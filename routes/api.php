@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Api\V1\Auth\AccountController;
 use App\Http\Controllers\Api\V1\Auth\MeController;
+use App\Http\Controllers\Api\V1\Auth\PasswordController;
 use App\Http\Controllers\Api\V1\Auth\PasswordResetController;
 use App\Http\Controllers\Api\V1\Auth\RegisterController;
 use App\Http\Controllers\Api\V1\Auth\SessionController;
@@ -15,5 +17,7 @@ Route::prefix('v1')->group(function () {
     Route::middleware('auth:sanctum')->group(function () {
         Route::post('logout', [SessionController::class, 'destroy']);
         Route::get('me', MeController::class);
+        Route::put('me/password', PasswordController::class);
+        Route::delete('me', [AccountController::class, 'destroy']);
     });
 });

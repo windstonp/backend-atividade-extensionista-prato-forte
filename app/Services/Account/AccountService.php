@@ -29,4 +29,14 @@ class AccountService
             return $user;
         });
     }
+
+    /** RN06 — apaga o usuário e tudo dele. As FKs em cascata cuidam das tabelas de domínio. */
+    public function delete(User $user): void
+    {
+        DB::transaction(function () use ($user) {
+            $user->endSessions();
+            DB::table('password_reset_tokens')->where('email', $user->email)->delete();
+            $user->delete();
+        });
+    }
 }
