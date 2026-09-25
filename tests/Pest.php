@@ -35,3 +35,16 @@ function fakeSession(User $user, string $id): void
         'last_activity' => now()->timestamp,
     ]);
 }
+
+/** Corpo válido de cadastro; sobrescreva o que o teste quiser variar. */
+function registerPayload(array $overrides = []): array
+{
+    return array_merge([
+        'name' => 'Camila Réus',
+        'email' => 'camila.reus@gmail.com',
+        'password' => 'senha1234',
+        'password_confirmation' => 'senha1234',
+        'terms_accepted' => true,
+        'terms_version' => '2026-09',
+    ], $overrides);
+}
