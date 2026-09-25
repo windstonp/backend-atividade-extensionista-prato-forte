@@ -8,6 +8,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
+/**
+ * @property list<string> $completed_steps
+ * @property list<int> $training_days
+ * @property list<string> $other_restrictions
+ */
 class Profile extends Model
 {
     /** @use HasFactory<ProfileFactory> */

@@ -29,7 +29,11 @@ class User extends Authenticatable
         ];
     }
 
-    /** RN01 — e-mail sempre minúsculo e sem espaços nas pontas. */
+    /**
+     * RN01 — e-mail sempre minúsculo e sem espaços nas pontas.
+     *
+     * @return Attribute<string, string>
+     */
     protected function email(): Attribute
     {
         return Attribute::make(set: fn (string $value) => Str::lower(trim($value)));

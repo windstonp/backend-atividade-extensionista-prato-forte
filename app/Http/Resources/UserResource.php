@@ -2,11 +2,12 @@
 
 namespace App\Http\Resources;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Support\Str;
 
-/** @mixin \App\Models\User — exige a relação `profile` carregada. */
+/** @mixin User — exige a relação `profile` carregada. */
 class UserResource extends JsonResource
 {
     /** @return array<string, mixed> */
