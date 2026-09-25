@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Notifications\ResetPasswordNotification;
 use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -44,6 +45,12 @@ class User extends Authenticatable
     public function settings(): HasOne
     {
         return $this->hasOne(UserSetting::class);
+    }
+
+    /** Usa o e-mail pt-BR com link para o front, no lugar do padrão do Laravel. */
+    public function sendPasswordResetNotification($token): void
+    {
+        $this->notify(new ResetPasswordNotification($token));
     }
 
     /** Derruba as sessões abertas do usuário (RN05, RN06, RF04), poupando `$except` se vier. */

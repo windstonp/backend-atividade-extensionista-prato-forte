@@ -3,6 +3,8 @@ services:
     build: ./docker/php
     user: "1000:1000"
     working_dir: /app
+    environment:
+      HOME: /tmp # o usuário 1000 não tem home no container (tinker/psysh precisam)
     volumes:
       - .:/app
     ports:
