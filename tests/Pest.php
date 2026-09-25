@@ -3,6 +3,7 @@
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Testing\TestResponse;
 use Tests\TestCase;
 
 uses(TestCase::class, RefreshDatabase::class)
@@ -47,4 +48,23 @@ function registerPayload(array $overrides = []): array
         'terms_accepted' => true,
         'terms_version' => '2026-09',
     ], $overrides);
+}
+
+/**
+ * Esquece o estado que o processo de teste guarda entre requisições (guardas e atributos da sessão),
+ * para a próxima requisição depender só dos cookies — como uma requisição nova do navegador.
+ */
+function forgetServerState(): void
+{
+    app('session.store')->flush();
+    app('auth')->forgetGuards();
+    app()->forgetInstance('auth.driver'); // Guard::class, que o driver de sessão usa para gravar user_id
+}
+
+/** As próximas requisições mandam o cookie de sessão desta resposta, como o navegador faria. */
+function followSession(TestResponse $response): void
+{
+    $name = config('session.cookie');
+    test()->withCredentials()->withCookie($name, $response->getCookie($name)->getValue());
+    forgetServerState();
 }
