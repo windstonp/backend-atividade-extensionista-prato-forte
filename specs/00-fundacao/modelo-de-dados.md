@@ -411,7 +411,7 @@ foods N───N pantry_items        (food_pantry_item)
 |---|---|
 | `RestrictionSeeder` | as 6 restrições 🔵 com `is_allergy` |
 | `PantryItemSeeder` | os 17 itens de cozinha 🔵 |
-| `FoodSeeder` | lê `database/data/foods.csv` (≈ 120 alimentos: nome, grupo, macros/100 g, porção típica, medida caseira, nota de troca, `common_dislike`, `is_staple`, fonte, **slugs de restrições que o excluem**, **slugs de itens de cozinha**). Idempotente (upsert por `slug`). Cobertura mínima: todos os alimentos do `mock-data.ts` 🔵, todos os itens de cozinha, a lista "não curto" do mock (fígado, jiló, beterraba, peixe, berinjela), e ≥ 3 opções de troca por grupo principal. |
+| `FoodSeeder` | lê `database/data/foods.csv` (≈ 60 alimentos no Plano 03, ampliado quando precisar: nome, grupo, macros/100 g, porção típica, medida caseira, nota de troca, `common_dislike`, `is_staple`, fonte, **slugs de restrições que o excluem**, **slugs de itens de cozinha**). Idempotente (upsert por `slug`). Cobertura mínima: todos os alimentos do `mock-data.ts` 🔵, todos os itens de cozinha, a lista "não curto" do mock (fígado, jiló, beterraba, peixe, berinjela), e ≥ 3 opções de troca por grupo principal. Fonte por linha: `TACO 4ª ed.`, `Rótulo`, `Tabela USDA` ou `Receita caseira (TACO)` — conferência pendente (P5). |
 
 ### Desenvolvimento e demonstração (`DemoSeeder`, só `local`/`staging`)
 - **Camila Réus** (`camila@demo.pratoforte.test` / `demo1234`) reproduzindo o `mockProfile` 🔵: 27 anos, 164 cm, ganhar massa, meta 62 kg, moderado, sentada, treina 19:00 seg/qua/sex, marmita, cozinha do mock, alergia a castanhas, não curte fígado e jiló.
