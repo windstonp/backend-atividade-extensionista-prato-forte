@@ -196,6 +196,18 @@ Qualquer tela autenticada + 401 → Login?voltar=rota → após login volta à r
 
 ## 9. Definition of Done
 ```
+[x] CA01–CA09 atendidos (CA01, CA03, CA09 também pelo front)
+[x] Endpoints, Form Requests, rate limiters, ResetPasswordNotification pt-BR   (Plano 01)
+[x] Feature tests: sucesso, 422, 401, 429, cascade de exclusão                 (Plano 01)
+[x] Telas N01–N04, N06, N07 geradas com frontend-design (animadas, identidade do mock)
+[x] Stories + play dos formulários; integração com MSW
+[x] proxy.ts + layout autenticado redirecionando corretamente
+[x] Link "Pular para o app" removido; "Já tenho conta" → /entrar
+[x] E2E-01 (parte de cadastro), E2E-02, E2E-10 verdes — o resto do E2E-01 é dos Planos 03/04
+[x] axe limpo; formulários navegáveis por teclado; autocomplete correto
+Pendente fora do Plano 02: remover a inscrição Web Push no logout (Plano 07); texto final do termo (P3).
+E2E: o E2ESeeder tem uma conta concluída e uma de senha por navegador (limite de 5 logins/min por e-mail).
+```
 [ ] CA01–CA09 atendidos
 [ ] Endpoints, Form Requests, rate limiters, ResetPasswordNotification pt-BR
 [ ] Feature tests: sucesso, 422, 401, 429, cascade de exclusão
