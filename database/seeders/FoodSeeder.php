@@ -68,7 +68,13 @@ class FoodSeeder extends Seeder
         return $rows;
     }
 
-    /** "a|b" → ["a", "b"] @return list<string> */
+    /**
+     * "a|b" → ["a", "b"]
+
+     *
+
+     * @return list<string>
+     */
     private function list(string $value): array
     {
         return array_values(array_filter(explode('|', $value), fn (string $item) => $item !== ''));
