@@ -1,5 +1,8 @@
 <?php
 
+use App\Models\Food;
+use App\Models\PantryItem;
+use App\Models\Restriction;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Password;
@@ -13,12 +16,21 @@ dataset('tabelas do usuário', [
     'profiles' => ['profiles', 'user_id'],
     'user_settings' => ['user_settings', 'user_id'],
     'sessions' => ['sessions', 'user_id'],
+    'weigh_ins' => ['weigh_ins', 'user_id'],
+    'restriction_user' => ['restriction_user', 'user_id'],
+    'pantry_item_user' => ['pantry_item_user', 'user_id'],
+    'disliked_food_user' => ['disliked_food_user', 'user_id'],
 ]);
 
 it('não deixa nenhuma linha do usuário para trás (CA08)', function (string $table, string $column) {
     $user = login(User::factory()->onboarded()->create(['email' => 'camila@exemplo.com']));
     fakeSession($user, 'outro-celular');
     Password::createToken($user);
+    seedCatalog();
+    $user->restrictions()->attach(Restriction::first());
+    $user->pantryItems()->attach(PantryItem::first());
+    $user->dislikedFoods()->attach(Food::where('common_dislike', true)->first());
+    $user->weighIns()->create(['date' => today(), 'weight_kg' => 58.4]);
 
     $this->deleteJson('/api/v1/me', ['password' => 'senha1234'])->assertNoContent();
 

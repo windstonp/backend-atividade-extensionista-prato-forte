@@ -6,6 +6,8 @@ use App\Notifications\ResetPasswordNotification;
 use Database\Factories\UserFactory;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -49,6 +51,67 @@ class User extends Authenticatable
     public function settings(): HasOne
     {
         return $this->hasOne(UserSetting::class);
+    }
+
+    /**
+     * Restrições e alergias marcadas.
+
+     *
+
+     * @return BelongsToMany<Restriction, $this>
+     */
+    public function restrictions(): BelongsToMany
+    {
+        return $this->belongsToMany(Restriction::class)->orderBy('position');
+    }
+
+    /**
+     * Itens da cozinha.
+
+     *
+
+     * @return BelongsToMany<PantryItem, $this>
+     */
+    public function pantryItems(): BelongsToMany
+    {
+        return $this->belongsToMany(PantryItem::class)->orderBy('position');
+    }
+
+    /**
+     * "Prefiro não ver no cardápio" (só alimentos `common_dislike`).
+
+     *
+
+     * @return BelongsToMany<Food, $this>
+     */
+    public function dislikedFoods(): BelongsToMany
+    {
+        return $this->belongsToMany(Food::class, 'disliked_food_user')->orderBy('name');
+    }
+
+    /** @return HasMany<WeighIn, $this> */
+    public function weighIns(): HasMany
+    {
+        return $this->hasMany(WeighIn::class);
+    }
+
+    /** @return HasOne<WeighIn, $this> */
+    public function latestWeighIn(): HasOne
+    {
+        return $this->hasOne(WeighIn::class)->latestOfMany('date');
+    }
+
+    /** RN34: peso atual = pesagem mais recente; antes da primeira, o peso informado no onboarding. */
+    public function currentWeightKg(): ?float
+    {
+        $latest = $this->latestWeighIn;
+        if ($latest !== null) {
+            return $latest->weight_kg;
+        }
+
+        $start = $this->profile?->start_weight_kg;
+
+        return $start === null ? null : (float) $start;
     }
 
     /** Usa o e-mail pt-BR com link para o front, no lugar do padrão do Laravel. */
