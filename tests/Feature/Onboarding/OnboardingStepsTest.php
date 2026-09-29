@@ -195,3 +195,23 @@ it('exige login', function () {
     $this->patchJson('/api/v1/profile/steps/objetivo', stepPayload('objetivo'))->assertUnauthorized();
     $this->getJson('/api/v1/onboarding')->assertUnauthorized();
 });
+
+it('salvar os dados sem mudar o peso não inventa pesagem de hoje (RN34)', function () {
+    $user = login(User::factory()->onboarded()->create());
+    $user->weighIns()->create(['date' => today()->subDays(21), 'weight_kg' => 60.0]);
+
+    $this->patchJson('/api/v1/profile/steps/dados', stepPayload('dados', ['preferred_name' => 'Mila', 'weight_kg' => 60.0]))->assertOk();
+
+    expect(WeighIn::where('user_id', $user->id)->count())->toBe(1)
+        ->and(WeighIn::where('user_id', $user->id)->sole()->date->isToday())->toBeFalse();
+});
+
+it('meta sugerida que ainda combina não anda junto com o peso', function () {
+    $user = User::factory()->onboarded()->create();
+    $user->profile->update(['goal_weight_kg' => 61.5, 'goal_weight_source' => 'suggested']);
+    login($user);
+
+    $this->patchJson('/api/v1/profile/steps/dados', stepPayload('dados', ['weight_kg' => 60.0, 'goal_weight_kg' => null]))
+        ->assertJsonPath('data.answers.goal_weight_kg', 61.5)
+        ->assertJsonPath('data.answers.goal_weight_source', 'suggested');
+});

@@ -98,8 +98,12 @@ class ProfileService
 
         if ($profile->isOnboarded()) {
             // RN34: depois do onboarding, "peso de hoje" é a pesagem do dia; o peso inicial não muda.
-            $user->weighIns()->updateOrCreate(['date' => today()->toDateString()], ['weight_kg' => $weight]);
-            $user->unsetRelation('latestWeighIn');
+            // Peso igual ao atual = a pessoa só mexeu em outro campo: não inventa uma pesagem.
+            $current = $user->currentWeightKg();
+            if ($current === null || abs($current - $weight) >= 0.05) {
+                $user->weighIns()->updateOrCreate(['date' => today()->toDateString()], ['weight_kg' => $weight]);
+                $user->unsetRelation('latestWeighIn');
+            }
         } else {
             $profile->start_weight_kg = $weight;
         }
@@ -112,6 +116,10 @@ class ProfileService
         }
 
         $goal = Goal::tryFrom((string) $profile->goal);
+        $previous = $profile->goal_weight_kg === null ? null : (float) $profile->goal_weight_kg;
+        if ($goal !== null && $profile->isOnboarded() && $profile->goal_weight_source === 'suggested' && $this->goalWeights->fits($goal, $weight, $previous)) {
+            return []; // meta sugerida que ainda combina fica: senão ela andaria junto com o peso
+        }
         $this->setGoalWeight($profile, $goal === null ? null : $this->defaultGoalWeight($profile, $goal, $weight));
 
         return [];
