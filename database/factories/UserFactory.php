@@ -45,6 +45,12 @@ class UserFactory extends Factory
         return $this->has(Profile::factory()->onboarded(), 'profile');
     }
 
+    /** Onboarding respondido até o resumo, ainda não concluído. */
+    public function answered(): static
+    {
+        return $this->has(Profile::factory()->answered(), 'profile');
+    }
+
     /** @param  list<string>  $steps */
     public function withCompletedSteps(array $steps): static
     {

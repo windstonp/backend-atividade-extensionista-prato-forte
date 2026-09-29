@@ -18,8 +18,8 @@ class ProfileFactory extends Factory
         return [];
     }
 
-    /** Perfil da Camila do mock, com onboarding concluído. */
-    public function onboarded(): static
+    /** Todas as etapas respondidas (Camila do mock), sem concluir o onboarding. */
+    public function answered(): static
     {
         return $this->state(fn () => [
             'goal' => 'ganhar-massa',
@@ -36,6 +36,14 @@ class ProfileFactory extends Factory
             'sleep_time' => '23:00',
             'training_days' => [1, 3, 5],
             'lunch_place' => 'marmita',
+            'completed_steps' => ['objetivo', 'dados', 'atividade', 'preferencias', 'restricoes', 'rotina'],
+        ]);
+    }
+
+    /** Perfil da Camila do mock, com onboarding concluído. */
+    public function onboarded(): static
+    {
+        return $this->answered()->state(fn () => [
             'completed_steps' => array_map(fn (OnboardingStep $step) => $step->value, OnboardingStep::cases()),
             'onboarding_completed_at' => now(),
         ]);
