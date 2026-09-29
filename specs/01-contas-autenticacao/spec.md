@@ -208,13 +208,3 @@ Qualquer tela autenticada + 401 → Login?voltar=rota → após login volta à r
 Pendente fora do Plano 02: remover a inscrição Web Push no logout (Plano 07); texto final do termo (P3).
 E2E: o E2ESeeder tem uma conta concluída e uma de senha por navegador (limite de 5 logins/min por e-mail).
 ```
-[ ] CA01–CA09 atendidos
-[ ] Endpoints, Form Requests, rate limiters, ResetPasswordNotification pt-BR
-[ ] Feature tests: sucesso, 422, 401, 429, cascade de exclusão
-[ ] Telas N01–N04, N06, N07 geradas com frontend-design (animadas, identidade do mock)
-[ ] Stories + play dos formulários; integração com MSW
-[ ] proxy.ts + layout autenticado redirecionando corretamente
-[ ] Link "Pular para o app" removido; "Já tenho conta" → /entrar
-[ ] E2E-01 (parte de cadastro), E2E-02, E2E-10 verdes
-[ ] axe limpo; formulários navegáveis por teclado; autocomplete correto
-```
