@@ -63,5 +63,5 @@ Form Requests com recurso chamam a Policy em `authorize()`; o restante retorna `
 
 - `src/proxy.ts` (Next 16 — o antigo `middleware.ts` foi renomeado para `proxy`): se não existir o cookie de sessão, rotas do app (`/hoje`, `/dieta`, `/nutri`, `/evolucao`, `/perfil`, `/onboarding/*`) redirecionam para `/entrar`. É só uma primeira barreira de UX — **a autoridade é a API**.
 - Layout autenticado chama `GET /me`; `401` → `/entrar`; `onboarding_completed = false` → `/onboarding/{next_step}`.
-- Rotas públicas: `/`, `/cadastro`, `/entrar`, `/senha/*`. Usuário logado que abre `/`, `/cadastro` ou `/entrar` vai para `/hoje` (ou para a etapa pendente).
+- Rotas públicas: `/`, `/cadastro`, `/entrar`, `/senha/*`. Usuário logado que abre `/`, `/cadastro` ou `/entrar` vai para `/hoje` (ou para a etapa pendente) — decidido **no cliente** por `GET /me` (`RedirecionarSeLogado`), não no `proxy.ts`: depois do logout o Laravel mantém um cookie de sessão anônima, então a simples presença do cookie não prova login e o `proxy` criaria um laço `/entrar` ↔ `/hoje`.
 - O link "Pular para o app" (`sr-only`) da tela inicial 🔵 é **removido** (contornava a autenticação — ver `99-inconsistencias.md`).
