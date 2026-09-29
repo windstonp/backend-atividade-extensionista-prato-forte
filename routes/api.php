@@ -9,6 +9,7 @@ use App\Http\Controllers\Api\V1\Auth\SessionController;
 use App\Http\Controllers\Api\V1\CatalogController;
 use App\Http\Controllers\Api\V1\OnboardingController;
 use App\Http\Controllers\Api\V1\PlanController;
+use App\Http\Controllers\Api\V1\PreferencesController;
 use App\Http\Controllers\Api\V1\ProfileController;
 use App\Http\Middleware\EnsureSpaSession;
 use Illuminate\Support\Facades\Route;
@@ -31,5 +32,10 @@ Route::prefix('v1')->group(function () {
         Route::get('plans/preview-targets', [PlanController::class, 'previewTargets']);
         Route::patch('profile/steps/{step}', [ProfileController::class, 'updateStep'])
             ->whereIn('step', ['objetivo', 'dados', 'atividade', 'preferencias', 'restricoes', 'rotina']);
+
+        Route::middleware('onboarded')->group(function () {
+            Route::get('profile', [ProfileController::class, 'show']);
+            Route::put('profile/preferences', PreferencesController::class);
+        });
     });
 });

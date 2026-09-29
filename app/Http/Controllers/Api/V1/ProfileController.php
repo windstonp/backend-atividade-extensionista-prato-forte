@@ -6,12 +6,22 @@ use App\Enums\OnboardingStep;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Profile\ProfileStepRequest;
 use App\Http\Resources\OnboardingResource;
+use App\Http\Resources\ProfileResource;
 use App\Models\User;
 use App\Services\Profile\ProfileService;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 
 class ProfileController extends Controller
 {
+    public function show(Request $request): ProfileResource
+    {
+        /** @var User $user */
+        $user = $request->user();
+
+        return new ProfileResource($user->load(ProfileResource::RELATIONS));
+    }
+
     public function updateStep(ProfileStepRequest $request, string $step, ProfileService $profiles): JsonResponse
     {
         /** @var User $user */

@@ -2,6 +2,7 @@
 
 use App\Exceptions\ApiExceptionRenderer;
 use App\Exceptions\DomainException;
+use App\Http\Middleware\EnsureOnboardingCompleted;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
@@ -17,6 +18,7 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->statefulApi();
         $middleware->throttleApi();
+        $middleware->alias(['onboarded' => EnsureOnboardingCompleted::class]);
         // A API não tem rota "login" web: sem isso, 401 sem Accept JSON vira "Route [login] not defined".
         $middleware->redirectGuestsTo(fn (Request $request) => $request->is('api/*') ? null : '/');
     })
