@@ -19,7 +19,7 @@ Base existente 🔵: Next.js 16.3 (App Router) + React 19.2 + TypeScript 5 + Tai
      rules: { 'no-restricted-imports': ['error', { patterns: [
        { group: ['@/mocks/*', '**/mocks/**', '**/mock-data'], message: 'Dado mockado só em stories, testes e MSW. Use src/lib/api.' } ] }] } }
    ```
-   Exceção única: o ponto de ativação do MSW no `app/layout.tsx`, via `import()` dinâmico condicionado à variável — liberado com comentário `eslint-disable-next-line` justificado.
+   Exceção única: o ponto de ativação do MSW no `app/layout.tsx`, via `import()` dinâmico condicionado à variável — liberado com comentário `eslint-disable-next-line` justificado. Transição (Plano 02): o antigo `lib/api.ts` virou `src/lib/mock-api.ts` e, junto com as telas ainda não migradas, fica num bloco "legado" do `eslint.config.mjs` que cada plano de feature encolhe; a pasta `src/lib/api/` é o cliente real.
 
 ## 2. Estrutura de diretórios
 

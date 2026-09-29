@@ -20,7 +20,7 @@ Cada componente: `Nome.tsx` + `Nome.stories.tsx` (estados reais + `play`) na mes
 
 ## 3. Storybook
 
-- **Versão/framework:** Storybook 9, `@storybook/nextjs-vite` (App Router, Tailwind 4 via Vite).
+- **Versão/framework:** Storybook 10, `@storybook/nextjs-vite` (App Router, Tailwind 4 via Vite).
 - **Addons:** `@storybook/addon-vitest` (stories viram testes, modo browser/Playwright), `@storybook/addon-a11y` (`parameters.a11y.test = 'error'`), `@storybook/addon-docs` (autodocs a partir das props), `msw-storybook-addon` (componentes de domínio que buscam dado).
 - **`preview.tsx`:** importa `globals.css` e as fontes; fundo `papel` e variante escura (`tinta`) como *backgrounds*; *global toolbar* "Movimento: normal / reduzido" que força `prefers-reduced-motion` (emulação via classe no `<html>` lida por `motion.ts`); viewport padrão 390×844; decorator com `QueryClientProvider` e `Toaster`.
 - **Títulos:** `UI/Button`, `App/TopBar`, `Plano/DayRail`, `Nutri/SwapCard`, `Evolução/WeightChart`, `Conta/LoginForm`…
@@ -157,7 +157,7 @@ Componentes de domínio recebem **dados prontos por props** (não chamam hooks d
 
 ## 9. Definition of Done
 ```
-[ ] Storybook 9 configurado (Tailwind, fontes, MSW, a11y, vitest, toolbar de movimento)
+[ ] Storybook 10 configurado (Tailwind, fontes, MSW, a11y, vitest, toolbar de movimento)
 [ ] Primitivos §4 com as mudanças marcadas (novo) e stories
 [ ] Estrutura §5 atualizada (OnboardingStep com aoContinuar/carregando/erro/modoEdicao)
 [ ] Domínio §6 extraído das páginas, com stories
