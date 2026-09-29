@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\User;
+use Database\Seeders\CatalogSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Testing\TestResponse;
@@ -67,4 +68,10 @@ function followSession(TestResponse $response): void
     $name = config('session.cookie');
     test()->withCredentials()->withCookie($name, $response->getCookie($name)->getValue());
     forgetServerState();
+}
+
+/** Catálogo de referência (restrições, cozinha e alimentos), como em produção. */
+function seedCatalog(): void
+{
+    test()->seed(CatalogSeeder::class);
 }
