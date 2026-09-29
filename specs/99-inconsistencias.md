@@ -162,3 +162,8 @@ Status: **Decidido** (✅ com os autores) · **Recomendado** (adotado nesta spec
 ### P4 — Revisão nutricional · **Pendente (não bloqueia o MVP)**
 - **Problema:** fórmulas (RN13), pisos de kcal, faixas de troca (RN25) e regras do prompt são sugestões técnicas, sem validação de nutricionista.
 - **Recomendação técnica:** se houver nutricionista parceiro(a) da Zfit, revisar `regras-de-negocio.md` RN13/RN25 e o system prompt antes da rodada de validação; registrar no relatório que o app **não substitui acompanhamento profissional** (texto no termo e no rodapé de Configurações).
+
+### P5 — Valores nutricionais do catálogo · **Pendente (não bloqueia o MVP)**
+- **Problema:** `database/data/foods.csv` (Plano 03) foi montado com valores por 100 g da TACO 4ª ed. quando o alimento existe nela, de rótulo ou da tabela USDA quando não existe, e de receita caseira para preparos (ovos mexidos, salada). Ninguém da nutrição conferiu.
+- **Impacto:** as metas (RN13) não mudam; as porções e os totais do cardápio (Plano 04) herdam qualquer erro da tabela.
+- **Recomendação técnica:** antes da rodada de validação, conferir a planilha com a TACO (e, se possível, com o(a) nutricionista de P4); a coluna `source` diz de onde veio cada linha.

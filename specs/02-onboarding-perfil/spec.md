@@ -70,7 +70,7 @@ Salvar: botão "Continuar" em `carregando`; erro 422 → mensagem no campo; erro
 - **Campos:** Nome preferido ("Como podemos te chamar", preenchido com o primeiro nome do cadastro) · Idade (anos) · Altura (cm) · Peso de hoje (kg) · Sexo biológico (`Segmento` 3 opções) · **Meta de peso (kg, opcional)** — só se objetivo ∈ {ganhar, perder}.
 - **Ajuda da meta:** "Para {altura}, a faixa saudável vai de {min} a {max} kg." (atualiza ao digitar a altura; cálculo no front espelhando RN10, confirmado pela API).
 - **Aviso não bloqueante** (RN10): meta fora da faixa → texto em `gema-texto`: "Essa meta fica fora da faixa saudável para a sua altura. Tudo bem seguir — vale conversar com um profissional."
-- **Unidade imperial** (RN39): se `unit_system = imperial` (só no modo edição — no onboarding ainda é métrico), campos em lb e ft/in; conversão antes de enviar.
+- **Unidade imperial** (RN39): se `unit_system = imperial` (só no modo edição — no onboarding ainda é métrico), campos em lb e ft/in; conversão antes de enviar — **entra no Plano 07**, junto com `GET/PATCH /settings` (até lá ninguém escolhe imperial).
 - **Endpoint:** `PATCH /profile/steps/dados`.
 - **Validação:** RN09, RN10 (direção; limites 30–250).
 
@@ -102,8 +102,8 @@ Salvar: botão "Continuar" em `carregando`; erro 422 → mensagem no campo; erro
 - **Estados:** prévia carregando (`Skeleton` na linha de kcal); prévia com erro (esconde o bloco — não impede gerar); 422 no complete (etapa inválida) → vai à etapa indicada em `details.step`.
 
 ### S17 — Perfil (`/perfil`) 🔵
-- **Exibe:** iniciais (derivadas de `name`), nome, subtítulo (ver pendência P1: hoje "Treina na Zfit desde agosto"), cartão do objetivo com `ReguaPeso` (início, atual, meta) — **oculto** se `goal = mais-disposicao`; meta `suggested` mostra "meta sugerida" 🟡; "Trocar objetivo"; atividade + academia + cidade; lista: Dados pessoais, Preferências alimentares ("N alimentos na sua cozinha"), Restrições e alergias (primeira alergia em `alerta` ou "Nenhuma restrição"), Rotina e horários, Notificações e conta (resumo das notificações ligadas), **Avaliar o app** (spec 07); `NutriBar`/botão "Refazer meu plano".
-- **Endpoints:** `GET /profile`, `GET /settings`, `GET /usability-responses/status`.
+- **Exibe:** iniciais (derivadas de `name`), nome, subtítulo "No Prato Forte desde {mês de ano}" (P1, opção a), cartão do objetivo com `ReguaPeso` (início, atual, meta) — **oculto** se `goal = mais-disposicao`; meta `suggested` mostra "meta sugerida" 🟡; "Trocar objetivo"; atividade + academia + cidade; lista: Dados pessoais, Preferências alimentares ("N alimentos na sua cozinha"), Restrições e alergias (primeira alergia em `alerta` ou "Nenhuma restrição"), Rotina e horários, Notificações e conta (resumo das notificações ligadas), **Avaliar o app** (spec 07); `NutriBar`/botão "Refazer meu plano".
+- **Endpoints:** `GET /profile`, `GET /settings`, `GET /usability-responses/status`. Até o Plano 07, a linha "Notificações e conta" mostra "Avisos, medidas e conta"; "Avaliar o app" entra no Plano 08.
 - **Estados:** carregando (`Skeleton` ×3, já no mock); erro (`ErrorState`); sucesso.
 
 ### S18 — Preferências e restrições (`/perfil/preferencias`) 🔵
@@ -153,6 +153,7 @@ Salvar: botão "Continuar" em `carregando`; erro 422 → mensagem no campo; erro
 | restricoes | `{ "restrictions": ["castanhas"], "other_restrictions": ["camarão", "pimenta"] }` |
 | rotina | `{ "wake_time": "06:20", "training_time": "19:00", "sleep_time": "23:00", "training_days": [1, 3, 5], "lunch_place": "marmita" }` |
 - **Response 200:** `{ "data": <mesmo formato de GET /onboarding>, "meta": { "plan_effect": "none", "plan_id": null, "warnings": [] } }`
+- **Avisos (`meta.warnings`):** `GOAL_WEIGHT_OUT_OF_HEALTHY_RANGE` (RN10) e `GOAL_WEIGHT_RESET` (RN11). `plan_effect` é sempre `none` até o plano alimentar existir (Plano 04).
 - **Validações:** ver §6.
 - **Erros:** 401; 404 (step inválido); 422 `VALIDATION_ERROR`.
 - **Efeitos:** marca a etapa em `completed_steps`; após onboarding concluído aplica RN21 e, em `dados`, RN34 (pesagem de hoje).
@@ -160,6 +161,7 @@ Salvar: botão "Continuar" em `carregando`; erro 422 → mensagem no campo; erro
 ### `POST /api/v1/onboarding/complete`
 - **Objetivo:** concluir o onboarding e pedir o primeiro plano.
 - **Response 202:** `{ "data": { "plan": { "id": 42, "status": "pending" } } }`
+- **Até o Plano 04:** `{ "data": { "plan": null } }` (sem plano nem job); 200 com o mesmo corpo se já concluído.
 - **Efeitos:** valida todas as etapas; grava `onboarding_completed_at`; cria a primeira pesagem (RN34); aplica meta sugerida/auto (RN10); dispara `GeneratePlanJob`.
 - **Erros:** 422 `VALIDATION_ERROR` com `details.step` (primeira etapa incompleta); 409 se já concluído (idempotência: devolve o plano existente com 200) 🟡.
 
@@ -180,7 +182,7 @@ Salvar: botão "Continuar" em `carregando`; erro 422 → mensagem no campo; erro
   "gym": "Zfit", "city": "Capivari de Baixo"
 } }
 ```
-`gym`/`city` vêm de `config('app.parceiro')` (constantes do projeto, não do usuário).
+`gym`/`city` vêm de `config('prato.parceiro')` (constantes do projeto, não do usuário).
 
 ### `PUT /api/v1/profile/preferences`
 - **Request:** `{ "restrictions": ["castanhas","lactose"], "other_restrictions": ["camarão"], "pantry_items": ["ovos"], "disliked_food_ids": [88, 91] }` (todas as listas obrigatórias, podem ser vazias — substituição completa).
@@ -244,13 +246,13 @@ Salvar: botão "Continuar" em `carregando`; erro 422 → mensagem no campo; erro
 
 ## 9. Definition of Done
 ```
-[ ] CA01–CA10 atendidos
-[ ] Endpoints catalog, onboarding, steps, complete, profile, preferences
-[ ] GoalWeightResolver + NutritionCalculator com unit tests por tabela de casos
-[ ] Feature tests: cada etapa, cada regra do §6, cada linha de RN21
-[ ] Telas do onboarding ligadas à API (sem localStorage), com modo edição
-[ ] Listas de opções vindas do catálogo (sem arrays fixos nas telas)
-[ ] Campo de meta de peso e avisos com stories
-[ ] E2E-01, E2E-03, E2E-11 verdes
-[ ] axe limpo; progresso anunciado; foco no título ao trocar de etapa
+[x] CA01–CA10 atendidos — CA07, CA08 (toast "Refazer") e CA09 dependem do plano (Plano 04)
+[x] Endpoints catalog, onboarding, steps, complete, profile, preferences — complete sem plano até o Plano 04
+[x] GoalWeightResolver + NutritionCalculator com unit tests por tabela de casos
+[x] Feature tests: cada etapa, cada regra do §6 — as linhas de RN21 entram no Plano 04
+[x] Telas do onboarding ligadas à API (sem localStorage), com modo edição
+[x] Listas de opções vindas do catálogo (sem arrays fixos nas telas)
+[x] Campo de meta de peso e avisos com stories
+[ ] E2E-01, E2E-03, E2E-11 verdes — E2E-01 até "Gerando" e E2E-03 no Plano 03; E2E-11 e o resto do E2E-01 no Plano 04
+[x] axe limpo; progresso anunciado; foco no título ao trocar de etapa
 ```
