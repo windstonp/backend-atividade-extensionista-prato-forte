@@ -181,7 +181,7 @@ Consequência: números confiáveis, **alergia garantida em código**, e todo o 
 | D7 | Sanctum SPA (cookie) como autenticação. | JWT do Node |
 | D8 | Meta de peso: campo opcional com coerência de direção; fora do IMC 18,5–24,9 **só avisa, nunca bloqueia**. | bloquear abaixo de 18,5; bloquear fora da faixa |
 | D9 | Chat com várias conversas: antes de abrir, o usuário escolhe continuar uma conversa ou começar outra; a IA recebe resumos das últimas conversas. | conversa única |
-| D10 | Ferramentas de teste: Pest (back); Storybook 9 + Vitest + Testing Library + MSW + Playwright (front). | — |
+| D10 | Ferramentas de teste: Pest (back); Storybook 10 + Vitest + Testing Library + MSW + Playwright (front). | — |
 | D11 | Telas novas geradas com o skill `frontend-design:frontend-design`, com bastante animação e na identidade visual do mock. | — |
 | D12 | Sugestões de continuação do Nutri geradas pela IA a cada resposta (RN45), com filtro e reserva determinística. Nenhum dado de domínio fixo no front: checagem no CI proíbe importar mocks fora de `src/mocks/`, stories e testes. | chips fixos do mock |
 

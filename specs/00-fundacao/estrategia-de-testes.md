@@ -30,12 +30,14 @@ E2E Tests         → fluxo real do usuário, navegador + API + banco
 | Back | **Pest 3** (+ plugin Laravel) | Unit e Feature |
 | Back | MySQL 8 real no CI (serviço do GitHub Actions) | integração fiel (coluna gerada, JSON, collation) — não SQLite |
 | Back | `Queue::fake`, `Notification::fake`, `Http::fake`, `FakeAiClient`, `Carbon::setTestNow` | isolamento de efeitos e tempo |
-| Front | **Storybook 9** (`@storybook/nextjs-vite`) + **`@storybook/addon-vitest`** | stories viram testes de componente (modo browser, Playwright/Chromium) |
+| Front | **Storybook 10** (`@storybook/nextjs-vite`) + **`@storybook/addon-vitest`** | stories viram testes de componente (modo browser, Playwright/Chromium) |
 | Front | `@storybook/addon-a11y` | axe em toda story; `parameters.a11y.test = 'error'` |
 | Front | **Vitest** + **Testing Library** (`@testing-library/react`, `user-event`) | unit e integração |
 | Front | **MSW 2** | mocks de API compartilhados por stories, integração e demo |
 | E2E | **Playwright** | Chromium + WebKit mobile (viewport 390×844); traces em falha |
 | E2E | Mailpit | ler o e-mail de recuperação de senha |
+
+Versões fixadas no Plano 02: Storybook 10.6, Vitest 4.1, Playwright 1.63 (mesma tag da imagem Docker `mcr.microsoft.com/playwright:v1.63.0-noble`, onde o front roda local e no CI).
 
 ## 3. Estrutura
 
