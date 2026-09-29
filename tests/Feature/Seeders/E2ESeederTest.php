@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Food;
+use App\Models\Restriction;
 use App\Models\User;
 use Database\Seeders\E2ESeeder;
 
@@ -21,4 +23,15 @@ it('usa a senha combinada com o front', function () {
     $this->postJson('/api/v1/login', ['email' => 'concluido-chromium@e2e.pratoforte.test', 'password' => 'senha1234'])
         ->assertOk()
         ->assertJsonPath('data.onboarding_completed', true);
+});
+
+it('semeia o catálogo e deixa a conta "novo" com objetivo e dados respondidos (E2E-03)', function () {
+    $this->seed(E2ESeeder::class);
+
+    $novo = User::where('email', 'novo@e2e.pratoforte.test')->sole()->profile;
+
+    expect(Restriction::count())->toBe(6)
+        ->and(Food::count())->toBeGreaterThan(50)
+        ->and([$novo->goal, $novo->preferred_name, $novo->age, $novo->height_cm, (float) $novo->start_weight_kg, $novo->sex])
+        ->toBe(['perder-gordura', 'Nina', 30, 170, 70.0, 'feminino']);
 });

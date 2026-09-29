@@ -5061,7 +5061,8 @@ describe('Etapa Rotina (S07)', () => {
 
   it('pede o lugar do almoço', async () => {
     renderizar(<EtapaRotina />);
-    await userEvent.setup().click(await screen.findByRole('button', { name: 'Continuar' }));
+    await screen.findByLabelText('Treina às'); // antes disso o botão é o do esqueleto
+    await userEvent.setup().click(screen.getByRole('button', { name: 'Continuar' }));
 
     expect(await screen.findByText(MENSAGENS.almoco)).toBeInTheDocument();
   });
@@ -5575,7 +5576,8 @@ describe('Resumo (S08)', () => {
 
     renderizar(<EtapaResumo />);
 
-    expect(await screen.findByRole('button', { name: 'Gerar meu plano' })).toBeEnabled();
+    await screen.findByText('Amendoim e castanhas, camarão');
+    expect(screen.getByRole('button', { name: 'Gerar meu plano' })).toBeEnabled();
     await waitFor(() => expect(screen.queryByLabelText('Calculando suas metas')).not.toBeInTheDocument());
     expect(screen.queryByText(/Com isso/)).not.toBeInTheDocument();
   });
@@ -5590,7 +5592,8 @@ describe('Resumo (S08)', () => {
     );
 
     renderizar(<EtapaResumo />);
-    await userEvent.setup().click(await screen.findByRole('button', { name: 'Gerar meu plano' }));
+    await screen.findByText('Amendoim e castanhas, camarão'); // antes disso o botão é o do esqueleto
+    await userEvent.setup().click(screen.getByRole('button', { name: 'Gerar meu plano' }));
 
     await waitFor(() => expect(recarregarEm).toHaveBeenCalledWith('/onboarding/gerando'));
     expect(concluiu).toBe(true);
@@ -5604,7 +5607,8 @@ describe('Resumo (S08)', () => {
     );
 
     renderizar(<EtapaResumo />);
-    await userEvent.setup().click(await screen.findByRole('button', { name: 'Gerar meu plano' }));
+    await screen.findByText('Amendoim e castanhas, camarão'); // antes disso o botão é o do esqueleto
+    await userEvent.setup().click(screen.getByRole('button', { name: 'Gerar meu plano' }));
 
     await waitFor(() => expect(roteador.push).toHaveBeenCalledWith('/onboarding/rotina?de=resumo'));
     expect(await screen.findByText('Falta completar esta etapa.')).toBeInTheDocument();
@@ -5615,7 +5619,8 @@ describe('Resumo (S08)', () => {
     server.use(http.post(url('/onboarding/complete'), () => HttpResponse.error()));
 
     renderizar(<EtapaResumo />);
-    await userEvent.setup().click(await screen.findByRole('button', { name: 'Gerar meu plano' }));
+    await screen.findByText('Amendoim e castanhas, camarão'); // antes disso o botão é o do esqueleto
+    await userEvent.setup().click(screen.getByRole('button', { name: 'Gerar meu plano' }));
 
     expect(await screen.findByRole('alert')).toHaveTextContent('Sem conexão. Confira a internet e tente de novo.');
     expect(screen.getByRole('button', { name: 'Gerar meu plano' })).toBeEnabled();
@@ -5731,7 +5736,7 @@ export function PreviaDeMetas({ estado }: { estado: "carregando" | "indisponivel
   return (
     <div className="mt-4 animate-escala rounded-[18px] bg-tinta px-[18px] py-4 text-neve" style={{ animationDelay: "560ms" }}>
       {estado === "carregando" ? (
-        <div aria-busy="true" aria-label="Calculando suas metas">
+        <div role="status" aria-busy="true" aria-label="Calculando suas metas">
           <Skeleton className="h-4 w-4/5" />
           <Skeleton className="mt-2 h-4 w-3/5" atraso={90} />
         </div>

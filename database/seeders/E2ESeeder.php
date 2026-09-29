@@ -13,8 +13,13 @@ class E2ESeeder extends Seeder
 {
     public function run(): void
     {
-        User::factory()->withCompletedSteps(['objetivo', 'dados'])
+        $this->call(CatalogSeeder::class);
+
+        $novo = User::factory()->withCompletedSteps(['objetivo', 'dados'])
             ->create(['name' => 'Nina Souza', 'email' => 'novo@e2e.pratoforte.test']);
+        $novo->profile->update([
+            'goal' => 'perder-gordura', 'preferred_name' => 'Nina', 'age' => 30, 'height_cm' => 170, 'start_weight_kg' => 70.0, 'sex' => 'feminino',
+        ]);
 
         // Uma conta por navegador: o E2E-10 troca a senha, e o login aceita só 5 tentativas
         // por minuto por e-mail — os dois navegadores juntos na mesma conta passariam disso.
