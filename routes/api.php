@@ -8,6 +8,7 @@ use App\Http\Controllers\Api\V1\Auth\RegisterController;
 use App\Http\Controllers\Api\V1\Auth\SessionController;
 use App\Http\Controllers\Api\V1\CatalogController;
 use App\Http\Controllers\Api\V1\OnboardingController;
+use App\Http\Controllers\Api\V1\PlanController;
 use App\Http\Controllers\Api\V1\ProfileController;
 use App\Http\Middleware\EnsureSpaSession;
 use Illuminate\Support\Facades\Route;
@@ -26,6 +27,8 @@ Route::prefix('v1')->group(function () {
 
         Route::get('catalog/onboarding', CatalogController::class);
         Route::get('onboarding', [OnboardingController::class, 'show']);
+        Route::post('onboarding/complete', [OnboardingController::class, 'complete']);
+        Route::get('plans/preview-targets', [PlanController::class, 'previewTargets']);
         Route::patch('profile/steps/{step}', [ProfileController::class, 'updateStep'])
             ->whereIn('step', ['objetivo', 'dados', 'atividade', 'preferencias', 'restricoes', 'rotina']);
     });
