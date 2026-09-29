@@ -6,6 +6,9 @@ use App\Http\Controllers\Api\V1\Auth\PasswordController;
 use App\Http\Controllers\Api\V1\Auth\PasswordResetController;
 use App\Http\Controllers\Api\V1\Auth\RegisterController;
 use App\Http\Controllers\Api\V1\Auth\SessionController;
+use App\Http\Controllers\Api\V1\CatalogController;
+use App\Http\Controllers\Api\V1\OnboardingController;
+use App\Http\Controllers\Api\V1\ProfileController;
 use App\Http\Middleware\EnsureSpaSession;
 use Illuminate\Support\Facades\Route;
 
@@ -20,5 +23,10 @@ Route::prefix('v1')->group(function () {
         Route::get('me', MeController::class);
         Route::put('me/password', PasswordController::class);
         Route::delete('me', [AccountController::class, 'destroy']);
+
+        Route::get('catalog/onboarding', CatalogController::class);
+        Route::get('onboarding', [OnboardingController::class, 'show']);
+        Route::patch('profile/steps/{step}', [ProfileController::class, 'updateStep'])
+            ->whereIn('step', ['objetivo', 'dados', 'atividade', 'preferencias', 'restricoes', 'rotina']);
     });
 });

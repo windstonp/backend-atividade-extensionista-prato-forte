@@ -75,3 +75,18 @@ function seedCatalog(): void
 {
     test()->seed(CatalogSeeder::class);
 }
+
+/** Corpo válido de cada etapa do onboarding (dados da Camila do mock); sobrescreva o que o teste variar. */
+function stepPayload(string $step, array $overrides = []): array
+{
+    $payloads = [
+        'objetivo' => ['goal' => 'ganhar-massa'],
+        'dados' => ['preferred_name' => 'Camila', 'age' => 27, 'height_cm' => 164, 'weight_kg' => 58.4, 'sex' => 'feminino', 'goal_weight_kg' => 62.0],
+        'atividade' => ['activity_level' => 'moderado', 'work_posture' => 'sentada'],
+        'preferencias' => ['pantry_items' => ['ovos', 'frango', 'arroz-e-feijao']],
+        'restricoes' => ['restrictions' => ['castanhas'], 'other_restrictions' => ['camarão', 'pimenta']],
+        'rotina' => ['wake_time' => '06:20', 'training_time' => '19:00', 'sleep_time' => '23:00', 'training_days' => [1, 3, 5], 'lunch_place' => 'marmita'],
+    ];
+
+    return array_merge($payloads[$step], $overrides);
+}
