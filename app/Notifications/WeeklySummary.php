@@ -25,6 +25,7 @@ class WeeklySummary extends Notification implements ShouldQueue
 
     public function toWebPush(object $notifiable, Notification $notification): WebPushMessage
     {
-        return (new WebPushMessage)->title('Sua semana no Prato Forte')->body($this->body)->tag('resumo-semana')->data(['url' => '/evolucao']);
+        return (new WebPushMessage)->title('Sua semana no Prato Forte')->body($this->body)->tag('resumo-semana')->data(['url' => '/evolucao'])
+            ->options(['TTL' => 86400, 'urgency' => 'normal']);
     }
 }

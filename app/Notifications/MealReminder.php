@@ -34,6 +34,7 @@ class MealReminder extends Notification implements ShouldQueue
             ->title("{$this->name} às {$this->time}")
             ->body($this->summary)
             ->tag("refeicao-{$this->slot}")
-            ->data(['url' => "/dieta/{$this->slot}"]);
+            ->data(['url' => "/dieta/{$this->slot}"])
+            ->options(['TTL' => 900, 'urgency' => 'high']);
     }
 }
