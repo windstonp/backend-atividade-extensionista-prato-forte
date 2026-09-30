@@ -89,6 +89,12 @@ class User extends Authenticatable
         return $this->belongsToMany(Food::class, 'disliked_food_user')->orderBy('name');
     }
 
+    /** @return HasMany<NutriConversation, $this> */
+    public function conversations(): HasMany
+    {
+        return $this->hasMany(NutriConversation::class);
+    }
+
     /** @return HasMany<WeighIn, $this> */
     public function weighIns(): HasMany
     {

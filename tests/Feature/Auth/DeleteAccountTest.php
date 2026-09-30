@@ -27,6 +27,7 @@ dataset('tabelas do usuário', [
     'meal_plans' => ['meal_plans', 'user_id'],
     'day_meals' => ['day_meals', 'user_id'],
     'day_meal_changes' => ['day_meal_changes', 'user_id'],
+    'nutri_conversations' => ['nutri_conversations', 'user_id'],
 ]);
 
 it('não deixa nenhuma linha do usuário para trás (CA08)', function (string $table, string $column) {
@@ -44,6 +45,7 @@ it('não deixa nenhuma linha do usuário para trás (CA08)', function (string $t
     $meal = DayMeal::where('user_id', $user->id)->firstOrFail();
     DayMealChange::create(['user_id' => $user->id, 'date' => today(), 'day_meal_id' => $meal->id, 'type' => 'swap', 'description' => 'x', 'items_before' => []]);
 
+    $user->conversations()->create(['title' => 'x'])->messages()->create(['role' => 'user', 'content' => 'Oi']);
     $this->deleteJson('/api/v1/me', ['password' => 'senha1234'])->assertNoContent();
 
     expect(DB::table($table)->where($column, $user->id)->exists())->toBeFalse("sobrou linha em {$table}")
