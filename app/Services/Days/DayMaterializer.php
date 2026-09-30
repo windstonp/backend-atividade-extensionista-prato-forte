@@ -12,6 +12,7 @@ use App\Models\DayMealItem;
 use App\Models\MealPlan;
 use App\Models\PlanMeal;
 use App\Models\User;
+use App\Services\Foods\FoodFilter;
 use Carbon\CarbonImmutable;
 use Illuminate\Database\UniqueConstraintViolationException;
 use Illuminate\Support\Collection;
@@ -20,6 +21,8 @@ use Illuminate\Support\Facades\DB;
 /** RN22 (hoje, futuro, passado) e RN15 (nome e nota de cada dia). */
 class DayMaterializer
 {
+    public function __construct(private readonly FoodFilter $filter) {}
+
     public function view(User $user, CarbonImmutable $date): DayView
     {
         $meals = $this->meals($user, $date);
@@ -72,12 +75,13 @@ class DayMaterializer
     public function build(User $user, MealPlan $plan, CarbonImmutable $date, bool $save, ?array $onlySlots = null): Collection
     {
         $plan->loadMissing('meals.items.food');
+        $allowed = $this->filter->allowedFor($user); // RN17: o plano pode ser de antes de uma restrição nova
         $training = $this->isTrainingDay($user, $date);
         $trainingTime = substr((string) $user->profile->training_time, 0, 5);
 
         return $plan->meals
             ->filter(fn (PlanMeal $meal) => $onlySlots === null || in_array($meal->slot, $onlySlots, true))
-            ->map(function (PlanMeal $planMeal) use ($user, $plan, $date, $save, $training, $trainingTime) {
+            ->map(function (PlanMeal $planMeal) use ($user, $plan, $date, $save, $training, $trainingTime, $allowed) {
                 $meal = new DayMeal([
                     'user_id' => $user->id,
                     'date' => $date,
@@ -90,7 +94,7 @@ class DayMaterializer
                 ]);
                 $meal->setRelation('plan', $plan);
 
-                $items = $planMeal->items->map(fn ($planItem) => (new DayMealItem([
+                $items = $planMeal->items->filter(fn ($planItem) => $allowed->has($planItem->food_id))->map(fn ($planItem) => (new DayMealItem([
                     'food_id' => $planItem->food_id,
                     'grams' => $planItem->grams,
                     'source' => ItemSource::Plan,
@@ -105,6 +109,17 @@ class DayMaterializer
                 return $meal->setRelation('items', $items->values());
             })
             ->values();
+    }
+
+    /** RN17/RN21 — restrição nova: sai na hora das refeições de hoje ainda não feitas, sem esperar o plano novo. */
+    public function dropForbiddenToday(User $user): void
+    {
+        $allowed = $this->filter->allowedFor($user);
+
+        DayMealItem::query()
+            ->whereHas('dayMeal', fn ($query) => $query->where('user_id', $user->id)->whereDate('date', CarbonImmutable::today())->whereNull('done_at'))
+            ->whereNotIn('food_id', $allowed->keys())
+            ->delete();
     }
 
     public function isTrainingDay(User $user, CarbonImmutable $date): bool

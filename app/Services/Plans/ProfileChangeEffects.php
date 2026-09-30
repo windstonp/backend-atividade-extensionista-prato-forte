@@ -4,12 +4,13 @@ namespace App\Services\Plans;
 
 use App\Enums\PlanEffect;
 use App\Models\User;
+use App\Services\Days\DayMaterializer;
 use App\Services\Foods\FoodFilter;
 
 /** RN21 — o que uma mudança do perfil faz com o plano ativo. */
 class ProfileChangeEffects
 {
-    public function __construct(private readonly PlanService $plans) {}
+    public function __construct(private readonly PlanService $plans, private readonly DayMaterializer $days) {}
 
     /**
      * Foto do que importa para o plano, para comparar antes e depois.
@@ -59,7 +60,9 @@ class ProfileChangeEffects
         }
 
         if ($before['restrictions'] !== $after['restrictions']) {
-            // Segurança: restrição nova nunca espera (RN17, RN21).
+            // Segurança: restrição nova nunca espera (RN17, RN21) — nem pelo plano novo, que pode falhar.
+            $this->days->dropForbiddenToday($user);
+
             return ['effect' => PlanEffect::RegenerationStarted, 'plan_id' => $this->plans->requestGeneration($user, force: true)->id];
         }
 

@@ -18,7 +18,10 @@ class FoodFilter
      */
     public function allowedFor(User $user): Collection
     {
-        $terms = array_values(array_filter(array_map(self::normalize(...), $user->profile->other_restrictions)));
+        $terms = array_values(array_unique(array_merge(...array_map(
+            self::variants(...),
+            array_filter(array_map(self::normalize(...), $user->profile->other_restrictions)),
+        ))));
 
         return Food::query()
             ->where('is_active', true)
@@ -54,6 +57,25 @@ class FoodFilter
     public static function normalize(string $text): string
     {
         return Str::lower(Str::ascii(trim($text)));
+    }
+
+    /**
+     * O termo e o singular dele, palavra a palavra ("camarões" → "camarao"): quem digita no plural
+     * também é protegido. Pegar alimento demais é o lado seguro (RN17).
+     *
+     * @return list<string>
+     */
+    private static function variants(string $term): array
+    {
+        $singular = implode(' ', array_map(fn (string $word) => match (true) {
+            strlen($word) <= 3 => $word,
+            str_ends_with($word, 'oes'), str_ends_with($word, 'aes') => substr($word, 0, -3).'ao',
+            str_ends_with($word, 'zes'), str_ends_with($word, 'res') => substr($word, 0, -2),
+            str_ends_with($word, 's') => substr($word, 0, -1),
+            default => $word,
+        }, explode(' ', $term)));
+
+        return array_values(array_unique([$term, $singular]));
     }
 
     /** @param list<string> $terms */
