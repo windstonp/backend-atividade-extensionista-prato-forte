@@ -63,3 +63,15 @@ it('sequência longa: 27 dias completos seguidos', function () {
 
     expect((new AdherenceCalculator)->compute($dias, $this->hoje)['streak'])->toBe(27);
 });
+
+it('a sequência não para nos 28 dias da grade: 40 dias completos seguidos contam 40', function () {
+    $dias = [];
+    for ($i = 1; $i <= 40; $i++) {
+        $dias[$this->hoje->subDays($i)->toDateString()] = ['total' => 5, 'done' => 5];
+    }
+    $dias[$this->hoje->subDays(41)->toDateString()] = ['total' => 5, 'done' => 2];
+
+    $resultado = (new AdherenceCalculator)->compute($dias, $this->hoje);
+
+    expect($resultado['streak'])->toBe(40)->and($resultado['days'])->toHaveCount(28)->and($resultado['complete_days'])->toBe(27);
+});

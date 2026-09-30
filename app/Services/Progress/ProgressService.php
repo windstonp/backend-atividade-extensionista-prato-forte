@@ -76,7 +76,7 @@ final class ProgressService
     {
         $linhas = DB::table('day_meals')
             ->where('user_id', $user->id)
-            ->whereBetween('date', [$today->subDays(AdherenceCalculator::JANELA - 1)->toDateString(), $today->toDateString()])
+            ->where('date', '<=', $today->toDateString()) // todo o histórico: a sequência pode passar dos 28 dias (≤ 1 linha por dia)
             ->groupBy('date')
             ->selectRaw('date, count(*) as total, sum(done_at is not null) as done')
             ->get();

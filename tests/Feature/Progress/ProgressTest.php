@@ -130,3 +130,14 @@ it('nenhum dia com refeição feita: médias vazias (CA06)', function () {
         'insight' => null,
     ]);
 });
+
+it('a sequência olha além dos 28 dias da grade', function () {
+    $this->travelTo(CarbonImmutable::parse('2026-09-28 20:00', 'America/Sao_Paulo'));
+    $plano = planoPronto($this->user);
+    foreach (range(1, 35) as $dias) {
+        $data = CarbonImmutable::today()->subDays($dias)->toDateString();
+        $this->user->dayMeals()->create(['date' => $data, 'meal_plan_id' => $plano->id, 'slot' => 'cafe', 'name' => 'Café', 'time' => '07:00', 'position' => 1, 'done_at' => now()]);
+    }
+
+    expect($this->getJson('/api/v1/progress')->assertOk()->json('data.adherence.streak'))->toBe(35);
+});
