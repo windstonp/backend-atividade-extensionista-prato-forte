@@ -2,8 +2,10 @@
 
 namespace App\Ai;
 
+use App\Models\Food;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 use LogicException;
 use PHPUnit\Framework\Assert;
 
@@ -80,6 +82,13 @@ final class FakeAiClient implements AiClient
             }
 
             return new AiResult($this->defaultPlan($messages), null, null, 1);
+        }
+
+        if ($options->purpose === 'chat') {
+            return new AiResult($this->defaultChat($messages), null, null, 1);
+        }
+        if ($options->purpose === 'summary') {
+            return new AiResult($this->defaultSummary($messages), null, null, 1);
         }
 
         throw new LogicException("FakeAiClient sem roteiro para '{$options->purpose}'.");
@@ -179,5 +188,93 @@ final class FakeAiClient implements AiClient
                 }
             }
         }
+    }
+
+    /**
+     * Os cenários do `askNutri` do mock (integracao-ia.md §6), com `food_id` reais do contexto.
+     *
+     * @param  list<array{role: string, content: string}>  $messages
+     */
+    private function defaultChat(array $messages): string
+    {
+        $context = [];
+        foreach ($messages as $message) {
+            if ($message['role'] === 'system' && str_starts_with($message['content'], 'Contexto de agora (JSON): ')) {
+                $context = json_decode(substr($message['content'], strlen('Contexto de agora (JSON): ')), true) ?: [];
+            }
+        }
+        $question = Str::lower(Str::ascii((string) end($messages)['content']));
+        /** @var list<array{id: int, nome: string, grupo: string}> $allowed */
+        $allowed = $context['alimentos_permitidos'] ?? [];
+        /** @var list<array{slot: string, feita: bool, itens: list<array{food_id: int, nome: string}>}> $meals */
+        $meals = $context['refeicoes_hoje'] ?? [];
+        $groupOf = array_column($allowed, 'grupo', 'id');
+
+        $swap = function (string $group, string $prefer) use ($allowed, $meals, $groupOf): ?array {
+            foreach ($meals as $meal) {
+                foreach ($meal['feita'] ? [] : $meal['itens'] as $item) {
+                    if (($groupOf[$item['food_id']] ?? null) !== $group) {
+                        continue;
+                    }
+                    $options = array_values(array_filter($allowed, fn (array $f) => $f['grupo'] === $group && $f['id'] !== $item['food_id']));
+                    usort($options, fn (array $a, array $b) => [! str_contains(Str::lower(Str::ascii($a['nome'])), $prefer), $a['id']] <=> [! str_contains(Str::lower(Str::ascii($b['nome'])), $prefer), $b['id']]);
+
+                    return $options === [] ? null : ['type' => 'substituir', 'slot' => $meal['slot'], 'from_food_id' => $item['food_id'], 'to_food_id' => $options[0]['id']];
+                }
+            }
+
+            return null;
+        };
+        $first = fn (string $group, string $prefer = '') => collect($allowed)->where('grupo', $group)
+            ->sortBy(fn (array $f) => [! str_contains(Str::lower(Str::ascii($f['nome'])), $prefer), $f['id']])->first();
+
+        $answer = match (true) {
+            str_contains($question, 'castanha') => [
+                'reply' => 'Dá para pôr um punhado de castanha de caju no lanche.',
+                'suggestions' => ['E no lanche da tarde?'],
+                'action' => ($caju = Food::where('slug', 'castanha-de-caju')->first()) && ($gordura = $swap('gordura', ''))
+                    ? ['to_food_id' => $caju->id] + $gordura : null,
+            ],
+            str_contains($question, 'arroz') || str_contains($question, 'batata') => [
+                'reply' => 'Pode. A batata-doce entra no lugar do arroz com carboidrato parecido e mais fibra.',
+                'follow_up' => 'A batata-doce segura a fome por mais tempo até o treino.',
+                'suggestions' => ['E no jantar, o que como?', 'Por que a batata segura mais a fome?'],
+                'action' => $swap('carboidrato', 'batata'),
+            ],
+            str_contains($question, 'frango') => [
+                'reply' => 'Sem frango, os ovos cobrem a proteína desse prato.',
+                'suggestions' => ['E se eu não tiver ovos?', 'Quanto de proteína falta hoje?'],
+                'action' => $swap('proteina', 'ovo'),
+            ],
+            str_contains($question, 'jantar') || str_contains($question, 'ovo') || str_contains($question, 'brocolis') => [
+                'reply' => 'Montei um jantar leve com o que costuma ter em casa.',
+                'suggestions' => ['E se eu treinar à noite?', 'Posso trocar o brócolis?'],
+                'action' => ['type' => 'aplicar-refeicao', 'slot' => 'jantar', 'items' => array_values(array_filter([
+                    ($p = $first('proteina', 'ovo')) ? ['food_id' => $p['id'], 'grams' => 100] : null,
+                    ($v = $first('vegetal', 'brocolis')) ? ['food_id' => $v['id'], 'grams' => 80] : null,
+                    ($c = $first('carboidrato')) ? ['food_id' => $c['id'], 'grams' => 100] : null,
+                ]))],
+            ],
+            str_contains($question, 'treino') => [
+                'reply' => 'Uma hora antes do treino, prefira um carboidrato leve, como banana ou batata-doce.',
+                'suggestions' => ['E depois do treino?'],
+                'action' => null,
+            ],
+            default => [
+                'reply' => 'Ainda não sei responder isso por aqui. Pergunte sobre as refeições de hoje.',
+                'suggestions' => [],
+                'action' => null,
+            ],
+        };
+
+        return (string) json_encode($answer + ['follow_up' => null], JSON_UNESCAPED_UNICODE);
+    }
+
+    /** @param list<array{role: string, content: string}> $messages */
+    private function defaultSummary(array $messages): string
+    {
+        $questions = array_column(array_filter($messages, fn (array $m) => $m['role'] === 'user'), 'content');
+
+        return Str::limit('Conversou sobre: '.implode('; ', $questions), 600, '…');
     }
 }
