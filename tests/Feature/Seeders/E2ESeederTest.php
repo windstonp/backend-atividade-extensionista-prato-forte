@@ -59,3 +59,11 @@ it('cria as contas do 04B: dia, alergia e mudança com plano; falha parada no re
             ->and($conta("falha-{$b}@e2e.pratoforte.test")->mealPlans()->count())->toBe(0);
     }
 });
+
+it('cria as contas do Nutri com plano', function () {
+    $this->seed(E2ESeeder::class);
+
+    foreach (['chromium', 'webkit'] as $b) {
+        expect(User::where('email', "nutri-{$b}@e2e.pratoforte.test")->sole()->activePlan()->first()?->status)->toBe(PlanStatus::Ready);
+    }
+});
