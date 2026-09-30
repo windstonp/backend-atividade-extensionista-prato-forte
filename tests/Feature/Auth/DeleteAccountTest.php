@@ -28,6 +28,7 @@ dataset('tabelas do usuário', [
     'day_meals' => ['day_meals', 'user_id'],
     'day_meal_changes' => ['day_meal_changes', 'user_id'],
     'nutri_conversations' => ['nutri_conversations', 'user_id'],
+    'push_subscriptions' => ['push_subscriptions', 'subscribable_id'],
 ]);
 
 it('não deixa nenhuma linha do usuário para trás (CA08)', function (string $table, string $column) {
@@ -46,6 +47,7 @@ it('não deixa nenhuma linha do usuário para trás (CA08)', function (string $t
     DayMealChange::create(['user_id' => $user->id, 'date' => today(), 'day_meal_id' => $meal->id, 'type' => 'swap', 'description' => 'x', 'items_before' => []]);
 
     $user->conversations()->create(['title' => 'x'])->messages()->create(['role' => 'user', 'content' => 'Oi']);
+    $user->updatePushSubscription('https://fcm.googleapis.com/fcm/send/abc', 'BPublica', 'segredo', 'aes128gcm');
     $this->deleteJson('/api/v1/me', ['password' => 'senha1234'])->assertNoContent();
 
     expect(DB::table($table)->where($column, $user->id)->exists())->toBeFalse("sobrou linha em {$table}")
