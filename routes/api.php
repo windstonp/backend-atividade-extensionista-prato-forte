@@ -1,5 +1,6 @@
 <?php
 
+use App\Enums\MealSlot;
 use App\Http\Controllers\Api\V1\Auth\AccountController;
 use App\Http\Controllers\Api\V1\Auth\MeController;
 use App\Http\Controllers\Api\V1\Auth\PasswordController;
@@ -41,6 +42,8 @@ Route::prefix('v1')->group(function () {
             Route::get('profile', [ProfileController::class, 'show']);
             Route::put('profile/preferences', PreferencesController::class);
             Route::get('days/{date}', [DayController::class, 'show']);
+            Route::patch('days/{date}/meals/{slot}', [DayController::class, 'toggleMeal'])
+                ->whereIn('slot', array_map(fn (MealSlot $slot) => $slot->value, MealSlot::cases()));
         });
     });
 });
