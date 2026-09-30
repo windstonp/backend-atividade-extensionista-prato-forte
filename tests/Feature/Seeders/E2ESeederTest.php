@@ -78,3 +78,13 @@ it('cria as contas da Evolução com três pesagens semanais', function () {
             ->and($user->weighIns()->max('date'))->toBe(today()->subDays(7)->toDateString());
     }
 });
+
+it('cria as contas do E2E-12: convite do questionário já elegível', function () {
+    $this->seed(E2ESeeder::class);
+
+    foreach (['chromium', 'webkit'] as $navegador) {
+        $user = User::where('email', "avaliar-{$navegador}@e2e.pratoforte.test")->sole();
+        expect($user->activePlan()->exists())->toBeTrue()
+            ->and($user->profile->onboarding_completed_at->lessThanOrEqualTo(now()->subDays(7)))->toBeTrue();
+    }
+});
