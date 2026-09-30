@@ -49,6 +49,13 @@ class E2ESeeder extends Seeder
                 $planos->requestGeneration($user);
             }
 
+            // 06: Evolução — três pesagens semanais; o E2E-09 registra a de hoje.
+            $peso = User::factory()->onboarded()->create(['name' => 'Paula Prado', 'email' => "peso-{$navegador}@e2e.pratoforte.test"]);
+            $planos->requestGeneration($peso);
+            foreach ([[21, 58.4], [14, 58.7], [7, 59.0]] as [$dias, $kg]) {
+                $peso->weighIns()->create(['date' => today()->subDays($dias)->toDateString(), 'weight_kg' => $kg]);
+            }
+
             // E2E-07: parada no resumo; com AI_FAKE_FAIL_PLAN_FOR, a primeira geração falha.
             User::factory()->answered()->create(['name' => 'Fábio Faria', 'email' => "falha-{$navegador}@e2e.pratoforte.test"]);
         }
