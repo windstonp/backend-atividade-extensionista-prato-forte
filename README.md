@@ -28,6 +28,13 @@ Com `AI_DRIVER=fake`, o Nutri responde aos cenários do protótipo (arroz/batata
 
 Contas do E2E (senha `senha1234`): `php artisan migrate:fresh --seeder=E2ESeeder --force`.
 
+## Agendador, fila e Web Push
+
+- O contêiner `scheduler` roda o agendador; em servidor, use o cron `* * * * * php /caminho/artisan schedule:run >> /dev/null 2>&1`.
+- O contêiner `queue` roda `php artisan queue:work`: os avisos (`MealReminder`, `WeeklySummary`, `NutriTip`) saem pela fila.
+- Chaves VAPID: `php artisan webpush:vapid` grava `VAPID_PUBLIC_KEY`/`VAPID_PRIVATE_KEY` no `.env` (nunca no repo). Sem elas, `GET /settings` devolve `vapid_public_key: null` e o app não oferece avisos.
+- Agenda (fuso `America/Sao_Paulo`): lembrete de refeição a cada minuto; resumo da semana domingo 20:00; dicas do Nutri terça e sexta 18:00. Nada sai fora da janela acordado nem duas vezes (`sent_notifications`).
+
 ## Segredos
 
 Nunca versione `.env`. A chave de IA usada no protótipo Node foi exposta e deve ser revogada; a nova vai só no ambiente (`AI_API_KEY`).
