@@ -1,6 +1,7 @@
 <?php
 
 use App\Ai\FakeAiClient;
+use App\Models\DayMealItem;
 use App\Models\MealPlan;
 use App\Models\User;
 use App\Services\Plans\PlanService;
@@ -105,4 +106,33 @@ function fakeAi(): FakeAiClient
 function planoPronto(User $user): MealPlan
 {
     return app(PlanService::class)->requestGeneration($user)->fresh();
+}
+
+/** Primeiro item de hoje cujo alimento é do grupo dado (materializa o dia se preciso). */
+function itemDeHoje(string $grupo): DayMealItem
+{
+    test()->getJson('/api/v1/days/today')->assertOk();
+
+    return DayMealItem::with('food')
+        ->whereHas('food', fn ($q) => $q->where('group', $grupo))
+        ->whereHas('dayMeal', fn ($q) => $q->where('user_id', auth('web')->id())->whereDate('date', today()))
+        ->orderBy('id')
+        ->firstOrFail();
+}
+
+/** Troca o item pela primeira opção da folha e devolve a opção escolhida. */
+function trocarPelaPrimeiraOpcao(int $itemId): array
+{
+    $opcao = test()->getJson("/api/v1/days/today/items/{$itemId}/substitutions")->json('data.options.0');
+    test()->postJson("/api/v1/days/today/items/{$itemId}/swap", ['food_id' => $opcao['food_id']])->assertOk();
+
+    return $opcao;
+}
+
+/** Itens de uma refeição de hoje como a API mostra (sem ids, que mudam ao desfazer). */
+function itensDaRefeicao(string $slot): array
+{
+    $meal = collect(test()->getJson('/api/v1/days/today')->json('data.meals'))->firstWhere('slot', $slot);
+
+    return array_map(fn ($i) => [$i['food_id'], $i['grams'], $i['source'], $i['replaced_from']], $meal['items']);
 }

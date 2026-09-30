@@ -44,6 +44,9 @@ Route::prefix('v1')->group(function () {
             Route::get('days/{date}', [DayController::class, 'show']);
             Route::patch('days/{date}/meals/{slot}', [DayController::class, 'toggleMeal'])
                 ->whereIn('slot', array_map(fn (MealSlot $slot) => $slot->value, MealSlot::cases()));
+            Route::get('days/{date}/items/{item}/substitutions', [DayController::class, 'substitutions'])->whereNumber('item');
+            Route::post('days/{date}/items/{item}/swap', [DayController::class, 'swap'])->whereNumber('item');
+            Route::post('days/{date}/undo', [DayController::class, 'undo']);
         });
     });
 });
