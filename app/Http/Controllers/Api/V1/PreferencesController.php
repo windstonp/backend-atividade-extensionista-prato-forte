@@ -15,11 +15,10 @@ class PreferencesController extends Controller
     {
         /** @var User $user */
         $user = $request->user();
-        $profiles->updatePreferences($user, $request->validated());
+        $result = $profiles->updatePreferences($user, $request->validated());
 
-        // plan_effect: RN21 (regeneração ao mudar restrição) entra com o plano, no Plano 04.
         return (new ProfileResource($user->fresh(ProfileResource::RELATIONS)))
-            ->additional(['meta' => ['plan_effect' => 'none', 'plan_id' => null]])
+            ->additional(['meta' => ['plan_effect' => $result['effect']->value, 'plan_id' => $result['plan_id']]])
             ->response();
     }
 }

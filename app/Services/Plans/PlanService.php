@@ -10,16 +10,24 @@ use App\Enums\Sex;
 use App\Enums\WorkPosture;
 use App\Exceptions\DomainException;
 use App\Jobs\GeneratePlanJob;
+use App\Models\DayMeal;
 use App\Models\MealPlan;
 use App\Models\User;
+use App\Services\Days\DayMaterializer;
 use App\Services\Nutrition\DailyTargets;
+use App\Services\Nutrition\MealScheduler;
 use App\Services\Nutrition\NutritionCalculator;
+use Carbon\CarbonImmutable;
 use Illuminate\Support\Facades\DB;
 
 /** Pedir, ativar e refazer planos (RN19–RN21). */
 class PlanService
 {
-    public function __construct(private readonly NutritionCalculator $calculator) {}
+    public function __construct(
+        private readonly NutritionCalculator $calculator,
+        private readonly MealScheduler $scheduler,
+        private readonly DayMaterializer $days,
+    ) {}
 
     /**
      * RN19 — um plano gerando por usuário. `$force`: mudança de restrição (RN21) não espera o que está
@@ -88,8 +96,59 @@ class PlanService
 
             MealPlan::where('user_id', $plan->user_id)->where('is_active', true)->update(['is_active' => false, 'active_user_id' => null]);
             $plan->update(['status' => PlanStatus::Ready, 'is_active' => true, 'ready_at' => now()]);
+            $this->refreshToday($plan);
 
             return true;
         });
+    }
+
+    /** RN14/RN21 (`times_updated`) — horários novos no plano ativo e nas refeições não feitas de hoje, sem IA. */
+    public function retime(User $user): void
+    {
+        $plan = $user->activePlan()->with('meals')->first();
+        if ($plan === null) {
+            return;
+        }
+        $profile = $user->profile()->firstOrFail();
+        $user->setRelation('profile', $profile);
+        $times = $this->scheduler->schedule(
+            substr((string) $profile->wake_time, 0, 5), substr((string) $profile->training_time, 0, 5),
+            substr((string) $profile->sleep_time, 0, 5), $profile->training_days !== [],
+        );
+        $order = array_keys($times);
+
+        DB::transaction(function () use ($user, $plan, $times, $order) {
+            foreach ($plan->meals as $meal) {
+                $meal->update(['time' => $times[$meal->slot], 'position' => (int) array_search($meal->slot, $order, true) + 1]);
+            }
+            $plan->unsetRelation('meals');
+
+            $fresh = $this->days->build($user, $plan, CarbonImmutable::today(), save: false)->keyBy('slot');
+            foreach ($user->dayMeals()->whereDate('date', CarbonImmutable::today())->get() as $meal) {
+                $new = $fresh[$meal->slot];
+                $meal->update($meal->isDone()
+                    ? ['position' => $new->position]
+                    : ['position' => $new->position, 'time' => $new->time, 'name' => $new->name, 'note' => $new->note]);
+            }
+        });
+    }
+
+    /** RN20 — hoje já aberto: não feitas vêm do plano novo; feitas ficam (e só mudam de posição). */
+    private function refreshToday(MealPlan $plan): void
+    {
+        $user = $plan->user()->firstOrFail();
+        $today = $user->dayMeals()->whereDate('date', CarbonImmutable::today())->get();
+        if ($today->isEmpty()) {
+            return; // hoje ainda não aberto: materializa do plano novo na primeira leitura
+        }
+
+        $pending = $today->reject(fn (DayMeal $meal) => $meal->isDone());
+        DayMeal::whereKey($pending->modelKeys())->delete(); // itens e alterações caem em cascata
+        $this->days->build($user, $plan, CarbonImmutable::today(), save: true, onlySlots: $pending->pluck('slot')->all());
+
+        $positions = $plan->meals()->pluck('position', 'slot');
+        foreach ($today->filter(fn (DayMeal $meal) => $meal->isDone()) as $meal) {
+            $meal->update(['position' => $positions[$meal->slot]]);
+        }
     }
 }

@@ -26,11 +26,10 @@ class ProfileController extends Controller
     {
         /** @var User $user */
         $user = $request->user();
-        $warnings = $profiles->updateStep($user, OnboardingStep::from($step), $request->validated());
+        $result = $profiles->updateStep($user, OnboardingStep::from($step), $request->validated());
 
-        // plan_effect: RN21 entra com o plano alimentar (Plano 04); sem plano, é sempre "none".
         return (new OnboardingResource($user->fresh(OnboardingResource::RELATIONS)))
-            ->additional(['meta' => ['plan_effect' => 'none', 'plan_id' => null, 'warnings' => $warnings]])
+            ->additional(['meta' => ['plan_effect' => $result['effect']->value, 'plan_id' => $result['plan_id'], 'warnings' => $result['warnings']]])
             ->response();
     }
 }
