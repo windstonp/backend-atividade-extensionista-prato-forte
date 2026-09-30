@@ -5,6 +5,7 @@ services:
     working_dir: /app
     environment:
       HOME: /tmp # o usuário 1000 não tem home no container (tinker/psysh precisam)
+      AI_FAKE_FAIL_PLAN_FOR: ${AI_FAKE_FAIL_PLAN_FOR:-} # só E2E-07
     volumes:
       - .:/app
     ports:
@@ -21,6 +22,7 @@ services:
     working_dir: /app
     environment:
       HOME: /tmp
+      AI_FAKE_FAIL_PLAN_FOR: ${AI_FAKE_FAIL_PLAN_FOR:-} # só E2E-07
     volumes:
       - .:/app
     command: php artisan queue:work --tries=1 --timeout=170 --sleep=1

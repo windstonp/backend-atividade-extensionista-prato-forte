@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Ai\AiClient;
 use App\Ai\FakeAiClient;
 use App\Ai\LoggingAiClient;
+use App\Models\Restriction;
 use App\Models\User;
 use App\Services\Plans\PlanService;
 use Illuminate\Database\Seeder;
@@ -38,6 +39,18 @@ class E2ESeeder extends Seeder
                 $user = User::factory()->onboarded()->create(['name' => $nome, 'email' => "{$conta}-{$navegador}@e2e.pratoforte.test"]);
                 $planos->requestGeneration($user);
             }
+
+            // 04B: uma conta por teste que muda estado, para não passar do limite de login.
+            foreach ([['Dora Dias', 'dia'], ['Ana Alves', 'alergia'], ['Mauro Mendes', 'mudanca']] as [$nome, $conta]) {
+                $user = User::factory()->onboarded()->create(['name' => $nome, 'email' => "{$conta}-{$navegador}@e2e.pratoforte.test"]);
+                if ($conta === 'alergia') {
+                    $user->restrictions()->sync([Restriction::where('slug', 'castanhas')->sole()->id]);
+                }
+                $planos->requestGeneration($user);
+            }
+
+            // E2E-07: parada no resumo; com AI_FAKE_FAIL_PLAN_FOR, a primeira geração falha.
+            User::factory()->answered()->create(['name' => 'Fábio Faria', 'email' => "falha-{$navegador}@e2e.pratoforte.test"]);
         }
     }
 }

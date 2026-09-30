@@ -45,3 +45,17 @@ it('as contas concluídas já têm plano pronto e ativo, gerado pela IA falsa', 
         expect($plano?->status)->toBe(PlanStatus::Ready);
     }
 });
+
+it('cria as contas do 04B: dia, alergia e mudança com plano; falha parada no resumo', function () {
+    $this->seed(E2ESeeder::class);
+    $conta = fn (string $email) => User::where('email', $email)->sole();
+
+    foreach (['chromium', 'webkit'] as $b) {
+        foreach (['dia', 'alergia', 'mudanca'] as $tipo) {
+            expect($conta("{$tipo}-{$b}@e2e.pratoforte.test")->activePlan()->first()?->status)->toBe(PlanStatus::Ready);
+        }
+        expect($conta("alergia-{$b}@e2e.pratoforte.test")->restrictions()->pluck('slug')->all())->toBe(['castanhas'])
+            ->and($conta("falha-{$b}@e2e.pratoforte.test")->profile->nextStep()?->value)->toBe('resumo')
+            ->and($conta("falha-{$b}@e2e.pratoforte.test")->mealPlans()->count())->toBe(0);
+    }
+});
