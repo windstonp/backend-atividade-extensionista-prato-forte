@@ -18,7 +18,17 @@ class ExportValidationData extends Command
         $rodada = (string) ($this->option('rodada') ?: config('validacao.rodada'));
         $dir = (string) ($this->option('dir') ?: storage_path("app/validacao/{$rodada}"));
         $data = fn (?string $valor) => $valor ? CarbonImmutable::parse($valor) : null;
-        $r = $exporter->export($rodada, $data($this->option('de')), $data($this->option('ate')), $dir);
+        $de = $data($this->option('de'));
+        // Padrão: a rodada toda. Só a vigente tem início conhecido (VALIDACAO_INICIO); para outra, peça o período.
+        if ($de === null) {
+            if ($rodada !== (string) config('validacao.rodada')) {
+                $this->error("Para a rodada {$rodada}, informe o período com --de (e, se quiser, --ate).");
+
+                return self::FAILURE;
+            }
+            $de = CarbonImmutable::parse((string) config('validacao.inicio'));
+        }
+        $r = $exporter->export($rodada, $de, $data($this->option('ate')), $dir);
         $n = fn (?float $v, string $sufixo = '') => $v === null ? '—' : number_format($v, 1, ',', '.').$sufixo;
 
         $this->info("Arquivos em {$dir}");

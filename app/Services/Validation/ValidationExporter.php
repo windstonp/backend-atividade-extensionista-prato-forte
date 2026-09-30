@@ -31,12 +31,12 @@ final class ValidationExporter
         // usabilidade.csv
         $respostas = DB::table('usability_responses')->where('round', $rodada)->orderBy('id')->get();
         $this->write("{$dir}/usabilidade.csv", ['usuario_hash', 'rodada', 'q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10', 'sus', 'utilidade', 'ajudou', 'atrapalhou', 'respondido_em'],
-            $respostas->map(fn ($r) => [$this->hash($r->user_id), $r->round, ...json_decode($r->sus_answers, true), $this->decimal((float) $r->sus_score), $r->usefulness, $r->liked, $r->disliked, $r->created_at]));
+            $respostas->map(fn ($r) => [$this->hash($r->user_id), $r->round, ...json_decode($r->sus_answers, true), $this->decimal((float) $r->sus_score), $r->usefulness, $this->texto($r->liked), $this->texto($r->disliked), $r->created_at]));
 
         // avaliacoes.csv
         $avaliacoes = $noPeriodo(DB::table('ratings'), 'created_at')->orderBy('id')->get();
         $this->write("{$dir}/avaliacoes.csv", ['usuario_hash', 'tipo', 'valor', 'comentario', 'criado_em'],
-            $avaliacoes->map(fn ($a) => [$this->hash($a->user_id), $a->rateable_type === 'meal_plan' ? 'plano' : 'resposta_nutri', $a->value, $a->comment, $a->created_at]));
+            $avaliacoes->map(fn ($a) => [$this->hash($a->user_id), $a->rateable_type === 'meal_plan' ? 'plano' : 'resposta_nutri', $a->value, $this->texto($a->comment), $a->created_at]));
 
         // uso.csv — ativos no período: refeição marcada, pesagem ou pergunta ao Nutri
         $ativos = collect()
@@ -86,7 +86,7 @@ final class ValidationExporter
         $pct = fn ($lista) => $lista->isEmpty() ? null : round($lista->where('value', 'up')->count() / $lista->count() * 100, 1);
 
         return [
-            'participantes' => $ativos->merge($respostas->pluck('user_id'))->unique()->count(),
+            'participantes' => $ativos->merge($respostas->pluck('user_id'))->merge($avaliacoes->pluck('user_id'))->unique()->count(),
             'sus_medio' => $sus->isEmpty() ? null : round($sus->avg(), 1),
             'sus_desvio' => $sus->count() < 2 ? null : round(sqrt($sus->map(fn ($s) => ($s - $sus->avg()) ** 2)->sum() / ($sus->count() - 1)), 1),
             'up_nutri' => $pct($avaliacoes->where('rateable_type', 'nutri_message')),
@@ -109,6 +109,12 @@ final class ValidationExporter
             fputcsv($h, array_map(fn ($v) => $v === null ? '' : (string) $v, $linha), ';', '"', '');
         }
         fclose($h);
+    }
+
+    /** Texto livre que começa com =, +, - ou @ viraria fórmula no Excel: vai com um apóstrofo na frente. */
+    private function texto(?string $valor): ?string
+    {
+        return $valor !== null && preg_match('/^[=+\-@]/', $valor) ? "'".$valor : $valor;
     }
 
     private function decimal(float $n): string

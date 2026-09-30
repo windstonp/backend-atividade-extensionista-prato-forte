@@ -94,3 +94,40 @@ it('filtra o uso por data (--de/--ate)', function () {
 
     expect(lerCsv("{$this->dir}/uso.csv"))->toHaveCount(1); // ninguém ativo no período
 });
+
+it('sem --de, a rodada vigente começa em validacao.inicio (não mistura rodadas antigas)', function () {
+    config(['validacao.inicio' => '2026-10-01']);
+    $user = User::factory()->onboarded()->create();
+    $plano = planoPronto($user);
+    DB::table('ratings')->insert([
+        ['user_id' => $user->id, 'rateable_type' => 'meal_plan', 'rateable_id' => $plano->id, 'value' => 'up', 'comment' => null, 'created_at' => '2026-09-15 10:00:00', 'updated_at' => '2026-09-15 10:00:00'],
+    ]);
+
+    $this->artisan('validacao:exportar', ['--dir' => $this->dir])->assertSuccessful();
+
+    expect(lerCsv("{$this->dir}/avaliacoes.csv"))->toHaveCount(1);
+});
+
+it('rodada antiga sem --de: pede o período em vez de exportar tudo', function () {
+    $this->artisan('validacao:exportar', ['--dir' => $this->dir, '--rodada' => '2025-2'])->assertFailed();
+});
+
+it('texto livre que começa com =, +, - ou @ não vira fórmula no Excel', function () {
+    $user = User::factory()->onboarded()->create();
+    $plano = planoPronto($user);
+    DB::table('ratings')->insert(['user_id' => $user->id, 'rateable_type' => 'meal_plan', 'rateable_id' => $plano->id, 'value' => 'down', 'comment' => '- faltou arroz', 'created_at' => now(), 'updated_at' => now()]);
+    DB::table('usability_responses')->insert(['user_id' => $user->id, 'round' => '2026-1', 'sus_answers' => '[3,3,3,3,3,3,3,3,3,3]', 'sus_score' => 50, 'usefulness' => 3, 'liked' => '=1+1', 'disliked' => '@cmd', 'created_at' => now()]);
+
+    $this->artisan('validacao:exportar', ['--dir' => $this->dir])->assertSuccessful();
+
+    expect(lerCsv("{$this->dir}/avaliacoes.csv")[1][3])->toBe("'- faltou arroz")
+        ->and(array_slice(lerCsv("{$this->dir}/usabilidade.csv")[1], 14, 2))->toBe(["'=1+1", "'@cmd"]);
+});
+
+it('quem só avaliou também conta como participante', function () {
+    $user = User::factory()->onboarded()->create();
+    $plano = planoPronto($user);
+    DB::table('ratings')->insert(['user_id' => $user->id, 'rateable_type' => 'meal_plan', 'rateable_id' => $plano->id, 'value' => 'up', 'comment' => null, 'created_at' => now(), 'updated_at' => now()]);
+
+    $this->artisan('validacao:exportar', ['--dir' => $this->dir])->expectsOutputToContain('Participantes: 1')->assertSuccessful();
+});
