@@ -23,35 +23,47 @@ final class SubstitutionFinder
      */
     public function find(Food $original, float $grams, Collection $allowed, array $pantryFoodIds): array
     {
-        $before = DayTotals::item($original, $grams);
-        $macro = $this->mainMacro($original->group);
-        $target = $macro === 'calories' ? (float) $before['calories'] : $before[$macro];
-
         $options = [];
         foreach ($allowed as $candidate) {
-            if ($candidate->id === $original->id || $candidate->group !== $original->group) {
-                continue;
+            $option = $this->optionFor($original, $grams, $candidate, $pantryFoodIds);
+            if ($option !== null) {
+                $options[] = $option;
             }
-            $per100 = $this->per100($candidate, $macro);
-            if ($per100 <= 0) {
-                continue;
-            }
-
-            $portion = min(max($target / $per100 * 100, 0.5 * $candidate->typical_portion_g), 2 * $candidate->typical_portion_g);
-            $portion = max(5.0, min(600.0, round($portion / 5) * 5));
-            $after = DayTotals::item($candidate, $portion);
-            $delta = $after['calories'] - $before['calories'];
-            if (abs($delta) > self::MAX_CALORIE_DIFF * $before['calories']) {
-                continue;
-            }
-
-            $options[] = new SubstitutionOption($candidate, (float) $portion, $after, $delta, in_array($candidate->id, $pantryFoodIds, true));
         }
 
         usort($options, fn (SubstitutionOption $a, SubstitutionOption $b) => [! $a->inPantry, abs($a->calorieDelta), $a->food->name]
             <=> [! $b->inPantry, abs($b->calorieDelta), $b->food->name]);
 
         return array_slice($options, 0, self::MAX_OPTIONS);
+    }
+
+    /**
+     * A porção equivalente de um candidato (RN25), ou nada se não servir como troca.
+     *
+     * @param  list<int>  $pantryFoodIds
+     */
+    public function optionFor(Food $original, float $grams, Food $candidate, array $pantryFoodIds): ?SubstitutionOption
+    {
+        if ($candidate->id === $original->id || $candidate->group !== $original->group) {
+            return null;
+        }
+        $before = DayTotals::item($original, $grams);
+        $macro = $this->mainMacro($original->group);
+        $target = $macro === 'calories' ? (float) $before['calories'] : $before[$macro];
+        $per100 = $this->per100($candidate, $macro);
+        if ($per100 <= 0) {
+            return null;
+        }
+
+        $portion = min(max($target / $per100 * 100, 0.5 * $candidate->typical_portion_g), 2 * $candidate->typical_portion_g);
+        $portion = max(5.0, min(600.0, round($portion / 5) * 5));
+        $after = DayTotals::item($candidate, $portion);
+        $delta = $after['calories'] - $before['calories'];
+        if (abs($delta) > self::MAX_CALORIE_DIFF * $before['calories']) {
+            return null;
+        }
+
+        return new SubstitutionOption($candidate, (float) $portion, $after, $delta, in_array($candidate->id, $pantryFoodIds, true));
     }
 
     /** Carboidrato troca por carboidrato; proteínas, laticínios e leguminosas por proteína; gorduras por gordura; o resto por kcal. */
