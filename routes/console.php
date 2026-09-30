@@ -9,3 +9,4 @@ Artisan::command('inspire', function () {
 })->purpose('Display an inspiring quote');
 
 Schedule::command('plans:fail-stale')->everyFiveMinutes();
+Schedule::command('notifications:meal-reminders')->everyMinute()->withoutOverlapping();
