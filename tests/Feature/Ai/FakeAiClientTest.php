@@ -21,5 +21,5 @@ it('falha quando roteirizado', function () {
 })->throws(AiUnavailableException::class);
 
 it('sem roteiro, reclama de propósito que não sabe responder', function () {
-    fakeAi()->chat([], new AiOptions('summary', 'fake', 100));
+    fakeAi()->chat([], new AiOptions('desconhecido', 'fake', 100));
 })->throws(LogicException::class);
