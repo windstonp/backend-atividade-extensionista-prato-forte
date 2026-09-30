@@ -12,7 +12,7 @@ final class AdherenceCalculator
     public const JANELA = 28;
 
     /**
-     * @param  array<string, array{total: int, done: int}>  $days  dias materializados, por `Y-m-d`
+     * @param  array<string, array{total: int, done: int}>  $days  dias materializados, por `Y-m-d` (pode ir além dos 28, para a sequência)
      * @return array{days: list<array{date: string, status: string}>, complete_days: int, streak: int}
      */
     public function compute(array $days, CarbonImmutable $today): array
@@ -23,8 +23,9 @@ final class AdherenceCalculator
             $lista[] = ['date' => $data, 'status' => $i === 0 ? 'hoje' : $this->status($days[$data] ?? null)];
         }
 
+        // A sequência não para na grade: anda para trás a partir de ontem enquanto o dia estiver completo.
         $sequencia = 0;
-        for ($i = self::JANELA - 2; $i >= 0 && $lista[$i]['status'] === 'completo'; $i--) {
+        for ($dia = $today->subDay(); $this->status($days[$dia->toDateString()] ?? null) === 'completo'; $dia = $dia->subDay()) {
             $sequencia++;
         }
 
