@@ -30,6 +30,9 @@ Route::prefix('v1')->group(function () {
         Route::get('onboarding', [OnboardingController::class, 'show']);
         Route::post('onboarding/complete', [OnboardingController::class, 'complete']);
         Route::get('plans/preview-targets', [PlanController::class, 'previewTargets']);
+        Route::get('plans/active', [PlanController::class, 'active']);
+        Route::get('plans/{plan}', [PlanController::class, 'show'])->whereNumber('plan');
+        Route::post('plans', [PlanController::class, 'store'])->middleware('throttle:plans');
         Route::patch('profile/steps/{step}', [ProfileController::class, 'updateStep'])
             ->whereIn('step', ['objetivo', 'dados', 'atividade', 'preferencias', 'restricoes', 'rotina']);
 

@@ -9,11 +9,15 @@ use App\Enums\Sex;
 use App\Enums\WorkPosture;
 use App\Exceptions\DomainException;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\PlanResource;
+use App\Models\MealPlan;
 use App\Models\User;
 use App\Services\Nutrition\NutritionCalculator;
+use App\Services\Plans\PlanService;
 use App\Services\Profile\OnboardingService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 class PlanController extends Controller
 {
@@ -37,5 +41,31 @@ class PlanController extends Controller
         return response()->json(['data' => [
             'kcal' => $targets->kcal, 'protein_g' => $targets->proteinG, 'carbs_g' => $targets->carbsG, 'fat_g' => $targets->fatG, 'meals' => 5,
         ]]);
+    }
+
+    public function store(Request $request, PlanService $plans): JsonResponse
+    {
+        /** @var User $user */
+        $user = $request->user();
+        $plan = $plans->requestGeneration($user);
+
+        return response()->json(['data' => ['id' => $plan->id, 'status' => $plan->status->value]], 202);
+    }
+
+    public function show(MealPlan $plan): PlanResource
+    {
+        Gate::authorize('view', $plan);
+
+        return new PlanResource($plan->load(PlanResource::RELATIONS));
+    }
+
+    public function active(Request $request): PlanResource
+    {
+        /** @var User $user */
+        $user = $request->user();
+        $plan = $user->activePlan()->with(PlanResource::RELATIONS)->first()
+            ?? throw new DomainException(ErrorCode::NoActivePlan);
+
+        return (new PlanResource($plan))->withItems();
     }
 }
