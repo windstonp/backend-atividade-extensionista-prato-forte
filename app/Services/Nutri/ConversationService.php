@@ -2,6 +2,7 @@
 
 namespace App\Services\Nutri;
 
+use App\Jobs\SummarizeConversationJob;
 use App\Models\NutriConversation;
 use App\Models\User;
 use Illuminate\Support\Facades\DB;
@@ -16,7 +17,7 @@ class ConversationService
      */
     public function start(User $user): array
     {
-        return DB::transaction(function () use ($user) {
+        $result = DB::transaction(function () use ($user) {
             User::whereKey($user->id)->lockForUpdate()->first();
 
             $empty = $user->conversations()->whereNull('last_message_at')->latest('id')->first();
@@ -26,6 +27,18 @@ class ConversationService
 
             return ['conversation' => $user->conversations()->create(), 'created' => true];
         });
+
+        // RN30 — memória: a conversa anterior mais recente com mensagens novas desde o último resumo.
+        $previous = $user->conversations()
+            ->whereKeyNot($result['conversation']->id)
+            ->whereNotNull('last_message_at')
+            ->orderByDesc('last_message_at')
+            ->first();
+        if ($previous !== null && $previous->messages()->where('id', '>', (int) $previous->summarized_message_id)->exists()) {
+            SummarizeConversationJob::dispatch($previous->id);
+        }
+
+        return $result;
     }
 
     /** Título = primeira pergunta, até 60 caracteres, cortada na fronteira de palavra (+ "…"). */
