@@ -21,6 +21,7 @@ use App\Http\Controllers\Api\V1\ProgressController;
 use App\Http\Controllers\Api\V1\PushSubscriptionController;
 use App\Http\Controllers\Api\V1\RatingController;
 use App\Http\Controllers\Api\V1\SettingsController;
+use App\Http\Controllers\Api\V1\UsabilityController;
 use App\Http\Controllers\Api\V1\WeighInController;
 use App\Http\Middleware\EnsureSpaSession;
 use Illuminate\Support\Facades\Route;
@@ -64,6 +65,9 @@ Route::prefix('v1')->group(function () {
             Route::get('progress', ProgressController::class);
             Route::put('ratings', [RatingController::class, 'update']);
             Route::delete('ratings', [RatingController::class, 'destroy']);
+            Route::get('usability-responses/status', [UsabilityController::class, 'status']);
+            Route::post('usability-responses', [UsabilityController::class, 'store']);
+            Route::post('usability-responses/dismiss', [UsabilityController::class, 'dismiss']);
             Route::get('weigh-ins', [WeighInController::class, 'index']);
             Route::post('weigh-ins', [WeighInController::class, 'store']);
             Route::get('nutri/context', [NutriController::class, 'context']);

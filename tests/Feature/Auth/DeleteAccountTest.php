@@ -31,6 +31,7 @@ dataset('tabelas do usuário', [
     'push_subscriptions' => ['push_subscriptions', 'subscribable_id'],
     'sent_notifications' => ['sent_notifications', 'user_id'],
     'ratings' => ['ratings', 'user_id'],
+    'usability_responses' => ['usability_responses', 'user_id'],
 ]);
 
 it('não deixa nenhuma linha do usuário para trás (CA08)', function (string $table, string $column) {
@@ -52,6 +53,7 @@ it('não deixa nenhuma linha do usuário para trás (CA08)', function (string $t
     $user->updatePushSubscription('https://fcm.googleapis.com/fcm/send/abc', 'BPublica', 'segredo', 'aes128gcm');
     DB::table('sent_notifications')->insert(['user_id' => $user->id, 'type' => 'meal_reminder', 'reference' => '2026-09-28:almoco', 'sent_at' => now()]);
     DB::table('ratings')->insert(['user_id' => $user->id, 'rateable_type' => 'meal_plan', 'rateable_id' => 1, 'value' => 'up', 'created_at' => now(), 'updated_at' => now()]);
+    DB::table('usability_responses')->insert(['user_id' => $user->id, 'round' => '2026-1', 'sus_answers' => '[3,3,3,3,3,3,3,3,3,3]', 'sus_score' => 50, 'usefulness' => 3, 'created_at' => now()]);
     $this->deleteJson('/api/v1/me', ['password' => 'senha1234'])->assertNoContent();
 
     expect(DB::table($table)->where($column, $user->id)->exists())->toBeFalse("sobrou linha em {$table}")
