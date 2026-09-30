@@ -16,7 +16,7 @@ class MessageController extends Controller
     public function index(Request $request, NutriConversation $conversation): JsonResponse
     {
         Gate::authorize('view', $conversation);
-        $page = $conversation->messages()->orderByDesc('id')->cursorPaginate(30);
+        $page = $conversation->messages()->with('rating')->orderByDesc('id')->cursorPaginate(30);
 
         return response()->json([
             'data' => NutriMessageResource::collection($page->items())->resolve($request),

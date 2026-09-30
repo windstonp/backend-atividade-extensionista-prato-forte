@@ -6,6 +6,7 @@ use App\Enums\PlanStatus;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Support\Carbon;
 
 /**
@@ -50,5 +51,13 @@ class MealPlan extends Model
     public function meals(): HasMany
     {
         return $this->hasMany(PlanMeal::class)->orderBy('position');
+    }
+
+    /**
+     * @return MorphOne<Rating, $this>
+     */
+    public function rating(): MorphOne
+    {
+        return $this->morphOne(Rating::class, 'rateable');
     }
 }
