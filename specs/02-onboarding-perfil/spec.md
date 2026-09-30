@@ -153,7 +153,7 @@ Salvar: botão "Continuar" em `carregando`; erro 422 → mensagem no campo; erro
 | restricoes | `{ "restrictions": ["castanhas"], "other_restrictions": ["camarão", "pimenta"] }` |
 | rotina | `{ "wake_time": "06:20", "training_time": "19:00", "sleep_time": "23:00", "training_days": [1, 3, 5], "lunch_place": "marmita" }` |
 - **Response 200:** `{ "data": <mesmo formato de GET /onboarding>, "meta": { "plan_effect": "none", "plan_id": null, "warnings": [] } }`
-- **Avisos (`meta.warnings`):** `GOAL_WEIGHT_OUT_OF_HEALTHY_RANGE` (RN10) e `GOAL_WEIGHT_RESET` (RN11). `plan_effect` é sempre `none` até o plano alimentar existir (Plano 04).
+- **Avisos (`meta.warnings`):** `GOAL_WEIGHT_OUT_OF_HEALTHY_RANGE` (RN10) e `GOAL_WEIGHT_RESET` (RN11).
 - **Validações:** ver §6.
 - **Erros:** 401; 404 (step inválido); 422 `VALIDATION_ERROR`.
 - **Efeitos:** marca a etapa em `completed_steps`; após onboarding concluído aplica RN21 e, em `dados`, RN34 (pesagem de hoje).
@@ -161,7 +161,6 @@ Salvar: botão "Continuar" em `carregando`; erro 422 → mensagem no campo; erro
 ### `POST /api/v1/onboarding/complete`
 - **Objetivo:** concluir o onboarding e pedir o primeiro plano.
 - **Response 202:** `{ "data": { "plan": { "id": 42, "status": "pending" } } }`
-- **Até o Plano 04:** `{ "data": { "plan": null } }` (sem plano nem job); 200 com o mesmo corpo se já concluído.
 - **Efeitos:** valida todas as etapas; grava `onboarding_completed_at`; cria a primeira pesagem (RN34); aplica meta sugerida/auto (RN10); dispara `GeneratePlanJob`.
 - **Erros:** 422 `VALIDATION_ERROR` com `details.step` (primeira etapa incompleta); 409 se já concluído (idempotência: devolve o plano existente com 200) 🟡.
 
@@ -246,10 +245,10 @@ Salvar: botão "Continuar" em `carregando`; erro 422 → mensagem no campo; erro
 
 ## 9. Definition of Done
 ```
-[x] CA01–CA10 atendidos — CA07, CA08 (toast "Refazer") e CA09 dependem do plano (Plano 04)
-[x] Endpoints catalog, onboarding, steps, complete, profile, preferences — complete sem plano até o Plano 04
+[x] CA01–CA10 atendidos — CA07–CA09 cobertos na API pelo Plano 04A; telas no 04B
+[x] Endpoints catalog, onboarding, steps, complete, profile, preferences
 [x] GoalWeightResolver + NutritionCalculator com unit tests por tabela de casos
-[x] Feature tests: cada etapa, cada regra do §6 — as linhas de RN21 entram no Plano 04
+[x] Feature tests: cada etapa, cada regra do §6, cada linha de RN21
 [x] Telas do onboarding ligadas à API (sem localStorage), com modo edição
 [x] Listas de opções vindas do catálogo (sem arrays fixos nas telas)
 [x] Campo de meta de peso e avisos com stories

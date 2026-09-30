@@ -14,6 +14,36 @@ services:
       mysql:
         condition: service_healthy
 
+  # Gera os planos (GeneratePlanJob). Sem ele, os planos ficam "pending" e viram TIMEOUT.
+  queue:
+    build: ./docker/php
+    user: "1000:1000"
+    working_dir: /app
+    environment:
+      HOME: /tmp
+    volumes:
+      - .:/app
+    command: php artisan queue:work --tries=1 --timeout=170 --sleep=1
+    restart: unless-stopped # volta sozinho (ex.: depois de um migrate:fresh derrubar as tabelas)
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  # Tarefas agendadas (plans:fail-stale; lembretes no Plano 07).
+  scheduler:
+    build: ./docker/php
+    user: "1000:1000"
+    working_dir: /app
+    environment:
+      HOME: /tmp
+    volumes:
+      - .:/app
+    command: php artisan schedule:work
+    restart: unless-stopped # volta sozinho (ex.: depois de um migrate:fresh derrubar as tabelas)
+    depends_on:
+      mysql:
+        condition: service_healthy
+
   mysql:
     image: mysql:8.0
     environment:

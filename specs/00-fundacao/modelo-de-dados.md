@@ -160,14 +160,14 @@ Todas com FKs cascade.
 | user_id | FK users | R | cascade |
 | status | varchar(12) | R | `pending` · `generating` · `ready` · `failed` |
 | is_active | boolean | R | padrão `false` |
-| active_user_id | bigint | O | **coluna gerada** `IF(is_active, user_id, NULL)` — `UNIQUE` garante 1 plano ativo por usuário |
+| active_user_id | bigint | O | `user_id` quando `is_active`, senão `NULL` — `UNIQUE` garante 1 plano ativo por usuário. Coluna comum mantida pelo model (o MySQL não aceita `CASCADE` na FK da coluna-base de uma coluna gerada) |
 | target_kcal | smallint unsigned | R | RN13 |
 | target_protein_g | smallint unsigned | R | |
 | target_carbs_g | smallint unsigned | R | |
 | target_fat_g | smallint unsigned | R | |
 | inputs | json | R | snapshot do perfil e da lista permitida usados (auditoria/regeneração) |
 | attempts | tinyint unsigned | R | tentativas com a IA, padrão 0 |
-| failure_reason | varchar(255) | O | `AI_UNAVAILABLE`, `AI_INVALID_RESPONSE`, `TIMEOUT` |
+| failure_reason | varchar(255) | O | `AI_UNAVAILABLE`, `AI_INVALID_RESPONSE`, `TIMEOUT`, `SUPERSEDED` (plano mais antigo que terminou depois de um mais novo — ver RN21) |
 | ready_at | timestamp | O | |
 
 Índices: `INDEX(user_id, status)`, `UNIQUE(active_user_id)`.
@@ -353,7 +353,7 @@ Log de chamadas à IA, sem conteúdo (RN44). Serve para custo e para o relatóri
 | prompt_tokens | int unsigned | O | |
 | completion_tokens | int unsigned | O | |
 | duration_ms | int unsigned | R | |
-| status | varchar(10) | R | `ok` · `invalid` · `error` · `timeout` |
+| status | varchar(10) | R | `ok` · `invalid` · `error` · `timeout` (`invalid` reservado; o log registra ok/error/timeout) |
 | error_code | varchar(40) | O | |
 | created_at | timestamp | R | |
 
@@ -393,7 +393,7 @@ foods N───N pantry_items        (food_pantry_item)
 3. `foods`, `restrictions`, `pantry_items`
 4. `food_restriction`, `food_pantry_item`
 5. `restriction_user`, `pantry_item_user`, `disliked_food_user`
-6. `meal_plans` (com coluna gerada `active_user_id`)
+6. `meal_plans` (com `active_user_id` único)
 7. `plan_meals`, `plan_meal_items`
 8. `day_meals`, `day_meal_items`, `day_meal_changes`
 9. `weigh_ins`

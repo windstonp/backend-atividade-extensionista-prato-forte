@@ -234,11 +234,11 @@
 
 ## 9. Definition of Done
 ```
-[ ] CA01–CA12 atendidos
-[ ] Catálogo semeado (FoodSeeder + foods.csv) cobrindo mock e itens de cozinha
-[ ] NutritionCalculator, MealScheduler, PortionAdjuster, PlanValidator, SubstitutionFinder, DayTotals, PortionFormatter com unit tests
-[ ] GeneratePlanJob com FakeAiClient e fixtures; FailStalePlans agendado
-[ ] Endpoints de plano e dia; Policies; feature tests incluindo posse e alergia
+[ ] CA01–CA12 atendidos — API no 04A (CA01–CA12 por feature test); telas no 04B
+[x] Catálogo semeado (FoodSeeder + foods.csv) cobrindo mock e itens de cozinha
+[x] NutritionCalculator, MealScheduler, PortionAdjuster, PlanValidator, SubstitutionFinder, DayTotals, PortionFormatter com unit tests
+[x] GeneratePlanJob com FakeAiClient e fixtures; FailStalePlans agendado
+[x] Endpoints de plano e dia; Policies; feature tests incluindo posse e alergia
 [ ] plan-store.tsx substituído por hooks (TanStack Query) — sem localStorage para o plano
 [ ] Hoje, Dieta, Detalhe, Gerando, Pronto ligados à API com todos os estados
 [ ] DayRail, MealRow, FoodItemRow, SubstitutionSheet, WeekDayPicker com stories e play

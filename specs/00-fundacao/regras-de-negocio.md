@@ -79,6 +79,7 @@ Onde: `ProfileStepRequest` (etapa `rotina`).
 | horários da rotina ou dias de treino | horários das refeições-modelo recalculados na hora, sem IA (RN14) | `times_updated` |
 | nome preferido, sexo sem mudar metas | nada | `none` |
 Durante o onboarding (ainda sem plano) o efeito é sempre `none`.
+Pedido por restrição nunca espera o que já está gerando: cria outro plano, e ao ficar pronto só o mais novo é ativado (um mais antigo que termine depois vira `failed` `SUPERSEDED`). Mudança de horário sempre reprograma, mesmo quando outra mudança da mesma etapa sugere refazer.
 Onde: `ProfileService`, `PlanService::regenerate`, `MealScheduler`.
 
 ## Cálculo e plano
@@ -128,7 +129,7 @@ A resposta da IA é aceita somente se:
 1. JSON válido no contrato (`integracao-ia.md`);
 2. exatamente os 5 slots, sem repetição;
 3. cada refeição com 1 a 6 itens; cada item com `food_id` permitido (RN16) e 5–600 g;
-4. depois do `PortionAdjuster` (escala uniforme das porções do dia para bater a meta de kcal, se o desvio for ≤ 25%), total de kcal a ±10% da meta e proteína ≥ 90% da meta.
+4. depois do `PortionAdjuster` (escala uniforme das porções do dia para bater a meta de kcal, se o desvio for ≤ 25%; porções arredondadas a 5 g), total de kcal a ±10% da meta e proteína ≥ 90% da meta.
 Falhou: **1 nova tentativa**, enviando à IA a lista de erros. Falhou de novo: plano `failed` com `failure_reason`.
 Onde: `GeneratePlanJob` → `PlanGenerator` → `PortionAdjuster` → `PlanValidator`.
 
@@ -160,7 +161,7 @@ Onde: `DayTotals` (puro), exposto em `DayResource`. FE: `lib/nutrition.ts` recal
 **RN25 — Opções de troca** 🔵🟡
 Para um item do dia:
 1. candidatos = alimentos permitidos (RN16) do **mesmo grupo**, exceto o próprio;
-2. porção equivalente pelo **macro principal do grupo** (carboidrato → carbs; proteína/laticínio → protein; gordura → fat; fruta/vegetal/outros → kcal), limitada a 0,5×–2× a porção típica do alimento;
+2. porção equivalente pelo **macro principal do grupo** (carboidrato → carbs; proteína/laticínio/leguminosa → protein; gordura → fat; fruta/vegetal/bebida/outros → kcal), arredondada a 5 g, limitada a 0,5×–2× a porção típica do alimento;
 3. descarta candidatos cuja kcal fique fora de ±35% da original;
 4. ordena: primeiro os da cozinha do usuário, depois menor |Δ kcal|;
 5. devolve até 4 opções, com medida caseira (`PortionFormatter`) e a nota do catálogo.
