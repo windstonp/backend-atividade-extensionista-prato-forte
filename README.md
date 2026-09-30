@@ -24,6 +24,8 @@ docker compose run --rm --no-deps api composer lint   # Pint + Larastan nível 6
 
 `AI_DRIVER=fake` (padrão) usa uma IA determinística: planos montados com os alimentos permitidos, sem custo — é a usada nos testes, no E2E e na demonstração. Para a IA de verdade, no `.env`: `AI_DRIVER=openai`, `AI_BASE_URL` (ex.: `https://api.aimlapi.com/v1`), `AI_API_KEY` e, se quiser, `AI_MODEL_PLAN`/`AI_MODEL_CHAT`. Toda chamada vai para `ai_requests` sem conteúdo (RN44).
 
+Com `AI_DRIVER=fake`, o Nutri responde aos cenários do protótipo (arroz/batata, frango, jantar/ovo/brócolis, treino, castanha) com alimentos reais do catálogo — o bastante para demonstrar e para os E2E.
+
 Contas do E2E (senha `senha1234`): `php artisan migrate:fresh --seeder=E2ESeeder --force`.
 
 ## Segredos

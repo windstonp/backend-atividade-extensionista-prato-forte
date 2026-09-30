@@ -136,6 +136,7 @@ Atalho (NutriBar / Dieta / Pronto / folha vazia) ─▶ /nutri?pergunta={texto o
     "actions_available": true, "rating": null, "created_at": "2026-09-21T11:02:07-03:00" }
 ], "meta": { "next_cursor": "eyJpZCI6MzAwfQ", "per_page": 30 } }
 ```
+- O cartão de troca traz também `from.food_id`, `to.food_id` e `to.grams`, e o de refeição traz `food_id`/`grams` por item: são o que a ação aplica — o que foi mostrado é exatamente o que entra no prato.
 - `actions_available = false` quando a ação já foi resolvida (aplicada/dispensada) ou a mensagem é de outro dia; nesse caso `actions` vem vazio.
 - Cartão de refeição: `{ "type": "meal", "slot": "jantar", "title": "Jantar", "time": "20:30", "calories": 375, "macros": {…}, "items": [ { "name": "Ovos mexidos", "amount": "3 unidades", "calories": 230 } ], "warning": "Fica 8 g de proteína abaixo do jantar original." }`
 
