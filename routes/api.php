@@ -17,6 +17,7 @@ use App\Http\Controllers\Api\V1\OnboardingController;
 use App\Http\Controllers\Api\V1\PlanController;
 use App\Http\Controllers\Api\V1\PreferencesController;
 use App\Http\Controllers\Api\V1\ProfileController;
+use App\Http\Controllers\Api\V1\WeighInController;
 use App\Http\Middleware\EnsureSpaSession;
 use Illuminate\Support\Facades\Route;
 
@@ -51,6 +52,8 @@ Route::prefix('v1')->group(function () {
             Route::get('days/{date}/items/{item}/substitutions', [DayController::class, 'substitutions'])->whereNumber('item');
             Route::post('days/{date}/items/{item}/swap', [DayController::class, 'swap'])->whereNumber('item');
             Route::post('days/{date}/undo', [DayController::class, 'undo']);
+            Route::get('weigh-ins', [WeighInController::class, 'index']);
+            Route::post('weigh-ins', [WeighInController::class, 'store']);
             Route::get('nutri/context', [NutriController::class, 'context']);
             Route::get('nutri/suggestions', [NutriController::class, 'suggestions']);
             Route::get('conversations', [ConversationController::class, 'index']);
