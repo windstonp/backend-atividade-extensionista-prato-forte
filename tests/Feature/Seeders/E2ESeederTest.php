@@ -1,5 +1,6 @@
 <?php
 
+use App\Enums\PlanStatus;
 use App\Models\Food;
 use App\Models\Restriction;
 use App\Models\User;
@@ -41,6 +42,6 @@ it('as contas concluídas já têm plano pronto e ativo, gerado pela IA falsa', 
 
     foreach (['concluido-chromium', 'concluido-webkit', 'senha-chromium', 'senha-webkit'] as $conta) {
         $plano = User::where('email', "{$conta}@e2e.pratoforte.test")->sole()->activePlan()->first();
-        expect($plano?->status)->toBe(App\Enums\PlanStatus::Ready);
+        expect($plano?->status)->toBe(PlanStatus::Ready);
     }
 });
