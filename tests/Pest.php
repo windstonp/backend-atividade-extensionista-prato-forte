@@ -3,8 +3,10 @@
 use App\Ai\FakeAiClient;
 use App\Models\DayMealItem;
 use App\Models\MealPlan;
+use App\Models\NutriConversation;
 use App\Models\User;
 use App\Services\Plans\PlanService;
+use Carbon\CarbonImmutable;
 use Database\Seeders\CatalogSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
@@ -135,4 +137,14 @@ function itensDaRefeicao(string $slot): array
     $meal = collect(test()->getJson('/api/v1/days/today')->json('data.meals'))->firstWhere('slot', $slot);
 
     return array_map(fn ($i) => [$i['food_id'], $i['grams'], $i['source'], $i['replaced_from']], $meal['items']);
+}
+
+/** Conversa com uma pergunta e uma resposta, a última em `$quando`. */
+function conversaCom(User $user, string $titulo, string $ultima, string $quando): NutriConversation
+{
+    $conversa = $user->conversations()->create(['title' => $titulo, 'last_message_at' => CarbonImmutable::parse($quando)]);
+    $conversa->messages()->create(['role' => 'user', 'content' => $titulo]);
+    $conversa->messages()->create(['role' => 'assistant', 'content' => $ultima]);
+
+    return $conversa;
 }

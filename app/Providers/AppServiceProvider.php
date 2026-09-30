@@ -45,6 +45,10 @@ class AppServiceProvider extends ServiceProvider
         };
 
         RateLimiter::for('api', fn (Request $request) => Limit::perMinute(120)->by($request->user()?->getAuthIdentifier() ?: $request->ip()));
+        RateLimiter::for('nutri', fn (Request $request) => [
+            Limit::perMinute(20)->by('nutri|'.$request->user()?->getAuthIdentifier()),
+            Limit::perDay(100)->by('nutri-dia|'.$request->user()?->getAuthIdentifier()),
+        ]); // RN33
         RateLimiter::for('plans', fn (Request $request) => Limit::perDay(5)->by('plans|'.$request->user()?->getAuthIdentifier()));
         RateLimiter::for('register', fn (Request $request) => Limit::perMinute(3)->by($request->ip()));
         RateLimiter::for('login', fn (Request $request) => Limit::perMinute(5)->by($emailAndIp($request)));

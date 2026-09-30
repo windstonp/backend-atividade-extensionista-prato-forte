@@ -2,20 +2,10 @@
 
 use App\Models\NutriConversation;
 use App\Models\User;
-use Carbon\CarbonImmutable;
 
 beforeEach(function () {
     $this->user = login(User::factory()->onboarded()->create());
 });
-
-function conversaCom(User $user, string $titulo, string $ultima, string $quando): NutriConversation
-{
-    $conversa = $user->conversations()->create(['title' => $titulo, 'last_message_at' => CarbonImmutable::parse($quando)]);
-    $conversa->messages()->create(['role' => 'user', 'content' => $titulo]);
-    $conversa->messages()->create(['role' => 'assistant', 'content' => $ultima]);
-
-    return $conversa;
-}
 
 it('lista só conversas com mensagens, da mais recente para a mais antiga', function () {
     conversaCom($this->user, 'Antiga', 'Resposta antiga', '2026-09-20 10:00');
