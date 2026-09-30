@@ -17,9 +17,7 @@ final readonly class NutriResponse
     {
         $json = self::decode($content);
         if ($json === null) {
-            $text = trim($content);
-
-            return new self($text === '' ? self::FALLBACK : $text, null, [], null);
+            return new self(self::salvage($content), null, [], null);
         }
 
         $reply = is_string($json['reply'] ?? null) ? trim($json['reply']) : '';
@@ -33,6 +31,25 @@ final readonly class NutriResponse
             $suggestions,
             is_array($json['action'] ?? null) ? $json['action'] : null,
         );
+    }
+
+    /** Texto puro fica; JSON cortado no meio (limite de tokens) nunca aparece cru: salva o "reply" ou usa o padrão. */
+    private static function salvage(string $content): string
+    {
+        $text = trim($content);
+        if ($text === '') {
+            return self::FALLBACK;
+        }
+        if (! str_starts_with($text, '{') && ! str_contains($text, '"reply"')) {
+            return $text;
+        }
+        if (preg_match('/"reply"\s*:\s*"((?:[^"\\\\]|\\\\.)*)"/u', $text, $m) === 1) {
+            $reply = json_decode('"'.$m[1].'"');
+
+            return is_string($reply) && trim($reply) !== '' ? trim($reply) : self::FALLBACK;
+        }
+
+        return self::FALLBACK;
     }
 
     /** @return array<string, mixed>|null */

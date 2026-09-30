@@ -25,3 +25,8 @@ it('campos de tipo errado são ignorados; resposta vazia vira a padrão', functi
     expect(NutriResponse::parse('  ')->reply)->toBe('Não consegui montar uma resposta agora. Pode perguntar de novo?')
         ->and(NutriResponse::parse('{"reply":""}')->reply)->toBe('Não consegui montar uma resposta agora. Pode perguntar de novo?');
 });
+
+it('JSON cortado no meio não vira texto cru na tela (revisão 05A)', function () {
+    expect(NutriResponse::parse('{"reply":"Pode. No seu almoço os 150 g de arroz","suggestions":["E no'))->reply->toBe('Pode. No seu almoço os 150 g de arroz');
+    expect(NutriResponse::parse('{"suggestions":["E no'))->reply->toBe(NutriResponse::FALLBACK);
+});

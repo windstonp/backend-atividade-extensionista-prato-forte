@@ -18,3 +18,23 @@ it('filtra vazias, duplicadas, longas, repetição da pergunta e alimento proibi
 
     expect($limpas)->toBe(['E no jantar?', 'Por que mais fibra?', 'E o café?']);
 });
+
+it('pega nome curto, alias e plural do alimento proibido (revisão 05A)', function (string $restricao, string $sugestao) {
+    $this->user->restrictions()->sync([Restriction::where('slug', $restricao)->sole()->id]);
+
+    expect(app(FollowUpSanitizer::class)->clean([$sugestao, 'E no jantar?'], 'Oi', $this->user->fresh()))->toBe(['E no jantar?']);
+})->with([
+    'glúten: pão' => ['gluten', 'Posso comer pão no café?'],
+    'frutos do mar: plural' => ['frutos-do-mar', 'Posso comer camarões?'],
+    'sem animal: ovo' => ['sem-animal', 'E se eu comer um ovo?'],
+]);
+
+it('não barra sugestão só por parecer com alimento permitido', function () {
+    expect(app(FollowUpSanitizer::class)->clean(['E o arroz do almoço?'], 'Oi', $this->user))->toBe(['E o arroz do almoço?']);
+});
+
+it('"outras restrições" digitadas também valem', function () {
+    $this->user->profile->update(['other_restrictions' => ['beterraba']]);
+
+    expect(app(FollowUpSanitizer::class)->clean(['Posso comer beterrabas?'], 'Oi', $this->user->fresh()))->toBe([]);
+});

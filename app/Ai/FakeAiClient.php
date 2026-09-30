@@ -229,12 +229,7 @@ final class FakeAiClient implements AiClient
             ->sortBy(fn (array $f) => [! str_contains(Str::lower(Str::ascii($f['nome'])), $prefer), $f['id']])->first();
 
         $answer = match (true) {
-            str_contains($question, 'castanha') => [
-                'reply' => 'Dá para pôr um punhado de castanha de caju no lanche.',
-                'suggestions' => ['E no lanche da tarde?'],
-                'action' => ($caju = Food::where('slug', 'castanha-de-caju')->first()) && ($gordura = $swap('gordura', ''))
-                    ? ['to_food_id' => $caju->id] + $gordura : null,
-            ],
+            str_contains($question, 'castanha') => $this->nutsAnswer($allowed, $swap('gordura', '')),
             str_contains($question, 'arroz') || str_contains($question, 'batata') => [
                 'reply' => 'Pode. A batata-doce entra no lugar do arroz com carboidrato parecido e mais fibra.',
                 'follow_up' => 'A batata-doce segura a fome por mais tempo até o treino.',
@@ -242,9 +237,11 @@ final class FakeAiClient implements AiClient
                 'action' => $swap('carboidrato', 'batata'),
             ],
             str_contains($question, 'frango') => [
-                'reply' => 'Sem frango, os ovos cobrem a proteína desse prato.',
-                'suggestions' => ['E se eu não tiver ovos?', 'Quanto de proteína falta hoje?'],
-                'action' => $swap('proteina', 'ovo'),
+                'reply' => ($troca = $swap('proteina', 'ovo')) !== null
+                    ? 'Sem frango, '.Str::lower((string) (array_column($allowed, 'nome', 'id')[$troca['to_food_id']] ?? 'outra proteína')).' cobre a proteína desse prato.'
+                    : 'Sem frango, dá para usar outra proteína do seu plano.',
+                'suggestions' => ['Quanto de proteína falta hoje?'],
+                'action' => $troca,
             ],
             str_contains($question, 'jantar') || str_contains($question, 'ovo') || str_contains($question, 'brocolis') => [
                 'reply' => 'Montei um jantar leve com o que costuma ter em casa.',
@@ -268,6 +265,27 @@ final class FakeAiClient implements AiClient
         };
 
         return (string) json_encode($answer + ['follow_up' => null], JSON_UNESCAPED_UNICODE);
+    }
+
+    /**
+     * Castanha de caju só aparece para quem pode comer (RN17 vale também para o texto da IA falsa).
+     *
+     * @param  list<array{id: int, nome: string, grupo: string}>  $allowed
+     * @param  array<string, mixed>|null  $fatSwap
+     * @return array<string, mixed>
+     */
+    private function nutsAnswer(array $allowed, ?array $fatSwap): array
+    {
+        $caju = Food::where('slug', 'castanha-de-caju')->first();
+        if ($caju === null || ! in_array($caju->id, array_column($allowed, 'id'), true)) {
+            return ['reply' => 'Com a sua restrição, castanha fica de fora do seu plano. Posso sugerir outro lanche.', 'suggestions' => ['Monte um lanche para mim'], 'action' => null];
+        }
+
+        return [
+            'reply' => 'Dá para pôr um punhado de castanha de caju no lanche.',
+            'suggestions' => ['E no lanche da tarde?'],
+            'action' => $fatSwap === null ? null : ['to_food_id' => $caju->id] + $fatSwap,
+        ];
     }
 
     /** @param list<array{role: string, content: string}> $messages */

@@ -67,15 +67,19 @@ class FoodFilter
      */
     private static function variants(string $term): array
     {
-        $singular = implode(' ', array_map(fn (string $word) => match (true) {
+        return array_values(array_unique([$term, self::singular($term)]));
+    }
+
+    /** Singular palavra a palavra, já normalizado ("camarões" → "camarao"). */
+    public static function singular(string $text): string
+    {
+        return implode(' ', array_map(fn (string $word) => match (true) {
             strlen($word) <= 3 => $word,
             str_ends_with($word, 'oes'), str_ends_with($word, 'aes') => substr($word, 0, -3).'ao',
             str_ends_with($word, 'zes'), str_ends_with($word, 'res') => substr($word, 0, -2),
             str_ends_with($word, 's') => substr($word, 0, -1),
             default => $word,
-        }, explode(' ', $term)));
-
-        return array_values(array_unique([$term, $singular]));
+        }, explode(' ', self::normalize($text))));
     }
 
     /** @param list<string> $terms */
