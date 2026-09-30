@@ -19,7 +19,7 @@ use Illuminate\Http\Resources\Json\JsonResource;
  */
 class PlanResource extends JsonResource
 {
-    public const RELATIONS = ['meals.items.food'];
+    public const RELATIONS = ['meals.items.food', 'rating'];
 
     private bool $withItems = false;
 
@@ -50,7 +50,7 @@ class PlanResource extends JsonResource
                 'carbs_g' => $this->target_carbs_g, 'fat_g' => $this->target_fat_g,
             ],
             'meals' => $this->meals->map(fn (PlanMeal $meal) => $this->meal($meal))->all(),
-            'rating' => null, // avaliação 👍/👎: spec 07 (Plano 08)
+            'rating' => $this->resource->relationLoaded('rating') ? $this->resource->rating?->toPublic() : null,
         ];
     }
 

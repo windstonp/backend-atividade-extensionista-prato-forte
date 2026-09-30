@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Support\Carbon;
 
 /**
@@ -51,5 +52,13 @@ class NutriMessage extends Model
     public function actionsAvailable(): bool
     {
         return ($this->actions ?? []) !== [] && $this->actions_resolved_at === null && $this->created_at->isToday();
+    }
+
+    /**
+     * @return MorphOne<Rating, $this>
+     */
+    public function rating(): MorphOne
+    {
+        return $this->morphOne(Rating::class, 'rateable');
     }
 }

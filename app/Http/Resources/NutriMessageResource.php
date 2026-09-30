@@ -25,7 +25,7 @@ class NutriMessageResource extends JsonResource
             'card' => $m->card,
             'actions' => $available ? $m->actions : [],
             'actions_available' => $available,
-            'rating' => null, // Plano 08
+            'rating' => $m->relationLoaded('rating') ? $m->rating?->toPublic() : null,
         ];
     }
 }

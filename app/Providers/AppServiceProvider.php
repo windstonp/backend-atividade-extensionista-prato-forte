@@ -6,8 +6,11 @@ use App\Ai\AiClient;
 use App\Ai\FakeAiClient;
 use App\Ai\LoggingAiClient;
 use App\Ai\OpenAiCompatibleClient;
+use App\Models\MealPlan;
+use App\Models\NutriMessage;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\ServiceProvider;
@@ -33,6 +36,9 @@ class AppServiceProvider extends ServiceProvider
         Model::shouldBeStrict(! $this->app->isProduction());
 
         $this->configureRateLimiting();
+
+        // RN40: nomes curtos e estáveis para o que se avalia (sem enforce: push_subscriptions guarda a classe do User).
+        Relation::morphMap(['nutri_message' => NutriMessage::class, 'meal_plan' => MealPlan::class]);
     }
 
     /** Limites de `specs/00-fundacao/seguranca.md` §8. */

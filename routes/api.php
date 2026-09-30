@@ -19,6 +19,7 @@ use App\Http\Controllers\Api\V1\PreferencesController;
 use App\Http\Controllers\Api\V1\ProfileController;
 use App\Http\Controllers\Api\V1\ProgressController;
 use App\Http\Controllers\Api\V1\PushSubscriptionController;
+use App\Http\Controllers\Api\V1\RatingController;
 use App\Http\Controllers\Api\V1\SettingsController;
 use App\Http\Controllers\Api\V1\WeighInController;
 use App\Http\Middleware\EnsureSpaSession;
@@ -61,6 +62,8 @@ Route::prefix('v1')->group(function () {
             Route::post('days/{date}/items/{item}/swap', [DayController::class, 'swap'])->whereNumber('item');
             Route::post('days/{date}/undo', [DayController::class, 'undo']);
             Route::get('progress', ProgressController::class);
+            Route::put('ratings', [RatingController::class, 'update']);
+            Route::delete('ratings', [RatingController::class, 'destroy']);
             Route::get('weigh-ins', [WeighInController::class, 'index']);
             Route::post('weigh-ins', [WeighInController::class, 'store']);
             Route::get('nutri/context', [NutriController::class, 'context']);
