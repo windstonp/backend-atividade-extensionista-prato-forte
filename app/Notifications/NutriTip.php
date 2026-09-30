@@ -25,6 +25,7 @@ class NutriTip extends Notification implements ShouldQueue
 
     public function toWebPush(object $notifiable, Notification $notification): WebPushMessage
     {
-        return (new WebPushMessage)->title('Dica do Nutri')->body($this->text)->tag('dica')->data(['url' => $this->url]);
+        return (new WebPushMessage)->title('Dica do Nutri')->body($this->text)->tag('dica')->data(['url' => $this->url])
+            ->options(['TTL' => 86400, 'urgency' => 'normal']);
     }
 }
