@@ -67,3 +67,14 @@ it('cria as contas do Nutri com plano', function () {
         expect(User::where('email', "nutri-{$b}@e2e.pratoforte.test")->sole()->activePlan()->first()?->status)->toBe(PlanStatus::Ready);
     }
 });
+
+it('cria as contas da Evolução com três pesagens semanais', function () {
+    $this->seed(E2ESeeder::class);
+
+    foreach (['chromium', 'webkit'] as $navegador) {
+        $user = User::where('email', "peso-{$navegador}@e2e.pratoforte.test")->sole();
+        expect($user->activePlan()->exists())->toBeTrue()
+            ->and($user->weighIns()->orderBy('date')->pluck('weight_kg')->all())->toBe([58.4, 58.7, 59.0])
+            ->and($user->weighIns()->max('date'))->toBe(today()->subDays(7)->toDateString());
+    }
+});
