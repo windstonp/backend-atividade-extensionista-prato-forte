@@ -10,6 +10,7 @@ use App\Http\Controllers\Api\V1\Auth\SessionController;
 use App\Http\Controllers\Api\V1\CatalogController;
 use App\Http\Controllers\Api\V1\ConversationController;
 use App\Http\Controllers\Api\V1\DayController;
+use App\Http\Controllers\Api\V1\MessageActionController;
 use App\Http\Controllers\Api\V1\MessageController;
 use App\Http\Controllers\Api\V1\NutriController;
 use App\Http\Controllers\Api\V1\OnboardingController;
@@ -59,6 +60,8 @@ Route::prefix('v1')->group(function () {
             Route::get('conversations/{conversation}/messages', [MessageController::class, 'index'])->whereNumber('conversation');
             Route::post('conversations/{conversation}/messages', [MessageController::class, 'store'])
                 ->whereNumber('conversation')->middleware('throttle:nutri');
+            Route::post('messages/{message}/actions/{index}', [MessageActionController::class, 'store'])
+                ->whereNumber('message')->whereNumber('index');
         });
     });
 });
