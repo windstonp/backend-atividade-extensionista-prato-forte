@@ -42,6 +42,10 @@ Contas do E2E (senha `senha1234`): `php artisan migrate:fresh --seeder=E2ESeeder
 3. Fechar e exportar: `php artisan validacao:exportar --rodada=2026-1` gera `storage/app/validacao/2026-1/{usabilidade,avaliacoes,uso,ia}.csv` (anônimos, `;`, UTF-8 com BOM) e imprime o resumo para o relatório. `--de`/`--ate` filtram o período.
 4. Próxima rodada: troque `VALIDACAO_RODADA` e `VALIDACAO_INICIO`.
 
+## Demonstração
+
+`php artisan migrate:fresh --seed` com `APP_ENV=local` cria `camila@demo.pratoforte.test` e `novo@demo.pratoforte.test` (senha `demo1234`): a Camila com um mês de uso e uma conta parada no onboarding. Nada chama a IA de verdade. Para subir num servidor, veja [docs/implantacao.md](docs/implantacao.md); antes da apresentação, `php artisan ai:smoke` confere a IA configurada.
+
 ## Segredos
 
 Nunca versione `.env`. A chave de IA usada no protótipo Node foi exposta e deve ser revogada; a nova vai só no ambiente (`AI_API_KEY`).
