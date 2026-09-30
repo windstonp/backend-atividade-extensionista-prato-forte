@@ -17,7 +17,7 @@ it('cria a conta, o perfil vazio e as configurações, e já entra (CA01)', func
 
     $user = User::sole();
     expect($user->consented_at)->not->toBeNull()
-        ->and($user->terms_version)->toBe('2026-09')
+        ->and($user->terms_version)->toBe('2026-10')
         ->and($user->profile()->exists())->toBeTrue()
         ->and($user->settings()->value('unit_system'))->toBe('metric');
     $this->assertAuthenticatedAs($user, 'web');
@@ -93,4 +93,8 @@ it('limita cadastros a 3 por minuto por IP', function () {
     $this->postJson('/api/v1/register', registerPayload(['email' => 'pessoa4@exemplo.com']))
         ->assertTooManyRequests()
         ->assertJsonPath('code', 'TOO_MANY_REQUESTS');
+});
+
+it('só aceita a versão vigente do termo (2026-10)', function () {
+    $this->postJson('/api/v1/register', registerPayload(['terms_version' => '2026-09']))->assertUnprocessable()->assertJsonValidationErrors('terms_version');
 });

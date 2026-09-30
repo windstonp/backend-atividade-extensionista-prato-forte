@@ -56,6 +56,11 @@ class E2ESeeder extends Seeder
                 $peso->weighIns()->create(['date' => today()->subDays($dias)->toDateString(), 'weight_kg' => $kg]);
             }
 
+            // 08: validação — onboarding há 8 dias, o convite do questionário aparece (E2E-12).
+            $avaliar = User::factory()->onboarded()->create(['name' => 'Vera Vaz', 'email' => "avaliar-{$navegador}@e2e.pratoforte.test"]);
+            $avaliar->profile->update(['onboarding_completed_at' => now()->subDays(8)]);
+            $planos->requestGeneration($avaliar);
+
             // E2E-07: parada no resumo; com AI_FAKE_FAIL_PLAN_FOR, a primeira geração falha.
             User::factory()->answered()->create(['name' => 'Fábio Faria', 'email' => "falha-{$navegador}@e2e.pratoforte.test"]);
         }

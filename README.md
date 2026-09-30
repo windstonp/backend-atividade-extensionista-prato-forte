@@ -35,6 +35,13 @@ Contas do E2E (senha `senha1234`): `php artisan migrate:fresh --seeder=E2ESeeder
 - Chaves VAPID: `php artisan webpush:vapid` grava `VAPID_PUBLIC_KEY`/`VAPID_PRIVATE_KEY` no `.env` (nunca no repo). Sem elas, `GET /settings` devolve `vapid_public_key: null` e o app não oferece avisos.
 - Agenda (fuso `America/Sao_Paulo`): lembrete de refeição a cada minuto; resumo da semana domingo 20:00; dicas do Nutri terça e sexta 18:00. Nada sai fora da janela acordado nem duas vezes (`sent_notifications`).
 
+## Rodada de validação (spec 07)
+
+1. Abrir: defina `VALIDACAO_RODADA` (ex.: `2026-1`) e `VALIDACAO_INICIO` (data de abertura) no `.env`. O convite aparece em Hoje para quem concluiu o onboarding há 7 dias ou marcou 10 refeições.
+2. Durante: as respostas ficam em `usability_responses` (uma por pessoa por rodada); 👍/👎 em `ratings`.
+3. Fechar e exportar: `php artisan validacao:exportar --rodada=2026-1` gera `storage/app/validacao/2026-1/{usabilidade,avaliacoes,uso,ia}.csv` (anônimos, `;`, UTF-8 com BOM) e imprime o resumo para o relatório. `--de`/`--ate` filtram o período.
+4. Próxima rodada: troque `VALIDACAO_RODADA` e `VALIDACAO_INICIO`.
+
 ## Segredos
 
 Nunca versione `.env`. A chave de IA usada no protótipo Node foi exposta e deve ser revogada; a nova vai só no ambiente (`AI_API_KEY`).

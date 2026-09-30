@@ -54,7 +54,7 @@ function registerPayload(array $overrides = []): array
         'password' => 'senha1234',
         'password_confirmation' => 'senha1234',
         'terms_accepted' => true,
-        'terms_version' => '2026-09',
+        'terms_version' => '2026-10',
     ], $overrides);
 }
 
