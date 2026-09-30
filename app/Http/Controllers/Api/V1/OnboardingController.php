@@ -25,9 +25,11 @@ class OnboardingController extends Controller
         $user = $request->user();
         $alreadyDone = $user->profile->isOnboarded();
 
-        $onboarding->complete($user);
+        $plan = $onboarding->complete($user);
 
-        // O plano (e o GeneratePlanJob) chega no Plano 04; até lá, `plan` é null.
-        return response()->json(['data' => ['plan' => null]], $alreadyDone ? 200 : 202);
+        return response()->json(
+            ['data' => ['plan' => $plan ? ['id' => $plan->id, 'status' => $plan->status->value] : null]],
+            $alreadyDone ? 200 : 202,
+        );
     }
 }

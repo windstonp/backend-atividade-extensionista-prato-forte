@@ -2,6 +2,8 @@
 
 use App\Enums\ErrorCode;
 use App\Exceptions\DomainException;
+use App\Models\User;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -72,4 +74,12 @@ it('não expõe a mensagem da exceção em erro 500', function () {
     $this->getJson('/api/v1/_teste/quebra')
         ->assertStatus(500)
         ->assertExactJson(['message' => 'Algo deu errado do nosso lado. Tente de novo.', 'code' => 'SERVER_ERROR']);
+});
+
+it('responde 404 NOT_FOUND quando o modelo não existe ou não é do usuário', function () {
+    Route::get('api/v1/_teste/modelo', fn () => User::findOrFail(999999));
+    Route::get('api/v1/_teste/policy', fn () => throw (new AuthorizationException)->withStatus(404));
+
+    $this->getJson('/api/v1/_teste/modelo')->assertNotFound()->assertJsonPath('code', 'NOT_FOUND');
+    $this->getJson('/api/v1/_teste/policy')->assertNotFound()->assertJsonPath('code', 'NOT_FOUND');
 });

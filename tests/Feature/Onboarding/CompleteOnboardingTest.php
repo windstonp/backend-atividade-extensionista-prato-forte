@@ -5,16 +5,17 @@ use App\Models\WeighIn;
 
 beforeEach(fn () => seedCatalog());
 
-it('conclui, cria a primeira pesagem e responde 202 (RF07, RN34)', function () {
+it('conclui, cria a primeira pesagem, pede o primeiro plano e responde 202 (RF07, RN34)', function () {
     $user = login(User::factory()->answered()->create());
 
-    $this->postJson('/api/v1/onboarding/complete')
+    $response = $this->postJson('/api/v1/onboarding/complete')
         ->assertAccepted()
-        ->assertExactJson(['data' => ['plan' => null]]);
+        ->assertJsonPath('data.plan.status', 'pending');
 
     expect($user->profile->fresh()->isOnboarded())->toBeTrue()
         ->and(WeighIn::where('user_id', $user->id)->sole()->weight_kg)->toBe(58.4)
-        ->and(WeighIn::where('user_id', $user->id)->sole()->date->isToday())->toBeTrue();
+        ->and(WeighIn::where('user_id', $user->id)->sole()->date->isToday())->toBeTrue()
+        ->and($user->mealPlans()->sole()->id)->toBe($response->json('data.plan.id'));
     $this->getJson('/api/v1/me')->assertJsonPath('data.onboarding_completed', true)->assertJsonPath('data.next_step', null);
 });
 
@@ -68,13 +69,14 @@ it('aponta a etapa salva que ficou sem campo obrigatório', function () {
     $this->postJson('/api/v1/onboarding/complete')->assertJsonPath('details.step', 'atividade');
 });
 
-it('é idempotente: concluir de novo responde 200 e não duplica a pesagem', function () {
+it('é idempotente: concluir de novo responde 200 com o mesmo plano e não duplica nada', function () {
     $user = login(User::factory()->answered()->create());
-    $this->postJson('/api/v1/onboarding/complete')->assertAccepted();
+    $plano = $this->postJson('/api/v1/onboarding/complete')->json('data.plan.id');
 
     $this->postJson('/api/v1/onboarding/complete')
         ->assertOk()
-        ->assertExactJson(['data' => ['plan' => null]]);
+        ->assertJsonPath('data.plan.id', $plano);
 
-    expect(WeighIn::where('user_id', $user->id)->count())->toBe(1);
+    expect(WeighIn::where('user_id', $user->id)->count())->toBe(1)
+        ->and($user->mealPlans()->count())->toBe(1);
 });

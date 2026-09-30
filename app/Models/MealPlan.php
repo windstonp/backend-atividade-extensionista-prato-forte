@@ -6,12 +6,14 @@ use App\Enums\PlanStatus;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Carbon;
 
 /**
  * Plano alimentar gerado (RN18–RN20).
  *
  * @property PlanStatus $status
  * @property array<string, mixed> $inputs
+ * @property Carbon|null $ready_at
  */
 class MealPlan extends Model
 {

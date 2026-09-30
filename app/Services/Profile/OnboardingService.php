@@ -6,9 +6,11 @@ use App\Enums\ErrorCode;
 use App\Enums\Goal;
 use App\Enums\OnboardingStep;
 use App\Exceptions\DomainException;
+use App\Models\MealPlan;
 use App\Models\Profile;
 use App\Models\User;
 use App\Services\Nutrition\GoalWeightResolver;
+use App\Services\Plans\PlanService;
 use Illuminate\Support\Facades\DB;
 
 /** Conclusão do onboarding (RF07, RN08, RN10, RN34). O primeiro plano chega no Plano 04. */
@@ -24,14 +26,14 @@ class OnboardingService
         'rotina' => ['wake_time', 'training_time', 'sleep_time', 'lunch_place'],
     ];
 
-    public function __construct(private readonly GoalWeightResolver $goalWeights) {}
+    public function __construct(private readonly GoalWeightResolver $goalWeights, private readonly PlanService $plans) {}
 
-    /** Idempotente: quem já concluiu não muda nada. */
-    public function complete(User $user): void
+    /** Idempotente: quem já concluiu recebe o plano mais recente. */
+    public function complete(User $user): ?MealPlan
     {
         $profile = $user->profile;
         if ($profile->isOnboarded()) {
-            return;
+            return $user->mealPlans()->latest('id')->first();
         }
 
         $missing = $this->firstIncompleteStep($profile);
@@ -53,6 +55,9 @@ class OnboardingService
             $profile->onboarding_completed_at = now();
             $profile->save();
         });
+
+        // RF09 — o primeiro plano sai daqui (spec 02 §5).
+        return $this->plans->requestGeneration($user);
     }
 
     /** Primeira etapa não salva ou salva sem um campo obrigatório (RN08). */

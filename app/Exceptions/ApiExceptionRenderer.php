@@ -3,7 +3,9 @@
 namespace App\Exceptions;
 
 use App\Enums\ErrorCode;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\AuthenticationException;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Validation\ValidationException;
 use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
@@ -18,6 +20,8 @@ final class ApiExceptionRenderer
             $e instanceof DomainException => $this->respond($e->errorCode, $e->getMessage(), details: $e->details),
             $e instanceof ValidationException => $this->respond(ErrorCode::ValidationError, errors: $e->errors()),
             $e instanceof AuthenticationException => $this->respond(ErrorCode::Unauthenticated),
+            $e instanceof ModelNotFoundException => $this->respond(ErrorCode::NotFound),
+            $e instanceof AuthorizationException => $this->respond($e->status() === 404 ? ErrorCode::NotFound : ErrorCode::Forbidden),
             $e instanceof HttpExceptionInterface => $this->fromHttp($e),
             (bool) config('app.debug') => null, // em dev, deixa o Laravel mostrar a exceção
             default => $this->respond(ErrorCode::ServerError),

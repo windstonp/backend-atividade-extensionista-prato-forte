@@ -21,6 +21,7 @@ uses(TestCase::class)->in('Unit');
 function login(?User $user = null): User
 {
     $user ??= User::factory()->create();
+    app('auth')->forgetGuards(); // trocar de usuário no meio do teste: o guard do Sanctum guarda o anterior
     test()->actingAs($user, 'web');
 
     return $user;
