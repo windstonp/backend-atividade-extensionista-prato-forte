@@ -2,6 +2,10 @@
 
 namespace App\Providers;
 
+use App\Ai\AiClient;
+use App\Ai\FakeAiClient;
+use App\Ai\LoggingAiClient;
+use App\Ai\OpenAiCompatibleClient;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
@@ -13,7 +17,14 @@ class AppServiceProvider extends ServiceProvider
 {
     public function register(): void
     {
-        //
+        $this->app->singleton(FakeAiClient::class, fn () => new FakeAiClient(config('services.ai.fake_fail_plan_for', [])));
+
+        // Toda chamada passa pelo log sem conteúdo (RN44). Sem AI_DRIVER=openai, a IA é a falsa.
+        $this->app->singleton(AiClient::class, fn ($app) => new LoggingAiClient(
+            config('services.ai.driver') === 'openai'
+                ? new OpenAiCompatibleClient((string) config('services.ai.base_url'), config('services.ai.key'), (int) config('services.ai.timeout'))
+                : $app->make(FakeAiClient::class),
+        ));
     }
 
     public function boot(): void
