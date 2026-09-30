@@ -2,7 +2,11 @@
 
 namespace Database\Seeders;
 
+use App\Ai\AiClient;
+use App\Ai\FakeAiClient;
+use App\Ai\LoggingAiClient;
 use App\Models\User;
+use App\Services\Plans\PlanService;
 use Illuminate\Database\Seeder;
 
 /**
@@ -21,11 +25,19 @@ class E2ESeeder extends Seeder
             'goal' => 'perder-gordura', 'preferred_name' => 'Nina', 'age' => 30, 'height_cm' => 170, 'start_weight_kg' => 70.0, 'sex' => 'feminino',
         ]);
 
+        // Contas concluídas já com plano pronto: IA falsa e fila síncrona só durante o seed,
+        // para nunca chamar a IA de verdade nem depender do worker.
+        config(['queue.default' => 'sync']);
+        app()->instance(AiClient::class, new LoggingAiClient(app(FakeAiClient::class)));
+        $planos = app(PlanService::class);
+
         // Uma conta por navegador: o E2E-10 troca a senha, e o login aceita só 5 tentativas
         // por minuto por e-mail — os dois navegadores juntos na mesma conta passariam disso.
         foreach (['chromium', 'webkit'] as $navegador) {
-            User::factory()->onboarded()->create(['name' => 'Camila Réus', 'email' => "concluido-{$navegador}@e2e.pratoforte.test"]);
-            User::factory()->onboarded()->create(['name' => 'Rafa Lima', 'email' => "senha-{$navegador}@e2e.pratoforte.test"]);
+            foreach ([['Camila Réus', 'concluido'], ['Rafa Lima', 'senha']] as [$nome, $conta]) {
+                $user = User::factory()->onboarded()->create(['name' => $nome, 'email' => "{$conta}-{$navegador}@e2e.pratoforte.test"]);
+                $planos->requestGeneration($user);
+            }
         }
     }
 }

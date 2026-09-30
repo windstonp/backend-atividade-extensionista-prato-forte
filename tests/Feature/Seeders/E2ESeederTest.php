@@ -35,3 +35,12 @@ it('semeia o catálogo e deixa a conta "novo" com objetivo e dados respondidos (
         ->and([$novo->goal, $novo->preferred_name, $novo->age, $novo->height_cm, (float) $novo->start_weight_kg, $novo->sex])
         ->toBe(['perder-gordura', 'Nina', 30, 170, 70.0, 'feminino']);
 });
+
+it('as contas concluídas já têm plano pronto e ativo, gerado pela IA falsa', function () {
+    $this->seed(E2ESeeder::class);
+
+    foreach (['concluido-chromium', 'concluido-webkit', 'senha-chromium', 'senha-webkit'] as $conta) {
+        $plano = User::where('email', "{$conta}@e2e.pratoforte.test")->sole()->activePlan()->first();
+        expect($plano?->status)->toBe(App\Enums\PlanStatus::Ready);
+    }
+});
