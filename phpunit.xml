@@ -25,6 +25,7 @@
         <env name="DB_DATABASE" value="prato_forte_test"/>
         <env name="MAIL_MAILER" value="array"/>
         <env name="QUEUE_CONNECTION" value="sync"/>
+        <env name="AI_DRIVER" value="fake"/>
         <env name="SESSION_DRIVER" value="database"/>
     </php>
 </phpunit>

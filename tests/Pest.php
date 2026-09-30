@@ -1,5 +1,6 @@
 <?php
 
+use App\Ai\FakeAiClient;
 use App\Models\User;
 use Database\Seeders\CatalogSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
@@ -89,4 +90,10 @@ function stepPayload(string $step, array $overrides = []): array
     ];
 
     return array_merge($payloads[$step], $overrides);
+}
+
+/** A IA falsa usada em todos os testes (roteiros com queue()/failNext()). */
+function fakeAi(): FakeAiClient
+{
+    return app(FakeAiClient::class);
 }
