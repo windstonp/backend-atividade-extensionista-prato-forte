@@ -110,3 +110,19 @@ it('mensagens de conversa de outra pessoa: 404 (CA10)', function () {
     $this->getJson("/api/v1/conversations/{$dela->id}/messages")->assertNotFound();
     ($this->perguntar)('Oi', $dela)->assertNotFound();
 });
+
+it('a IA falsa não recomenda alimento proibido no texto (revisão 05A)', function () {
+    $this->user->restrictions()->sync([Restriction::where('slug', 'castanhas')->sole()->id]);
+
+    $resposta = ($this->perguntar)('Posso pôr castanha no lanche?')->json('data.assistant_message.content');
+
+    expect(mb_strtolower($resposta))->not->toContain('punhado de castanha');
+});
+
+it('na IA falsa, o texto da troca cita o alimento do cartão', function () {
+    $m = ($this->perguntar)('Não tenho frango em casa')->json('data.assistant_message');
+
+    if ($m['card'] !== null) {
+        expect(mb_strtolower($m['content']))->toContain(mb_strtolower($m['card']['to']['name']));
+    }
+});
