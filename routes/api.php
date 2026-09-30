@@ -8,6 +8,7 @@ use App\Http\Controllers\Api\V1\Auth\PasswordResetController;
 use App\Http\Controllers\Api\V1\Auth\RegisterController;
 use App\Http\Controllers\Api\V1\Auth\SessionController;
 use App\Http\Controllers\Api\V1\CatalogController;
+use App\Http\Controllers\Api\V1\ConversationController;
 use App\Http\Controllers\Api\V1\DayController;
 use App\Http\Controllers\Api\V1\OnboardingController;
 use App\Http\Controllers\Api\V1\PlanController;
@@ -47,6 +48,10 @@ Route::prefix('v1')->group(function () {
             Route::get('days/{date}/items/{item}/substitutions', [DayController::class, 'substitutions'])->whereNumber('item');
             Route::post('days/{date}/items/{item}/swap', [DayController::class, 'swap'])->whereNumber('item');
             Route::post('days/{date}/undo', [DayController::class, 'undo']);
+            Route::get('conversations', [ConversationController::class, 'index']);
+            Route::post('conversations', [ConversationController::class, 'store']);
+            Route::get('conversations/{conversation}', [ConversationController::class, 'show'])->whereNumber('conversation');
+            Route::delete('conversations/{conversation}', [ConversationController::class, 'destroy'])->whereNumber('conversation');
         });
     });
 });
