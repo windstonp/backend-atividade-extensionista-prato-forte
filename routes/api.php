@@ -7,6 +7,7 @@ use App\Http\Controllers\Api\V1\Auth\PasswordResetController;
 use App\Http\Controllers\Api\V1\Auth\RegisterController;
 use App\Http\Controllers\Api\V1\Auth\SessionController;
 use App\Http\Controllers\Api\V1\CatalogController;
+use App\Http\Controllers\Api\V1\DayController;
 use App\Http\Controllers\Api\V1\OnboardingController;
 use App\Http\Controllers\Api\V1\PlanController;
 use App\Http\Controllers\Api\V1\PreferencesController;
@@ -39,6 +40,7 @@ Route::prefix('v1')->group(function () {
         Route::middleware('onboarded')->group(function () {
             Route::get('profile', [ProfileController::class, 'show']);
             Route::put('profile/preferences', PreferencesController::class);
+            Route::get('days/{date}', [DayController::class, 'show']);
         });
     });
 });

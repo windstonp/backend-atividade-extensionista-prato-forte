@@ -1,6 +1,8 @@
 <?php
 
 use App\Models\AiRequest;
+use App\Models\DayMeal;
+use App\Models\DayMealChange;
 use App\Models\Food;
 use App\Models\PantryItem;
 use App\Models\Restriction;
@@ -23,6 +25,8 @@ dataset('tabelas do usuário', [
     'disliked_food_user' => ['disliked_food_user', 'user_id'],
     'ai_requests' => ['ai_requests', 'user_id'],
     'meal_plans' => ['meal_plans', 'user_id'],
+    'day_meals' => ['day_meals', 'user_id'],
+    'day_meal_changes' => ['day_meal_changes', 'user_id'],
 ]);
 
 it('não deixa nenhuma linha do usuário para trás (CA08)', function (string $table, string $column) {
@@ -35,7 +39,10 @@ it('não deixa nenhuma linha do usuário para trás (CA08)', function (string $t
     $user->dislikedFoods()->attach(Food::where('common_dislike', true)->first());
     $user->weighIns()->create(['date' => today(), 'weight_kg' => 58.4]);
     AiRequest::create(['user_id' => $user->id, 'purpose' => 'plan', 'model' => 'fake', 'duration_ms' => 1, 'status' => 'ok']);
-    $user->mealPlans()->create(['status' => 'ready', 'target_kcal' => 2250, 'target_protein_g' => 115, 'target_carbs_g' => 305, 'target_fat_g' => 65, 'inputs' => []]);
+    planoPronto($user);
+    $this->getJson('/api/v1/days/today')->assertOk();
+    $meal = DayMeal::where('user_id', $user->id)->firstOrFail();
+    DayMealChange::create(['user_id' => $user->id, 'date' => today(), 'day_meal_id' => $meal->id, 'type' => 'swap', 'description' => 'x', 'items_before' => []]);
 
     $this->deleteJson('/api/v1/me', ['password' => 'senha1234'])->assertNoContent();
 

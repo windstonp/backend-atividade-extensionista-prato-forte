@@ -95,6 +95,12 @@ class User extends Authenticatable
         return $this->hasMany(WeighIn::class);
     }
 
+    /** @return HasMany<DayMeal, $this> */
+    public function dayMeals(): HasMany
+    {
+        return $this->hasMany(DayMeal::class);
+    }
+
     /** @return HasMany<MealPlan, $this> */
     public function mealPlans(): HasMany
     {
