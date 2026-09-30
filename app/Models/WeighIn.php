@@ -4,8 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Carbon;
 
-/** Pesagem do dia (RN34). */
+/**
+ * Pesagem do dia (RN34).
+ *
+ * @property Carbon $date
+ * @property float $weight_kg
+ */
 class WeighIn extends Model
 {
     protected $fillable = ['date', 'weight_kg'];
