@@ -18,6 +18,8 @@ use App\Http\Controllers\Api\V1\PlanController;
 use App\Http\Controllers\Api\V1\PreferencesController;
 use App\Http\Controllers\Api\V1\ProfileController;
 use App\Http\Controllers\Api\V1\ProgressController;
+use App\Http\Controllers\Api\V1\PushSubscriptionController;
+use App\Http\Controllers\Api\V1\SettingsController;
 use App\Http\Controllers\Api\V1\WeighInController;
 use App\Http\Middleware\EnsureSpaSession;
 use Illuminate\Support\Facades\Route;
@@ -33,6 +35,11 @@ Route::prefix('v1')->group(function () {
         Route::get('me', MeController::class);
         Route::put('me/password', PasswordController::class);
         Route::delete('me', [AccountController::class, 'destroy']);
+
+        Route::get('settings', [SettingsController::class, 'show']);
+        Route::put('settings', [SettingsController::class, 'update']);
+        Route::post('push-subscriptions', [PushSubscriptionController::class, 'store']);
+        Route::delete('push-subscriptions', [PushSubscriptionController::class, 'destroy']);
 
         Route::get('catalog/onboarding', CatalogController::class);
         Route::get('onboarding', [OnboardingController::class, 'show']);

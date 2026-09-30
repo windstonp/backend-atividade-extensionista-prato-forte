@@ -36,6 +36,7 @@ class AccountService
         DB::transaction(function () use ($user) {
             $user->endSessions();
             DB::table('password_reset_tokens')->where('email', $user->email)->delete();
+            $user->pushSubscriptions()->delete(); // morph sem FK: não sai no cascade
             $user->delete();
         });
     }
