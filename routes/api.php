@@ -10,6 +10,7 @@ use App\Http\Controllers\Api\V1\Auth\SessionController;
 use App\Http\Controllers\Api\V1\CatalogController;
 use App\Http\Controllers\Api\V1\ConversationController;
 use App\Http\Controllers\Api\V1\DayController;
+use App\Http\Controllers\Api\V1\NutriController;
 use App\Http\Controllers\Api\V1\OnboardingController;
 use App\Http\Controllers\Api\V1\PlanController;
 use App\Http\Controllers\Api\V1\PreferencesController;
@@ -48,6 +49,8 @@ Route::prefix('v1')->group(function () {
             Route::get('days/{date}/items/{item}/substitutions', [DayController::class, 'substitutions'])->whereNumber('item');
             Route::post('days/{date}/items/{item}/swap', [DayController::class, 'swap'])->whereNumber('item');
             Route::post('days/{date}/undo', [DayController::class, 'undo']);
+            Route::get('nutri/context', [NutriController::class, 'context']);
+            Route::get('nutri/suggestions', [NutriController::class, 'suggestions']);
             Route::get('conversations', [ConversationController::class, 'index']);
             Route::post('conversations', [ConversationController::class, 'store']);
             Route::get('conversations/{conversation}', [ConversationController::class, 'show'])->whereNumber('conversation');
