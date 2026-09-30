@@ -167,7 +167,7 @@ Todas com FKs cascade.
 | target_fat_g | smallint unsigned | R | |
 | inputs | json | R | snapshot do perfil e da lista permitida usados (auditoria/regeneração) |
 | attempts | tinyint unsigned | R | tentativas com a IA, padrão 0 |
-| failure_reason | varchar(255) | O | `AI_UNAVAILABLE`, `AI_INVALID_RESPONSE`, `TIMEOUT`, `SUPERSEDED` (plano mais antigo que terminou depois de um mais novo — ver RN21) |
+| failure_reason | varchar(255) | O | `AI_UNAVAILABLE`, `AI_INVALID_RESPONSE`, `TIMEOUT`, `SUPERSEDED` (plano mais antigo que terminou depois de um mais novo, ou ainda na fila quando outro foi forçado — ver RN21), `RESTRICTIONS_CHANGED` (ficou pronto com alimento que a restrição atual proíbe — RN17) |
 | ready_at | timestamp | O | |
 
 Índices: `INDEX(user_id, status)`, `UNIQUE(active_user_id)`.

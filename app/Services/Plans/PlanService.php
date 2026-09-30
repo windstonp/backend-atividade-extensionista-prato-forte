@@ -14,6 +14,7 @@ use App\Models\DayMeal;
 use App\Models\MealPlan;
 use App\Models\User;
 use App\Services\Days\DayMaterializer;
+use App\Services\Foods\FoodFilter;
 use App\Services\Nutrition\DailyTargets;
 use App\Services\Nutrition\MealScheduler;
 use App\Services\Nutrition\NutritionCalculator;
@@ -27,6 +28,7 @@ class PlanService
         private readonly NutritionCalculator $calculator,
         private readonly MealScheduler $scheduler,
         private readonly DayMaterializer $days,
+        private readonly FoodFilter $filter,
     ) {}
 
     /**
@@ -42,7 +44,11 @@ class PlanService
             if (! $profile->isOnboarded()) {
                 throw new DomainException(ErrorCode::OnboardingIncomplete, ['next_step' => $profile->nextStep()?->value]);
             }
-            if (! $force) {
+            if ($force) {
+                // Os que ainda esperam na fila não chegam a chamar a IA: o novo lê o perfil mais recente.
+                $user->mealPlans()->where('status', PlanStatus::Pending)
+                    ->update(['status' => PlanStatus::Failed, 'failure_reason' => 'SUPERSEDED']);
+            } else {
                 $busy = $user->mealPlans()->whereIn('status', [PlanStatus::Pending, PlanStatus::Generating])->latest('id')->first();
                 if ($busy !== null) {
                     throw new DomainException(ErrorCode::PlanAlreadyGenerating, ['plan_id' => $busy->id]);
@@ -94,12 +100,27 @@ class PlanService
                 return false;
             }
 
+            if (! $this->respectsRestrictions($plan)) {
+                // A restrição mudou enquanto o plano era montado (RN17): este não serve; outro sai na hora.
+                $plan->update(['status' => PlanStatus::Failed, 'failure_reason' => 'RESTRICTIONS_CHANGED']);
+                $this->requestGeneration($plan->user()->firstOrFail(), force: true);
+
+                return false;
+            }
+
             MealPlan::where('user_id', $plan->user_id)->where('is_active', true)->update(['is_active' => false, 'active_user_id' => null]);
             $plan->update(['status' => PlanStatus::Ready, 'is_active' => true, 'ready_at' => now()]);
             $this->refreshToday($plan);
 
             return true;
         });
+    }
+
+    private function respectsRestrictions(MealPlan $plan): bool
+    {
+        $allowed = $this->filter->allowedFor($plan->user()->firstOrFail());
+
+        return $plan->meals()->with('items')->get()->flatMap->items->every(fn ($item) => $allowed->has($item->food_id));
     }
 
     /** RN14/RN21 (`times_updated`) — horários novos no plano ativo e nas refeições não feitas de hoje, sem IA. */

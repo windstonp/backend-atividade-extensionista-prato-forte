@@ -104,11 +104,15 @@ class DayService
         $this->assertEditable($date);
         $change = DayMealChange::undoableFor($user, $date)->first() ?? throw new DomainException(ErrorCode::NothingToUndo);
 
-        DB::transaction(function () use ($change) {
+        $allowed = $this->filter->allowedFor($user);
+
+        DB::transaction(function () use ($change, $allowed) {
             $meal = $change->dayMeal()->firstOrFail();
             $meal->items()->delete();
             foreach ($change->items_before as $item) {
-                $meal->items()->create($item);
+                if ($allowed->has($item['food_id'])) { // RN17: o que ficou proibido depois da troca não volta
+                    $meal->items()->create($item);
+                }
             }
             $change->update(['undone_at' => now()]);
         });

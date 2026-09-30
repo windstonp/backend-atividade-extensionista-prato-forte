@@ -79,7 +79,7 @@ Onde: `ProfileStepRequest` (etapa `rotina`).
 | horários da rotina ou dias de treino | horários das refeições-modelo recalculados na hora, sem IA (RN14) | `times_updated` |
 | nome preferido, sexo sem mudar metas | nada | `none` |
 Durante o onboarding (ainda sem plano) o efeito é sempre `none`.
-Pedido por restrição nunca espera o que já está gerando: cria outro plano, e ao ficar pronto só o mais novo é ativado (um mais antigo que termine depois vira `failed` `SUPERSEDED`). Mudança de horário sempre reprograma, mesmo quando outra mudança da mesma etapa sugere refazer.
+Pedido por restrição nunca espera o que já está gerando: cria outro plano, e ao ficar pronto só o mais novo é ativado (um mais antigo que termine depois vira `failed` `SUPERSEDED`, e os que ainda esperam na fila também). Enquanto o plano novo não fica pronto — ou se ele falhar —, o alimento restrito sai na hora das refeições de hoje não feitas e não aparece nos próximos dias nem volta por "Desfazer". Um plano que termine com alimento proibido pela restrição atual não é ativado (`failed` `RESTRICTIONS_CHANGED`) e outro é pedido na hora. Mudança de horário sempre reprograma, mesmo quando outra mudança da mesma etapa sugere refazer.
 Onde: `ProfileService`, `PlanService::regenerate`, `MealScheduler`.
 
 ## Cálculo e plano
