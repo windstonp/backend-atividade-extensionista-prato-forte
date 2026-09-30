@@ -1,7 +1,9 @@
 <?php
 
 use App\Ai\FakeAiClient;
+use App\Models\MealPlan;
 use App\Models\User;
+use App\Services\Plans\PlanService;
 use Database\Seeders\CatalogSeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
@@ -97,4 +99,10 @@ function stepPayload(string $step, array $overrides = []): array
 function fakeAi(): FakeAiClient
 {
     return app(FakeAiClient::class);
+}
+
+/** Pede e gera (fila síncrona + IA falsa) o plano do usuário; devolve o plano já ativo. */
+function planoPronto(User $user): MealPlan
+{
+    return app(PlanService::class)->requestGeneration($user)->fresh();
 }
