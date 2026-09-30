@@ -95,6 +95,24 @@ class User extends Authenticatable
         return $this->hasMany(WeighIn::class);
     }
 
+    /** @return HasMany<MealPlan, $this> */
+    public function mealPlans(): HasMany
+    {
+        return $this->hasMany(MealPlan::class);
+    }
+
+    /**
+     * RN20: o único plano ativo.
+
+     *
+
+     * @return HasOne<MealPlan, $this>
+     */
+    public function activePlan(): HasOne
+    {
+        return $this->hasOne(MealPlan::class)->where('is_active', true);
+    }
+
     /** @return HasOne<WeighIn, $this> */
     public function latestWeighIn(): HasOne
     {

@@ -1659,8 +1659,9 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->string('status', 12);
             $table->boolean('is_active')->default(false);
-            // RN20: um só plano ativo por usuário, garantido pelo banco.
-            $table->unsignedBigInteger('active_user_id')->nullable()->storedAs('IF(is_active, user_id, NULL)');
+            // RN20: um só plano ativo por usuário, garantido pelo banco (UNIQUE abaixo). Não é coluna gerada:
+            // o MySQL não aceita CASCADE na FK da coluna-base de uma coluna gerada. O model mantém o valor.
+            $table->unsignedBigInteger('active_user_id')->nullable();
             $table->unsignedSmallInteger('target_kcal');
             $table->unsignedSmallInteger('target_protein_g');
             $table->unsignedSmallInteger('target_carbs_g');
@@ -1734,6 +1735,14 @@ class MealPlan extends Model
             'inputs' => 'array',
             'ready_at' => 'datetime',
         ];
+    }
+
+    /** `active_user_id` = `user_id` só no plano ativo; o UNIQUE garante um ativo por usuário (RN20). */
+    protected static function booted(): void
+    {
+        static::saving(function (MealPlan $plan) {
+            $plan->active_user_id = $plan->is_active ? $plan->user_id : null;
+        });
     }
 
     /** @return BelongsTo<User, $this> */
@@ -2318,7 +2327,7 @@ class PlanService
                 return false;
             }
 
-            MealPlan::where('user_id', $plan->user_id)->where('is_active', true)->update(['is_active' => false]);
+            MealPlan::where('user_id', $plan->user_id)->where('is_active', true)->update(['is_active' => false, 'active_user_id' => null]);
             $plan->update(['status' => PlanStatus::Ready, 'is_active' => true, 'ready_at' => now()]);
 
             return true;

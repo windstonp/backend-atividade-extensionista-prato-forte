@@ -22,6 +22,7 @@ dataset('tabelas do usuário', [
     'pantry_item_user' => ['pantry_item_user', 'user_id'],
     'disliked_food_user' => ['disliked_food_user', 'user_id'],
     'ai_requests' => ['ai_requests', 'user_id'],
+    'meal_plans' => ['meal_plans', 'user_id'],
 ]);
 
 it('não deixa nenhuma linha do usuário para trás (CA08)', function (string $table, string $column) {
@@ -34,6 +35,7 @@ it('não deixa nenhuma linha do usuário para trás (CA08)', function (string $t
     $user->dislikedFoods()->attach(Food::where('common_dislike', true)->first());
     $user->weighIns()->create(['date' => today(), 'weight_kg' => 58.4]);
     AiRequest::create(['user_id' => $user->id, 'purpose' => 'plan', 'model' => 'fake', 'duration_ms' => 1, 'status' => 'ok']);
+    $user->mealPlans()->create(['status' => 'ready', 'target_kcal' => 2250, 'target_protein_g' => 115, 'target_carbs_g' => 305, 'target_fat_g' => 65, 'inputs' => []]);
 
     $this->deleteJson('/api/v1/me', ['password' => 'senha1234'])->assertNoContent();
 
