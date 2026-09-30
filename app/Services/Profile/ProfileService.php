@@ -5,12 +5,14 @@ namespace App\Services\Profile;
 use App\Enums\Goal;
 use App\Enums\GoalWeightSource;
 use App\Enums\OnboardingStep;
+use App\Enums\PlanEffect;
 use App\Models\PantryItem;
 use App\Models\Profile;
 use App\Models\Restriction;
 use App\Models\User;
 use App\Services\Nutrition\GoalWeight;
 use App\Services\Nutrition\GoalWeightResolver;
+use App\Services\Plans\ProfileChangeEffects;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
 use LogicException;
@@ -18,17 +20,22 @@ use LogicException;
 /** Etapas do onboarding e edição do perfil (RN08, RN10, RN11, RN34). RN21 chega no Plano 04. */
 class ProfileService
 {
-    public function __construct(private readonly GoalWeightResolver $goalWeights) {}
+    public function __construct(
+        private readonly GoalWeightResolver $goalWeights,
+        private readonly ProfileChangeEffects $effects,
+    ) {}
 
     /**
      * Salva uma etapa e a marca como feita; devolve os avisos da resposta (`meta.warnings`).
      *
      * @param  array<string, mixed>  $data  validado por ProfileStepRequest
-     * @return list<string>
+     * @return array{warnings: list<string>, effect: PlanEffect, plan_id: int|null}
      */
     public function updateStep(User $user, OnboardingStep $step, array $data): array
     {
-        return DB::transaction(function () use ($user, $step, $data) {
+        $before = $this->effects->snapshot($user);
+
+        $warnings = DB::transaction(function () use ($user, $step, $data) {
             $profile = $user->profile;
 
             $warnings = match ($step) {
@@ -45,21 +52,28 @@ class ProfileService
 
             return $warnings;
         });
+
+        return ['warnings' => $warnings, ...$this->effects->apply($user, $before, $this->effects->snapshot($user))];
     }
 
     /**
      * RF17 — substitui as quatro listas de uma vez.
      *
      * @param  array<string, mixed>  $data  validado por PreferencesRequest
+     * @return array{effect: PlanEffect, plan_id: int|null}
      */
-    public function updatePreferences(User $user, array $data): void
+    public function updatePreferences(User $user, array $data): array
     {
+        $before = $this->effects->snapshot($user);
+
         DB::transaction(function () use ($user, $data) {
             $this->saveRestrictions($user, $user->profile, $data);
             $user->profile->save();
             $this->syncPantry($user, $data['pantry_items']);
             $user->dislikedFoods()->sync($data['disliked_food_ids']);
         });
+
+        return $this->effects->apply($user, $before, $this->effects->snapshot($user));
     }
 
     /**
