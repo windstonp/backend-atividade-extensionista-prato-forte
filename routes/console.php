@@ -11,3 +11,4 @@ Artisan::command('inspire', function () {
 Schedule::command('plans:fail-stale')->everyFiveMinutes();
 Schedule::command('notifications:meal-reminders')->everyMinute()->withoutOverlapping();
 Schedule::command('notifications:weekly-summary')->weeklyOn(0, '20:00');
+Schedule::command('notifications:tips')->days([2, 5])->at('18:00');
