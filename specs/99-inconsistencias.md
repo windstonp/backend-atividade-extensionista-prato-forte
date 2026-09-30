@@ -148,22 +148,27 @@ Status: **Decidido** (✅ com os autores) · **Recomendado** (adotado nesta spec
 - **Impacto:** texto incorreto para parte do público; eventual campo novo.
 - **Opções:** (a) texto neutro "No Prato Forte desde {mês}"; (b) perguntar na etapa Dados "Você treina na Zfit?" e mostrar o texto só para alunos; (c) manter como está.
 - **Recomendação técnica:** (a) — sem campo novo; a Zfit continua citada em Boas-vindas e Configurações. Até a decisão, a spec usa (a).
+- **Situação (Plano 09):** aplicada a recomendação (a) — o Perfil diz "No Prato Forte desde {mês}". Confirmar com os autores.
 
 ### P2 — Idade mínima · **Pendente**
 - **Problema:** nenhuma fonte define idade mínima. A academia pode ter adolescentes; dados de saúde de menores exigem consentimento dos pais (LGPD art. 14) e a fórmula de gasto (RN13) é para adultos.
 - **Opções:** 18+; 16+ com aviso; sem limite.
 - **Recomendação técnica:** **18+** no MVP (RN09); rever depois com orientação de profissional de nutrição.
+- **Situação (Plano 09):** aplicada a recomendação — 18+ (RN09, `ProfileStepRequest`, `between:18,100`).
 
 ### P3 — Termo de consentimento (LGPD) · **Pendente (incluído na spec como recomendação)**
 - **Problema:** o app coleta dado sensível de saúde; nenhuma fonte prevê consentimento. A pesquisa de validação também usa esses dados (anonimizados).
 - **Opções:** checkbox + termo no cadastro; termo só na validação; nada.
 - **Recomendação técnica:** checkbox obrigatório no cadastro (RN03) com termo curto que cubra: finalidade (montar o plano), envio de dados à API de IA, uso anonimizado no projeto de extensão, direito de apagar tudo. **O texto do termo precisa ser redigido pelos autores** (possivelmente com orientação do professor/UNINTER).
+- **Situação (Plano 09):** termo provisório no cadastro, versão `2026-10` (`frontend/src/features/auth/termo.ts` e `config/prato.php`), já com o uso anonimizado, os comentários livres e o aviso de que não substitui nutricionista. **O texto final é dos autores.**
 
 ### P4 — Revisão nutricional · **Pendente (não bloqueia o MVP)**
 - **Problema:** fórmulas (RN13), pisos de kcal, faixas de troca (RN25) e regras do prompt são sugestões técnicas, sem validação de nutricionista.
 - **Recomendação técnica:** se houver nutricionista parceiro(a) da Zfit, revisar `regras-de-negocio.md` RN13/RN25 e o system prompt antes da rodada de validação; registrar no relatório que o app **não substitui acompanhamento profissional** (texto no termo e no rodapé de Configurações).
+- **Situação (Plano 09):** aviso "O Prato Forte não substitui o acompanhamento de um(a) nutricionista." no termo e no rodapé de Configurações. A revisão por nutricionista continua pendente.
 
 ### P5 — Valores nutricionais do catálogo · **Pendente (não bloqueia o MVP)**
 - **Problema:** `database/data/foods.csv` (Plano 03) foi montado com valores por 100 g da TACO 4ª ed. quando o alimento existe nela, de rótulo ou da tabela USDA quando não existe, e de receita caseira para preparos (ovos mexidos, salada). Ninguém da nutrição conferiu.
 - **Impacto:** as metas (RN13) não mudam; as porções e os totais do cardápio (Plano 04) herdam qualquer erro da tabela.
 - **Recomendação técnica:** antes da rodada de validação, conferir a planilha com a TACO (e, se possível, com o(a) nutricionista de P4); a coluna `source` diz de onde veio cada linha.
+- **Situação (Plano 09):** a coluna `source` de `database/data/foods.csv` diz a origem de cada linha; a conferência com a TACO continua pendente (antes da rodada de validação).
