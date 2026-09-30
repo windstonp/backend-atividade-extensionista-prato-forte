@@ -98,6 +98,66 @@ class DayService
         });
     }
 
+    /** RN31 — troca um alimento da refeição de hoje pelo que o Nutri mostrou (mesmas regras da troca manual). */
+    public function replaceFood(User $user, CarbonImmutable $date, string $slot, int $fromFoodId, int $toFoodId, float $grams, ItemSource $source): void
+    {
+        $meal = $this->editableMeal($user, $date, $slot);
+        $item = $meal->items()->with('food')->where('food_id', $fromFoodId)->first();
+        $to = $this->filter->allowedFor($user)->get($toFoodId);
+        if ($item === null || $to === null) {
+            throw new DomainException(ErrorCode::SubstitutionNotAllowed);
+        }
+
+        DB::transaction(function () use ($user, $date, $meal, $item, $to, $grams, $source) {
+            DayMealChange::create([
+                'user_id' => $user->id, 'date' => $date, 'day_meal_id' => $meal->id, 'type' => DayChangeType::Swap,
+                'description' => $item->food->name.' trocado por '.mb_strtolower(mb_substr($to->name, 0, 1)).mb_substr($to->name, 1),
+                'items_before' => $this->snapshot($meal),
+            ]);
+            $item->update(['food_id' => $to->id, 'grams' => $grams, 'source' => $source, 'replaced_food_id' => $item->replaced_food_id ?? $item->food_id]);
+        });
+    }
+
+    /**
+     * RN31 — troca a refeição inteira de hoje.
+     *
+     * @param  list<array{food_id: int, grams: float}>  $items
+     */
+    public function applyMeal(User $user, CarbonImmutable $date, string $slot, array $items, ItemSource $source): void
+    {
+        $meal = $this->editableMeal($user, $date, $slot);
+        $allowed = $this->filter->allowedFor($user);
+        foreach ($items as $item) {
+            if (! $allowed->has($item['food_id'])) {
+                throw new DomainException(ErrorCode::SubstitutionNotAllowed);
+            }
+        }
+
+        DB::transaction(function () use ($user, $date, $meal, $items, $source) {
+            DayMealChange::create([
+                'user_id' => $user->id, 'date' => $date, 'day_meal_id' => $meal->id, 'type' => DayChangeType::ApplyMeal,
+                'description' => $meal->name.' trocado pelo Nutri',
+                'items_before' => $this->snapshot($meal),
+            ]);
+            $meal->items()->delete();
+            foreach ($items as $i => $item) {
+                $meal->items()->create(['food_id' => $item['food_id'], 'grams' => $item['grams'], 'source' => $source, 'position' => $i + 1]);
+            }
+        });
+    }
+
+    /** Refeição de hoje que ainda pode mudar (RN23; feita não troca). */
+    private function editableMeal(User $user, CarbonImmutable $date, string $slot): DayMeal
+    {
+        $this->assertEditable($date);
+        $meal = $this->days->meals($user, $date)->firstWhere('slot', $slot) ?? throw new NotFoundHttpException;
+        if ($meal->isDone()) {
+            throw new DomainException(ErrorCode::MealAlreadyDone, [], 'Esse '.mb_strtolower($meal->name).' já está marcado como feito. Desmarque para trocar.');
+        }
+
+        return $meal;
+    }
+
     /** RN27 — volta a última alteração de conteúdo (até 15 min), um passo por vez. */
     public function undo(User $user, CarbonImmutable $date): void
     {
