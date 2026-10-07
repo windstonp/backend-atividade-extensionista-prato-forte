@@ -23,3 +23,10 @@ it('recusa o que não é o contrato, dizendo o motivo', function (string $conten
     'item sem food_id' => ['{"meals":[{"slot":"cafe","items":[{"grams":100}]}]}', 'food_id'],
     'slot que não é texto' => ['{"meals":[{"slot":3,"items":[]}]}', 'slot'],
 ]);
+
+it('aceita a lista de refeições solta ou embrulhada em outra chave (modelos menores fazem isso)', function (string $content) {
+    expect(PlanResponse::parse($content)[0]['slot'])->toBe('cafe');
+})->with([
+    'lista solta' => ['[{"slot":"cafe","items":[{"food_id":1,"grams":100}]}]'],
+    'embrulhada' => ['{"plano":{"meals":[{"slot":"cafe","items":[{"food_id":1,"grams":100}]}]}}'],
+]);

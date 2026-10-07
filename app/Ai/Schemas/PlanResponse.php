@@ -12,7 +12,7 @@ final class PlanResponse
      */
     public static function parse(string $content): array
     {
-        $json = self::decode($content);
+        $json = self::unwrap(self::decode($content));
         if (! isset($json['meals']) || ! is_array($json['meals'])) {
             throw new InvalidAiResponse('A resposta precisa ter a lista "meals".');
         }
@@ -36,6 +36,39 @@ final class PlanResponse
     }
 
     /** @return array<string, mixed> */
+    /**
+     * Modelos menores às vezes devolvem a lista solta (`[{slot…}]`) ou dentro de outra chave
+     * (`{"plano": {"meals": …}}`): os dois viram `{"meals": …}`.
+     *
+     * @param  array<mixed>  $json
+     * @return array<mixed>
+     */
+    private static function unwrap(array $json): array
+    {
+        if (self::isMealList($json)) {
+            return ['meals' => $json];
+        }
+        if (! isset($json['meals']) && count($json) === 1) {
+            $inner = reset($json);
+            if (is_array($inner) && (isset($inner['meals']) || self::isMealList($inner))) {
+                return self::unwrap($inner);
+            }
+        }
+
+        return $json;
+    }
+
+    /**
+     * Lista não vazia de objetos com `slot` (uma lista qualquer não vira plano).
+     *
+     * @param  array<mixed>  $json
+     */
+    private static function isMealList(array $json): bool
+    {
+        return $json !== [] && array_is_list($json) && is_array($json[0]) && isset($json[0]['slot']);
+    }
+
+    /** @return array<mixed> */
     private static function decode(string $content): array
     {
         $json = json_decode($content, true);

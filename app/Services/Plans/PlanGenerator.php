@@ -15,6 +15,7 @@ use App\Models\MealPlan;
 use App\Services\Foods\FoodFilter;
 use App\Services\Nutrition\MealScheduler;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 
 /** Pipeline da geração (integracao-ia.md §3.3): prompt → IA → parse → ajuste → validação → 2ª tentativa → persistência. */
 class PlanGenerator
@@ -56,6 +57,8 @@ class PlanGenerator
             ],
             'horarios' => $times + ['treino' => $training],
             'distribuicao_kcal' => PlanPrompt::DISTRIBUICAO_KCAL,
+            // v3: a conta já feita — modelos menores (Gemini Flash-Lite) erravam a proporção e estouravam o dia.
+            'meta_kcal_por_refeicao' => array_map(fn (float $parte) => (int) round($plan->target_kcal * $parte), PlanPrompt::DISTRIBUICAO_KCAL),
             'alimentos_permitidos' => $allowed->map(fn (Food $food) => [
                 'id' => $food->id, 'nome' => $food->name, 'grupo' => $food->group,
                 'kcal_100g' => $food->kcal_per_100g, 'prot_100g' => $food->protein_per_100g,
@@ -97,6 +100,8 @@ class PlanGenerator
                 return;
             }
 
+            // Só as regras que falharam (nunca o conteúdo da IA — RN44): é o que explica um AI_INVALID_RESPONSE.
+            Log::warning('plan.invalid_attempt', ['plan_id' => $plan->id, 'attempt' => $attempt, 'errors' => $errors]);
             $messages[] = ['role' => 'assistant', 'content' => $result->content];
             $messages[] = ['role' => 'user', 'content' => PlanPrompt::correction($errors)];
         }

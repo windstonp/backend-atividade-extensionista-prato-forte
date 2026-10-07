@@ -66,10 +66,13 @@ it('almoço e jantar levam carboidrato de prato (arroz, batata…), não aveia',
 it('o prompt manda a porção típica de cada alimento e a divisão das calorias', function () {
     $plano = app(PlanService::class)->requestGeneration(User::factory()->onboarded()->create())->fresh();
 
-    expect($plano->inputs['prompt_version'])->toBe(PlanPrompt::VERSION)->toBeGreaterThanOrEqual(2)
+    expect($plano->inputs['prompt_version'])->toBe(PlanPrompt::VERSION)->toBeGreaterThanOrEqual(3)
         ->and($plano->inputs['distribuicao_kcal'])->toEqual(PlanPrompt::DISTRIBUICAO_KCAL)
-        ->and($plano->inputs['alimentos_permitidos'][0])->toHaveKey('porcao_g');
-    fakeAi()->assertSent('plan', fn (array $mensagens) => expect($mensagens[0]['content'])->toContain('porcao_g')->toContain('distribuicao_kcal'));
+        ->and($plano->inputs['alimentos_permitidos'][0])->toHaveKey('porcao_g')
+        // v3: a meta de kcal de cada refeição já calculada (modelos menores erram a conta da proporção).
+        ->and($plano->inputs['meta_kcal_por_refeicao']['almoco'])->toBe((int) round($plano->target_kcal * 0.30))
+        ->and(array_sum($plano->inputs['meta_kcal_por_refeicao']))->toBeGreaterThanOrEqual($plano->target_kcal - 2);
+    fakeAi()->assertSent('plan', fn (array $mensagens) => expect($mensagens[0]['content'])->toContain('porcao_g')->toContain('meta_kcal_por_refeicao'));
 });
 
 it('café da manhã leva carboidrato de café (pão, aveia, tapioca), não arroz', function (Closure $pessoa) {
