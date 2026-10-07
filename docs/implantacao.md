@@ -22,6 +22,7 @@ Checklist para subir o app num servidor (RNF-OPE-01…05) e para a demonstraçã
 | `DB_*` | banco MySQL |
 | `MAIL_*` | SMTP gratuito: Gmail com senha de app ou Brevo (RNF-OPE-04) |
 | `AI_DRIVER` / `AI_BASE_URL` / `AI_API_KEY` | `openai` / URL do provedor / **chave nova**. A chave do protótipo Node foi exposta no repositório antigo: revogue no painel da aimlapi.com antes de tudo (RN44). |
+| `AI_MODEL_FALLBACK` / `AI_TIMEOUT` | `gemini-flash-lite-latest` / `25`: modelo reserva quando o principal responde 429/5xx ou estoura o tempo |
 | `AI_MODEL_PLAN` / `AI_MODEL_CHAT` | Gemini (Google AI Studio, camada gratuita): `AI_BASE_URL=https://generativelanguage.googleapis.com/v1beta/openai` e `gemini-3.5-flash-lite` nos dois. O `gemini-2.5-*` não é mais liberado para chaves novas; os Flash maiores (3.5/3.8) davam 503 por alta demanda em 2026-10-07. |
 | `VAPID_SUBJECT` / `VAPID_PUBLIC_KEY` / `VAPID_PRIVATE_KEY` | `php artisan webpush:vapid` grava as duas chaves no `.env` |
 | `VALIDACAO_RODADA` / `VALIDACAO_INICIO` | rodada da validação e a data de abertura |

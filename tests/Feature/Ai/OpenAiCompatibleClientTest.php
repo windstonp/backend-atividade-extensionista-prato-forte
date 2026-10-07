@@ -6,6 +6,7 @@ use App\Ai\OpenAiCompatibleClient;
 use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 $options = fn () => new AiOptions(purpose: 'plan', model: 'gpt-x', maxTokens: 100, json: true);
 
@@ -62,4 +63,56 @@ it('junta as mensagens system do começo numa só (o Gemini seguia só a última
         ['role' => 'assistant', 'content' => 'olá'],
         ['role' => 'user', 'content' => 'e aí?'],
     ]);
+});
+
+it('modelo sobrecarregado (503/429) passa para o modelo reserva e registra o motivo do provedor', function () use ($options) {
+    Log::spy();
+    Http::fakeSequence('ia.test/*')
+        ->push(['error' => ['code' => 503, 'message' => 'This model is currently experiencing high demand.', 'status' => 'UNAVAILABLE']], 503)
+        ->push(['choices' => [['message' => ['content' => '{"ok":true}']]], 'usage' => []]);
+
+    $result = (new OpenAiCompatibleClient('https://ia.test/v1', 'k', 30, 'modelo-reserva'))->chat([['role' => 'user', 'content' => 'oi']], $options());
+
+    expect($result->content)->toBe('{"ok":true}');
+    $modelos = [];
+    Http::assertSent(function (Request $request) use (&$modelos) {
+        $modelos[] = $request['model'];
+
+        return true;
+    });
+    expect($modelos)->toBe(['gpt-x', 'modelo-reserva']);
+    Log::shouldHaveReceived('warning')->withArgs(fn (string $msg, array $ctx) => $msg === 'ai.provider_error'
+        && $ctx['status'] === 503 && $ctx['model'] === 'gpt-x' && str_contains($ctx['reason'], 'high demand'));
+});
+
+it('sem modelo reserva, o 503 continua virando AiUnavailableException', function () use ($options) {
+    Http::fake(['ia.test/*' => Http::response(['error' => ['message' => 'busy']], 503)]);
+
+    expect(fn () => (new OpenAiCompatibleClient('https://ia.test/v1', 'k', 30))->chat([['role' => 'user', 'content' => 'oi']], $options()))
+        ->toThrow(AiUnavailableException::class);
+    Http::assertSentCount(1);
+});
+
+it('erro que não é de sobrecarga (400) não tenta o reserva', function () use ($options) {
+    Http::fake(['ia.test/*' => Http::response(['error' => ['message' => 'bad']], 400)]);
+
+    expect(fn () => (new OpenAiCompatibleClient('https://ia.test/v1', 'k', 30, 'modelo-reserva'))->chat([['role' => 'user', 'content' => 'oi']], $options()))
+        ->toThrow(AiUnavailableException::class);
+    Http::assertSentCount(1);
+});
+
+it('modelo principal que estoura o tempo também passa para o reserva', function () use ($options) {
+    $chamadas = 0;
+    Http::fake(function (Request $request) use (&$chamadas) {
+        $chamadas++;
+        if ($request['model'] === 'gpt-x') {
+            throw new ConnectionException('cURL error 28: Operation timed out after 30001 milliseconds');
+        }
+
+        return Http::response(['choices' => [['message' => ['content' => 'ok']]], 'usage' => []]);
+    });
+
+    $result = (new OpenAiCompatibleClient('https://ia.test/v1', 'k', 30, 'modelo-reserva'))->chat([['role' => 'user', 'content' => 'oi']], $options());
+
+    expect($result->content)->toBe('ok');
 });

@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
         // Toda chamada passa pelo log sem conteúdo (RN44). Sem AI_DRIVER=openai, a IA é a falsa.
         $this->app->singleton(AiClient::class, fn ($app) => new LoggingAiClient(
             config('services.ai.driver') === 'openai'
-                ? new OpenAiCompatibleClient((string) config('services.ai.base_url'), config('services.ai.key'), (int) config('services.ai.timeout'))
+                ? new OpenAiCompatibleClient((string) config('services.ai.base_url'), config('services.ai.key'), (int) config('services.ai.timeout'), config('services.ai.model_fallback') ?: null)
                 : $app->make(FakeAiClient::class),
         ));
     }

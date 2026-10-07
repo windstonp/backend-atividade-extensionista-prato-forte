@@ -42,6 +42,8 @@ return [
         'key' => env('AI_API_KEY'),
         'model_plan' => env('AI_MODEL_PLAN', 'gpt-4o-mini'),
         'model_chat' => env('AI_MODEL_CHAT', 'gpt-4o-mini'),
+        // Modelo reserva quando o principal responde 429/5xx (o Gemini dá 503 em picos de demanda).
+        'model_fallback' => env('AI_MODEL_FALLBACK'),
         'timeout' => (int) env('AI_TIMEOUT', 60),
         // Só E2E: e-mails cuja primeira geração de plano falha (E2E-07).
         'fake_fail_plan_for' => array_values(array_filter(explode(',', (string) env('AI_FAKE_FAIL_PLAN_FOR', '')))),
