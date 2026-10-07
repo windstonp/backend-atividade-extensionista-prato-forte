@@ -24,3 +24,8 @@ it('soma partes e calcula o restante sem ficar negativo', function () {
         ->and(DayTotals::remaining($planejado, $consumido))->toBe(['calories' => 0, 'protein' => 30.9, 'carbs' => 0.0, 'fat' => 2.2])
         ->and(DayTotals::sum([]))->toBe(['calories' => 0, 'protein' => 0.0, 'carbs' => 0.0, 'fat' => 0.0]);
 });
+
+it('porção por 100 g ou 100 ml com o arredondamento do dia', function () {
+    expect(DayTotals::portion(61, 2.9, 4.3, 3.2, 200))
+        ->toBe(['calories' => 122, 'protein' => 5.8, 'carbs' => 8.6, 'fat' => 6.4]);
+});

@@ -12,3 +12,9 @@ it('escreve a porção em gramas e em medida caseira', function (float $grams, ?
     'sem medida caseira' => [100, null, null, null, '100 g'],
     'gramas quebradas' => [58.5, null, null, null, '58,5 g'],
 ]);
+
+it('líquido sai em ml com a medida caseira', function () {
+    expect((new PortionFormatter)->format(200, 'copo', 'copos', 200, 'ml'))->toBe('200 ml, mais ou menos 1 copo')
+        ->and((new PortionFormatter)->format(150, null, null, null, 'ml'))->toBe('150 ml')
+        ->and((new PortionFormatter)->format(150, null, null, null))->toBe('150 g');
+});

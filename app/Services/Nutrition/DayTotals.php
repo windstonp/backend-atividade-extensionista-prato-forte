@@ -12,20 +12,30 @@ use App\Models\Food;
 final class DayTotals
 {
     /**
-     * Macros de uma porção: kcal inteira, macros com 1 casa.
+     * Macros de uma porção a partir de valores por 100 (g ou ml): kcal inteira, macros com 1 casa.
+     *
+     * @return Macros
+     */
+    public static function portion(float $kcal, float $protein, float $carbs, float $fat, float $amount): array
+    {
+        $factor = $amount / 100;
+
+        return [
+            'calories' => (int) round($kcal * $factor),
+            'protein' => round($protein * $factor, 1),
+            'carbs' => round($carbs * $factor, 1),
+            'fat' => round($fat * $factor, 1),
+        ];
+    }
+
+    /**
+     * Macros de um item do catálogo (por 100 g ou 100 ml — RN47).
      *
      * @return Macros
      */
     public static function item(Food $food, float $grams): array
     {
-        $factor = $grams / 100;
-
-        return [
-            'calories' => (int) round($food->kcal_per_100g * $factor),
-            'protein' => round($food->protein_per_100g * $factor, 1),
-            'carbs' => round($food->carbs_per_100g * $factor, 1),
-            'fat' => round($food->fat_per_100g * $factor, 1),
-        ];
+        return self::portion($food->kcal_per_100g, $food->protein_per_100g, $food->carbs_per_100g, $food->fat_per_100g, $grams);
     }
 
     /**

@@ -4,22 +4,23 @@ namespace App\Services\Nutrition;
 
 use App\Models\Food;
 
-/** "150 g, mais ou menos 6 colheres de sopa" — gramas e medida caseira (meia em meia). Puro. */
+/** "150 g, mais ou menos 6 colheres de sopa" (ou "200 ml, …") — quantidade e medida caseira (meia em meia). Puro. */
 final class PortionFormatter
 {
-    public function forFood(Food $food, float $grams): string
+    public function forFood(Food $food, float $amount): string
     {
-        return $this->format($grams, $food->unit_label, $food->unit_label_plural, $food->unit_grams);
+        return $this->format($amount, $food->unit_label, $food->unit_label_plural, $food->unit_grams, $food->measure ?? 'g');
     }
 
-    public function format(float $grams, ?string $unit, ?string $unitPlural, ?float $unitGrams): string
+    /** Quantidade na medida do alimento (g ou ml — RN47) e a medida caseira. */
+    public function format(float $amount, ?string $unit, ?string $unitPlural, ?float $unitGrams, string $measure = 'g'): string
     {
-        $text = $this->number($grams).' g';
+        $text = $this->number($amount).' '.$measure;
         if ($unit === null || $unitGrams === null || $unitGrams <= 0) {
             return $text;
         }
 
-        $count = round($grams / $unitGrams * 2) / 2;
+        $count = round($amount / $unitGrams * 2) / 2;
         if ($count < 1) {
             return $text;
         }
