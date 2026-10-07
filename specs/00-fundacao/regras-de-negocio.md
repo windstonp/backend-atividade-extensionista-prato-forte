@@ -147,7 +147,7 @@ Onde: `PlanService::activate` (transação), `DayMaterializer::refreshPending`.
 - **Hoje**: na primeira leitura, o dia é copiado do plano ativo para `day_meals`/`day_meal_items`.
 - **Futuro** (até +6 dias): retornado como prévia do plano ativo, sem gravar, somente leitura.
 - **Passado** (até −90 dias): retorna o que foi gravado; se nada foi gravado, dia vazio. Somente leitura.
-- **Ontem** ✅ D13: se não foi materializado, a leitura devolve a prévia do plano ativo (como o futuro) com `editable: true`; a **primeira escrita** de registro materializa ontem a partir do plano ativo (nomes e notas pelo dia da semana de ontem, RN15).
+- **Ontem** ✅ D13: editável para o registro; se não foi materializado, é gravado na **primeira leitura** a partir do plano ativo (nomes e notas pelo dia da semana de ontem, RN15) — a sugestão precisa de ids para o "+" (Plano 11C).
 - Sem plano ativo: `409 NO_ACTIVE_PLAN` (com status do último plano, para a tela mostrar "gerando" ou "tentar de novo").
 Onde: `DayMaterializer`.
 

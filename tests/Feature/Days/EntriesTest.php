@@ -99,17 +99,17 @@ it('o "Desfazer" da remoção devolve o vínculo com a sugestão e a quantidade 
         ->assertCreated()->assertJsonPath('data.meals.2.entries.0.amount', 150)->assertJsonPath('data.meals.2.items.0.registered', true);
 });
 
-it('ontem sem nada gravado vem em prévia editável e a primeira escrita grava ontem uma vez (CA39)', function () {
+it('ontem é gravado na primeira leitura, com ids na sugestão para o "+", e uma vez só (CA39, RN22)', function () {
     $ontem = $this->getJson('/api/v1/days/2026-10-06')->assertOk()
-        ->assertJsonPath('data.editable', true)->assertJsonPath('data.materialized', false)->json('data');
-    $comida = Food::where('slug', 'arroz-branco-cozido')->sole();
+        ->assertJsonPath('data.editable', true)->assertJsonPath('data.materialized', true)->json('data');
+    expect($ontem['meals'][4]['items'][0]['id'])->toBeInt();
 
-    $this->postJson('/api/v1/days/2026-10-06/meals/jantar/entries', ['entries' => [['food_id' => $comida->id, 'amount' => 100]]])
-        ->assertCreated()->assertJsonPath('data.materialized', true)->assertJsonPath('data.date', '2026-10-06');
-    $this->postJson('/api/v1/days/2026-10-06/meals/jantar/entries', ['entries' => [['food_id' => $comida->id, 'amount' => 50]]])->assertCreated();
+    $this->getJson('/api/v1/days/2026-10-06')->assertOk();
+    $this->postJson('/api/v1/days/2026-10-06/meals/jantar/entries', ['entries' => [['suggestion_item_id' => $ontem['meals'][4]['items'][0]['id']]]])
+        ->assertCreated()->assertJsonPath('data.date', '2026-10-06')->assertJsonPath('data.meals.4.done', true);
 
     expect(DayMeal::whereDate('date', '2026-10-06')->count())->toBe(count($ontem['meals']))
-        ->and(MealEntry::count())->toBe(2);
+        ->and(MealEntry::count())->toBe(1);
 });
 
 it('anteontem e amanhã não aceitam registro (CA39, Review Focus 3)', function (string $data) {

@@ -169,7 +169,7 @@ Mudanças em relação à spec 03: **removido** `PATCH /days/{date}/meals/{slot}
   - `calories`/`macros` da refeição = a **meta** da refeição (soma da sugestão, RN48);
   - `done` = a refeição tem pelo menos um registro (RN46);
   - novos: `entries` (o que foi comido), `consumed` (soma de `entries`, RN24), `status` e `goal_met` (RN48).
-- `editable` = data é hoje ou ontem (RN23). Ontem não materializado vem com `materialized: false` e a sugestão em prévia; a primeira escrita materializa (RN22).
+- `editable` = data é hoje ou ontem (RN23). Ontem não materializado é gravado na primeira leitura, como hoje (RN22), para a sugestão ter ids.
 - `status`: por RN48 — `calories`: `below` · `ok` · `above`; `protein`: `below` · `ok`; `fat`: `ok` · `above`; `null` quando nada foi registrado. `goal_met` (bool) acompanha `status`.
 
 ### `POST /api/v1/days/{date}/meals/{slot}/entries`
@@ -264,24 +264,24 @@ Mudanças em relação à spec 03: **removido** `PATCH /days/{date}/meals/{slot}
 - Front: `lib/registro.ts` (status RN48 espelhado para otimismo; texto da situação; atalhos de medida caseira a partir de `household`/`portion`).
 
 ### Integration Tests
-- Back: `EntriesTest` (criar por sugestão/catálogo/próprio; lote; `ALREADY_REGISTERED`; editar; remover; `done_at`; hoje e ontem; anteontem 409; posse 404; ontem não materializado materializa na primeira escrita); `FoodSearchEndpointTest`; `CustomFoodsTest` (criar, editar, apagar lógico; nomes iguais; posse; edição não muda registros antigos); `DayResourceShapeTest` (formato novo); `ConsumedFromEntriesTest` (Progress, WeeklySummary, TipSelector, NutriContext e exportação usam registros); `MigrateDoneMealsToEntriesTest` (CA44); `CatalogSeederTest` (≥ 700, `measure`, slugs antigos preservados, `in_plans`).
+- Back: `EntriesTest` (criar por sugestão/catálogo/próprio; lote; `ALREADY_REGISTERED`; editar; remover; `done_at`; hoje e ontem; anteontem 409; posse 404; ontem materializa na primeira leitura); `FoodSearchEndpointTest`; `CustomFoodsTest` (criar, editar, apagar lógico; nomes iguais; posse; edição não muda registros antigos); `DayResourceShapeTest` (formato novo); `ConsumedFromEntriesTest` (Progress, WeeklySummary, TipSelector, NutriContext e exportação usam registros); `MigrateDoneMealsToEntriesTest` (CA44); `CatalogSeederTest` (≥ 700, `measure`, slugs antigos preservados, `in_plans`).
 - Front (MSW): Detalhe — "+" otimista e reversão em erro; "Adicionar os n"; busca → quantidade → adicionar; sem resultado → cadastrar → quantidade; editar e remover com "Desfazer"; ontem sem "Trocar"; Hoje sem botão ✓; Dieta com ontem tocável.
 
 ### E2E Tests
 - **E2E-04 (reescrito):** registrar pela sugestão e pela busca; recarregar mantém.
-- **E2E-08 (novo):** cadastrar alimento próprio e registrar; outro usuário não vê.
-- **E2E-09 (novo):** registrar o jantar de ontem.
+- **E2E-13 (novo):** cadastrar alimento próprio e registrar; outro usuário não vê.
+- **E2E-14 (novo):** registrar o jantar de ontem.
 - E2E-05/E2E-06 continuam (troca e alergia na **sugestão**).
 
 ## 9. Definition of Done
 ```
-[ ] CA31–CA44 atendidos
+[x] CA31–CA45 atendidos
 [x] Migrations: meal_entries, custom_foods (com deleted_at), foods.measure/in_plans, day_meals.done_at com o novo sentido (dados antigos convertidos)
 [x] Catálogo ≥ 700 alimentos (TACO 4ª ed. + Tabela de Composição Nutricional do IBGE/POF 2008–2009), P5 atualizado para conferência
 [x] Endpoints de registro, busca, recentes e alimento próprio; PATCH meals removido; Policies; feature tests com posse
 [x] Consumido vem dos registros em Hoje, Evolução, Nutri, notificações e exportação
-[ ] Detalhe reescrito (régua, registros, sugestão com "+"), folha Adicionar alimento, Hoje e Dieta ajustados
-[ ] Componentes novos com stories e play; axe limpo; teclado na folha
-[ ] E2E-04 reescrito, E2E-08 e E2E-09 verdes em Chromium e WebKit
+[x] Detalhe reescrito (régua, registros, sugestão com "+"), folha Adicionar alimento, Hoje e Dieta ajustados
+[x] Componentes novos com stories e play; axe limpo; teclado na folha
+[x] E2E-04 reescrito, E2E-13 e E2E-14 verdes em Chromium e WebKit
 [x] Specs 03, 04, 05, 06 e 07 atualizadas onde citam "feita"
 ```

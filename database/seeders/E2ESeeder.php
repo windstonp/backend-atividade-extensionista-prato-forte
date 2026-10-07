@@ -41,7 +41,7 @@ class E2ESeeder extends Seeder
             }
 
             // 04B: uma conta por teste que muda estado, para não passar do limite de login.
-            foreach ([['Dora Dias', 'dia'], ['Ana Alves', 'alergia'], ['Mauro Mendes', 'mudanca'], ['Nara Nunes', 'nutri']] as [$nome, $conta]) {
+            foreach ([['Dora Dias', 'dia'], ['Ana Alves', 'alergia'], ['Mauro Mendes', 'mudanca'], ['Nara Nunes', 'nutri'], ['Rui Rocha', 'registro'], ['Pia Prates', 'proprio']] as [$nome, $conta]) {
                 $user = User::factory()->onboarded()->create(['name' => $nome, 'email' => "{$conta}-{$navegador}@e2e.pratoforte.test"]);
                 if ($conta === 'alergia') {
                     $user->restrictions()->sync([Restriction::where('slug', 'castanhas')->sole()->id]);

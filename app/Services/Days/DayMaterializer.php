@@ -54,9 +54,10 @@ class DayMaterializer
 
         $plan = $user->activePlan()->with('meals.items.food')->first() ?? throw $this->noActivePlan($user);
 
-        if (! $date->isToday()) {
-            return $this->build($user, $plan, $date, save: false); // ontem sem registro e futuro: prévia (RN22)
+        if (! $date->isToday() && ! $date->isYesterday()) {
+            return $this->build($user, $plan, $date, save: false); // futuro: prévia, sem gravar (RN22)
         }
+        // Hoje e ontem (editável, D13) são gravados na primeira leitura: a sugestão precisa de ids para o "+".
 
         try {
             DB::transaction(fn () => $this->build($user, $plan, $date, save: true));
@@ -113,21 +114,12 @@ class DayMaterializer
     }
 
     /**
-     * Refeições onde se vai escrever: ontem ainda não gravado é gravado agora (RN22, D13), uma vez só.
+     * Refeições onde se vai escrever (hoje ou ontem): `meals()` já as grava na primeira leitura.
      *
      * @return Collection<int, DayMeal>
      */
     public function mealsForWriting(User $user, CarbonImmutable $date): Collection
     {
-        if (! $date->isToday() && $this->stored($user, $date)->isEmpty()) {
-            $plan = $user->activePlan()->with('meals.items.food')->first() ?? throw $this->noActivePlan($user);
-            try {
-                DB::transaction(fn () => $this->build($user, $plan, $date, save: true));
-            } catch (UniqueConstraintViolationException) {
-                // Outra aba gravou ao mesmo tempo.
-            }
-        }
-
         return $this->meals($user, $date);
     }
 
