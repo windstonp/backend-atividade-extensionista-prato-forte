@@ -55,11 +55,13 @@ class PlanGenerator
                 'carboidrato_g' => $plan->target_carbs_g, 'gordura_g' => $plan->target_fat_g,
             ],
             'horarios' => $times + ['treino' => $training],
+            'distribuicao_kcal' => PlanPrompt::DISTRIBUICAO_KCAL,
             'alimentos_permitidos' => $allowed->map(fn (Food $food) => [
                 'id' => $food->id, 'nome' => $food->name, 'grupo' => $food->group,
                 'kcal_100g' => $food->kcal_per_100g, 'prot_100g' => $food->protein_per_100g,
                 'carb_100g' => $food->carbs_per_100g, 'gord_100g' => $food->fat_per_100g,
                 'pantry' => in_array($food->id, $pantry, true),
+                'porcao_g' => $food->typical_portion_g,
             ])->values()->all(),
         ];
         $plan->update(['inputs' => $inputs + ['prompt_version' => PlanPrompt::VERSION]]);

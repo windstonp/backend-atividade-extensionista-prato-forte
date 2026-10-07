@@ -5,7 +5,7 @@ namespace App\Services\Plans;
 use App\Models\Food;
 use Illuminate\Support\Collection;
 
-/** RN18 — escala uniforme das porções do dia para bater a meta de kcal. Puro. */
+/** RN18 — escala uniforme das porções do dia para bater a meta de kcal, sem passar de 2,5× a porção de costume. Puro. */
 final class PortionAdjuster
 {
     private const MAX_DEVIATION = 0.25;
@@ -39,10 +39,16 @@ final class PortionAdjuster
 
         return array_map(fn (array $meal) => [
             'slot' => $meal['slot'],
-            'items' => array_map(fn (array $item) => [
-                'food_id' => $item['food_id'],
-                'grams' => max(5.0, round($item['grams'] * $factor / 5) * 5),
-            ], $meal['items']),
+            'items' => array_map(function (array $item) use ($foods, $factor) {
+                $grams = $item['grams'] * $factor;
+                // Escalar não infla porção além de 2,5× a de costume (mesma regra do prompt).
+                $portion = $foods->get($item['food_id'])?->typical_portion_g;
+                if ($portion > 0 && $factor > 1) {
+                    $grams = min($grams, max($item['grams'], 2.5 * $portion));
+                }
+
+                return ['food_id' => $item['food_id'], 'grams' => max(5.0, round($grams / 5) * 5)];
+            }, $meal['items']),
         ], $meals);
     }
 }

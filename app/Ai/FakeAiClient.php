@@ -2,8 +2,10 @@
 
 namespace App\Ai;
 
+use App\Ai\Prompts\PlanPrompt;
 use App\Models\Food;
 use App\Models\User;
+use Closure;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use LogicException;
@@ -106,8 +108,9 @@ final class FakeAiClient implements AiClient
     }
 
     /**
-     * Um plano válido a partir do prompt: escolhe alimentos permitidos por grupo (cozinha primeiro),
-     * ajusta as proteínas para a meta de proteína e os carboidratos/frutas para a meta de kcal.
+     * Um plano plausível a partir do prompt, refeição por refeição: cada uma recebe sua parte das kcal
+     * (`distribuicao_kcal`) e da proteína; as porções ficam entre 0,5× e 2,5× a de costume (`porcao_g`) e,
+     * quando não basta, entra mais um alimento do grupo. Almoço e jantar levam carboidrato de prato.
      *
      * @param  list<array{role: string, content: string}>  $messages
      */
@@ -120,37 +123,48 @@ final class FakeAiClient implements AiClient
                 break;
             }
         }
-        /** @var list<array{id: int, grupo: string, kcal_100g: float, prot_100g: float, pantry: bool}> $foods */
+        /** @var list<array{id: int, grupo: string, kcal_100g: float, prot_100g: float, pantry: bool, porcao_g?: float|null}> $foods */
         $foods = $prompt['alimentos_permitidos'] ?? [];
         usort($foods, fn (array $a, array $b) => [! $a['pantry'], $a['id']] <=> [! $b['pantry'], $b['id']]);
         $targetKcal = (float) ($prompt['metas_diarias']['kcal'] ?? 2000);
         $targetProtein = (float) ($prompt['metas_diarias']['proteina_g'] ?? 100);
+        /** @var array<string, float> $shares */
+        $shares = $prompt['distribuicao_kcal'] ?? PlanPrompt::DISTRIBUICAO_KCAL;
 
         $used = [];
-        $plan = [];
+        $meals = [];
         foreach (self::MEALS as $slot => $wanted) {
-            $items = [];
-            foreach ($wanted as $groups) {
+            $pick = function (array $groups, array $items) use ($foods, $slot, &$used): ?array {
                 $candidates = array_filter($foods, fn (array $f) => in_array($f['grupo'], $groups, true) && ! isset($items[$f['id']]));
+                if (in_array($slot, ['almoco', 'jantar'], true)) {
+                    // Carboidrato de prato: porção de costume de pelo menos 100 g (arroz, batata…), não aveia.
+                    $prato = array_filter($candidates, fn (array $f) => $f['grupo'] !== 'carboidrato' || self::portion($f) >= 100);
+                    $candidates = $prato ?: $candidates;
+                }
                 if ($candidates === []) {
-                    continue;
+                    return null;
                 }
                 usort($candidates, fn (array $a, array $b) => ($used[$a['id']] ?? 0) <=> ($used[$b['id']] ?? 0));
-                $chosen = $candidates[0];
-                $items[$chosen['id']] = ['food' => $chosen, 'grams' => 100.0];
-                $used[$chosen['id']] = ($used[$chosen['id']] ?? 0) + 1;
+                $used[$candidates[0]['id']] = ($used[$candidates[0]['id']] ?? 0) + 1;
+
+                return $candidates[0];
+            };
+
+            /** @var array<int, array{food: array<string, mixed>, grams: float}> $items */
+            $items = [];
+            foreach ($wanted as $groups) {
+                if ($food = $pick($groups, $items)) {
+                    $items[$food['id']] = ['food' => $food, 'grams' => self::portion($food)];
+                }
             }
             if ($items === [] && $foods !== []) {
-                $items[$foods[0]['id']] = ['food' => $foods[0], 'grams' => 100.0];
+                $items[$foods[0]['id']] = ['food' => $foods[0], 'grams' => self::portion($foods[0])];
             }
-            $plan[$slot] = $items;
-        }
 
-        $this->scale($plan, self::PROTEIN_GROUPS, 'prot_100g', $targetProtein * 1.02);
-        $this->scale($plan, self::FILL_GROUPS, 'kcal_100g', $targetKcal);
+            $share = (float) ($shares[$slot] ?? 0.2);
+            $this->fillMeal($items, self::PROTEIN_GROUPS, 'prot_100g', $targetProtein * 1.05 * $share, $pick);
+            $this->fillMeal($items, self::FILL_GROUPS, 'kcal_100g', $targetKcal * $share, $pick);
 
-        $meals = [];
-        foreach ($plan as $slot => $items) {
             $meals[] = ['slot' => $slot, 'items' => array_values(array_map(
                 fn (array $item) => ['food_id' => $item['food']['id'], 'grams' => $item['grams']],
                 $items,
@@ -161,32 +175,49 @@ final class FakeAiClient implements AiClient
     }
 
     /**
-     * Escala os itens dos grupos dados para que o total do nutriente chegue ao alvo.
+     * Porção de costume do alimento no prompt (100 g quando não vier).
      *
-     * @param  array<string, array<int, array{food: array<string, mixed>, grams: float}>>  $plan
+     * @param  array<string, mixed>  $food
+     */
+    private static function portion(array $food): float
+    {
+        return (float) ($food['porcao_g'] ?? 0) > 0 ? (float) $food['porcao_g'] : 100.0;
+    }
+
+    /**
+     * Ajusta os itens dos grupos dados para o total do nutriente na refeição chegar ao alvo, com cada porção
+     * entre 0,5× e 2,5× a de costume. Se ainda faltar, acrescenta outro alimento do grupo (até 6 itens).
+     *
+     * @param  array<int, array{food: array<string, mixed>, grams: float}>  $items
      * @param  list<string>  $groups
      */
-    private function scale(array &$plan, array $groups, string $key, float $target): void
+    private function fillMeal(array &$items, array $groups, string $key, float $target, Closure $pick): void
     {
-        $inGroups = 0.0;
-        $others = 0.0;
-        foreach ($plan as $items) {
+        $amount = fn (array $item) => (float) $item['food'][$key] * $item['grams'] / 100;
+        for ($tentativa = 0; $tentativa < 3; $tentativa++) {
+            $inGroups = 0.0;
+            $others = 0.0;
             foreach ($items as $item) {
-                $amount = (float) $item['food'][$key] * $item['grams'] / 100;
-                in_array($item['food']['grupo'], $groups, true) ? $inGroups += $amount : $others += $amount;
+                in_array($item['food']['grupo'], $groups, true) ? $inGroups += $amount($item) : $others += $amount($item);
             }
-        }
-        if ($inGroups <= 0) {
-            return;
-        }
-
-        $factor = max(0.0, $target - $others) / $inGroups;
-        foreach ($plan as &$items) {
-            foreach ($items as &$item) {
-                if (in_array($item['food']['grupo'], $groups, true)) {
-                    $item['grams'] = max(5.0, min(450.0, round($item['grams'] * $factor / 5) * 5));
+            if ($inGroups > 0) {
+                $factor = max(0.0, $target - $others) / $inGroups;
+                foreach ($items as &$item) {
+                    if (in_array($item['food']['grupo'], $groups, true)) {
+                        $portion = self::portion($item['food']);
+                        $item['grams'] = max(5.0, round(min(2.5 * $portion, max(0.5 * $portion, $item['grams'] * $factor)) / 5) * 5);
+                    }
                 }
+                unset($item);
             }
+
+            $total = array_sum(array_map($amount, $items));
+            /** @var array<string, mixed>|null $extra */
+            $extra = $total >= 0.99 * $target || count($items) >= 6 ? null : $pick($groups, $items);
+            if ($extra === null) {
+                return;
+            }
+            $items[(int) $extra['id']] = ['food' => $extra, 'grams' => self::portion($extra)];
         }
     }
 

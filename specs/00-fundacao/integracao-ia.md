@@ -44,10 +44,13 @@ final class AiResult    { public function __construct(public string $content, pu
   "pessoa": { "objetivo": "ganhar-massa", "sexo": "feminino", "idade": 27, "altura_cm": 164, "peso_kg": 58.4, "atividade": "moderado", "trabalho": "sentada", "almoco": "marmita" },
   "metas_diarias": { "kcal": 2250, "proteina_g": 115, "carboidrato_g": 285, "gordura_g": 60 },
   "horarios": { "cafe": "07:00", "lanche": "10:00", "almoco": "12:30", "pre-treino": "17:30", "jantar": "20:30", "treino": "19:00" },
-  "alimentos_permitidos": [ { "id": 12, "nome": "Arroz branco cozido", "grupo": "carboidrato", "kcal_100g": 128, "prot_100g": 2.5, "carb_100g": 28.1, "gord_100g": 0.2, "pantry": true } ],
+  "distribuicao_kcal": { "cafe": 0.25, "lanche": 0.10, "almoco": 0.30, "pre-treino": 0.10, "jantar": 0.25 },
+  "alimentos_permitidos": [ { "id": 12, "nome": "Arroz branco cozido", "grupo": "carboidrato", "kcal_100g": 128, "prot_100g": 2.5, "carb_100g": 28.1, "gord_100g": 0.2, "pantry": true, "porcao_g": 150 } ],
   "formato_resposta": { "meals": [ { "slot": "cafe", "items": [ { "food_id": 0, "grams": 0 } ] } ] }
 }
 ```
+
+🟡 Prompt versão 2 (Plano 10C): `porcao_g` é a porção de costume do catálogo; o system pede porções entre 0,5× e 2,5× dela (acrescentar outro alimento em vez de inflar a porção), a divisão de `distribuicao_kcal` (sugestão técnica, não vem do documento) e carboidrato de prato no almoço e no jantar. A `FakeAiClient` segue as mesmas regras.
 Nome, e-mail e texto livre do usuário **não** são enviados (minimização — ver `seguranca.md`). "Outras restrições" já foram aplicadas no filtro (RN16) e não vão ao prompt.
 
 ### 3.2 Contrato de resposta (`PlanResponse`)

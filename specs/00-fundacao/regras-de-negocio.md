@@ -129,7 +129,7 @@ A resposta da IA é aceita somente se:
 1. JSON válido no contrato (`integracao-ia.md`);
 2. exatamente os 5 slots, sem repetição;
 3. cada refeição com 1 a 6 itens; cada item com `food_id` permitido (RN16) e 5–600 g;
-4. depois do `PortionAdjuster` (escala uniforme das porções do dia para bater a meta de kcal, se o desvio for ≤ 25%; porções arredondadas a 5 g), total de kcal a ±10% da meta e proteína ≥ 90% da meta.
+4. depois do `PortionAdjuster` (escala uniforme das porções do dia para bater a meta de kcal, se o desvio for ≤ 25%; porções arredondadas a 5 g; ao aumentar, nenhuma porção passa de 2,5× a de costume, `typical_portion_g` — 🟡 Plano 10C), total de kcal a ±10% da meta e proteína ≥ 90% da meta.
 Falhou: **1 nova tentativa**, enviando à IA a lista de erros. Falhou de novo: plano `failed` com `failure_reason`.
 Onde: `GeneratePlanJob` → `PlanGenerator` → `PortionAdjuster` → `PlanValidator`.
 
