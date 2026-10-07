@@ -19,7 +19,7 @@
 - Desligar todos os avisos **não** apaga a inscrição (apagada só no logout ou se o serviço de push recusar).
 
 ### RF27 — Lembrete de refeição
-15 min antes de cada refeição de hoje não feita, notificação "{Refeição} às {hora}" / "{resumo}"; ao tocar, abre `/dieta/{slot}`. Regras: RN38.
+15 min antes de cada refeição de hoje não feita (sem registro — RN46, D13), notificação "{Refeição} às {hora}" / "{resumo}"; ao tocar, abre `/dieta/{slot}`. Regras: RN38.
 
 ### RF28 — Resumo da semana
 Domingo 20:00: "Sua semana no Prato Forte" / "{n} de 7 dias completos · média de {p} g de proteína{ · peso {+/-x} kg}". Toque abre `/evolucao`. Só para quem teve ao menos 1 refeição marcada na semana.
@@ -29,7 +29,7 @@ Terça e sexta 18:00, no máximo 2 por semana, somente se uma regra se aplica (s
 | Regra | Texto |
 |---|---|
 | Proteína média dos últimos 7 dias < 90% da meta | "Faltou proteína nesta semana. Um ovo a mais no café já ajuda." |
-| Mesma refeição ficou sem marcar ≥ 3 vezes nos últimos 7 dias | "O {refeição} ficou de fora {n} vezes esta semana. Quer pedir ao Nutri uma opção mais prática?" |
+| Mesma refeição ficou sem registro ≥ 3 vezes nos últimos 7 dias | "O {refeição} ficou de fora {n} vezes esta semana. Quer pedir ao Nutri uma opção mais prática?" |
 | Meta definida e nenhuma pesagem há ≥ 7 dias | "Faz uma semana sem pesagem. Amanhã cedo, antes do café?" |
 | Sequência ≥ 5 dias completos | "{n} dias seguidos com tudo feito. Segue assim!" |
 Toque abre a tela relacionada (`/nutri`, `/evolucao/peso`, `/evolucao`).
@@ -86,7 +86,7 @@ Logout ─▶ DELETE /push-subscriptions {endpoint} ─▶ POST /logout
 | Comando | Agenda | Seleção | Notificação | `reference` (anti-duplicata) |
 |---|---|---|---|---|
 | `SendMealReminders` | a cada minuto | onboarding concluído + `notify_meal_reminders` + ≥ 1 inscrição; refeições de hoje (dia materializado ou prévia do plano ativo) com `time − 15 min` = minuto atual, não feitas; dentro da janela acordado | `MealReminder` | `{data}:{slot}` |
-| `SendWeeklySummary` | domingo 20:00 | `notify_weekly_summary` + inscrição + ≥ 1 refeição feita na semana | `WeeklySummary` | `{ano}-W{semana}` |
+| `SendWeeklySummary` | domingo 20:00 | `notify_weekly_summary` + inscrição + ≥ 1 refeição feita (com registro) na semana; a proteína média soma os registros | `WeeklySummary` | `{ano}-W{semana}` |
 | `SendNutriTips` | ter e sex 18:00 | `notify_tips` + inscrição + regra aplicável + < 2 dicas na semana | `NutriTip` | `{ano}-W{semana}:{dia}` |
 
 - Processamento em lotes (`chunkById(200)`); notificações `ShouldQueue` na fila `default`.

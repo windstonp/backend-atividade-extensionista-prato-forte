@@ -11,7 +11,7 @@
 | **Responder no Nutri** | cada pergunta | sim — dentro do request (timeout 60 s) | JSON `NutriResponse` | parse + `NutriActionValidator` (RN31) |
 | **Resumir conversa** | ao abrir nova conversa (RN30) | não — `SummarizeConversationJob` | texto ≤ 600 chars | tamanho, não vazio |
 
-"Registros alimentares" (✅ D1) chegam à IA como: refeições feitas/não feitas de hoje, trocas aplicadas, restantes do dia (contexto do Nutri — RN29) e, no resumo semanal/dicas, a constância (spec 06 — regras sem IA no MVP).
+"Registros alimentares" (✅ D1, revista em D13) chegam à IA como: o que foi registrado em cada refeição de hoje (`comido`) e a sugestão (`sugestao`), trocas aplicadas, restantes do dia (contexto do Nutri — RN29) e, no resumo semanal/dicas, a constância (spec 06 — regras sem IA no MVP).
 
 ## 2. Interface
 
@@ -82,7 +82,7 @@ inputs = snapshot(perfil) + NutritionCalculator + MealScheduler + FoodFilter
 ### 4.1 Mensagens (RN29)
 1. **system** — `NutriPrompt::system()` (versionado):
    > Você é o Nutri, assistente de alimentação do app Prato Forte, feito com a academia Zfit, de Capivari de Baixo. Fale português do Brasil, de forma curta, calorosa e prática, como a nutricionista da academia conversando no balcão. Baseie-se no plano e no contexto fornecidos. Nunca sugira alimentos das restrições ou alergias. Não faça diagnóstico nem prescrição para doenças, gestação, transtornos alimentares ou remédios: nesses casos, recomende procurar um profissional de saúde. Não recomende suplementos específicos. Quando propuser trocar um alimento de uma refeição de hoje ou montar uma refeição inteira, use SOMENTE alimentos da lista `alimentos_permitidos`, por `id`, e descreva a proposta no campo `action`. Em `suggestions`, escreva até 3 próximas perguntas curtas (até 60 caracteres), do jeito que a pessoa perguntaria, que continuem o assunto e ajudem com o plano de hoje. Responda APENAS com JSON no formato indicado.
-2. **system** — contexto do momento em JSON (`NutriContextBuilder`): nome preferido, objetivo, meta de peso, metas/restantes do dia, refeições de hoje (slot, horário, feita, itens com `food_id`, nome, gramas), restrições e alergias (destacadas), itens da cozinha, almoço, treino e se hoje treina, e `alimentos_permitidos` (id, nome, grupo — sem macros, para economizar tokens).
+2. **system** — contexto do momento em JSON (`NutriContextBuilder`): nome preferido, objetivo, meta de peso, metas/restantes do dia, refeições de hoje (slot, horário, feita, `sugestao` e `comido` — D13 —, itens com `food_id`, nome, gramas), restrições e alergias (destacadas), itens da cozinha, almoço, treino e se hoje treina, e `alimentos_permitidos` (id, nome, grupo — sem macros, para economizar tokens).
 3. **system** — "Memória de conversas anteriores:" + os 3 resumos (se houver).
 4. Últimas 20 mensagens da conversa (`user`/`assistant`, só `content`).
 5. A pergunta nova (`user`).

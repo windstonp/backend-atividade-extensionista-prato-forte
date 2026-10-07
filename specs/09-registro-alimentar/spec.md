@@ -276,12 +276,12 @@ Mudanças em relação à spec 03: **removido** `PATCH /days/{date}/meals/{slot}
 ## 9. Definition of Done
 ```
 [ ] CA31–CA44 atendidos
-[ ] Migrations: meal_entries, custom_foods (com deleted_at), foods.measure/in_plans, day_meals.done_at com o novo sentido (dados antigos convertidos)
+[x] Migrations: meal_entries, custom_foods (com deleted_at), foods.measure/in_plans, day_meals.done_at com o novo sentido (dados antigos convertidos)
 [ ] Catálogo ≥ 700 alimentos (TACO 4ª ed. + Tabela de Composição Nutricional do IBGE/POF 2008–2009), P5 atualizado para conferência
-[ ] Endpoints de registro, busca, recentes e alimento próprio; PATCH meals removido; Policies; feature tests com posse
-[ ] Consumido vem dos registros em Hoje, Evolução, Nutri, notificações e exportação
+[x] Endpoints de registro, busca, recentes e alimento próprio; PATCH meals removido; Policies; feature tests com posse
+[x] Consumido vem dos registros em Hoje, Evolução, Nutri, notificações e exportação
 [ ] Detalhe reescrito (régua, registros, sugestão com "+"), folha Adicionar alimento, Hoje e Dieta ajustados
 [ ] Componentes novos com stories e play; axe limpo; teclado na folha
 [ ] E2E-04 reescrito, E2E-08 e E2E-09 verdes em Chromium e WebKit
-[ ] Specs 03, 04, 05, 06 e 07 atualizadas onde citam "feita"
+[x] Specs 03, 04, 05, 06 e 07 atualizadas onde citam "feita"
 ```

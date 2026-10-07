@@ -61,7 +61,9 @@ Implementação: `bootstrap/app.php` → `withExceptions()` renderiza `Validatio
 | 409 | `PLAN_ALREADY_GENERATING` | RN19 | acompanha o plano existente |
 | 409 | `DAY_NOT_EDITABLE` | RN23 | desabilita ações; mensagem |
 | 409 | `NOTHING_TO_UNDO` | RN27 (expirou ou já desfeito) | esconde o "Desfazer" |
-| 409 | `MEAL_ALREADY_DONE` | RN31 | mensagem na resposta do Nutri |
+| 409 | `MEAL_ALREADY_DONE` | RN31, RN26 (D13: refeição com registro — "Você já registrou o que comeu nessa refeição.") | mensagem na resposta do Nutri |
+| 409 | `ALREADY_REGISTERED` | spec 09 (item sugerido já registrado na refeição) | volta o ✓ do item |
+| 409 | `SUGGESTION_ALREADY_REGISTERED` | RN26 (trocar item já registrado) | esconde "Trocar" e recarrega |
 | 409 | `ACTION_ALREADY_APPLIED` | RN31 | marca ação como aplicada |
 | 409 | `ACTION_EXPIRED` | RN31 | "Essa sugestão era para {data}." |
 | 409 | `SUBSTITUTION_NOT_ALLOWED` | troca pedida fora das opções válidas (RN17/RN25) | recarrega opções |

@@ -19,8 +19,8 @@
 **Alternativos:** sem pesagens no período → estado vazio 🔵 "Sua linha começa na primeira pesagem". Sem meta (objetivo "mais disposição") → gráfico sem linha de meta e sem previsão.
 
 ### RF25 — Constância e médias
-**Fluxo:** Evolução → "Constância, últimos 28 dias": quadrados por status (RN36), "{n} dias com todas as refeições feitas", "Sua sequência atual é de {n} dias" (se > 1); "Média por dia neste período": proteína e calorias × meta, observação (RN37).
-**Alternativo:** nenhum dia com refeição feita → bloco de médias com `EmptyState` "Marque suas refeições para ver suas médias aqui."
+**Fluxo:** Evolução → "Constância, últimos 28 dias": quadrados por status (RN36), "{n} dias com todas as refeições feitas" (feita = com registro, RN46 — D13), "Sua sequência atual é de {n} dias" (se > 1); "Média por dia neste período": proteína e calorias × meta, observação (RN37).
+**Alternativo:** nenhum dia com refeição feita → bloco de médias com `EmptyState` "Registre o que você comeu para ver suas médias aqui." (D13; as médias somam os registros — RN24)
 
 ## 3. Fluxos
 ```

@@ -98,7 +98,7 @@ Servidor ─▶ artisan validacao:exportar ─▶ CSVs ─▶ relatório final d
 |---|---|---|
 | `usabilidade.csv` | resposta | usuario_hash, rodada, q1…q10, sus, utilidade, ajudou, atrapalhou, respondido_em |
 | `avaliacoes.csv` | avaliação | usuario_hash, tipo (resposta_nutri/plano), valor, comentario, criado_em |
-| `uso.csv` | usuário ativo no período | usuario_hash, objetivo, dias_desde_cadastro, dias_com_refeicao_marcada, refeicoes_feitas, dias_completos, trocas_manuais, trocas_nutri, perguntas_nutri, conversas, planos_gerados, planos_falhos, pesagens, variacao_peso_kg |
+| `uso.csv` | usuário ativo no período | usuario_hash, objetivo, dias_desde_cadastro, dias_com_refeicao_marcada, refeicoes_feitas (D13: refeição com registro),  dias_completos, trocas_manuais, trocas_nutri, perguntas_nutri, conversas, planos_gerados, planos_falhos, pesagens, variacao_peso_kg |
 | `ia.csv` | dia × propósito | dia, proposito, chamadas, falhas, tokens_entrada, tokens_saida, latencia_media_ms |
 
 **Resumo impresso:** nº de participantes, SUS médio (e desvio), % de 👍 no Nutri e no plano, média de utilidade, dias ativos médios.

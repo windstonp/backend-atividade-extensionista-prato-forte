@@ -42,7 +42,7 @@
 2. O backend valida e aplica no dia de hoje (mesmas regras da troca manual).
 3. As ações da mensagem somem; aparece a confirmação do Nutri "Feito. Seu {refeição} de hoje vai com {alimento}." com "Ver a refeição" 🔵; toast com "Desfazer" (RN27).
 **Outras ações:** "Ver outras opções"/"Gerar outra opção" enviam uma nova pergunta ("Quero ver outras opções" / "Monte outra opção de {refeição}") 🔵; "Ver o {refeição}" navega para `/dieta/{slot}`; "Agora não" dispensa (as ações somem e continuam sumidas ao recarregar).
-**Alternativos:** refeição já feita → "Esse {refeição} já está marcado como feito. Desmarque para trocar."; ação de outro dia → "Essa sugestão era para {data}."; já aplicada → ações já não aparecem.
+**Alternativos:** refeição já com registro → "Você já registrou o que comeu nesse {refeição}." (D13); ação de outro dia → "Essa sugestão era para {data}."; já aplicada → ações já não aparecem.
 **Regras:** RN17, RN23, RN26, RN27, RN31.
 
 ### RF22 — Memória entre conversas
