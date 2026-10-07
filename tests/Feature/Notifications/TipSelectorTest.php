@@ -18,7 +18,7 @@ function diaCom(string $data, array $slots): void
     test()->travelTo(CarbonImmutable::parse("{$data} 21:00", 'America/Sao_Paulo'));
     test()->getJson('/api/v1/days/today')->assertOk();
     foreach ($slots as $slot) {
-        test()->patchJson("/api/v1/days/today/meals/{$slot}", ['done' => true])->assertOk();
+        registrarRefeicao($slot);
     }
 }
 

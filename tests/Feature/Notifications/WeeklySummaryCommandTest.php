@@ -22,7 +22,7 @@ function feitasEm(string $data, array $slots): void
     login(test()->user);
     test()->getJson('/api/v1/days/today')->assertOk();
     foreach ($slots as $slot) {
-        test()->patchJson("/api/v1/days/today/meals/{$slot}", ['done' => true])->assertOk();
+        registrarRefeicao($slot);
     }
 }
 

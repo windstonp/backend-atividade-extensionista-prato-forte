@@ -21,18 +21,6 @@ class DayController extends Controller
         return new DayResource($days->view($user, DayDate::parse($date)));
     }
 
-    public function toggleMeal(Request $request, string $date, string $slot, DayService $service, DayMaterializer $days): DayResource
-    {
-        $data = $request->validate(['done' => ['required', 'boolean']], ['done.*' => 'Diga se a refeição foi feita.']);
-        /** @var User $user */
-        $user = $request->user();
-        $day = DayDate::parse($date);
-
-        $service->setDone($user, $day, $slot, (bool) $data['done']);
-
-        return new DayResource($days->view($user, $day));
-    }
-
     public function substitutions(Request $request, string $date, int $item, DayService $service): SubstitutionsResource
     {
         /** @var User $user */

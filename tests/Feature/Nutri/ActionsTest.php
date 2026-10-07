@@ -39,7 +39,9 @@ it('substituir troca o item de hoje com source nutri, confirma e deixa desfazer 
     expect($item->source)->toBe(ItemSource::Nutri)->and($item->grams)->toBe((float) $card['to']['grams']);
 
     $this->postJson('/api/v1/days/today/undo')->assertOk();
-    expect(DayMealItem::whereKey($item->id)->exists())->toBeFalse();
+    // RN27 (D13): desfazer devolve o alimento original na mesma linha (os registros seguem ligados).
+    expect($item->fresh()->food_id)->not->toBe($card['to']['food_id'])
+        ->and($item->fresh()->source)->not->toBe(ItemSource::Nutri);
 });
 
 it('aplicar-refeicao troca o jantar inteiro', function () {
@@ -76,10 +78,10 @@ it('de ontem: 409 ACTION_EXPIRED com a data (CA08)', function () {
 
 it('refeição já feita: 409 MEAL_ALREADY_DONE com o nome da refeição', function () {
     $m = ($this->resposta)('Monta um jantar com ovo e brócolis?');
-    $this->patchJson('/api/v1/days/today/meals/jantar', ['done' => true]);
+    registrarRefeicao('jantar');
 
     ($this->aplicar)($m)->assertStatus(409)->assertJsonPath('code', 'MEAL_ALREADY_DONE')
-        ->assertJsonPath('message', 'Esse jantar já está marcado como feito. Desmarque para trocar.');
+        ->assertJsonPath('message', 'Você já registrou o que comeu nesse jantar.');
 });
 
 it('alimento ficou proibido depois da resposta: 409 SUBSTITUTION_NOT_ALLOWED e o dia não muda (Review Focus 4)', function () {

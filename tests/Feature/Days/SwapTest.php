@@ -43,7 +43,8 @@ it('trocas seguidas guardam o original da refeição-modelo (RN26)', function ()
 it('trocar não muda o "feita" da refeição (RN26)', function () {
     $item = itemDeHoje('carboidrato');
     $slot = $item->dayMeal->slot;
-    $this->patchJson("/api/v1/days/today/meals/{$slot}", ['done' => true]);
+    $outro = $item->dayMeal->items()->where('id', '!=', $item->id)->first();
+    $this->postJson("/api/v1/days/today/meals/{$slot}/entries", ['entries' => [['suggestion_item_id' => $outro->id]]])->assertCreated();
 
     trocarPelaPrimeiraOpcao($item->id);
 

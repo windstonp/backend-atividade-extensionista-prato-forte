@@ -9,6 +9,7 @@ use App\Exceptions\DomainException;
 use App\Models\DayMeal;
 use App\Models\DayMealChange;
 use App\Models\DayMealItem;
+use App\Models\MealEntry;
 use App\Models\User;
 use App\Services\Foods\FoodFilter;
 use App\Services\Foods\SubstitutionFinder;
@@ -32,15 +33,6 @@ class DayService
         if (! $date->isToday()) {
             throw new DomainException(ErrorCode::DayNotEditable);
         }
-    }
-
-    /** RF13 — marcar ou desmarcar uma refeição. */
-    public function setDone(User $user, CarbonImmutable $date, string $slot, bool $done): void
-    {
-        $this->assertEditable($date);
-        $meal = $this->days->meals($user, $date)->firstWhere('slot', $slot) ?? throw new NotFoundHttpException;
-
-        $meal->update(['done_at' => $done ? ($meal->done_at ?? now()) : null]);
     }
 
     /** Item pedido na rota: precisa ser do usuário e da data (RN43 — senão, 404). */
@@ -76,6 +68,9 @@ class DayService
     {
         $this->assertEditable($date);
         $item = $this->item($user, $date, $itemId);
+        if (MealEntry::where('suggestion_item_id', $item->id)->exists()) {
+            throw new DomainException(ErrorCode::SuggestionAlreadyRegistered); // RN26 (D13): já comido não se troca
+        }
         $option = collect($this->options($user, $item))->first(fn (SubstitutionOption $o) => $o->food->id === $foodId)
             ?? throw new DomainException(ErrorCode::SubstitutionNotAllowed);
 
@@ -146,13 +141,13 @@ class DayService
         });
     }
 
-    /** Refeição de hoje que ainda pode mudar (RN23; feita não troca). */
+    /** Refeição de hoje cuja sugestão ainda pode mudar inteira (RN23; com registro não troca — RN26). */
     private function editableMeal(User $user, CarbonImmutable $date, string $slot): DayMeal
     {
         $this->assertEditable($date);
         $meal = $this->days->meals($user, $date)->firstWhere('slot', $slot) ?? throw new NotFoundHttpException;
         if ($meal->isDone()) {
-            throw new DomainException(ErrorCode::MealAlreadyDone, [], 'Esse '.mb_strtolower($meal->name).' já está marcado como feito. Desmarque para trocar.');
+            throw new DomainException(ErrorCode::MealAlreadyDone, [], 'Você já registrou o que comeu nesse '.mb_strtolower($meal->name).'.');
         }
 
         return $meal;
@@ -168,12 +163,18 @@ class DayService
 
         DB::transaction(function () use ($change, $allowed) {
             $meal = $change->dayMeal()->firstOrFail();
-            $meal->items()->delete();
+            // Linha a linha, pela posição: quem não mudou fica, e os registros seguem ligados à sugestão (RN27, D13).
+            $rows = $meal->items()->get()->keyBy('position');
+            $kept = [];
             foreach ($change->items_before as $item) {
-                if ($allowed->has($item['food_id'])) { // RN17: o que ficou proibido depois da troca não volta
-                    $meal->items()->create($item);
+                if (! $allowed->has($item['food_id'])) {
+                    continue; // RN17: o que ficou proibido depois da troca não volta
                 }
+                $row = $rows->get($item['position']);
+                $row !== null ? $row->update($item) : $meal->items()->create($item);
+                $kept[] = $item['position'];
             }
+            $meal->items()->whereNotIn('position', $kept)->delete();
             $change->update(['undone_at' => now()]);
         });
     }

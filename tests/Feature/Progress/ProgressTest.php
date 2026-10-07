@@ -23,7 +23,7 @@ function comerNoDia(string $data, array $slots): array
     test()->travelTo(CarbonImmutable::parse("{$data} 21:00", 'America/Sao_Paulo'));
     test()->getJson('/api/v1/days/today')->assertOk();
     foreach ($slots as $slot) {
-        test()->patchJson("/api/v1/days/today/meals/{$slot}", ['done' => true])->assertOk();
+        registrarRefeicao($slot);
     }
 
     return test()->getJson('/api/v1/days/today')->json('data.totals.consumed');

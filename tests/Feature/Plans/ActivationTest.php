@@ -11,7 +11,7 @@ it('plano novo às 15:00 mantém café, lanche e almoço feitos e troca o resto 
     $antigo = planoPronto($user);
     $this->getJson('/api/v1/days/today')->assertOk();
     foreach (['cafe', 'lanche', 'almoco'] as $slot) {
-        $this->patchJson("/api/v1/days/today/meals/{$slot}", ['done' => true])->assertOk();
+        registrarRefeicao($slot);
     }
     $feitas = DayMeal::whereIn('slot', ['cafe', 'lanche', 'almoco'])->with('items')->get()
         ->mapWithKeys(fn (DayMeal $m) => [$m->slot => [$m->id, $m->items->pluck('id')->all()]])->all();

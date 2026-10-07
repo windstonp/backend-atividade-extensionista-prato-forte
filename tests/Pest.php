@@ -139,6 +139,24 @@ function itensDaRefeicao(string $slot): array
     return array_map(fn ($i) => [$i['food_id'], $i['grams'], $i['source'], $i['replaced_from']], $meal['items']);
 }
 
+/** Registra todos os itens sugeridos de uma refeição (o antigo "marcar como feita") e devolve o dia. */
+function registrarRefeicao(string $slot, string $data = 'today'): array
+{
+    $refeicao = collect(test()->getJson("/api/v1/days/{$data}")->json('data.meals'))->firstWhere('slot', $slot);
+    $entradas = array_map(fn ($i) => ['suggestion_item_id' => $i['id']], $refeicao['items']);
+
+    return test()->postJson("/api/v1/days/{$data}/meals/{$slot}/entries", ['entries' => $entradas])->assertCreated()->json('data');
+}
+
+/** Remove todos os registros de uma refeição (o antigo "desmarcar"). */
+function apagarRegistros(string $slot, string $data = 'today'): void
+{
+    $refeicao = collect(test()->getJson("/api/v1/days/{$data}")->json('data.meals'))->firstWhere('slot', $slot);
+    foreach ($refeicao['entries'] as $registro) {
+        test()->deleteJson("/api/v1/days/{$data}/entries/{$registro['id']}")->assertOk();
+    }
+}
+
 /** Conversa com uma pergunta e uma resposta, a última em `$quando`. */
 function conversaCom(User $user, string $titulo, string $ultima, string $quando): NutriConversation
 {

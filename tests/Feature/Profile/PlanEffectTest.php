@@ -56,7 +56,7 @@ it('mudar só o nome, ou salvar igual, não mexe no plano', function (string $st
 
 it('treino às 07:00 muda os horários na hora, sem IA, e preserva a refeição feita (CA09, RN14)', function () {
     $this->getJson('/api/v1/days/today')->assertOk();
-    $this->patchJson('/api/v1/days/today/meals/cafe', ['done' => true]);
+    registrarRefeicao('cafe');
 
     $this->patchJson('/api/v1/profile/steps/rotina', stepPayload('rotina', ['training_time' => '07:00']))
         ->assertJsonPath('meta.plan_effect', 'times_updated')

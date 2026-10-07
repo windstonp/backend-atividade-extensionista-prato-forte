@@ -15,8 +15,8 @@ beforeEach(function () {
 });
 
 it('mostra o que o Nutri está olhando: próxima refeição, restante, alergias e objetivo', function () {
-    $this->patchJson('/api/v1/days/today/meals/cafe', ['done' => true]);
-    $this->patchJson('/api/v1/days/today/meals/lanche', ['done' => true]);
+    registrarRefeicao('cafe');
+    registrarRefeicao('lanche');
 
     $linhas = $this->getJson('/api/v1/nutri/context')->assertOk()->json('data.lines');
 
@@ -28,7 +28,7 @@ it('mostra o que o Nutri está olhando: próxima refeição, restante, alergias 
 
 it('sem próxima refeição, a primeira linha some', function () {
     foreach (['cafe', 'lanche', 'almoco', 'pre-treino', 'jantar'] as $slot) {
-        $this->patchJson("/api/v1/days/today/meals/{$slot}", ['done' => true]);
+        registrarRefeicao($slot);
     }
 
     expect($this->getJson('/api/v1/nutri/context')->json('data.lines.0.text'))->not->toStartWith('Seu ');
