@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api\V1;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\ConversationResource;
 use App\Models\NutriConversation;
+use App\Models\NutriMessage;
 use App\Models\User;
 use App\Services\Nutri\ConversationService;
 use Illuminate\Http\JsonResponse;
@@ -18,7 +19,10 @@ class ConversationController extends Controller
     {
         /** @var User $user */
         $user = $request->user();
-        $page = $user->conversations()->withMessages()->orderByDesc('last_message_at')->orderByDesc('id')->cursorPaginate(15);
+        $page = $user->conversations()->withMessages()
+            ->withCount('messages')
+            ->addSelect(['last_content' => NutriMessage::select('content')->whereColumn('conversation_id', 'nutri_conversations.id')->latest('id')->limit(1)])
+            ->orderByDesc('last_message_at')->orderByDesc('id')->cursorPaginate(15);
 
         return response()->json([
             'data' => ConversationResource::collection($page->items())->resolve($request),

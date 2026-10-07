@@ -8,16 +8,28 @@ use App\Ai\AiUnavailableException;
 use App\Ai\Prompts\NutriPrompt;
 use App\Models\NutriConversation;
 use App\Models\NutriMessage;
+use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
 use Illuminate\Support\Str;
 
 /** RN30 — memória: resume a conversa em até 600 caracteres. Falhar não afeta ninguém (tenta na próxima). */
-class SummarizeConversationJob implements ShouldQueue
+class SummarizeConversationJob implements ShouldBeUnique, ShouldQueue
 {
     use Queueable;
 
+    /** Mensagens novas que vão para a IA, no máximo (as mais recentes). */
+    private const MAX_NOVAS = 40;
+
     public int $tries = 1;
+
+    /** Uma vez na fila por conversa: duas conversas novas seguidas não pedem dois resumos. */
+    public int $uniqueFor = 300;
+
+    public function uniqueId(): string
+    {
+        return (string) $this->conversationId;
+    }
 
     public function __construct(public readonly int $conversationId) {}
 
@@ -29,7 +41,8 @@ class SummarizeConversationJob implements ShouldQueue
         }
         $new = $conversation->messages()
             ->when($conversation->summarized_message_id, fn ($q, $id) => $q->where('id', '>', $id))
-            ->orderBy('id')->get(['id', 'role', 'content']);
+            ->orderByDesc('id')->limit(self::MAX_NOVAS)->get(['id', 'role', 'content'])
+            ->reverse()->values();
         if ($new->isEmpty()) {
             return;
         }

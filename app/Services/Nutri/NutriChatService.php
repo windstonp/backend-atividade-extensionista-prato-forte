@@ -56,6 +56,8 @@ class NutriChatService
         }
 
         return DB::transaction(function () use ($conversation, $content, $response, $action, $followUps) {
+            // Apagada em outra aba enquanto a IA respondia: 404, nada gravado.
+            NutriConversation::whereKey($conversation->id)->lockForUpdate()->firstOrFail();
             $question = $conversation->messages()->create(['role' => 'user', 'content' => $content]);
             $answer = $conversation->messages()->create([
                 'role' => 'assistant',

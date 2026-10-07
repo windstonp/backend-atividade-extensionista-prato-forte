@@ -27,7 +27,9 @@ class MessageController extends Controller
     public function store(Request $request, NutriConversation $conversation, NutriChatService $chat): JsonResponse
     {
         Gate::authorize('view', $conversation);
-        $request->merge(['content' => trim((string) $request->input('content'))]);
+        if (is_string($request->input('content'))) {
+            $request->merge(['content' => trim($request->input('content'))]); // não-texto: o validador responde 422
+        }
         $data = $request->validate(
             ['content' => ['required', 'string', 'min:1', 'max:1000']],
             ['content.required' => 'Escreva sua pergunta.', 'content.max' => 'Sua pergunta passou de 1.000 caracteres.'],
