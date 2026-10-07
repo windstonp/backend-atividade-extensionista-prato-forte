@@ -32,6 +32,10 @@ class DemoSeeder extends Seeder
 
     public function run(): void
     {
+        // Contas com senha fraca: nunca em produção, nem chamado direto (db:seed --class=DemoSeeder).
+        if (! app()->environment(['local', 'staging', 'testing'])) {
+            throw new \RuntimeException('DemoSeeder não roda em produção.');
+        }
         $this->call(CatalogSeeder::class);
         config(['queue.default' => 'sync']);
         app()->instance(AiClient::class, new LoggingAiClient(app(FakeAiClient::class)));

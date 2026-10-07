@@ -25,6 +25,8 @@ Checklist para subir o app num servidor (RNF-OPE-01…05) e para a demonstraçã
 | `AI_MODEL_PLAN` / `AI_MODEL_CHAT` | ex.: `gpt-4o-mini` |
 | `VAPID_SUBJECT` / `VAPID_PUBLIC_KEY` / `VAPID_PRIVATE_KEY` | `php artisan webpush:vapid` grava as duas chaves no `.env` |
 | `VALIDACAO_RODADA` / `VALIDACAO_INICIO` | rodada da validação e a data de abertura |
+| `DB_QUEUE_RETRY_AFTER` | `200` (o padrão já é 200): precisa ser maior que o tempo da geração de plano (170 s) |
+| `APP_NAME` / `SESSION_COOKIE` | não mude sem mudar `SESSION_COOKIE_NAME` no front (padrão `prato-forte-session`): o front lê esse cookie para saber se há sessão |
 
 O `.env` nunca vai para o Git.
 
@@ -42,7 +44,7 @@ php artisan ai:smoke                # a IA de verdade responde?
 ## 4. Processos contínuos
 
 - Cron (a cada minuto): `* * * * * cd /caminho/backend && php artisan schedule:run >> /dev/null 2>&1` — lembretes de refeição, resumo de domingo, dicas.
-- Fila (planos gerados pela IA, avisos): sob systemd ou Supervisor.
+- Fila (planos gerados pela IA, avisos): **um** worker, sob systemd ou Supervisor.
 
 ```ini
 # /etc/systemd/system/prato-forte-fila.service
@@ -60,12 +62,12 @@ Restart=always
 WantedBy=multi-user.target
 ```
 
-Depois de cada atualização: `php artisan migrate --force && php artisan config:cache && php artisan route:cache && sudo systemctl restart prato-forte-fila`.
+Depois de cada atualização: `php artisan migrate --force && php artisan config:cache && php artisan route:cache && php artisan queue:restart` (o worker termina o job em andamento e o systemd o sobe de novo com o código novo).
 
 ## 5. Front
 
 - Variáveis: `NEXT_PUBLIC_API_URL=https://api.seu-dominio`; `NEXT_PUBLIC_APP_VERSION` é opcional (sem ela, vale a do `package.json`).
-- `npm ci && npm run build && npm start` (ou Vercel apontando para o repositório do front).
+- `npm ci && npm run build && npm start`, ou Vercel **com domínio próprio** (`app.seu-dominio`, mesmo domínio-pai da API). No domínio padrão `*.vercel.app` o cookie de sessão não chega ao front e ninguém consegue entrar.
 - No iPhone, os avisos só chegam com o app na tela de início (Compartilhar → Adicionar à Tela de Início, iOS 16.4+).
 
 ## 6. Antes da rodada de validação

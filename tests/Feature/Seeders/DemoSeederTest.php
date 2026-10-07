@@ -44,3 +44,10 @@ it('o DatabaseSeeder só chama a demonstração fora de produção', function ()
     $this->artisan('db:seed', ['--class' => DatabaseSeeder::class, '--force' => true])->assertSuccessful();
     expect(User::where('email', 'camila@demo.pratoforte.test')->exists())->toBeTrue();
 });
+
+it('o DemoSeeder se recusa a rodar em produção mesmo chamado direto', function () {
+    app()->detectEnvironment(fn () => 'production');
+
+    expect(fn () => app(DemoSeeder::class)->run())->toThrow(RuntimeException::class, 'DemoSeeder não roda em produção.')
+        ->and(User::where('email', 'camila@demo.pratoforte.test')->exists())->toBeFalse();
+});
