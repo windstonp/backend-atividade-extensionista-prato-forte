@@ -10,6 +10,7 @@ use App\Http\Controllers\Api\V1\Auth\SessionController;
 use App\Http\Controllers\Api\V1\CatalogController;
 use App\Http\Controllers\Api\V1\ConversationController;
 use App\Http\Controllers\Api\V1\DayController;
+use App\Http\Controllers\Api\V1\EntryController;
 use App\Http\Controllers\Api\V1\MessageActionController;
 use App\Http\Controllers\Api\V1\MessageController;
 use App\Http\Controllers\Api\V1\NutriController;
@@ -57,6 +58,10 @@ Route::prefix('v1')->group(function () {
             Route::get('profile', [ProfileController::class, 'show']);
             Route::put('profile/preferences', PreferencesController::class);
             Route::get('days/{date}', [DayController::class, 'show']);
+            Route::post('days/{date}/meals/{slot}/entries', [EntryController::class, 'store'])
+                ->whereIn('slot', array_map(fn (MealSlot $slot) => $slot->value, MealSlot::cases()));
+            Route::patch('days/{date}/entries/{entry}', [EntryController::class, 'update'])->whereNumber('entry');
+            Route::delete('days/{date}/entries/{entry}', [EntryController::class, 'destroy'])->whereNumber('entry');
             Route::patch('days/{date}/meals/{slot}', [DayController::class, 'toggleMeal'])
                 ->whereIn('slot', array_map(fn (MealSlot $slot) => $slot->value, MealSlot::cases()));
             Route::get('days/{date}/items/{item}/substitutions', [DayController::class, 'substitutions'])->whereNumber('item');

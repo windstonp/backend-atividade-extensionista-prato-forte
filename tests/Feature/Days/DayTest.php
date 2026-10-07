@@ -62,7 +62,7 @@ it('terça sem treino é prévia, com "Lanche da tarde" e sem nota, e não grava
 });
 
 it('passado sem registro vem vazio e só para leitura', function () {
-    $this->getJson('/api/v1/days/2026-09-27')
+    $this->getJson('/api/v1/days/2026-09-26')
         ->assertOk()
         ->assertJsonPath('data.meals', [])
         ->assertJsonPath('data.materialized', false)
@@ -83,7 +83,9 @@ it('"hoje" é o dia de São Paulo, também perto da meia-noite (Review Focus 3)'
 
     $this->travelTo(CarbonImmutable::parse('2026-09-29 03:01', 'UTC')); // 00:01 em São Paulo
     $this->getJson('/api/v1/days/today')->assertJsonPath('data.date', '2026-09-29');
-    $this->getJson('/api/v1/days/2026-09-28')->assertJsonPath('data.editable', false)->assertJsonPath('data.materialized', true);
+    // D13: ontem continua editável para o registro; antes de ontem, não.
+    $this->getJson('/api/v1/days/2026-09-28')->assertJsonPath('data.editable', true)->assertJsonPath('data.materialized', true);
+    $this->getJson('/api/v1/days/2026-09-27')->assertJsonPath('data.editable', false);
 });
 
 it('sem plano ativo responde NO_ACTIVE_PLAN com o status do último plano', function () {

@@ -47,14 +47,15 @@ class DayMaterializer
     public function meals(User $user, CarbonImmutable $date): Collection
     {
         $stored = $this->stored($user, $date);
-        if ($stored->isNotEmpty() || $date->lt(CarbonImmutable::today())) {
-            return $stored; // passado: o que foi gravado (ou nada)
+        $yesterday = CarbonImmutable::today()->subDay();
+        if ($stored->isNotEmpty() || $date->lt($yesterday)) {
+            return $stored; // antes de ontem: o que foi gravado (ou nada)
         }
 
         $plan = $user->activePlan()->with('meals.items.food')->first() ?? throw $this->noActivePlan($user);
 
         if (! $date->isToday()) {
-            return $this->build($user, $plan, $date, save: false); // futuro: prévia, sem gravar
+            return $this->build($user, $plan, $date, save: false); // ontem sem registro e futuro: prévia (RN22)
         }
 
         try {
@@ -111,6 +112,25 @@ class DayMaterializer
             ->values();
     }
 
+    /**
+     * Refeições onde se vai escrever: ontem ainda não gravado é gravado agora (RN22, D13), uma vez só.
+     *
+     * @return Collection<int, DayMeal>
+     */
+    public function mealsForWriting(User $user, CarbonImmutable $date): Collection
+    {
+        if (! $date->isToday() && $this->stored($user, $date)->isEmpty()) {
+            $plan = $user->activePlan()->with('meals.items.food')->first() ?? throw $this->noActivePlan($user);
+            try {
+                DB::transaction(fn () => $this->build($user, $plan, $date, save: true));
+            } catch (UniqueConstraintViolationException) {
+                // Outra aba gravou ao mesmo tempo.
+            }
+        }
+
+        return $this->meals($user, $date);
+    }
+
     /** RN17/RN21 — restrição nova: sai na hora das refeições de hoje ainda não feitas, sem esperar o plano novo. */
     public function dropForbiddenToday(User $user): void
     {
@@ -132,7 +152,7 @@ class DayMaterializer
     {
         return $user->dayMeals()
             ->whereDate('date', $date)
-            ->with(['items.food', 'items.replacedFood', 'plan'])
+            ->with(['items.food', 'items.replacedFood', 'plan', 'entries.food'])
             ->orderBy('position')
             ->get();
     }

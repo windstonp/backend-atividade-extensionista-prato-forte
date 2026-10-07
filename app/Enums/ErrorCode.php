@@ -14,6 +14,8 @@ enum ErrorCode: string
     case DayNotEditable = 'DAY_NOT_EDITABLE';
     case NothingToUndo = 'NOTHING_TO_UNDO';
     case MealAlreadyDone = 'MEAL_ALREADY_DONE';
+    case AlreadyRegistered = 'ALREADY_REGISTERED';
+    case SuggestionAlreadyRegistered = 'SUGGESTION_ALREADY_REGISTERED';
     case ActionAlreadyApplied = 'ACTION_ALREADY_APPLIED';
     case ActionExpired = 'ACTION_EXPIRED';
     case SubstitutionNotAllowed = 'SUBSTITUTION_NOT_ALLOWED';
@@ -50,7 +52,9 @@ enum ErrorCode: string
             self::PlanAlreadyGenerating => 'Seu plano já está sendo montado.',
             self::DayNotEditable => 'Esse dia não pode mais ser alterado.',
             self::NothingToUndo => 'Não há nada para desfazer.',
-            self::MealAlreadyDone => 'Essa refeição já foi marcada como feita.',
+            self::MealAlreadyDone => 'Você já registrou o que comeu nessa refeição.',
+            self::AlreadyRegistered => 'Esse alimento da sugestão já está registrado. Mude a quantidade no registro.',
+            self::SuggestionAlreadyRegistered => 'Você já registrou esse alimento. Remova o registro para trocar.',
             self::ActionAlreadyApplied => 'Essa sugestão já foi aplicada.',
             self::ActionExpired => 'Essa sugestão era para outro dia.',
             self::SubstitutionNotAllowed => 'Essa troca não está disponível. Veja as opções de novo.',
