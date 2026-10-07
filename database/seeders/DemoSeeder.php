@@ -10,6 +10,8 @@ use App\Models\PantryItem;
 use App\Models\Restriction;
 use App\Models\User;
 use App\Services\Days\DayMaterializer;
+use App\Services\Days\EntryService;
+use App\Services\Nutrition\DayTotals;
 use App\Services\Plans\PlanService;
 use Carbon\CarbonImmutable;
 use Illuminate\Database\Seeder;
@@ -67,8 +69,26 @@ class DemoSeeder extends Seeder
                 default => collect(),
             };
             foreach ($feitas as $meal) {
-                $meal->update(['done_at' => $data->setTimeFromTimeString((string) $meal->time)]);
+                // D13: refeição feita = registros iguais à sugestão, no horário da refeição.
+                $quando = $data->setTimeFromTimeString((string) $meal->time);
+                foreach ($meal->items()->with('food')->get() as $j => $item) {
+                    $meal->entries()->forceCreate([
+                        'user_id' => $meal->user_id, 'food_id' => $item->food_id, 'suggestion_item_id' => $item->id,
+                        'name' => $item->food->name, 'measure' => $item->food->measure, 'amount' => $item->grams,
+                        'position' => $j + 1, 'created_at' => $quando, 'updated_at' => $quando,
+                        ...DayTotals::item($item->food, (float) $item->grams),
+                    ]);
+                }
+                $meal->update(['done_at' => $quando]);
             }
+        }
+
+        // Hoje: o café registrado com mais aveia que a sugestão — a régua da refeição passa da meta (registro livre, D13).
+        $cafe = $dias->mealsForWriting($camila->fresh(), $hoje)->firstWhere('slot', 'cafe');
+        if ($cafe !== null && $cafe->entries->isEmpty()) {
+            $entradas = $cafe->items->map(fn ($item) => ['suggestion_item_id' => $item->id,
+                'amount' => (float) $item->grams + (str_contains($item->food->slug, 'aveia') ? 60 : 0)])->values()->all();
+            app(EntryService::class)->add($camila->fresh(), $hoje, 'cafe', $entradas);
         }
 
         $conversas = [

@@ -85,5 +85,5 @@ docker compose exec api php artisan key:generate
 docker compose exec api php artisan migrate:fresh --seed
 ```
 
-- `camila@demo.pratoforte.test` / `demo1234` — a Camila do mock, com um mês de uso: plano pronto, 28 dias de constância (21 completos, sequência de 3), 6 pesagens com previsão de meta e duas conversas com o Nutri.
+- `camila@demo.pratoforte.test` / `demo1234` — a Camila do mock, com um mês de uso: plano pronto, 28 dias de registros (21 completos, sequência de 3), o café de hoje registrado acima da meta, 6 pesagens com previsão de meta e duas conversas com o Nutri.
 - `novo@demo.pratoforte.test` / `demo1234` — conta parada na etapa "Atividade" do onboarding, para mostrar a retomada.
