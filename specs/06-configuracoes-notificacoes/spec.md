@@ -124,12 +124,14 @@ Logout ─▶ DELETE /push-subscriptions {endpoint} ─▶ POST /logout
 
 ## 9. Definition of Done
 ```
-[ ] CA01–CA08 atendidos
-[ ] Pacote webpush configurado; VAPID em variáveis de ambiente
-[ ] Comandos agendados com feature tests; cron + worker documentados para o servidor
-[ ] manifest.webmanifest + sw.js (push e notificationclick)
-[ ] Tela de configurações ligada à API; resumo real no Perfil
-[ ] units.ts aplicado em todas as telas com peso/altura
+[x] CA01–CA08 atendidos
+[x] Pacote webpush configurado; VAPID em variáveis de ambiente
+[x] Comandos agendados com feature tests; cron + worker documentados para o servidor
+[x] manifest.webmanifest + sw.js (push e notificationclick)
+[x] Tela de configurações ligada à API; resumo real no Perfil
+[x] units.ts aplicado em todas as telas com peso/altura
 [ ] Teste manual em Android e iPhone (PWA) registrado no relatório
-[ ] axe limpo; switches acessíveis
+[x] axe limpo; switches acessíveis
 ```
+
+Verificado em 2026-10-06 (Plano 10B). **Aberto:** o teste manual em Android e iPhone (PWA) só pode ser feito pelos autores, em aparelhos reais e com o servidor em HTTPS (`docs/implantacao.md` §5).

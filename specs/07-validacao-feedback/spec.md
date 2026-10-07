@@ -134,11 +134,13 @@ Sem nome, e-mail, conteúdo de mensagens, restrições específicas ou datas de 
 
 ## 9. Definition of Done
 ```
-[ ] CA01–CA07 atendidos
-[ ] ratings e usability_responses com migrations, Policies e feature tests
-[ ] SusScore com unit tests; ValidationExporter + comando com teste
-[ ] RatingButtons no chat e no Pronto; banner em Hoje; tela N08 gerada com frontend-design
-[ ] Texto do termo (RN03) menciona o uso anonimizado para a pesquisa
-[ ] E2E-12 verde
-[ ] Roteiro da rodada de validação (quando abrir/fechar, como exportar) anotado no README do backend
+[x] CA01–CA07 atendidos
+[x] ratings e usability_responses com migrations, Policies e feature tests
+[x] SusScore com unit tests; ValidationExporter + comando com teste
+[x] RatingButtons no chat e no Pronto; banner em Hoje; tela N08 gerada com frontend-design
+[x] Texto do termo (RN03) menciona o uso anonimizado para a pesquisa
+[x] E2E-12 verde
+[x] Roteiro da rodada de validação (quando abrir/fechar, como exportar) anotado no README do backend
 ```
+
+Verificado em 2026-10-06 (Plano 10B): termo 2026-10 cita a pesquisa anônima e os comentários; roteiro da rodada no README do backend; E2E-12 verde. Texto final do termo com os autores (P3).

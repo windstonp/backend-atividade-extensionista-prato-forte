@@ -234,15 +234,17 @@
 
 ## 9. Definition of Done
 ```
-[ ] CA01–CA12 atendidos — API no 04A (CA01–CA12 por feature test); telas no 04B
+[x] CA01–CA12 atendidos — API no 04A (CA01–CA12 por feature test); telas no 04B
 [x] Catálogo semeado (FoodSeeder + foods.csv) cobrindo mock e itens de cozinha
 [x] NutritionCalculator, MealScheduler, PortionAdjuster, PlanValidator, SubstitutionFinder, DayTotals, PortionFormatter com unit tests
 [x] GeneratePlanJob com FakeAiClient e fixtures; FailStalePlans agendado
 [x] Endpoints de plano e dia; Policies; feature tests incluindo posse e alergia
-[ ] plan-store.tsx substituído por hooks (TanStack Query) — sem localStorage para o plano
-[ ] Hoje, Dieta, Detalhe, Gerando, Pronto ligados à API com todos os estados
-[ ] DayRail, MealRow, FoodItemRow, SubstitutionSheet, WeekDayPicker com stories e play
-[ ] Textos do mock ajustados conforme 99-inconsistencias (reequilíbrio, dias passados)
-[ ] E2E-04, E2E-05, E2E-06, E2E-07 verdes
-[ ] axe limpo; folha acessível por teclado; movimento preservado
+[x] plan-store.tsx substituído por hooks (TanStack Query) — sem localStorage para o plano
+[x] Hoje, Dieta, Detalhe, Gerando, Pronto ligados à API com todos os estados
+[x] DayRail, MealRow, FoodItemRow, SubstitutionSheet, WeekDayPicker com stories e play
+[x] Textos do mock ajustados conforme 99-inconsistencias (reequilíbrio, dias passados)
+[x] E2E-04, E2E-05, E2E-06, E2E-07 verdes
+[x] axe limpo; folha acessível por teclado; movimento preservado
 ```
+
+Verificado em 2026-10-06 (Plano 10B): suítes do backend (589) e do front (615) verdes, E2E 32/32 em Chromium e WebKit, axe nas stories via CI.

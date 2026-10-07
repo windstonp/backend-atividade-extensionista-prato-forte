@@ -157,10 +157,12 @@ Nomes entre parênteses com "=" são os nomes usados no código (Plano 10B: reno
 
 ## 9. Definition of Done
 ```
-[ ] Storybook 10 configurado (Tailwind, fontes, MSW, a11y, vitest, toolbar de movimento)
-[ ] Primitivos §4 com as mudanças marcadas (novo) e stories
-[ ] Estrutura §5 atualizada (OnboardingStep com aoContinuar/carregando/erro/modoEdicao)
-[ ] Domínio §6 extraído das páginas, com stories
-[ ] CI rodando testes de stories + axe
-[ ] Componentes/telas novos gerados com frontend-design, animados, na identidade do mock
+[x] Storybook 10 configurado (Tailwind, fontes, MSW, a11y, vitest, toolbar de movimento)
+[x] Primitivos §4 com as mudanças marcadas (novo) e stories
+[x] Estrutura §5 atualizada (OnboardingStep com aoContinuar/carregando/erro/modoEdicao)
+[x] Domínio §6 extraído das páginas, com stories
+[x] CI rodando testes de stories + axe
+[x] Componentes/telas novos gerados com frontend-design, animados, na identidade do mock
 ```
+
+Verificado em 2026-10-06 (Plano 10B): `EmptyState`, `Aviso`, `Selo` criados e usados nas telas; stories de Screen, TopBar, BottomNav, ErrorState, NutriBar, Rail, Skeleton, Steps; domínio extraído (RoutineTimes, DayToggleGroup, ProfileHeader, ProfileMenu, MacroSummary, PlanReadySummary, PlanGenerating, ConversationList, SuggestionList, UnitSelector); CI roda `npm test` com o projeto storybook (Chromium + axe); lint sem avisos (bloco LEGADO removido).

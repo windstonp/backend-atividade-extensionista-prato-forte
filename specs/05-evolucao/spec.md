@@ -132,11 +132,13 @@ Hoje (card de peso) ─▶ /evolucao ─▶ GET /progress?period=6w ─┬─ co
 
 ## 9. Definition of Done
 ```
-[ ] CA01–CA08 atendidos
-[ ] WeightForecast, AdherenceCalculator, ProgressService com unit tests
-[ ] Endpoints weigh-ins e progress com feature tests
-[ ] Evolução e Registrar peso ligados à API; valores fixos do mock removidos
-[ ] WeightChart, AdherenceGrid, WeightStepper extraídos para features/progress com stories
-[ ] E2E-09 verde
-[ ] Gráfico acessível (rótulo descritivo); reduced-motion verificado
+[x] CA01–CA08 atendidos
+[x] WeightForecast, AdherenceCalculator, ProgressService com unit tests
+[x] Endpoints weigh-ins e progress com feature tests
+[x] Evolução e Registrar peso ligados à API; valores fixos do mock removidos
+[x] WeightChart, AdherenceGrid, WeightStepper extraídos para features/progress com stories
+[x] E2E-09 verde
+[x] Gráfico acessível (rótulo descritivo); reduced-motion verificado
 ```
+
+Verificado em 2026-10-06 (Plano 10B): componentes em `features/progresso`; gráfico `role="img"` com rótulo descritivo; story MovimentoReduzido; E2E-09 verde.

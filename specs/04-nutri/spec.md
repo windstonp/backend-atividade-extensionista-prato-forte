@@ -237,14 +237,16 @@ Regras: 1ª linha só se há próxima refeição; uma linha `alerta` por alergia
 
 ## 10. Definition of Done
 ```
-[ ] CA01–CA15 atendidos
-[ ] Sugestões de continuação dinâmicas (RN45) com sanitização e reserva; chips fixos removidos do chat
-[ ] AiClient (OpenAiCompatible + Fake), prompts versionados, parser e validador com unit tests
-[ ] Endpoints de conversas, mensagens, ações, contexto, sugestões; Policies; rate limiter nutri
-[ ] SummarizeConversationJob + memória no prompt
-[ ] Tela Conversas (nova) gerada com frontend-design; chat ligado à API (sem askNutri mock)
-[ ] Componentes do chat com stories e play; integração com MSW
-[ ] E2E-08 verde; alergia coberta em E2E-06
-[ ] Nenhum dangerouslySetInnerHTML; resposta da IA tratada como texto
-[ ] axe limpo; aria-live no indicador e nas novas mensagens
+[x] CA01–CA15 atendidos
+[x] Sugestões de continuação dinâmicas (RN45) com sanitização e reserva; chips fixos removidos do chat
+[x] AiClient (OpenAiCompatible + Fake), prompts versionados, parser e validador com unit tests
+[x] Endpoints de conversas, mensagens, ações, contexto, sugestões; Policies; rate limiter nutri
+[x] SummarizeConversationJob + memória no prompt
+[x] Tela Conversas (nova) gerada com frontend-design; chat ligado à API (sem askNutri mock)
+[x] Componentes do chat com stories e play; integração com MSW
+[x] E2E-08 verde; alergia coberta em E2E-06
+[x] Nenhum dangerouslySetInnerHTML; resposta da IA tratada como texto
+[x] axe limpo; aria-live no indicador e nas novas mensagens
 ```
+
+Verificado em 2026-10-06 (Plano 10B): sem `dangerouslySetInnerHTML` no front; `ThinkingIndicator` com `role="status"` e região `aria-live` para a resposta; E2E-08 e E2E-06 verdes. A IA real ainda precisa do `php artisan ai:smoke` com a chave nova (`docs/implantacao.md`).
