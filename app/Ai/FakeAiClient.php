@@ -23,7 +23,7 @@ final class FakeAiClient implements AiClient
         'lanche' => [['fruta'], ['laticinio', 'proteina', 'leguminosa']],
         'almoco' => [['carboidrato'], ['leguminosa'], ['proteina'], ['vegetal']],
         'pre-treino' => [['carboidrato'], ['fruta']],
-        'jantar' => [['proteina'], ['carboidrato'], ['vegetal']],
+        'jantar' => [['proteina'], ['carboidrato'], ['leguminosa'], ['vegetal']],
     ];
 
     private const PROTEIN_GROUPS = ['proteina', 'laticinio', 'leguminosa'];
@@ -135,16 +135,21 @@ final class FakeAiClient implements AiClient
         $meals = [];
         foreach (self::MEALS as $slot => $wanted) {
             $pick = function (array $groups, array $items) use ($foods, $slot, &$used): ?array {
-                $candidates = array_filter($foods, fn (array $f) => in_array($f['grupo'], $groups, true) && ! isset($items[$f['id']]));
-                if (in_array($slot, ['almoco', 'jantar'], true)) {
-                    // Carboidrato de prato: porção de costume de pelo menos 100 g (arroz, batata…), não aveia.
-                    $prato = array_filter($candidates, fn (array $f) => $f['grupo'] !== 'carboidrato' || self::portion($f) >= 100);
-                    $candidates = $prato ?: $candidates;
-                }
+                $grupos = array_count_values(array_map(fn (array $i) => $i['food']['grupo'], $items));
+                $candidates = array_filter($foods, fn (array $f) => in_array($f['grupo'], $groups, true) && ! isset($items[$f['id']])
+                    && ($f['grupo'] !== 'carboidrato' || ($grupos['carboidrato'] ?? 0) < 2)); // no máximo 2 carboidratos no prato
+                // Carboidrato de prato no almoço e no jantar (arroz, batata: porção ≥ 100 g); de café no café e no pré-treino (pão, tapioca: < 100 g).
+                $doMomento = match ($slot) {
+                    'almoco', 'jantar' => fn (array $f) => $f['grupo'] !== 'carboidrato' || self::portion($f) >= 100,
+                    'cafe', 'pre-treino' => fn (array $f) => $f['grupo'] !== 'carboidrato' || self::portion($f) < 100,
+                    default => fn () => true,
+                };
+                $candidates = array_filter($candidates, $doMomento) ?: $candidates;
                 if ($candidates === []) {
                     return null;
                 }
-                usort($candidates, fn (array $a, array $b) => ($used[$a['id']] ?? 0) <=> ($used[$b['id']] ?? 0));
+                // Primeiro um grupo que ainda não está no prato; depois o alimento menos repetido no dia.
+                usort($candidates, fn (array $a, array $b) => [isset($grupos[$a['grupo']]), $used[$a['id']] ?? 0] <=> [isset($grupos[$b['grupo']]), $used[$b['id']] ?? 0]);
                 $used[$candidates[0]['id']] = ($used[$candidates[0]['id']] ?? 0) + 1;
 
                 return $candidates[0];
@@ -163,7 +168,9 @@ final class FakeAiClient implements AiClient
 
             $share = (float) ($shares[$slot] ?? 0.2);
             $this->fillMeal($items, self::PROTEIN_GROUPS, 'prot_100g', $targetProtein * 1.05 * $share, $pick);
-            $this->fillMeal($items, self::FILL_GROUPS, 'kcal_100g', $targetKcal * $share, $pick);
+            // No almoço e no jantar as calorias crescem no arroz e no feijão, não só num carboidrato.
+            $fill = in_array($slot, ['almoco', 'jantar'], true) ? [...self::FILL_GROUPS, 'leguminosa'] : self::FILL_GROUPS;
+            $this->fillMeal($items, $fill, 'kcal_100g', $targetKcal * $share, $pick);
 
             $meals[] = ['slot' => $slot, 'items' => array_values(array_map(
                 fn (array $item) => ['food_id' => $item['food']['id'], 'grams' => $item['grams']],
@@ -213,7 +220,8 @@ final class FakeAiClient implements AiClient
 
             $total = array_sum(array_map($amount, $items));
             /** @var array<string, mixed>|null $extra */
-            $extra = $total >= 0.99 * $target || count($items) >= 6 ? null : $pick($groups, $items);
+            // Só falta de verdade (porções no teto) puxa outro alimento; o arredondamento a 5 g fica para o ajuste do dia.
+            $extra = $total >= 0.9 * $target || count($items) >= 6 ? null : $pick($groups, $items);
             if ($extra === null) {
                 return;
             }

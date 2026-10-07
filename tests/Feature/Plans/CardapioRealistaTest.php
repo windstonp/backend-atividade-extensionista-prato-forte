@@ -2,6 +2,7 @@
 
 use App\Ai\Prompts\PlanPrompt;
 use App\Enums\PlanStatus;
+use App\Models\Food;
 use App\Models\MealPlan;
 use App\Models\PantryItem;
 use App\Models\Restriction;
@@ -19,7 +20,12 @@ function kcalPorRefeicao(MealPlan $plano): array
 }
 
 $perfis = [
-    'Camila, com aveia na cozinha' => [fn () => tap(User::factory()->onboarded()->create(), fn (User $u) => $u->pantryItems()->sync(PantryItem::whereIn('slug', ['ovos', 'frango', 'arroz-e-feijao', 'batata-doce', 'banana', 'aveia', 'iogurte'])->pluck('id')))],
+    'Camila da demonstração' => [fn () => tap(User::factory()->onboarded()->create(), function (User $u) {
+        $u->profile->update(['start_weight_kg' => 56.8]);
+        $u->pantryItems()->sync(PantryItem::whereIn('slug', ['ovos', 'frango', 'arroz-e-feijao', 'batata-doce', 'banana', 'aveia', 'iogurte'])->pluck('id'));
+        $u->restrictions()->sync(Restriction::where('slug', 'castanhas')->pluck('id'));
+        $u->dislikedFoods()->sync(Food::whereIn('slug', ['figado-bovino', 'jilo'])->pluck('id'));
+    })],
     'nada de origem animal' => [fn () => tap(User::factory()->onboarded()->create(), fn (User $u) => $u->restrictions()->sync(Restriction::where('slug', 'sem-animal')->pluck('id')))],
     'homem de 95 kg, meta alta' => [fn () => tap(User::factory()->onboarded()->create(), fn (User $u) => $u->profile->update(['sex' => 'masculino', 'start_weight_kg' => 95, 'height_cm' => 186, 'age' => 22]))],
 ];
@@ -65,3 +71,36 @@ it('o prompt manda a porção típica de cada alimento e a divisão das calorias
         ->and($plano->inputs['alimentos_permitidos'][0])->toHaveKey('porcao_g');
     fakeAi()->assertSent('plan', fn (array $mensagens) => expect($mensagens[0]['content'])->toContain('porcao_g')->toContain('distribuicao_kcal'));
 });
+
+it('café da manhã leva carboidrato de café (pão, aveia, tapioca), não arroz', function (Closure $pessoa) {
+    $plano = app(PlanService::class)->requestGeneration($pessoa())->fresh();
+
+    $carbos = $plano->meals()->where('slot', 'cafe')->with('items.food')->sole()->items->filter(fn ($i) => $i->food->group === 'carboidrato');
+    foreach ($carbos as $item) {
+        expect($item->food->typical_portion_g)->toBeLessThan(100, $item->food->name);
+    }
+})->with($perfis);
+
+it('nenhuma refeição empilha mais de dois carboidratos', function (Closure $pessoa) {
+    $plano = app(PlanService::class)->requestGeneration($pessoa())->fresh();
+
+    foreach ($plano->meals()->with('items.food')->get() as $refeicao) {
+        expect($refeicao->items->filter(fn ($i) => $i->food->group === 'carboidrato')->count())->toBeLessThanOrEqual(2, $refeicao->slot);
+    }
+})->with($perfis);
+
+it('não sobra proteína demais: o dia fica até 25% acima da meta', function (Closure $pessoa) {
+    $plano = app(PlanService::class)->requestGeneration($pessoa())->fresh();
+
+    $proteina = $plano->meals()->with('items.food')->get()->flatMap->items->sum(fn ($i) => $i->food->protein_per_100g * $i->grams / 100);
+    expect($proteina)->toBeLessThanOrEqual(1.25 * $plano->target_protein_g);
+})->with($perfis);
+
+it('pré-treino com carboidrato leve (pão, tapioca), não arroz', function (Closure $pessoa) {
+    $plano = app(PlanService::class)->requestGeneration($pessoa())->fresh();
+
+    $carbos = $plano->meals()->where('slot', 'pre-treino')->with('items.food')->sole()->items->filter(fn ($i) => $i->food->group === 'carboidrato');
+    foreach ($carbos as $item) {
+        expect($item->food->typical_portion_g)->toBeLessThan(100, $item->food->name);
+    }
+})->with($perfis);
