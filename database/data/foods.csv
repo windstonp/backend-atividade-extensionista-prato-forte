@@ -61,3 +61,1451 @@ azeite-de-oliva,Azeite de oliva,azeite,gordura,884,0.0,0.0,100.0,5,colher de ch�
 manteiga,Manteiga,manteiga,gordura,726,0.4,0.1,82.4,5,colher de chá,colheres de chá,5,,0,0,TACO 4ª ed.,lactose|sem-animal,,g,1
 cafe-sem-acucar,Café sem açúcar,café|cafezinho,bebida,9,0.7,1.5,0.1,100,xícara,xícaras,100,,0,1,TACO 4ª ed.,,,ml,1
 mel,Mel,mel,outros,309,0.0,84.0,0.0,15,colher de sopa,colheres de sopa,15,,0,0,TACO 4ª ed.,sem-animal,,g,1
+arroz-integral-cozido,"Arroz, integral, cozido",arroz,carboidrato,124,2.6,25.8,1,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+arroz-integral-cru,"Arroz, integral, cru",arroz,carboidrato,360,7.3,77.5,1.9,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+arroz-tipo-1-cozido,"Arroz, tipo 1, cozido",arroz,carboidrato,128,2.5,28.1,0.2,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+arroz-tipo-1-cru,"Arroz, tipo 1, cru",arroz,carboidrato,358,7.2,78.8,0.3,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+arroz-tipo-2-cozido,"Arroz, tipo 2, cozido",arroz,carboidrato,130,2.6,28.2,0.4,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+arroz-tipo-2-cru,"Arroz, tipo 2, cru",arroz,carboidrato,358,7.2,78.9,0.3,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+aveia-flocos-crua,"Aveia, flocos, crua",aveia,carboidrato,394,13.9,66.6,8.5,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+biscoito-doce-maisena,"Biscoito, doce, maisena",biscoito,carboidrato,443,8.1,75.2,12,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+biscoito-doce-recheado-com-chocolate,"Biscoito, doce, recheado com chocolate",biscoito,carboidrato,472,6.4,70.5,19.6,100,,,,,0,0,"TACO 4ª ed.",gluten|lactose|sem-animal,,g,0
+biscoito-doce-recheado-com-morango,"Biscoito, doce, recheado com morango",biscoito,carboidrato,471,5.7,71,19.6,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+biscoito-doce-wafer-recheado-de-chocolate,"Biscoito, doce, wafer, recheado de chocolate",biscoito,carboidrato,502,5.6,67.5,24.7,100,,,,,0,0,"TACO 4ª ed.",gluten|lactose|sem-animal,,g,0
+biscoito-doce-wafer-recheado-de-morango,"Biscoito, doce, wafer, recheado de morango",biscoito,carboidrato,513,4.5,67.4,26.4,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+biscoito-salgado-cream-cracker,"Biscoito, salgado, cream cracker",biscoito,carboidrato,432,10.1,68.7,14.4,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+bolo-mistura-para,"Bolo, mistura para",bolo,carboidrato,419,6.2,84.7,6.1,100,,,,,0,0,"TACO 4ª ed.",gluten|lactose|sem-animal,,g,0
+bolo-pronto-aipim,"Bolo, pronto, aipim",bolo,carboidrato,324,4.4,47.9,12.7,100,,,,,0,0,"TACO 4ª ed.",gluten|lactose|sem-animal,,g,0
+bolo-pronto-chocolate,"Bolo, pronto, chocolate",bolo,carboidrato,410,6.2,54.7,18.5,100,,,,,0,0,"TACO 4ª ed.",gluten|lactose|sem-animal,,g,0
+bolo-pronto-coco,"Bolo, pronto, coco",bolo,carboidrato,333,5.7,52.3,11.3,100,,,,,0,0,"TACO 4ª ed.",gluten|lactose|sem-animal,,g,0
+bolo-pronto-milho,"Bolo, pronto, milho",bolo,carboidrato,311,4.8,45.1,12.4,100,,,,,0,0,"TACO 4ª ed.",gluten|lactose|sem-animal,,g,0
+canjica-branca-crua,"Canjica, branca, crua",canjica,carboidrato,358,7.2,78.1,1,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+canjica-com-leite-integral,"Canjica, com leite integral",canjica,carboidrato,112,2.4,23.6,1.2,100,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+cereais-milho-flocos-com-sal,"Cereais, milho, flocos, com sal",cereais,carboidrato,370,7.3,80.8,1.6,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+cereais-milho-flocos-sem-sal,"Cereais, milho, flocos, sem sal",cereais,carboidrato,363,6.9,80.4,1.2,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+cereais-mingau-milho-infantil,"Cereais, mingau, milho, infantil",cereais,carboidrato,394,6.4,87.3,1.1,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+cereais-mistura-para-vitamina-trigo-cevada-e-aveia,"Cereais, mistura para vitamina, trigo, cevada e aveia",cereais,carboidrato,381,8.9,81.6,2.1,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+cereal-matinal-milho,"Cereal matinal, milho","cereal matinal",carboidrato,365,7.2,83.8,1,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+cereal-matinal-milho-acucar,"Cereal matinal, milho, açúcar","cereal matinal",carboidrato,377,4.7,88.8,0.7,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+creme-de-arroz-po,"Creme de arroz, pó","creme de arroz",carboidrato,386,7,83.9,1.2,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+creme-de-milho-po,"Creme de milho, pó","creme de milho",carboidrato,333,4.8,86.1,1.6,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+curau-milho-verde,"Curau, milho verde",curau,carboidrato,78,2.4,13.9,1.6,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+curau-milho-verde-mistura-para,"Curau, milho verde, mistura para",curau,carboidrato,402,2.2,79.8,13.4,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+farinha-de-arroz-enriquecida,"Farinha, de arroz, enriquecida",farinha,carboidrato,363,1.3,85.5,0.3,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+farinha-de-centeio-integral,"Farinha, de centeio, integral",farinha,carboidrato,336,12.5,73.3,1.8,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+farinha-de-milho-amarela,"Farinha, de milho, amarela",farinha,carboidrato,351,7.2,79.1,1.5,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+farinha-de-rosca,"Farinha, de rosca",farinha,carboidrato,371,11.4,75.8,1.5,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+farinha-de-trigo,"Farinha, de trigo",farinha,carboidrato,360,9.8,75.1,1.4,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+farinha-lactea-de-cereais,"Farinha, láctea, de cereais",farinha,carboidrato,415,11.9,77.8,5.8,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+lasanha-massa-fresca-cozida,"Lasanha, massa fresca, cozida",lasanha,carboidrato,164,5.8,32.5,1.2,100,,,,,0,0,"TACO 4ª ed.",gluten|lactose|sem-animal,,g,0
+lasanha-massa-fresca-crua,"Lasanha, massa fresca, crua",lasanha,carboidrato,220,7,45.1,1.3,100,,,,,0,0,"TACO 4ª ed.",gluten|lactose|sem-animal,,g,0
+macarrao-instantaneo,"Macarrão, instantâneo",macarrao,carboidrato,436,8.8,62.4,17.2,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+macarrao-trigo-cru,"Macarrão, trigo, cru",macarrao,carboidrato,371,10,77.9,1.3,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+macarrao-trigo-cru-com-ovos,"Macarrão, trigo, cru, com ovos",macarrao,carboidrato,371,10.3,76.6,2,100,,,,,0,0,"TACO 4ª ed.",gluten|sem-animal,,g,0
+milho-amido-cru,"Milho, amido, cru",milho,carboidrato,361,0.6,87.1,0,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+milho-fuba-cru,"Milho, fubá, cru",milho,carboidrato,353,7.2,78.9,1.9,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+milho-verde-cru,"Milho, verde, cru",milho,carboidrato,138,6.6,28.6,0.6,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+milho-verde-enlatado-drenado,"Milho, verde, enlatado, drenado",milho,carboidrato,98,3.2,17.1,2.4,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+mingau-tradicional-po,"Mingau tradicional, pó","mingau tradicional",carboidrato,373,0.6,89.3,0.4,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+pamonha-barra-para-cozimento-pre-cozida,"Pamonha, barra para cozimento, pré-cozida",pamonha,carboidrato,171,2.6,30.7,4.8,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+pao-aveia-forma,"Pão, aveia, forma",pao,carboidrato,343,12.4,59.6,5.7,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+pao-de-soja,"Pão, de soja",pao,carboidrato,309,11.3,56.5,3.6,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+pao-gluten-forma,"Pão, glúten, forma",pao,carboidrato,253,12,44.1,2.7,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+pao-milho-forma,"Pão, milho, forma",pao,carboidrato,292,8.3,56.4,3.1,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+pao-trigo-forma-integral,"Pão, trigo, forma, integral",pao,carboidrato,253,9.4,49.9,3.7,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+pao-trigo-frances,"Pão, trigo, francês",pao,carboidrato,300,8,58.6,3.1,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+pao-trigo-sovado,"Pão, trigo, sovado",pao,carboidrato,311,8.4,61.5,2.8,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+pastel-de-carne-cru,"Pastel, de carne, cru",pastel,carboidrato,289,10.7,42,8.8,100,,,,,0,0,"TACO 4ª ed.",gluten|sem-carne|sem-animal,,g,0
+pastel-de-carne-frito,"Pastel, de carne, frito",pastel,carboidrato,388,10.1,43.8,20.1,100,,,,,0,0,"TACO 4ª ed.",gluten|sem-carne|sem-animal,,g,0
+pastel-de-queijo-cru,"Pastel, de queijo, cru",pastel,carboidrato,308,9.9,45.9,9.6,100,,,,,0,0,"TACO 4ª ed.",gluten|lactose|sem-animal,,g,0
+pastel-de-queijo-frito,"Pastel, de queijo, frito",pastel,carboidrato,422,8.7,48.1,22.7,100,,,,,0,0,"TACO 4ª ed.",gluten|lactose|sem-animal,,g,0
+pastel-massa-crua,"Pastel, massa, crua",pastel,carboidrato,310,6.9,57.4,5.5,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+pastel-massa-frita,"Pastel, massa, frita",pastel,carboidrato,570,6,49.3,40.9,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+pipoca-com-oleo-de-soja-sem-sal,"Pipoca, com óleo de soja, sem sal",pipoca,carboidrato,448,9.9,70.3,15.9,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+polenta-pre-cozida,"Polenta, pré-cozida",polenta,carboidrato,103,2.3,23.3,0.3,100,,,,,0,0,"TACO 4ª ed.",,,g,0
+torrada-pao-frances,"Torrada, pão francês",torrada,carboidrato,377,10.5,74.6,3.3,100,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+abobora-cabotian-cozida,"Abóbora, cabotian, cozida",abobora,vegetal,48,1.4,10.8,0.7,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+abobora-cabotian-crua,"Abóbora, cabotian, crua",abobora,vegetal,39,1.7,8.4,0.5,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+abobora-menina-brasileira-crua,"Abóbora, menina brasileira, crua",abobora,vegetal,14,0.6,3.3,0,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+abobora-moranga-crua,"Abóbora, moranga, crua",abobora,vegetal,12,1,2.7,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+abobora-moranga-refogada,"Abóbora, moranga, refogada",abobora,vegetal,29,0.4,6,0.8,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+abobora-pescoco-crua,"Abobora, pescoço, crua",abobora,vegetal,24,0.7,6.1,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+abobrinha-italiana-cozida,"Abobrinha, italiana, cozida",abobrinha,vegetal,15,1.1,3,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+abobrinha-italiana-crua,"Abobrinha, italiana, crua",abobrinha,vegetal,19,1.1,4.3,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+abobrinha-italiana-refogada,"Abobrinha, italiana, refogada",abobrinha,vegetal,24,1.1,4.2,0.8,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+abobrinha-paulista-crua,"Abobrinha, paulista, crua",abobrinha,vegetal,31,0.6,7.9,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+acelga-crua,"Acelga, crua",acelga,vegetal,21,1.4,4.6,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+agriao-cru,"Agrião, cru",agriao,vegetal,17,2.7,2.3,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+aipo-cru,"Aipo, cru",aipo,vegetal,19,0.8,4.3,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+alface-americana-crua,"Alface, americana, crua",alface,vegetal,9,0.6,1.7,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+alface-crespa-crua,"Alface, crespa, crua",alface,vegetal,11,1.3,1.7,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+alface-lisa-crua,"Alface, lisa, crua",alface,vegetal,14,1.7,2.4,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+alface-roxa-crua,"Alface, roxa, crua",alface,vegetal,13,0.9,2.5,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+alfavaca-crua,"Alfavaca, crua",alfavaca,vegetal,29,2.7,5.2,0.5,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+alho-cru,"Alho, cru",alho,vegetal,113,7,23.9,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+alho-poro-cru,"Alho-poró, cru",alho-poro,vegetal,32,1.4,6.9,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+almeirao-cru,"Almeirão, cru",almeirao,vegetal,18,1.8,3.3,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+almeirao-refogado,"Almeirão, refogado",almeirao,vegetal,65,1.7,5.7,4.8,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+batata-baroa-cozida,"Batata, baroa, cozida",batata,vegetal,80,0.9,18.9,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+batata-baroa-crua,"Batata, baroa, crua",batata,vegetal,101,1,24,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+batata-doce-crua,"Batata, doce, crua",batata,vegetal,118,1.3,28.2,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+batata-frita-tipo-chips-industrializada,"Batata, frita, tipo chips, industrializada",batata,vegetal,543,5.6,51.2,36.6,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+batata-inglesa-cozida,"Batata, inglesa, cozida",batata,vegetal,52,1.2,11.9,0,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+batata-inglesa-crua,"Batata, inglesa, crua",batata,vegetal,64,1.8,14.7,0,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+batata-inglesa-frita,"Batata, inglesa, frita",batata,vegetal,267,5,35.6,13.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+batata-inglesa-saute,"Batata, inglesa, sauté",batata,vegetal,68,1.3,14.1,0.9,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+berinjela-cozida,"Berinjela, cozida",berinjela,vegetal,19,0.7,4.5,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+berinjela-crua,"Berinjela, crua",berinjela,vegetal,20,1.2,4.4,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+beterraba-cozida,"Beterraba, cozida",beterraba,vegetal,32,1.3,7.2,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+beterraba-crua,"Beterraba, crua",beterraba,vegetal,49,1.9,11.1,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+biscoito-polvilho-doce,"Biscoito, polvilho doce",biscoito,vegetal,438,1.3,80.5,12.2,80,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+brocolis-cozido,"Brócolis, cozido",brocolis,vegetal,25,2.1,4.4,0.5,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+brocolis-cru,"Brócolis, cru",brocolis,vegetal,25,3.6,4,0.3,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+cara-cozido,"Cará, cozido",cara,vegetal,78,1.5,18.9,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+cara-cru,"Cará, cru",cara,vegetal,96,2.3,23,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+caruru-cru,"Caruru, cru",caruru,vegetal,34,3.2,6,0.6,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+catalonha-crua,"Catalonha, crua",catalonha,vegetal,24,1.9,4.8,0.3,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+catalonha-refogada,"Catalonha, refogada",catalonha,vegetal,63,2,4.8,4.8,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+cebola-crua,"Cebola, crua",cebola,vegetal,39,1.7,8.9,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+cebolinha-crua,"Cebolinha, crua",cebolinha,vegetal,20,1.9,3.4,0.4,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+cenoura-crua,"Cenoura, crua",cenoura,vegetal,34,1.3,7.7,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+chicoria-crua,"Chicória, crua",chicoria,vegetal,14,1.1,2.9,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+chuchu-cru,"Chuchu, cru",chuchu,vegetal,17,0.7,4.1,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+coentro-folhas-desidratadas,"Coentro, folhas desidratadas",coentro,vegetal,309,20.9,48,10.4,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+couve-manteiga-crua,"Couve, manteiga, crua",couve,vegetal,27,2.9,4.3,0.5,80,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+couve-manteiga-refogada,"Couve, manteiga, refogada",couve,vegetal,90,1.7,8.7,6.6,80,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+couve-flor-crua,"Couve-flor, crua",couve-flor,vegetal,23,1.9,4.5,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+couve-flor-cozida,"Couve-flor, cozida",couve-flor,vegetal,19,1.2,3.9,0.3,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+espinafre-nova-zelandia-cru,"Espinafre, Nova Zelândia, cru",espinafre,vegetal,16,2,2.6,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+espinafre-nova-zelandia-refogado,"Espinafre, Nova Zelândia, refogado",espinafre,vegetal,67,2.7,4.2,5.4,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+farinha-de-mandioca-crua,"Farinha, de mandioca, crua",farinha,vegetal,361,1.6,87.9,0.3,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+farinha-de-mandioca-torrada,"Farinha, de mandioca, torrada",farinha,vegetal,365,1.2,89.2,0.3,80,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+farinha-de-puba,"Farinha, de puba",farinha,vegetal,360,1.6,87.3,0.5,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+fecula-de-mandioca,"Fécula, de mandioca",fecula,vegetal,331,0.5,81.1,0.3,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+feijao-broto-cru,"Feijão, broto, cru",feijao,vegetal,39,4.2,7.8,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+inhame-cru,"Inhame, cru",inhame,vegetal,97,2.1,23.2,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+jilo-cru,"Jiló, cru",jilo,vegetal,27,1.4,6.2,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+jurubeba-crua,"Jurubeba, crua",jurubeba,vegetal,126,4.4,23.1,3.9,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+mandioca-cozida,"Mandioca, cozida",mandioca,vegetal,125,0.6,30.1,0.3,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+mandioca-crua,"Mandioca, crua",mandioca,vegetal,151,1.1,36.2,0.3,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+mandioca-farofa-temperada,"Mandioca, farofa, temperada",mandioca,vegetal,406,2.1,80.3,9.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+mandioca-frita,"Mandioca, frita",mandioca,vegetal,300,1.4,50.3,11.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+manjericao-cru,"Manjericão, cru",manjericao,vegetal,21,2,3.6,0.4,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+maxixe-cru,"Maxixe, cru",maxixe,vegetal,14,1.4,2.7,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+mostarda-folha-crua,"Mostarda, folha, crua",mostarda,vegetal,18,2.1,3.2,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+nhoque-batata-cozido,"Nhoque, batata, cozido",nhoque,vegetal,181,5.9,36.8,1.9,80,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+nabo-cru,"Nabo, cru",nabo,vegetal,18,1.2,4.1,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+palmito-jucara-em-conserva,"Palmito, juçara, em conserva",palmito,vegetal,23,1.8,4.3,0.4,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+palmito-pupunha-em-conserva,"Palmito, pupunha, em conserva",palmito,vegetal,29,2.5,5.5,0.5,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+pao-de-queijo-assado,"Pão, de queijo, assado",pao,vegetal,363,5.1,34.2,24.6,80,,,,,0,0,"TACO 4ª ed.",gluten|lactose|sem-animal,,g,0
+pao-de-queijo-cru,"Pão, de queijo, cru",pao,vegetal,295,3.6,38.5,14,80,,,,,0,0,"TACO 4ª ed.",gluten|lactose|sem-animal,,g,0
+pepino-cru,"Pepino, cru",pepino,vegetal,10,0.9,2,0,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+pimentao-amarelo-cru,"Pimentão, amarelo, cru",pimentao,vegetal,28,1.2,6,0.4,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+pimentao-verde-cru,"Pimentão, verde, cru",pimentao,vegetal,21,1.1,4.9,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+pimentao-vermelho-cru,"Pimentão, vermelho, cru",pimentao,vegetal,23,1,5.5,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+polvilho-doce,"Polvilho, doce",polvilho,vegetal,351,0.4,86.8,0,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+quiabo-cru,"Quiabo, cru",quiabo,vegetal,30,1.9,6.4,0.3,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+rabanete-cru,"Rabanete, cru",rabanete,vegetal,14,1.4,2.7,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+repolho-branco-cru,"Repolho, branco, cru",repolho,vegetal,17,0.9,3.9,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+repolho-roxo-cru,"Repolho, roxo, cru",repolho,vegetal,31,1.9,7.2,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+repolho-roxo-refogado,"Repolho, roxo, refogado",repolho,vegetal,42,1.8,7.6,1.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+rucula-crua,"Rúcula, crua",rucula,vegetal,13,1.8,2.2,0.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+salsa-crua,"Salsa, crua",salsa,vegetal,33,3.3,5.7,0.6,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+seleta-de-legumes-enlatada,"Seleta de legumes, enlatada","seleta de legumes",vegetal,57,3.4,12.7,0.4,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+serralha-crua,"Serralha, crua",serralha,vegetal,30,2.7,4.9,0.7,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+taioba-crua,"Taioba, crua",taioba,vegetal,34,2.9,5.4,0.9,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+tomate-com-semente-cru,"Tomate, com semente, cru",tomate,vegetal,15,1.1,3.1,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+tomate-extrato,"Tomate, extrato",tomate,vegetal,61,2.4,15,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+tomate-molho-industrializado,"Tomate, molho industrializado",tomate,vegetal,38,1.4,7.7,0.9,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+tomate-pure,"Tomate, purê",tomate,vegetal,28,1.4,6.9,0,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+tomate-salada,"Tomate, salada",tomate,vegetal,21,0.8,5.1,0,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+vagem-crua,"Vagem, crua",vagem,vegetal,25,1.8,5.3,0.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+abacate-cru,"Abacate, cru",abacate,fruta,96,1.2,6,8.4,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+abacaxi-cru,"Abacaxi, cru",abacaxi,fruta,48,0.9,12.3,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+abacaxi-polpa-congelada,"Abacaxi, polpa, congelada",abacaxi,fruta,31,0.5,7.8,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+abiu-cru,"Abiu, cru",abiu,fruta,62,0.8,14.9,0.7,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+acai-polpa-com-xarope-de-guarana-e-glucose,"Açaí, polpa, com xarope de guaraná e glucose",acai,fruta,110,0.7,21.5,3.7,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+acai-polpa-congelada,"Açaí, polpa, congelada",acai,fruta,58,0.8,6.2,3.9,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+acerola-crua,"Acerola, crua",acerola,fruta,33,0.9,8,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+acerola-polpa-congelada,"Acerola, polpa, congelada",acerola,fruta,22,0.6,5.5,0,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+ameixa-calda-enlatada,"Ameixa, calda, enlatada",ameixa,fruta,183,0.4,46.9,0,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+ameixa-crua,"Ameixa, crua",ameixa,fruta,53,0.8,13.9,0,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+ameixa-em-calda-enlatada-drenada,"Ameixa, em calda, enlatada, drenada",ameixa,fruta,177,1,47.7,0.3,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+atemoia-crua,"Atemóia, crua",atemoia,fruta,97,1,25.3,0.3,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+banana-da-terra-crua,"Banana, da terra, crua",banana,fruta,128,1.4,33.7,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+banana-doce-em-barra,"Banana, doce em barra",banana,fruta,280,2.2,75.7,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+banana-figo-crua,"Banana, figo, crua",banana,fruta,105,1.1,27.8,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+banana-maca-crua,"Banana, maçã, crua",banana,fruta,87,1.8,22.3,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+banana-nanica-crua,"Banana, nanica, crua",banana,fruta,92,1.4,23.8,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+banana-ouro-crua,"Banana, ouro, crua",banana,fruta,112,1.5,29.3,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+banana-pacova-crua,"Banana, pacova, crua",banana,fruta,78,1.2,20.3,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+banana-prata-crua,"Banana, prata, crua",banana,fruta,98,1.3,26,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+cacau-cru,"Cacau, cru",cacau,fruta,74,1,19.4,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+caja-manga-cru,"Cajá-Manga, cru",caja-manga,fruta,46,1.3,11.4,0,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+caja-polpa-congelada,"Cajá, polpa, congelada",caja,fruta,26,0.6,6.4,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+caju-cru,"Caju, cru",caju,fruta,43,1,10.3,0.3,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+caju-polpa-congelada,"Caju, polpa, congelada",caju,fruta,37,0.5,9.4,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+caju-suco-concentrado-envasado,"Caju, suco concentrado, envasado",caju,fruta,45,0.4,10.7,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+caqui-chocolate-cru,"Caqui, chocolate, cru",caqui,fruta,71,0.4,19.3,0.1,120,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+carambola-crua,"Carambola, crua",carambola,fruta,46,0.9,11.5,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+ciriguela-crua,"Ciriguela, crua",ciriguela,fruta,76,1.4,18.9,0.4,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+cupuacu-cru,"Cupuaçu, cru",cupuacu,fruta,49,1.2,10.4,1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+cupuacu-polpa-congelada,"Cupuaçu, polpa, congelada",cupuacu,fruta,49,0.8,11.4,0.6,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+figo-cru,"Figo, cru",figo,fruta,41,1,10.2,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+figo-enlatado-em-calda,"Figo, enlatado, em calda",figo,fruta,184,0.6,50.3,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+fruta-pao-crua,"Fruta-pão, crua",fruta-pao,fruta,67,1.1,17.2,0.2,120,,,,,0,0,"TACO 4ª ed.",gluten,,g,0
+goiaba-branca-com-casca-crua,"Goiaba, branca, com casca, crua",goiaba,fruta,52,0.9,12.4,0.5,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+goiaba-doce-em-pasta,"Goiaba, doce em pasta",goiaba,fruta,269,0.6,74.1,0,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+goiaba-doce-cascao,"Goiaba, doce, cascão",goiaba,fruta,286,0.4,78.7,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+goiaba-vermelha-com-casca-crua,"Goiaba, vermelha, com casca, crua",goiaba,fruta,54,1.1,13,0.4,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+graviola-crua,"Graviola, crua",graviola,fruta,62,0.8,15.8,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+graviola-polpa-congelada,"Graviola, polpa, congelada",graviola,fruta,38,0.6,9.8,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+jabuticaba-crua,"Jabuticaba, crua",jabuticaba,fruta,58,0.6,15.3,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+jaca-crua,"Jaca, crua",jaca,fruta,88,1.4,22.5,0.3,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+jambo-cru,"Jambo, cru",jambo,fruta,27,0.9,6.5,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+jamelao-cru,"Jamelão, cru",jamelao,fruta,41,0.5,10.6,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+kiwi-cru,"Kiwi, cru",kiwi,fruta,51,1.3,11.5,0.6,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+laranja-baia-crua,"Laranja, baía, crua",laranja,fruta,45,1,11.5,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+laranja-baia-suco,"Laranja, baía, suco",laranja,fruta,37,0.7,8.7,0,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+laranja-da-terra-crua,"Laranja, da terra, crua",laranja,fruta,51,1.1,12.9,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+laranja-da-terra-suco,"Laranja, da terra, suco",laranja,fruta,41,0.7,9.6,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+laranja-lima-crua,"Laranja, lima, crua",laranja,fruta,46,1.1,11.5,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+laranja-lima-suco,"Laranja, lima, suco",laranja,fruta,39,0.7,9.2,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+laranja-pera-crua,"Laranja, pêra, crua",laranja,fruta,37,1,8.9,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+laranja-pera-suco,"Laranja, pêra, suco",laranja,fruta,33,0.7,7.6,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+laranja-valencia-crua,"Laranja, valência, crua",laranja,fruta,46,0.8,11.7,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+laranja-valencia-suco,"Laranja, valência, suco",laranja,fruta,36,0.5,8.6,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+limao-cravo-suco,"Limão, cravo, suco",limao,fruta,14,0.3,5.2,0,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+limao-galego-suco,"Limão, galego, suco",limao,fruta,22,0.6,7.3,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+limao-tahiti-cru,"Limão, tahiti, cru",limao,fruta,32,0.9,11.1,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+maca-argentina-com-casca-crua,"Maçã, Argentina, com casca, crua",maca,fruta,63,0.2,16.6,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+maca-fuji-com-casca-crua,"Maçã, Fuji, com casca, crua",maca,fruta,56,0.3,15.2,0,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+macauba-crua,"Macaúba, crua",macauba,fruta,404,2.1,13.9,40.7,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+mamao-doce-em-calda-drenado,"Mamão, doce em calda, drenado",mamao,fruta,196,0.2,54,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+mamao-formosa-cru,"Mamão, Formosa, cru",mamao,fruta,45,0.8,11.6,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+mamao-papaia-cru,"Mamão, Papaia, cru",mamao,fruta,40,0.5,10.4,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+mamao-verde-doce-em-calda-drenado,"Mamão verde, doce em calda, drenado","mamao verde",fruta,209,0.3,57.6,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+manga-haden-crua,"Manga, Haden, crua",manga,fruta,64,0.4,16.7,0.3,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+manga-palmer-crua,"Manga, Palmer, crua",manga,fruta,72,0.4,19.4,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+manga-polpa-congelada,"Manga, polpa, congelada",manga,fruta,48,0.4,12.5,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+manga-tommy-atkins-crua,"Manga, Tommy Atkins, crua",manga,fruta,51,0.9,12.8,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+maracuja-cru,"Maracujá, cru",maracuja,fruta,68,2,12.3,2.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+maracuja-polpa-congelada,"Maracujá, polpa, congelada",maracuja,fruta,39,0.8,9.6,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+maracuja-suco-concentrado-envasado,"Maracujá, suco concentrado, envasado",maracuja,fruta,42,0.8,9.6,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+melancia-crua,"Melancia, crua",melancia,fruta,33,0.9,8.1,0,120,,,,,0,0,"TACO 4ª ed.",sem-animal,,g,0
+melao-cru,"Melão, cru",melao,fruta,29,0.7,7.5,0,120,,,,,0,0,"TACO 4ª ed.",sem-animal,,g,0
+mexerica-murcote-crua,"Mexerica, Murcote, crua",mexerica,fruta,58,0.9,14.9,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+mexerica-rio-crua,"Mexerica, Rio, crua",mexerica,fruta,37,0.7,9.3,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+morango-cru,"Morango, cru",morango,fruta,30,0.9,6.8,0.3,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+nespera-crua,"Nêspera, crua",nespera,fruta,43,0.3,11.5,0,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+pequi-cru,"Pequi, cru",pequi,fruta,205,2.3,13,18,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+pera-park-crua,"Pêra, Park, crua",pera,fruta,61,0.2,16.1,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+pera-williams-crua,"Pêra, Williams, crua",pera,fruta,53,0.6,14,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+pessego-aurora-cru,"Pêssego, Aurora, cru",pessego,fruta,36,0.8,9.3,0,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+pessego-enlatado-em-calda,"Pêssego, enlatado, em calda",pessego,fruta,63,0.7,16.9,0,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+pinha-crua,"Pinha, crua",pinha,fruta,88,1.5,22.4,0.3,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+pitanga-crua,"Pitanga, crua",pitanga,fruta,41,0.9,10.2,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+pitanga-polpa-congelada,"Pitanga, polpa, congelada",pitanga,fruta,19,0.3,4.8,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+roma-crua,"Romã, crua",roma,fruta,56,0.4,15.1,0,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+tamarindo-cru,"Tamarindo, cru",tamarindo,fruta,276,3.2,72.5,0.5,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+tangerina-ponca-crua,"Tangerina, Poncã, crua",tangerina,fruta,38,0.8,9.6,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+tangerina-ponca-suco,"Tangerina, Poncã, suco",tangerina,fruta,36,0.5,8.8,0,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+tucuma-cru,"Tucumã, cru",tucuma,fruta,262,2.1,26.5,19.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+umbu-cru,"Umbu, cru",umbu,fruta,37,0.8,9.4,0,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+umbu-polpa-congelada,"Umbu, polpa, congelada",umbu,fruta,34,0.5,8.8,0.1,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+uva-italia-crua,"Uva, Itália, crua",uva,fruta,53,0.7,13.6,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+uva-rubi-crua,"Uva, Rubi, crua",uva,fruta,49,0.6,12.7,0.2,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+uva-suco-concentrado-envasado,"Uva, suco concentrado, envasado",uva,fruta,58,0,14.7,0,120,,,,,0,0,"TACO 4ª ed.",,,g,0
+azeite-de-dende,"Azeite, de dendê",azeite,gordura,884,0,0,100,15,,,,,0,0,"TACO 4ª ed.",,,g,0
+azeite-de-oliva-extra-virgem,"Azeite, de oliva, extra virgem",azeite,gordura,884,0,0,100,15,,,,,0,0,"TACO 4ª ed.",,,g,0
+manteiga-com-sal,"Manteiga, com sal",manteiga,gordura,726,0.4,0.1,82.4,15,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+manteiga-sem-sal,"Manteiga, sem sal",manteiga,gordura,758,0.4,0,86,15,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+margarina-com-oleo-hidrogenado-com-sal-65-de-lipideos,"Margarina, com óleo hidrogenado, com sal (65% de lipídeos)",margarina,gordura,596,0,0,67.4,15,,,,,0,0,"TACO 4ª ed.",,,g,0
+margarina-com-oleo-hidrogenado-sem-sal-80-de-lipideos,"Margarina, com óleo hidrogenado, sem sal (80% de lipídeos)",margarina,gordura,723,0,0,81.7,15,,,,,0,0,"TACO 4ª ed.",,,g,0
+margarina-com-oleo-interesterificado-com-sal-65de-lipideos,"Margarina, com óleo interesterificado, com sal (65%de lipídeos)",margarina,gordura,594,0,0,67.2,15,,,,,0,0,"TACO 4ª ed.",,,g,0
+margarina-com-oleo-interesterificado-sem-sal-65-de-lipideos,"Margarina, com óleo interesterificado, sem sal (65% de lipídeos)",margarina,gordura,593,0,0,67.1,15,,,,,0,0,"TACO 4ª ed.",,,g,0
+oleo-de-babacu,"Óleo, de babaçu",oleo,gordura,884,0,0,100,15,,,,,0,0,"TACO 4ª ed.",,,g,0
+oleo-de-canola,"Óleo, de canola",oleo,gordura,884,0,0,100,15,,,,,0,0,"TACO 4ª ed.",,,g,0
+oleo-de-girassol,"Óleo, de girassol",oleo,gordura,884,0,0,100,15,,,,,0,0,"TACO 4ª ed.",,,g,0
+oleo-de-milho,"Óleo, de milho",oleo,gordura,884,0,0,100,15,,,,,0,0,"TACO 4ª ed.",,,g,0
+oleo-de-pequi,"Óleo, de pequi",oleo,gordura,884,0,0,100,15,,,,,0,0,"TACO 4ª ed.",,,g,0
+oleo-de-soja,"Óleo, de soja",oleo,gordura,884,0,0,100,15,,,,,0,0,"TACO 4ª ed.",,,g,0
+abadejo-file-congelado-assado,"Abadejo, filé, congelado, assado",abadejo,proteina,112,23.5,0,1.2,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+abadejo-file-congeladocozido,"Abadejo, filé, congelado,cozido",abadejo,proteina,91,19.3,0,0.9,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+abadejo-file-congelado-cru,"Abadejo, filé, congelado, cru",abadejo,proteina,59,13.1,0,0.4,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+abadejo-file-congelado-grelhado,"Abadejo, filé, congelado, grelhado",abadejo,proteina,130,27.6,0,1.3,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+atum-conserva-em-oleo,"Atum, conserva em óleo",atum,proteina,166,26.2,0,6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+atum-fresco-cru,"Atum, fresco, cru",atum,proteina,118,25.7,0,0.9,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+bacalhau-salgado-cru,"Bacalhau, salgado, cru",bacalhau,proteina,136,29,0,1.3,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+bacalhau-salgado-refogado,"Bacalhau, salgado, refogado",bacalhau,proteina,140,24,1.2,3.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+cacao-posta-com-farinha-de-trigo-frita,"Cação, posta, com farinha de trigo, frita",cacao,proteina,208,25,3.1,10,100,,,,,0,0,"TACO 4ª ed.",gluten|sem-carne|sem-animal,,g,0
+cacao-posta-cozida,"Cação, posta, cozida",cacao,proteina,116,25.6,0,0.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+cacao-posta-crua,"Cação, posta, crua",cacao,proteina,83,17.9,0,0.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+camarao-rio-grande-grande-cozido,"Camarão, Rio Grande, grande, cozido",camarao,proteina,90,19,0,1,100,,,,,0,0,"TACO 4ª ed.",frutos-do-mar|sem-carne|sem-animal,,g,0
+camarao-rio-grande-grande-cru,"Camarão, Rio Grande, grande, cru",camarao,proteina,47,10,0,0.5,100,,,,,0,0,"TACO 4ª ed.",frutos-do-mar|sem-carne|sem-animal,,g,0
+camarao-sete-barbas-sem-cabeca-com-casca-frito,"Camarão, Sete Barbas, sem cabeça, com casca, frito",camarao,proteina,231,18.4,2.9,15.6,100,,,,,0,0,"TACO 4ª ed.",frutos-do-mar|sem-carne|sem-animal,,g,0
+caranguejo-cozido,"Caranguejo, cozido",caranguejo,proteina,83,18.5,0,0.4,100,,,,,0,0,"TACO 4ª ed.",frutos-do-mar|sem-carne|sem-animal,,g,0
+corimba-cru,"Corimba, cru",corimba,proteina,128,17.4,0,6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+corimbata-assado,"Corimbatá, assado",corimbata,proteina,261,19.9,0,19.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+corimbata-cozido,"Corimbatá, cozido",corimbata,proteina,239,20.1,0,16.9,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+corvina-de-agua-doce-crua,"Corvina de água doce, crua","corvina de agua doce",proteina,101,18.9,0,2.2,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+corvina-do-mar-crua,"Corvina do mar, crua","corvina do mar",proteina,94,18.6,0,1.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+corvina-grande-assada,"Corvina grande, assada","corvina grande",proteina,147,26.8,0,3.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+corvina-grande-cozida,"Corvina grande, cozida","corvina grande",proteina,100,23.4,0,2.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+dourada-de-agua-doce-fresca,"Dourada de água doce, fresca","dourada de agua doce",proteina,131,18.8,0,5.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+lambari-congelado-cru,"Lambari, congelado, cru",lambari,proteina,131,16.8,0,6.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+lambari-congelado-frito,"Lambari, congelado, frito",lambari,proteina,327,28.4,0,22.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+lambari-fresco-cru,"Lambari, fresco, cru",lambari,proteina,152,15.7,0,9.4,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+manjuba-com-farinha-de-trigo-frita,"Manjuba, com farinha de trigo, frita",manjuba,proteina,344,23.5,10.2,22.6,100,,,,,0,0,"TACO 4ª ed.",gluten|sem-carne|sem-animal,,g,0
+manjuba-frita,"Manjuba, frita",manjuba,proteina,349,30.1,0,24.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+merluza-file-assado,"Merluza, filé, assado",merluza,proteina,122,26.6,0,0.9,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+merluza-file-cru,"Merluza, filé, cru",merluza,proteina,89,16.6,0,2,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+merluza-file-frito,"Merluza, filé, frito",merluza,proteina,192,26.9,0,8.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+pescada-branca-crua,"Pescada, branca, crua",pescada,proteina,111,16.3,0,4.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+pescada-branca-frita,"Pescada, branca, frita",pescada,proteina,223,27.4,0,11.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+pescada-file-com-farinha-de-trigo-frito,"Pescada, filé, com farinha de trigo, frito",pescada,proteina,283,21.4,5,19.1,100,,,,,0,0,"TACO 4ª ed.",gluten|sem-carne|sem-animal,,g,0
+pescada-file-cru,"Pescada, filé, cru",pescada,proteina,107,16.7,0,4,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+pescada-file-frito,"Pescada, filé, frito",pescada,proteina,154,28.6,0,3.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+pescada-file-molho-escabeche,"Pescada, filé, molho escabeche",pescada,proteina,142,11.8,5,8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+pescadinha-crua,"Pescadinha, crua",pescadinha,proteina,76,15.5,0,1.1,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+pintado-assado,"Pintado, assado",pintado,proteina,192,36.5,0,4,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+pintado-cru,"Pintado, cru",pintado,proteina,91,18.6,0,1.3,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+pintado-grelhado,"Pintado, grelhado",pintado,proteina,152,30.8,0,2.3,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+porquinho-cru,"Porquinho, cru",porquinho,proteina,93,20.5,0,0.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+salmao-file-com-pele-fresco-grelhado,"Salmão, filé, com pele, fresco, grelhado",salmao,proteina,229,23.9,0,14,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+salmao-sem-pele-fresco-cru,"Salmão, sem pele, fresco, cru",salmao,proteina,170,19.3,0,9.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+salmao-sem-pele-fresco-grelhado,"Salmão, sem pele, fresco, grelhado",salmao,proteina,243,26.1,0,14.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+sardinha-assada,"Sardinha, assada",sardinha,proteina,164,32.2,0,3,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+sardinha-conserva-em-oleo,"Sardinha, conserva em óleo",sardinha,proteina,285,15.9,0,24,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+sardinha-frita,"Sardinha, frita",sardinha,proteina,257,33.4,0,12.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+sardinha-inteira-crua,"Sardinha, inteira, crua",sardinha,proteina,114,21.1,0,2.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+tucunare-file-congelado-cru,"Tucunaré, filé, congelado, cru",tucunare,proteina,88,18,0,1.2,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+apresuntado,Apresuntado,apresuntado,proteina,129,13.5,2.9,6.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+caldo-de-carne-tablete,"Caldo de carne, tablete","caldo de carne",proteina,241,7.8,15.1,16.6,200,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,ml,0
+caldo-de-galinha-tablete,"Caldo de galinha, tablete","caldo de galinha",proteina,251,6.3,10.6,20.4,200,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,ml,0
+carne-bovina-acem-moido-cozido,"Carne, bovina, acém, moído, cozido",carne,proteina,212,26.7,0,10.9,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-acem-moido-cru,"Carne, bovina, acém, moído, cru",carne,proteina,137,19.4,0,5.9,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-acem-sem-gordura-cozido,"Carne, bovina, acém, sem gordura, cozido",carne,proteina,215,27.3,0,10.9,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-acem-sem-gordura-cru,"Carne, bovina, acém, sem gordura, cru",carne,proteina,144,20.8,0,6.1,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-almondegas-cruas,"Carne, bovina, almôndegas, cruas",carne,proteina,189,12.3,9.8,11.2,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-almondegas-fritas,"Carne, bovina, almôndegas, fritas",carne,proteina,272,18.2,14.3,15.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-bucho-cozido,"Carne, bovina, bucho, cozido",carne,proteina,133,21.6,0,4.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-bucho-cru,"Carne, bovina, bucho, cru",carne,proteina,137,20.5,0,5.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-capa-de-contra-file-com-gordura-crua,"Carne, bovina, capa de contra-filé, com gordura, crua",carne,proteina,217,19.2,0,15,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-capa-de-contra-file-com-gordura-grelhada,"Carne, bovina, capa de contra-filé, com gordura, grelhada",carne,proteina,312,30.7,0,20,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-capa-de-contra-file-sem-gordura-crua,"Carne, bovina, capa de contra-filé, sem gordura, crua",carne,proteina,131,21.5,0,4.3,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-capa-de-contra-file-sem-gordura-grelhada,"Carne, bovina, capa de contra-filé, sem gordura, grelhada",carne,proteina,239,35.1,0,10,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-charque-cozido,"Carne, bovina, charque, cozido",carne,proteina,263,36.4,0,11.9,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-charque-cru,"Carne, bovina, charque, cru",carne,proteina,249,22.7,0,16.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-contra-file-a-milanesa,"Carne, bovina, contra-filé, à milanesa",carne,proteina,352,20.6,12.2,24,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-contra-file-de-costela-cru,"Carne, bovina, contra-filé de costela, cru",carne,proteina,202,19.8,0,13.1,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-contra-file-de-costela-grelhado,"Carne, bovina, contra-filé de costela, grelhado",carne,proteina,275,29.9,0,16.3,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-contra-file-com-gordura-cru,"Carne, bovina, contra-filé, com gordura, cru",carne,proteina,206,21.2,0,12.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-contra-file-com-gordura-grelhado,"Carne, bovina, contra-filé, com gordura, grelhado",carne,proteina,278,32.4,0,15.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-contra-file-sem-gordura-cru,"Carne, bovina, contra-filé, sem gordura, cru",carne,proteina,157,24,0,6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-contra-file-sem-gordura-grelhado,"Carne, bovina, contra-filé, sem gordura, grelhado",carne,proteina,194,35.9,0,4.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-costela-assada,"Carne, bovina, costela, assada",carne,proteina,373,28.8,0,27.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-costela-crua,"Carne, bovina, costela, crua",carne,proteina,358,16.7,0,31.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-coxao-duro-sem-gordura-cozido,"Carne, bovina, coxão duro, sem gordura, cozido",carne,proteina,217,31.9,0,8.9,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-coxao-duro-sem-gordura-cru,"Carne, bovina, coxão duro, sem gordura, cru",carne,proteina,148,21.5,0,6.2,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-coxao-mole-sem-gordura-cozido,"Carne, bovina, coxão mole, sem gordura, cozido",carne,proteina,219,32.4,0,8.9,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-coxao-mole-sem-gordura-cru,"Carne, bovina, coxão mole, sem gordura, cru",carne,proteina,169,21.2,0,8.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-cupim-assado,"Carne, bovina, cupim, assado",carne,proteina,330,28.6,0,23,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-cupim-cru,"Carne, bovina, cupim, cru",carne,proteina,221,19.5,0,15.3,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-figado-cru,"Carne, bovina, fígado, cru",carne,proteina,141,20.7,1.1,5.4,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-figado-grelhado,"Carne, bovina, fígado, grelhado",carne,proteina,225,29.9,4.2,9,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-file-mingnon-sem-gordura-cru,"Carne, bovina, filé mingnon, sem gordura, cru",carne,proteina,143,21.6,0,5.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-file-mingnon-sem-gordura-grelhado,"Carne, bovina, filé mingnon, sem gordura, grelhado",carne,proteina,220,32.8,0,8.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-flanco-sem-gordura-cozido,"Carne, bovina, flanco, sem gordura, cozido",carne,proteina,196,29.4,0,7.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-flanco-sem-gordura-cru,"Carne, bovina, flanco, sem gordura, cru",carne,proteina,141,20,0,6.2,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-fraldinha-com-gordura-cozida,"Carne, bovina, fraldinha, com gordura, cozida",carne,proteina,338,24.2,0,26,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-fraldinha-com-gordura-crua,"Carne, bovina, fraldinha, com gordura, crua",carne,proteina,221,17.6,0,16.1,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-lagarto-cozido,"Carne, bovina, lagarto, cozido",carne,proteina,222,32.9,0,9.1,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-lagarto-cru,"Carne, bovina, lagarto, cru",carne,proteina,135,20.5,0,5.2,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-lingua-cozida,"Carne, bovina, língua, cozida",carne,proteina,315,21.4,0,24.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-lingua-crua,"Carne, bovina, língua, crua",carne,proteina,215,17.1,0,15.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-maminha-crua,"Carne, bovina, maminha, crua",carne,proteina,153,20.9,0,7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-maminha-grelhada,"Carne, bovina, maminha, grelhada",carne,proteina,153,30.7,0,2.4,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-miolo-de-alcatra-sem-gordura-cru,"Carne, bovina, miolo de alcatra, sem gordura, cru",carne,proteina,163,21.6,0,7.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-miolo-de-alcatra-sem-gordura-grelhado,"Carne, bovina, miolo de alcatra, sem gordura, grelhado",carne,proteina,241,31.9,0,11.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-musculo-sem-gordura-cozido,"Carne, bovina, músculo, sem gordura, cozido",carne,proteina,194,31.2,0,6.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-musculo-sem-gordura-cru,"Carne, bovina, músculo, sem gordura, cru",carne,proteina,142,21.6,0,5.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-paleta-com-gordura-crua,"Carne, bovina, paleta, com gordura, crua",carne,proteina,159,21.4,0,7.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-paleta-sem-gordura-cozida,"Carne, bovina, paleta, sem gordura, cozida",carne,proteina,194,29.7,0,7.4,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-paleta-sem-gordura-crua,"Carne, bovina, paleta, sem gordura, crua",carne,proteina,141,21,0,5.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-patinho-sem-gordura-cru,"Carne, bovina, patinho, sem gordura, cru",carne,proteina,133,21.7,0,4.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-patinho-sem-gordura-grelhado,"Carne, bovina, patinho, sem gordura, grelhado",carne,proteina,219,35.9,0,7.3,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-peito-sem-gordura-cozido,"Carne, bovina, peito, sem gordura, cozido",carne,proteina,338,22.2,0,27,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-peito-sem-gordura-cru,"Carne, bovina, peito, sem gordura, cru",carne,proteina,259,17.6,0,20.4,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-picanha-com-gordura-crua,"Carne, bovina, picanha, com gordura, crua",carne,proteina,213,18.8,0,14.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-picanha-com-gordura-grelhada,"Carne, bovina, picanha, com gordura, grelhada",carne,proteina,289,26.4,0,19.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-picanha-sem-gordura-crua,"Carne, bovina, picanha, sem gordura, crua",carne,proteina,134,21.3,0,4.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-picanha-sem-gordura-grelhada,"Carne, bovina, picanha, sem gordura, grelhada",carne,proteina,238,31.9,0,11.3,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-seca-cozida,"Carne, bovina, seca, cozida",carne,proteina,313,26.9,0,21.9,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+carne-bovina-seca-crua,"Carne, bovina, seca, crua",carne,proteina,313,19.7,0,25.4,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+coxinha-de-frango-frita,"Coxinha de frango, frita","coxinha de frango",proteina,283,9.6,34.5,11.8,100,,,,,0,0,"TACO 4ª ed.",gluten|sem-carne|sem-animal,,g,0
+croquete-de-carne-cru,"Croquete, de carne, cru",croquete,proteina,246,12,13.9,15.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+croquete-de-carne-frito,"Croquete, de carne, frito",croquete,proteina,347,16.9,18.1,22.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+empada-de-frango-pre-cozida-assada,"Empada de frango, pré-cozida, assada","empada de frango",proteina,358,6.9,47.5,15.6,100,,,,,0,0,"TACO 4ª ed.",gluten|sem-carne|sem-animal,,g,0
+empada-de-frango-pre-cozida,"Empada, de frango, pré-cozida",empada,proteina,377,7.3,35.5,22.9,100,,,,,0,0,"TACO 4ª ed.",gluten|sem-carne|sem-animal,,g,0
+frango-asa-com-pele-crua,"Frango, asa, com pele, crua",frango,proteina,213,18.1,0,15.1,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-caipira-inteiro-com-pele-cozido,"Frango, caipira, inteiro, com pele, cozido",frango,proteina,243,23.9,0,15.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-caipira-inteiro-sem-pele-cozido,"Frango, caipira, inteiro, sem pele, cozido",frango,proteina,196,29.6,0,7.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-coracao-cru,"Frango, coração, cru",frango,proteina,222,12.6,0,18.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-coracao-grelhado,"Frango, coração, grelhado",frango,proteina,207,22.4,0.6,12.1,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-coxa-com-pele-assada,"Frango, coxa, com pele, assada",frango,proteina,215,28.5,0.1,10.4,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-coxa-com-pele-crua,"Frango, coxa, com pele, crua",frango,proteina,161,17.1,0,9.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-coxa-sem-pele-cozida,"Frango, coxa, sem pele, cozida",frango,proteina,167,26.9,0,5.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-coxa-sem-pele-crua,"Frango, coxa, sem pele, crua",frango,proteina,120,17.8,0,4.9,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-figado-cru,"Frango, fígado, cru",frango,proteina,106,17.6,0,3.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-file-a-milanesa,"Frango, filé, à milanesa",frango,proteina,221,28.5,7.5,7.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-inteiro-com-pele-cru,"Frango, inteiro, com pele, cru",frango,proteina,226,16.4,0,17.3,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-inteiro-sem-pele-assado,"Frango, inteiro, sem pele, assado",frango,proteina,187,28,0,7.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-inteiro-sem-pele-cozido,"Frango, inteiro, sem pele, cozido",frango,proteina,170,25,0,7.1,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-inteiro-sem-pele-cru,"Frango, inteiro, sem pele, cru",frango,proteina,129,20.6,0,4.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-peito-com-pele-assado,"Frango, peito, com pele, assado",frango,proteina,212,33.4,0,7.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-peito-com-pele-cru,"Frango, peito, com pele, cru",frango,proteina,149,20.8,0,6.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-peito-sem-pele-cozido,"Frango, peito, sem pele, cozido",frango,proteina,163,31.5,0,3.2,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-peito-sem-pele-cru,"Frango, peito, sem pele, cru",frango,proteina,119,21.5,0,3,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-peito-sem-pele-grelhado,"Frango, peito, sem pele, grelhado",frango,proteina,159,32,0,2.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-sobrecoxa-com-pele-assada,"Frango, sobrecoxa, com pele, assada",frango,proteina,260,28.7,0,15.2,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-sobrecoxa-com-pele-crua,"Frango, sobrecoxa, com pele, crua",frango,proteina,255,15.5,0,20.9,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-sobrecoxa-sem-pele-assada,"Frango, sobrecoxa, sem pele, assada",frango,proteina,233,29.2,0,12,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-sobrecoxa-sem-pele-crua,"Frango, sobrecoxa, sem pele, crua",frango,proteina,162,17.6,0,9.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+hamburguer-bovino-cru,"Hambúrguer, bovino, cru",hamburguer,proteina,215,13.2,4.2,16.2,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+hamburguer-bovino-frito,"Hambúrguer, bovino, frito",hamburguer,proteina,258,20,6.3,17,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+hamburguer-bovino-grelhado,"Hambúrguer, bovino, grelhado",hamburguer,proteina,210,13.2,11.3,12.4,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+linguica-frango-crua,"Lingüiça, frango, crua",linguica,proteina,218,14.2,0,17.4,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+linguica-frango-frita,"Lingüiça, frango, frita",linguica,proteina,245,18.3,0,18.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+linguica-frango-grelhada,"Lingüiça, frango, grelhada",linguica,proteina,244,18.2,0,18.4,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+linguica-porco-crua,"Lingüiça, porco, crua",linguica,proteina,227,16.1,0,17.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+linguica-porco-frita,"Lingüiça, porco, frita",linguica,proteina,280,20.5,0,21.3,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+linguica-porco-grelhada,"Lingüiça, porco, grelhada",linguica,proteina,296,23.2,0,21.9,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+mortadela,Mortadela,mortadela,proteina,269,12,5.8,21.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+peru-congelado-assado,"Peru, congelado, assado",peru,proteina,163,26.2,0,5.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+peru-congelado-cru,"Peru, congelado, cru",peru,proteina,94,18.1,0,1.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+porco-bisteca-crua,"Porco, bisteca, crua",porco,proteina,164,21.5,0,8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+porco-bisteca-frita,"Porco, bisteca, frita",porco,proteina,311,33.7,0,18.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+porco-bisteca-grelhada,"Porco, bisteca, grelhada",porco,proteina,280,28.9,0,17.4,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+porco-costela-assada,"Porco, costela, assada",porco,proteina,402,30.2,0,30.3,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+porco-costela-crua,"Porco, costela, crua",porco,proteina,256,18,0,19.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+porco-lombo-assado,"Porco, lombo, assado",porco,proteina,210,35.7,0,6.4,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+porco-lombo-cru,"Porco, lombo, cru",porco,proteina,176,22.6,0,8.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+porco-orelha-salgada-crua,"Porco, orelha, salgada, crua",porco,proteina,258,18.5,0,19.9,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+porco-pernil-assado,"Porco, pernil, assado",porco,proteina,262,32.1,0,13.9,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+porco-pernil-cru,"Porco, pernil, cru",porco,proteina,186,20.1,0,11.1,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+porco-rabo-salgado-cru,"Porco, rabo, salgado, cru",porco,proteina,377,15.6,0,34.5,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+presunto-com-capa-de-gordura,"Presunto, com capa de gordura",presunto,proteina,128,14.4,1.4,6.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+presunto-sem-capa-de-gordura,"Presunto, sem capa de gordura",presunto,proteina,94,14.3,2.1,2.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+quibe-assado,"Quibe, assado",quibe,proteina,136,14.6,12.9,2.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+quibe-cru,"Quibe, cru",quibe,proteina,109,12.4,10.8,1.7,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+quibe-frito,"Quibe, frito",quibe,proteina,254,14.9,12.3,15.8,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+salame,Salame,salame,proteina,398,25.8,2.9,30.6,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+toucinho-cru,"Toucinho, cru",toucinho,proteina,593,11.5,0,60.3,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+toucinho-frito,"Toucinho, frito",toucinho,proteina,697,27.3,0,64.3,100,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+bebida-lactea-pessego,"Bebida láctea, pêssego","bebida lactea",laticinio,55,2.1,7.6,1.9,200,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,ml,0
+creme-de-leite,"Creme de Leite","creme de leite",laticinio,221,1.5,4.5,22.5,150,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+iogurte-natural-desnatado,"Iogurte, natural, desnatado",iogurte,laticinio,41,3.8,5.8,0.3,150,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+iogurte-sabor-morango,"Iogurte, sabor morango",iogurte,laticinio,70,2.7,9.7,2.3,150,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+iogurte-sabor-pessego,"Iogurte, sabor pêssego",iogurte,laticinio,68,2.5,9.4,2.3,150,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+leite-condensado,"Leite, condensado",leite,laticinio,313,7.7,57,6.7,150,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+leite-de-cabra,"Leite, de cabra",leite,laticinio,66,3.1,5.2,3.8,200,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,ml,0
+leite-de-vaca-achocolatado,"Leite, de vaca, achocolatado",leite,laticinio,83,2.1,14.2,2.2,200,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,ml,0
+leite-de-vaca-desnatado-po,"Leite, de vaca, desnatado, pó",leite,laticinio,362,34.7,53,0.9,150,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+leite-de-vaca-integral-po,"Leite, de vaca, integral, pó",leite,laticinio,497,25.4,39.2,26.9,150,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+leite-fermentado,"Leite, fermentado",leite,laticinio,70,1.9,15.7,0.1,150,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+queijo-minas-frescal,"Queijo, minas, frescal",queijo,laticinio,264,17.4,3.2,20.2,150,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+queijo-minas-meia-cura,"Queijo, minas, meia cura",queijo,laticinio,321,21.2,3.6,24.6,150,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+queijo-mozarela,"Queijo, mozarela",queijo,laticinio,330,22.6,3,25.2,150,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+queijo-parmesao,"Queijo, parmesão",queijo,laticinio,453,35.6,1.7,33.5,150,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+queijo-pasteurizado,"Queijo, pasteurizado",queijo,laticinio,303,9.4,5.7,27.4,150,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+queijo-petit-suisse-morango,"Queijo, petit suisse, morango",queijo,laticinio,121,5.8,18.5,2.8,150,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+queijo-prato,"Queijo, prato",queijo,laticinio,360,22.7,1.9,29.1,150,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+queijo-requeijao-cremoso,"Queijo, requeijão, cremoso",queijo,laticinio,257,9.6,2.4,23.4,150,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+queijo-ricota,"Queijo, ricota",queijo,laticinio,140,12.6,3.8,8.1,150,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+bebida-isotonica-sabores-variados,"Bebida isotônica, sabores variados","bebida isotonica",bebida,26,0,6.4,0,200,,,,,0,0,"TACO 4ª ed.",,,ml,0
+cafe-infusao-10,"Café, infusão 10%",cafe,bebida,9,0.7,1.5,0.1,200,,,,,0,0,"TACO 4ª ed.",,,ml,0
+cana-caldo-de,"Cana, caldo de",cana,bebida,65,0,18.2,0,200,,,,,0,0,"TACO 4ª ed.",,,ml,0
+cerveja-pilsen,"Cerveja, pilsen",cerveja,bebida,41,0.6,3.3,0,200,,,,,0,0,"TACO 4ª ed.",gluten,,ml,0
+cha-erva-doce-infusao-5,"Chá, erva-doce, infusão 5%",cha,bebida,1,0,0.4,0,200,,,,,0,0,"TACO 4ª ed.",,,ml,0
+cha-mate-infusao-5,"Chá, mate, infusão 5%",cha,bebida,3,0,0.6,0.1,200,,,,,0,0,"TACO 4ª ed.",,,ml,0
+cha-preto-infusao-5,"Chá, preto, infusão 5%",cha,bebida,2,0,0.6,0,200,,,,,0,0,"TACO 4ª ed.",,,ml,0
+coco-agua-de,"Coco, água de",coco,bebida,22,0,5.3,0,200,,,,,0,0,"TACO 4ª ed.",,,ml,0
+refrigerante-tipo-agua-tonica,"Refrigerante, tipo água tônica",refrigerante,bebida,31,0,8,0,200,,,,,0,0,"TACO 4ª ed.",,,ml,0
+refrigerante-tipo-cola,"Refrigerante, tipo cola",refrigerante,bebida,34,0,8.7,0,200,,,,,0,0,"TACO 4ª ed.",,,ml,0
+refrigerante-tipo-guarana,"Refrigerante, tipo guaraná",refrigerante,bebida,39,0,10,0,200,,,,,0,0,"TACO 4ª ed.",,,ml,0
+refrigerante-tipo-laranja,"Refrigerante, tipo laranja",refrigerante,bebida,46,0,11.8,0,200,,,,,0,0,"TACO 4ª ed.",,,ml,0
+refrigerante-tipo-limao,"Refrigerante, tipo limão",refrigerante,bebida,40,0,10.3,0,200,,,,,0,0,"TACO 4ª ed.",,,ml,0
+omelete-de-queijo,"Omelete, de queijo",omelete,proteina,268,15.6,0.4,22,100,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+ovo-de-codorna-inteiro-cru,"Ovo, de codorna, inteiro, cru",ovo,proteina,177,13.7,0.8,12.7,100,,,,,0,0,"TACO 4ª ed.",sem-animal,,g,0
+ovo-de-galinha-clara-cozida10minutos,"Ovo, de galinha, clara, cozida/10minutos",ovo,proteina,59,13.4,0,0.1,100,,,,,0,0,"TACO 4ª ed.",sem-animal,,g,0
+ovo-de-galinha-gema-cozida10minutos,"Ovo, de galinha, gema, cozida/10minutos",ovo,proteina,353,15.9,1.6,30.8,100,,,,,0,0,"TACO 4ª ed.",sem-animal,,g,0
+ovo-de-galinha-inteiro-cozido10minutos,"Ovo, de galinha, inteiro, cozido/10minutos",ovo,proteina,146,13.3,0.6,9.5,100,,,,,0,0,"TACO 4ª ed.",sem-animal,,g,0
+ovo-de-galinha-inteiro-cru,"Ovo, de galinha, inteiro, cru",ovo,proteina,143,13,1.6,8.9,100,,,,,0,0,"TACO 4ª ed.",sem-animal,,g,0
+ovo-de-galinha-inteiro-frito,"Ovo, de galinha, inteiro, frito",ovo,proteina,240,15.6,1.2,18.6,100,,,,,0,0,"TACO 4ª ed.",sem-animal,,g,0
+achocolatado-po,"Achocolatado, pó",achocolatado,outros,401,4.2,91.2,2.2,50,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+acucar-cristal,"Açúcar, cristal",acucar,outros,387,0.3,99.6,0,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+acucar-mascavo,"Açúcar, mascavo",acucar,outros,369,0.8,94.5,0.1,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+acucar-refinado,"Açúcar, refinado",acucar,outros,387,0.3,99.5,0,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+chocolate-ao-leite,"Chocolate, ao leite",chocolate,outros,540,7.2,59.6,30.3,50,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+chocolate-ao-leite-com-castanha-do-para,"Chocolate, ao leite, com castanha do Pará",chocolate,outros,559,7.4,55.4,34.2,50,,,,,0,0,"TACO 4ª ed.",lactose|castanhas|sem-animal,,g,0
+chocolate-ao-leite-dietetico,"Chocolate, ao leite, dietético",chocolate,outros,557,6.9,56.3,33.8,50,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+chocolate-meio-amargo,"Chocolate, meio amargo",chocolate,outros,475,4.9,62.4,29.9,50,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+cocada-branca,"Cocada branca","cocada branca",outros,449,1.1,81.4,13.6,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+doce-de-abobora-cremoso,"Doce, de abóbora, cremoso",doce,outros,199,0.9,54.6,0.2,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+doce-de-leite-cremoso,"Doce, de leite, cremoso",doce,outros,306,5.5,59.5,6,50,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+geleia-mocoto-natural,"Geléia, mocotó, natural",geleia,outros,106,2.1,24.2,0.1,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+glicose-de-milho,"Glicose de milho","glicose de milho",outros,292,0,79.4,0,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+maria-mole,"Maria mole","maria mole",outros,301,3.8,73.6,0.2,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+maria-mole-coco-queimado,"Maria mole, coco queimado","maria mole",outros,307,3.9,75.1,0.1,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+marmelada,Marmelada,marmelada,outros,257,0.4,70.8,0.1,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+mel-de-abelha,"Mel, de abelha",mel,outros,309,0,84,0,50,,,,,0,0,"TACO 4ª ed.",sem-animal,,g,0
+melado,Melado,melado,outros,297,0,76.6,0,50,,,,,0,0,"TACO 4ª ed.",sem-animal,,g,0
+quindim,Quindim,quindim,outros,411,4.7,46.3,24.4,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+rapadura,Rapadura,rapadura,outros,352,1,90.8,0.1,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+cafe-po-torrado,"Café, pó, torrado",cafe,outros,419,14.7,65.8,11.9,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+capuccino-po,"Capuccino, pó",capuccino,outros,417,11.3,73.6,8.6,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+fermento-em-po-quimico,"Fermento em pó, químico","fermento em po",outros,90,0.5,43.9,0.1,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+fermento-biologico-levedura-tablete,"Fermento, biológico, levedura, tablete",fermento,outros,90,17,7.7,1.5,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+gelatina-sabores-variados-po,"Gelatina, sabores variados, pó",gelatina,outros,380,8.9,89.2,0,50,,,,,0,0,"TACO 4ª ed.",sem-animal,,g,0
+shoyu,Shoyu,shoyu,outros,61,3.3,11.6,0.3,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+tempero-a-base-de-sal,"Tempero a base de sal","tempero a base de sal",outros,21,2.7,2.1,0.3,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+azeitona-preta-conserva,"Azeitona, preta, conserva",azeitona,outros,194,1.2,5.5,20.3,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+azeitona-verde-conserva,"Azeitona, verde, conserva",azeitona,outros,137,0.9,4.1,14.2,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+chantilly-spray-com-gordura-vegetal,"Chantilly, spray, com gordura vegetal",chantilly,outros,315,0.5,16.9,27.3,50,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+leite-de-coco,"Leite, de coco",leite,outros,166,1,2.2,18.4,50,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+maionese-tradicional-com-ovos,"Maionese, tradicional com ovos",maionese,outros,302,0.6,7.9,30.5,50,,,,,0,0,"TACO 4ª ed.",sem-animal,,g,0
+acaraje,Acarajé,acaraje,outros,289,8.3,19.1,19.9,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+arroz-carreteiro,"Arroz carreteiro","arroz carreteiro",outros,154,10.8,11.6,7.1,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+baiao-de-dois-arroz-e-feijao-de-corda,"Baião de dois, arroz e feijão-de-corda","baiao de dois",outros,136,6.2,20.4,3.2,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+barreado,Barreado,barreado,outros,165,18.3,0.2,9.5,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+bife-a-cavalo-com-contra-file,"Bife à cavalo, com contra filé","bife a cavalo",outros,291,23.7,0,21.1,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+bolinho-de-arroz,"Bolinho de arroz","bolinho de arroz",outros,274,8,41.7,8.3,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+camarao-a-baiana,"Camarão à baiana","camarao a baiana",outros,101,7.9,3.2,6,50,,,,,0,0,"TACO 4ª ed.",frutos-do-mar|sem-carne|sem-animal,,g,0
+charuto-de-repolho,"Charuto, de repolho",charuto,outros,78,6.8,10.1,1.1,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+cuscuz-de-milho-cozido-com-sal,"Cuscuz, de milho, cozido com sal",cuscuz,outros,113,2.2,25.3,0.7,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+cuscuz-paulista,"Cuscuz, paulista",cuscuz,outros,142,2.6,22.5,4.6,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+cuxa-molho,"Cuxá, molho",cuxa,outros,80,5.6,5.7,3.6,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+dobradinha,Dobradinha,dobradinha,outros,125,19.8,0,4.4,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+estrogonofe-de-carne,"Estrogonofe de carne","estrogonofe de carne",outros,173,15,3,10.8,50,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+estrogonofe-de-frango,"Estrogonofe de frango","estrogonofe de frango",outros,157,17.6,2.6,8,50,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+feijao-tropeiro-mineiro,"Feijão tropeiro mineiro","feijao tropeiro mineiro",outros,152,10.2,19.6,6.8,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+feijoada,Feijoada,feijoada,outros,117,8.7,11.6,6.5,50,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+frango-com-acafrao,"Frango, com açafrão",frango,outros,113,9.7,4.1,6.2,50,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+macarrao-molho-bolognesa,"Macarrão, molho bolognesa",macarrao,outros,120,4.9,22.5,0.9,50,,,,,0,0,"TACO 4ª ed.",gluten|lactose|sem-animal,,g,0
+manicoba,Maniçoba,manicoba,outros,134,10,3.4,8.7,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+quibebe,Quibebe,quibebe,outros,86,8.6,6.6,2.7,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+salada-de-legumes-com-maionese,"Salada, de legumes, com maionese",salada,outros,96,1.1,8.9,7,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+salada-de-legumes-cozida-no-vapor,"Salada, de legumes, cozida no vapor",salada,outros,35,2,7.1,0.3,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+salpicao-de-frango,"Salpicão, de frango",salpicao,outros,148,13.9,4.6,7.8,50,,,,,0,0,"TACO 4ª ed.",sem-carne|sem-animal,,g,0
+sarapatel,Sarapatel,sarapatel,outros,123,18.5,1.1,4.4,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+tabule,Tabule,tabule,outros,57,2,10.6,1.2,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+tacaca,Tacacá,tacaca,outros,47,7,3.4,0.4,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+tapioca-com-manteiga,"Tapioca, com manteiga",tapioca,outros,348,0.1,63.6,10.9,50,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+tucupi-com-pimenta-de-cheiro,"Tucupi, com pimenta-de-cheiro",tucupi,outros,27,2.1,4.7,0.3,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+vaca-atolada,"Vaca atolada","vaca atolada",outros,145,5.1,10.1,9.3,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+vatapa,Vatapá,vatapa,outros,255,6,9.7,23.2,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+virado-a-paulista,"Virado à paulista","virado a paulista",outros,307,10.2,14.1,25.6,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+yakisoba,Yakisoba,yakisoba,outros,113,7.5,18.3,2.6,50,,,,,0,0,"TACO 4ª ed.",,,g,0
+amendoim-grao-cru,"Amendoim, grão, cru",amendoim,leguminosa,544,27.2,20.3,43.9,80,,,,,0,0,"TACO 4ª ed.",castanhas,,g,0
+amendoim-torrado-salgado,"Amendoim, torrado, salgado",amendoim,leguminosa,606,22.5,18.7,54,80,,,,,0,0,"TACO 4ª ed.",castanhas,,g,0
+ervilha-em-vagem,"Ervilha, em vagem",ervilha,leguminosa,88,7.5,14.2,0.5,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+ervilha-enlatada-drenada,"Ervilha, enlatada, drenada",ervilha,leguminosa,74,4.6,13.4,0.4,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+feijao-carioca-cozido,"Feijão, carioca, cozido",feijao,leguminosa,76,4.8,13.6,0.5,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+feijao-carioca-cru,"Feijão, carioca, cru",feijao,leguminosa,329,20,61.2,1.3,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+feijao-fradinho-cozido,"Feijão, fradinho, cozido",feijao,leguminosa,78,5.1,13.5,0.6,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+feijao-fradinho-cru,"Feijão, fradinho, cru",feijao,leguminosa,339,20.2,61.2,2.4,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+feijao-jalo-cozido,"Feijão, jalo, cozido",feijao,leguminosa,93,6.1,16.5,0.5,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+feijao-jalo-cru,"Feijão, jalo, cru",feijao,leguminosa,328,20.1,61.5,0.9,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+feijao-preto-cozido,"Feijão, preto, cozido",feijao,leguminosa,77,4.5,14,0.5,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+feijao-preto-cru,"Feijão, preto, cru",feijao,leguminosa,324,21.3,58.8,1.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+feijao-rajado-cozido,"Feijão, rajado, cozido",feijao,leguminosa,85,5.5,15.3,0.4,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+feijao-rajado-cru,"Feijão, rajado, cru",feijao,leguminosa,326,17.3,62.9,1.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+feijao-rosinha-cozido,"Feijão, rosinha, cozido",feijao,leguminosa,68,4.5,11.8,0.5,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+feijao-rosinha-cru,"Feijão, rosinha, cru",feijao,leguminosa,337,20.9,62.2,1.3,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+feijao-roxo-cozido,"Feijão, roxo, cozido",feijao,leguminosa,77,5.7,12.9,0.5,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+feijao-roxo-cru,"Feijão, roxo, cru",feijao,leguminosa,331,22.2,60,1.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+grao-de-bico-cru,"Grão-de-bico, cru",grao-de-bico,leguminosa,355,21.2,57.9,5.4,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+guandu-cru,"Guandu, cru",guandu,leguminosa,344,19,64,2.1,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+lentilha-crua,"Lentilha, crua",lentilha,leguminosa,339,23.2,62,0.8,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+pacoca-amendoim,"Paçoca, amendoim",pacoca,leguminosa,487,16,52.4,26.1,80,,,,,0,0,"TACO 4ª ed.",castanhas,,g,0
+pe-de-moleque-amendoim,"Pé-de-moleque, amendoim",pe-de-moleque,leguminosa,503,13.2,54.7,28,80,,,,,0,0,"TACO 4ª ed.",castanhas,,g,0
+soja-farinha,"Soja, farinha",soja,leguminosa,404,36,38.4,14.6,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+soja-extrato-soluvel-natural-fluido,"Soja, extrato solúvel, natural, fluido",soja,leguminosa,39,2.4,4.3,1.6,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+soja-extrato-soluvel-po,"Soja, extrato solúvel, pó",soja,leguminosa,459,35.7,28.5,26.2,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+soja-queijo-tofu,"Soja, queijo (tofu)",soja,leguminosa,64,6.6,2.1,4,80,,,,,0,0,"TACO 4ª ed.",lactose|sem-animal,,g,0
+tremoco-cru,"Tremoço, cru",tremoco,leguminosa,381,33.6,43.8,10.3,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+tremoco-em-conserva,"Tremoço, em conserva",tremoco,leguminosa,121,11.1,12.4,3.8,80,,,,,0,0,"TACO 4ª ed.",,,g,0
+amendoa-torrada-salgada,"Amêndoa, torrada, salgada",amendoa,gordura,581,18.6,29.5,47.3,15,,,,,0,0,"TACO 4ª ed.",gluten|castanhas,,g,0
+castanha-de-caju-torrada-salgada,"Castanha-de-caju, torrada, salgada",castanha-de-caju,gordura,570,18.5,29.1,46.3,15,,,,,0,0,"TACO 4ª ed.",gluten|castanhas,,g,0
+castanha-do-brasil-crua,"Castanha-do-Brasil, crua",castanha-do-brasil,gordura,643,14.5,15.1,63.5,15,,,,,0,0,"TACO 4ª ed.",castanhas,,g,0
+coco-cru,"Coco, cru",coco,gordura,406,3.7,10.4,42,15,,,,,0,0,"TACO 4ª ed.",castanhas,,g,0
+farinha-de-mesocarpo-de-babacu-crua,"Farinha, de mesocarpo de babaçu, crua",farinha,gordura,329,1.4,79.2,0.2,15,,,,,0,0,"TACO 4ª ed.",castanhas,,g,0
+gergelim-semente,"Gergelim, semente",gergelim,gordura,584,21.2,21.6,50.4,15,,,,,0,0,"TACO 4ª ed.",castanhas,,g,0
+linhaca-semente,"Linhaça, semente",linhaca,gordura,495,14.1,43.3,32.3,15,,,,,0,0,"TACO 4ª ed.",castanhas,,g,0
+pinhao-cozido,"Pinhão, cozido",pinhao,gordura,174,3,43.9,0.7,15,,,,,0,0,"TACO 4ª ed.",castanhas,,g,0
+pupunha-cozida,"Pupunha, cozida",pupunha,gordura,219,2.5,29.6,12.8,15,,,,,0,0,"TACO 4ª ed.",castanhas,,g,0
+noz-crua,"Noz, crua",noz,gordura,620,14,18.4,59.4,15,,,,,0,0,"TACO 4ª ed.",castanhas,,g,0
+arroz-polido-parboilizado-agulha-agulhinha-etc,"Arroz (polido, parboilizado, agulha, agulhinha, etc.)","arroz (polido",carboidrato,135.6,2.5,27.8,1.2,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+milho-em-grao,"Milho (em grão)","milho (em grao)",carboidrato,160.1,3.3,25.1,7.2,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+canjiquinha-de-milho-em-grao,"Canjiquinha de milho em grão","canjiquinha de milho em grao",carboidrato,63,1.2,13.5,0.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+xerem-de-milho,"Xerém de milho","xerem de milho",carboidrato,63,1.2,13.5,0.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+amendoim-em-grao-in-natura,"Amendoim (em grão) in natura","amendoim (em grao) in natura",carboidrato,567,25.8,16.1,49.2,100,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+ervilha-em-grao,"Ervilha em grão","ervilha em grao",leguminosa,109.1,5.4,15.6,3.1,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+fava-em-grao,"Fava (em grão)","fava (em grao)",leguminosa,85.6,4.8,10.1,3.2,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mangalo-amargo-em-grao,"Mangalô amargo em grão","mangalo amargo em grao",carboidrato,85.6,4.8,10.1,3.2,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+feijao-de-corda,Feijão-de-corda,feijao-de-corda,leguminosa,121.3,3.2,20.3,3.1,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+feijao-verde,Feijão-verde,feijao-verde,leguminosa,121.3,3.2,20.3,3.1,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+semente-de-linhaca,"Semente de linhaça","semente de linhaca",carboidrato,534,18.3,28.9,42.2,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+andu,Andu,andu,carboidrato,97.4,5.8,15.1,1.8,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+grao-de-bico,"Grão de bico","grao de bico",carboidrato,188.5,8.9,27.4,5.4,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+lentilha,Lentilha,lentilha,leguminosa,136.3,9,20.1,2.7,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+soja-em-grao,"Soja em grão","soja em grao",leguminosa,196.3,16.6,9.9,11.6,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+feijao-preto-mulatinho-roxo-rosinha-etc,"Feijão (preto, mulatinho, roxo, rosinha, etc.)","feijao (preto",leguminosa,97.4,5.8,15.1,1.8,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+quirera-nao-especificada,"Quirera não especificada","quirera nao especificada",carboidrato,63,1.2,13.5,0.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pipoca-light,"Pipoca light","pipoca light",carboidrato,445.9,10.8,64.9,17.8,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+quinoa,Quinoa,quinoa,carboidrato,135.5,4.4,19.8,4.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+batata-inglesa,Batata-inglesa,batata-inglesa,vegetal,86,1.7,20,0.1,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mandioquinha-salsa-batata-baroa,"Mandioquinha salsa (batata-baroa)","mandioquinha salsa (batata-baroa)",vegetal,76,1.4,17.7,0.1,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cenoura-amarela-batata-baroa,"Cenoura amarela (batata-baroa)","cenoura amarela (batata-baroa)",vegetal,76,1.4,17.7,0.1,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+batata-doce,Batata-doce,batata-doce,vegetal,76,1.4,17.7,0.1,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+quicare,Quicaré,quicare,vegetal,100,1.7,23.4,0.1,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mandioca,Mandioca,mandioca,vegetal,125,0.6,30.1,0.3,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+aipim,Aipim,aipim,vegetal,125,0.6,30.1,0.3,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+batata-nao-especificada,"Batata (não especificada)","batata (nao especificada)",vegetal,86,1.7,20,0.1,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cenoura,Cenoura,cenoura,vegetal,41,0.9,9.6,0.2,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+creme-de-arroz,"Creme de arroz","creme de arroz",carboidrato,148.3,3.8,26.1,3.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+arrozina,Arrozina,arrozina,carboidrato,148.3,3.8,26.1,3.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mucilon,Mucilon,mucilon,carboidrato,78.2,2.4,10.5,3.1,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mingau-de-arroz,"Mingau de arroz","mingau de arroz",carboidrato,148.3,3.8,26.1,3.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+croquinhos-de-arroz,"Croquinhos de arroz","croquinhos de arroz",carboidrato,387,12.9,77.9,4.5,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+farinha-de-aveia,"Farinha de aveia","farinha de aveia",carboidrato,384,16,67,6.3,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+fuba-de-milho,"Fubá de milho","fuba de milho",carboidrato,60.6,1.4,13,0.2,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+farinha-de-milho,"Farinha de milho","farinha de milho",carboidrato,351,7.2,79.1,1.5,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+puba-de-milho,"Puba de milho","puba de milho",carboidrato,311,4.8,45.1,12.4,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+puba-de-fuba,"Puba de fubá","puba de fuba",carboidrato,311,4.8,45.1,12.4,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mingau-de-milho,"Mingau de milho","mingau de milho",carboidrato,78.2,2.4,10.5,3.1,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+amido-de-milho,"Amido de milho","amido de milho",carboidrato,78.2,2.4,10.5,3.1,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+amido-de-arroz,"Amido de arroz","amido de arroz",carboidrato,148.3,3.8,26.1,3.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cremogema,Cremogema,cremogema,carboidrato,78.2,2.4,10.5,3.1,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+vitamilho,Vitamilho,vitamilho,carboidrato,128.3,4.4,26.4,0.2,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+creme-de-milho,"Creme de milho","creme de milho",carboidrato,78.2,2.4,10.5,3.1,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+sucrilhos-de-milho,"Sucrilhos de milho","sucrilhos de milho",carboidrato,377,4.7,88.8,0.7,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cereal-matinal-de-milho-em-flocos,"Cereal matinal de milho em flocos","cereal matinal de milho em flocos",carboidrato,377,4.7,88.8,0.7,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+germe-de-trigo,"Germe de trigo","germe de trigo",carboidrato,360,23.2,51.8,9.7,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+fibra-de-trigo,"Fibra de trigo","fibra de trigo",carboidrato,216,15.6,64.5,4.3,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+fibra-de-cereal-trigo,"Fibra de cereal trigo","fibra de cereal trigo",carboidrato,216,15.6,64.5,4.3,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+farinha-de-mandioca,"Farinha de mandioca","farinha de mandioca",carboidrato,361,1.6,87.9,0.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+farinha-de-copioba,"Farinha de copioba","farinha de copioba",carboidrato,361,1.6,87.9,0.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+farinha-dagua,"Farinha d'água","farinha d'agua",carboidrato,361,1.6,87.9,0.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cruera,Cruera,cruera,carboidrato,361,1.6,87.9,0.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+goma-de-mandioca,"Goma de mandioca","goma de mandioca",carboidrato,336,2,82,0,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+sagu-de-mandioca,"Sagu de mandioca","sagu de mandioca",carboidrato,117,4.3,15.5,4.1,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+farinha-de-tapioca,"Farinha de tapioca","farinha de tapioca",carboidrato,331,0.5,81.1,0.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+farinha-beiju,"Farinha beiju","farinha beiju",carboidrato,331,0.5,81.1,0.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+sagu-de-tapioca,"Sagu de tapioca","sagu de tapioca",carboidrato,117,4.3,15.5,4.1,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+tapioca-de-goma,"Tapioca de goma","tapioca de goma",carboidrato,336,2,82,0,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+farinha-lactea,"Farinha láctea","farinha lactea",carboidrato,396.7,12.7,73.3,6.3,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+neston,Neston,neston,carboidrato,345.8,12.9,70.8,0,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+flocos-de-cereais,"Flocos de cereais","flocos de cereais",carboidrato,365,7.2,83.8,1,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+vitaflocos,Vitaflocos,vitaflocos,carboidrato,78.2,2.4,10.5,3.1,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mini-pizza-semipronta,"Mini pizza semipronta","mini pizza semipronta",carboidrato,252.5,10.2,33.7,8.2,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+fibra-de-soja,"Fibra de soja","fibra de soja",carboidrato,70,12,74,2,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+minipastel,Minipastel,minipastel,carboidrato,319.8,10.4,33.5,15.7,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+macarrao,Macarrão,macarrao,carboidrato,158,5.8,30.9,0.9,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+pure-de-batata,"Purê de batata","pure de batata",carboidrato,115.2,1.8,17.8,4.4,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bife-vegetal,"Bife vegetal","bife vegetal",carboidrato,142.4,18.5,5.8,5.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pasta-de-soja,"Pasta de soja","pasta de soja",carboidrato,62,6.9,2.4,2.7,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+carne-de-soja,"Carne de soja","carne de soja",carboidrato,142.4,18.5,5.8,5.3,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+amendoim-moido,"Amendoim moído","amendoim moido",carboidrato,567,25.8,16.1,49.2,100,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+granola,Granola,granola,carboidrato,388,9.5,73.8,6.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+musli,Musli,musli,carboidrato,388,9.5,73.8,6.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mix-de-cereais,"Mix de cereais","mix de cereais",carboidrato,388,9.5,73.8,6.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+miojo,Miojo,miojo,carboidrato,189.9,5.7,25.5,7.2,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+sustagem,Sustagem,sustagem,carboidrato,369.2,24.1,68,0.5,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+proteina-de-soja,"Proteína de soja","proteina de soja",carboidrato,142.4,18.5,5.8,5.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+proteina-vegetal,"Proteína vegetal","proteina vegetal",carboidrato,142.4,18.5,5.8,5.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+complemento-alimentar-de-qualquer-sabor,"Complemento alimentar de qualquer sabor","complemento alimentar de qualquer sabor",carboidrato,369.2,24.1,68,0.5,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+sucrilhos-de-milho-light,"Sucrilhos de milho light","sucrilhos de milho light",carboidrato,365,7.2,83.8,1,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+macarrao-instantaneo-light,"Macarrão instantâneo light","macarrao instantaneo light",carboidrato,189.9,5.7,25.5,7.2,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+macarrao-com-carne,"Macarrão com carne","macarrao com carne",carboidrato,120.6,6.2,17.4,2.8,100,,,,,0,0,"IBGE POF 2008-2009",gluten|sem-carne|sem-animal,,g,0
+macarrao-com-peixe,"Macarrão com peixe","macarrao com peixe",carboidrato,163.2,15,15.4,4.1,100,,,,,0,0,"IBGE POF 2008-2009",gluten|sem-carne|sem-animal,,g,0
+coco-da-baia-seco-ou-verde,"Coco-da-baía (seco ou verde)","coco-da-baia (seco ou verde)",gordura,354,3.3,15.2,33.5,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+castanha-portuguesa,"Castanha portuguesa","castanha portuguesa",gordura,131,2,27.8,1.4,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+pinhao,Pinhão,pinhao,gordura,174.4,3,43.9,0.8,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+amendoa,Amêndoa,amendoa,gordura,578,21.3,19.7,50.6,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+avela,Avelã,avela,gordura,628,15,16.7,60.8,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+butia,Butiá,butia,gordura,105,1.9,22.8,2,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+tucuma,Tucumã,tucuma,gordura,474,5.5,6.8,47.2,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+coco-de-mucaja,"Coco de mucajá","coco de mucaja",gordura,404.3,2.1,14,40.7,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+noz-nogueira,"Noz (nogueira)","noz (nogueira)",gordura,654,15.2,13.7,65.2,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+acai,Açaí,acai,gordura,262,3.6,57.4,2,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+jucara,Juçara,jucara,gordura,262,3.6,57.4,2,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+uacai,Uaçaí,uacai,gordura,262,3.6,57.4,2,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+jussara,Jussara,jussara,gordura,262,3.6,57.4,2,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+pupunha,Pupunha,pupunha,gordura,28,2.5,4.6,0.6,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+bacaba,Bacaba,bacaba,gordura,212,3.1,6.6,19.8,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+bacabucu,Bacabuçu,bacabucu,gordura,212,3.1,6.6,19.8,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+castanha-da-india,Castanha-da-índia,castanha-da-india,gordura,656,14.3,12.3,66.4,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+pistache,Pistache,pistache,gordura,557,20.6,28,44.4,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+buriti,Buriti,buriti,gordura,145,1.8,10.2,8.1,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+coco,Coco,coco,gordura,354,3.3,15.2,33.5,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+pataua,Patauá,pataua,gordura,105,1.9,22.8,2,15,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+alface,Alface,alface,vegetal,15,1.4,2.8,0.2,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+escarola,Escarola,escarola,vegetal,52.9,1.6,4.3,3.8,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+couve,Couve,couve,vegetal,26,2.1,4.9,0.4,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+couve-flor,Couve-flor,couve-flor,vegetal,23,1.8,4.1,0.5,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+espinafre,Espinafre,espinafre,vegetal,23,3,3.8,0.3,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mostarda-verdura,"Mostarda (verdura)","mostarda (verdura)",vegetal,15,2.3,2.1,0.2,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+repolho,Repolho,repolho,vegetal,23,1.3,5.5,0.1,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cebolinha,Cebolinha,cebolinha,vegetal,25,1.8,5.7,0.1,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+agriao,Agrião,agriao,vegetal,25,2.6,3.7,0.7,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+acelga,Acelga,acelga,vegetal,19,1.8,3.7,0.2,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+brocolis,Brócolis,brocolis,vegetal,35,2.4,7.2,0.4,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cuxa,Cuxá,cuxa,vegetal,26,2.1,4.9,0.4,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+vinagreira,Vinagreira,vinagreira,vegetal,26,2.1,4.9,0.4,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cariru,Cariru,cariru,vegetal,26,2.1,4.9,0.4,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+rucula,Rúcula,rucula,vegetal,25,2.6,3.7,0.7,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+jambu,Jambu,jambu,vegetal,32,1.9,7.2,0.3,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+alcachofra,Alcachofra,alcachofra,vegetal,53,2.9,12,0.3,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bredo,Bredo,bredo,vegetal,26,2.1,4.9,0.4,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+erva-doce,Erva-doce,erva-doce,vegetal,31,1.2,7.3,0.2,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+moranga,Moranga,moranga,vegetal,20,0.7,4.9,0.1,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+abobora,Abóbora,abobora,vegetal,20,0.7,4.9,0.1,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pimentao,Pimentão,pimentao,vegetal,20,0.9,4.6,0.2,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+quiabo,Quiabo,quiabo,vegetal,22,1.9,4.5,0.2,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+tomate,Tomate,tomate,vegetal,18,0.9,3.9,0.2,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+vagem,Vagem,vagem,vegetal,35,1.9,7.9,0.3,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cogumelo-in-natura,"Cogumelo in natura","cogumelo in natura",vegetal,28,2.2,5.3,0.5,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cebola,Cebola,cebola,vegetal,40,1.1,9.3,0.1,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+jardineira-seleta,"Jardineira (seleta)","jardineira (seleta)",vegetal,47,2.5,9.1,0.3,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+seleta-jardineira,"Seleta (jardineira)","seleta (jardineira)",vegetal,47,2.5,9.1,0.3,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+alho,Alho,alho,vegetal,149,6.4,33.1,0.5,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+alho-poro,Alho-poró,alho-poro,vegetal,54.5,0.8,7.6,2.9,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+broto-de-alfafa,"Broto de alfafa","broto de alfafa",vegetal,23,4,2.1,0.7,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+oregano,Orégano,oregano,vegetal,306,11,64.4,10.3,80,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pacova,Pacová,pacova,fruta,78,1.2,20.3,0.1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+banana-ouro-prata-dagua-da-terra-etc,"Banana (ouro, prata, d´água, da terra, etc.)","banana (ouro",fruta,89,1.1,22.8,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+laranja-pera-seleta-lima-da-terra-etc,"Laranja (pera, seleta, lima, da terra, etc.)","laranja (pera",fruta,47,0.9,11.8,0.1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+lima,Lima,lima,fruta,47,0.9,11.8,0.1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+limao-comum-galego-etc,"Limão (comum, galego, etc.)","limao (comum",fruta,30,0.7,10.5,0.2,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+tangerina,Tangerina,tangerina,fruta,53,0.8,13.3,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mexerica,Mexerica,mexerica,fruta,53,0.8,13.3,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bergamota,Bergamota,bergamota,fruta,53,0.8,13.3,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mimosa,Mimosa,mimosa,fruta,53,0.8,13.3,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+tanja,Tanja,tanja,fruta,53,0.8,13.3,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+maricota,Maricota,maricota,fruta,53,0.8,13.3,0.3,120,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+laranjinha-japonesa,"Laranjinha japonesa","laranjinha japonesa",fruta,47,0.9,11.8,0.1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cana-de-acucar,Cana-de-açúcar,cana-de-acucar,fruta,73.6,0,20,0.1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+ananas,Ananás,ananas,fruta,48,0.5,12.6,0.1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+caqui,Caqui,caqui,fruta,70,0.6,18.6,0.2,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+figo,Figo,figo,fruta,74,0.8,19.2,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+papaia,Papaia,papaia,fruta,39,0.6,9.8,0.1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+manguito,Manguito,manguito,fruta,65,0.5,17,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+maracuja,Maracujá,maracuja,fruta,97,2.2,23.4,0.7,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+melao,Melão,melao,fruta,36,0.5,9.1,0.1,120,,,,,0,0,"IBGE POF 2008-2009",sem-animal,,g,0
+pera,pera,pera,fruta,58,0.4,15.5,0.1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pessego,Pêssego,pessego,fruta,39,0.9,9.5,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+fruta-de-conde,Fruta-de-conde,fruta-de-conde,fruta,74,1.7,17.7,0.6,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pinha-fruta-de-conde,"Pinha (fruta-de-conde)","pinha (fruta-de-conde)",fruta,74,1.7,17.7,0.6,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+ata,Ata,ata,fruta,74,1.7,17.7,0.6,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+uva,Uva,uva,fruta,69,0.7,18.1,0.2,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+uva-passa,"Uva passa","uva passa",fruta,299,3.1,79.2,0.5,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+jenipapo,Jenipapo,jenipapo,fruta,113,5.2,25.7,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+jaca,Jaca,jaca,fruta,94,1.5,24,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+goiaba,Goiaba,goiaba,fruta,68,2.6,14.3,1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+araca-acu-goiaba,"Araçá-açu (goiaba)","araca-acu (goiaba)",fruta,68,2.6,14.3,1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+ameixa,Ameixa,ameixa,fruta,46,0.7,11.4,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+caju,Caju,caju,fruta,43,1,10.3,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cereja,Cereja,cereja,fruta,63,1.1,16,0.2,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+caja-manga,Cajá-manga,caja-manga,fruta,46,1.3,11.4,0,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cajarana,Cajarana,cajarana,fruta,46,0.2,12.4,0.1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+tapereba,Taperebá,tapereba,fruta,70,0.8,13.8,2.1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+acaja-tabereba,"Acaja (taberebá)","acaja (tabereba)",fruta,46,1.3,11.4,0,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+carambola,Carambola,carambola,fruta,31,1,6.7,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+jabuticaba,Jabuticaba,jabuticaba,fruta,73,0.7,18.4,0.5,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+graviola,Graviola,graviola,fruta,62,0.8,15.8,0.2,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+jambo,Jambo,jambo,fruta,27,0.9,6.5,0.1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+atemoia,Atemoia,atemoia,fruta,74,1.7,17.7,0.6,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mangaba,Mangaba,mangaba,fruta,43,0.7,10.5,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+araca,Araçá,araca,fruta,68,2.6,14.3,1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+nespera,Nêspera,nespera,fruta,47,0.4,12.1,0.2,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+fruta-pao,Fruta-pão,fruta-pao,fruta,103,1.1,27.1,0.2,120,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+sapoti,Sapoti,sapoti,fruta,96,0.7,25.9,0.1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+uxi,Uxi,uxi,fruta,252,2.2,38.2,10.1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+tamarindo,Tamarindo,tamarindo,fruta,239,2.8,62.5,0.6,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cacau,Cacau,cacau,fruta,74,1,19.4,0.1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pitomba,Pitomba,pitomba,fruta,66,0.8,16.5,0.4,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bacuri,Bacuri,bacuri,fruta,105,1.9,22.8,2,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+inga,Ingá,inga,fruta,60,1,15.5,0.1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pequi,Pequi,pequi,fruta,152,1.5,6.3,13.4,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pitanga,Pitanga,pitanga,fruta,41,0.9,10.2,0.2,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+ciriguela,Ciriguela,ciriguela,fruta,76,1.4,18.9,0.4,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+murici,Murici,murici,fruta,66,0.9,14.4,1.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+umbu,Umbu,umbu,fruta,37,0.8,9.4,0,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+imbu,Imbu,imbu,fruta,37,0.8,9.4,0,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+biriba,Biribá,biriba,fruta,74,1.7,17.7,0.6,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cupuacu,Cupuaçu,cupuacu,fruta,49,1.2,10.4,1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+nectarina,Nectarina,nectarina,fruta,44,1.1,10.6,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mari,Mari,mari,fruta,281.1,2.7,20.1,21.1,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+roma,Romã,roma,fruta,56,0.4,15.1,0,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+acerola,Acerola,acerola,fruta,32,0.4,7.7,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+kiwi,Kiwi,kiwi,fruta,61,1.1,14.7,0.5,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+abiu,Abiu,abiu,fruta,62,0.8,14.9,0.7,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+jurubeba,Jurubeba,jurubeba,fruta,126,4.4,23.1,3.9,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+fruta-nao-especificada,"Fruta (não especificada)","fruta (nao especificada)",fruta,89,1.1,22.8,0.3,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+amora,Amora,amora,fruta,43,1.4,9.6,0.5,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+jamelao-jamburao,"Jamelão (jamburão)","jamelao (jamburao)",fruta,73,0.7,18.4,0.5,120,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+demerara,Demerara,demerara,outros,387,0,100,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+alfenim-de-cana,"Alfenim de cana","alfenim de cana",outros,296,0,76.6,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+batida-rapadura,"Batida (rapadura)","batida (rapadura)",outros,380,0.1,98.1,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+sorvete-de-qualquer-sabor-industrializado,"Sorvete de qualquer sabor industrializado","sorvete de qualquer sabor industrializado",outros,206,3.6,25.1,11,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+picole-de-qualquer-sabor-industrializado,"Picolé de qualquer sabor industrializado","picole de qualquer sabor industrializado",outros,79,0,19.2,0.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+chiclete,Chiclete,chiclete,outros,396,0,98.9,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bala,Bala,bala,outros,394,0,98,0.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+caramelo-bala,"Caramelo (bala)","caramelo (bala)",outros,382,4.6,77,8.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+drops,Drops,drops,outros,394,0,98,0.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pastilha,Pastilha,pastilha,outros,396,0,98.9,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pirulito,Pirulito,pirulito,outros,394,0,98,0.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+goma-de-mascar,"Goma de mascar","goma de mascar",outros,396,0,98.9,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+jujuba,Jujuba,jujuba,outros,375,0,93.6,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+tablete-de-chocolate,"Tablete de chocolate","tablete de chocolate",outros,535,7.7,59.4,29.7,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+barra-de-chocolate,"Barra de chocolate","barra de chocolate",outros,535,7.7,59.4,29.7,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+confete,Confete,confete,outros,492,4.3,71.2,21.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+chocolate-em-po-de-qualquer-marca,"Chocolate em pó de qualquer marca","chocolate em po de qualquer marca",outros,364.2,2.8,85.5,3.6,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+ovomaltine,Ovomaltine,ovomaltine,outros,388,9.2,75.1,5.2,50,,,,,0,0,"IBGE POF 2008-2009",sem-animal,,g,0
+achocolatado-em-po,"Achocolatado em pó","achocolatado em po",outros,400,4.6,90.3,2.3,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+toddynho,Toddynho,toddynho,outros,83.3,3.2,10.4,3.4,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bombom-de-qualquer-marca,"Bombom de qualquer marca","bombom de qualquer marca",outros,373,0,93.2,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+trufa,Trufa,trufa,outros,487.9,3.6,49.1,36.3,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+geleia-de-frutas-de-qualquer-marca-ou-sabor,"Geleia de frutas de qualquer marca ou sabor","geleia de frutas de qualquer marca ou sabor",outros,278,0.4,68.9,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mousse-de-qualquer-sabor-geleia,"Mousse de qualquer sabor (Geleia)","mousse de qualquer sabor (geleia)",outros,331.9,5.1,32.2,21.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+geleia-de-mocoto,"Geleia de mocotó","geleia de mocoto",outros,120.3,3,28,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+doce-de-frutas-em-pasta-de-qualquer-sabor,"Doce de frutas em pasta de qualquer sabor","doce de frutas em pasta de qualquer sabor",outros,291.3,0.8,74.3,0.3,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pessegada,Pessegada,pessegada,outros,77,0.5,19.8,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+figada,Figada,figada,outros,88,0.4,22.9,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+goiabada,Goiabada,goiabada,outros,291.3,0.8,74.3,0.3,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+caju-em-pasta,"Caju em pasta","caju em pasta",outros,291.3,0.8,74.3,0.3,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mariola,Mariola,mariola,outros,291.3,0.8,74.3,0.3,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+doce-de-frutas-em-calda-de-qualquer-sabor,"Doce de frutas em calda de qualquer sabor","doce de frutas em calda de qualquer sabor",outros,77,0.5,19.8,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+doce-de-frutas-cristalizado-de-qualquer-sabor,"Doce de frutas cristalizado de qualquer sabor","doce de frutas cristalizado de qualquer sabor",outros,291.3,0.8,74.3,0.3,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+gelatina-de-qualquer-sabor,"Gelatina de qualquer sabor","gelatina de qualquer sabor",outros,278,0.4,68.9,0.1,50,,,,,0,0,"IBGE POF 2008-2009",sem-animal,,g,0
+merengue,Merengue,merengue,outros,358.3,6.2,85.9,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+schimier-de-cana,"Schimier de cana","schimier de cana",outros,296,0,76.6,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+fruta-seca-ou-desidratada,"Fruta seca ou desidratada","fruta seca ou desidratada",outros,240,2.2,63.9,0.4,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+passa,Passa,passa,outros,299,3.1,79.2,0.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pudim-de-qualquer-sabor,"Pudim de qualquer sabor","pudim de qualquer sabor",outros,131.2,5.6,15.4,5.1,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+danette-pudim,"Danette pudim","danette pudim",outros,131.2,5.6,15.4,5.1,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+manjar,Manjar,manjar,outros,285,8.2,40.1,10.7,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cuscuz,Cuscuz,cuscuz,outros,128.3,4.4,26.4,0.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cuscuz-de-tapioca,"Cuscuz de tapioca","cuscuz de tapioca",outros,117,4.3,15.5,4.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cocada,Cocada,cocada,outros,404.8,1,75.7,12.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+quebra-queixo,Quebra-queixo,quebra-queixo,outros,404.8,1,75.7,12.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+doce-de-amendoim,"Doce de amendoim","doce de amendoim",outros,451.6,11.2,55.3,23.9,50,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+pe-de-moleque,"Pé de moleque","pe de moleque",outros,474,9.1,69.2,17.9,50,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+pacoca,Paçoca,pacoca,outros,472.2,10.4,64,21.5,50,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+torrao-de-amendoim,"Torrão de amendoim","torrao de amendoim",outros,460.3,11,56.3,24.6,50,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+pacoquinha-de-amendoim,"Paçoquinha de amendoim","pacoquinha de amendoim",outros,472.2,10.4,64,21.5,50,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+amendoim-caramelizado,"Amendoim caramelizado","amendoim caramelizado",outros,474,9.1,69.2,17.9,50,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+amendoim-amanteigado,"Amendoim amanteigado","amendoim amanteigado",outros,567,25.8,16.1,49.2,50,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+amendoim-achocolatado,"Amendoim achocolatado","amendoim achocolatado",outros,519,13.1,49.7,33.5,50,,,,,0,0,"IBGE POF 2008-2009",lactose|castanhas|sem-animal,,g,0
+amendoim-apimentado,"Amendoim apimentado","amendoim apimentado",outros,567,25.8,16.1,49.2,50,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+amendoim-cozido,"Amendoim cozido","amendoim cozido",outros,318,13.5,21.3,22,50,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+brigadeiro,Brigadeiro,brigadeiro,outros,334.5,7.5,54.9,10.1,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+bomba-de-qualquer-tipo,"Bomba de qualquer tipo","bomba de qualquer tipo",outros,339.3,6.3,18.6,26.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mil-folhas,"Mil folhas","mil folhas",outros,440.3,2.4,43.2,29,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+queijadinha,Queijadinha,queijadinha,outros,404.8,1,75.7,12.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+doce-a-base-de-ovos,"Doce à base de ovos","doce a base de ovos",outros,131.2,5.6,15.4,5.1,50,,,,,0,0,"IBGE POF 2008-2009",sem-animal,,g,0
+cacarola-italiana,"Caçarola italiana","cacarola italiana",outros,285,8.2,40.1,10.7,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+fios-de-ovos,"Fios de ovos","fios de ovos",outros,131.2,5.6,15.4,5.1,50,,,,,0,0,"IBGE POF 2008-2009",sem-animal,,g,0
+doce-a-base-de-leite,"Doce à base de leite","doce a base de leite",outros,319.7,7.9,54.2,8.7,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+pave-de-qualquer-sabor,"Pavê de qualquer sabor","pave de qualquer sabor",outros,306.4,4.9,21.6,22.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+ambrosia,Ambrosia,ambrosia,outros,144.2,4.1,23.9,3.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+leite-geleificado,"Leite geleificado","leite geleificado",outros,131.2,5.6,15.4,5.1,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+chandele-de-qualquer-sabor,"Chandele de qualquer sabor","chandele de qualquer sabor",outros,131.2,5.6,15.4,5.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mumu,Mumu,mumu,outros,319.7,7.9,54.2,8.7,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+canudinho-recheado,"Canudinho recheado","canudinho recheado",outros,123.3,2.4,21.3,4.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+sarolho,Sarolho,sarolho,outros,336,2,82,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+beiju,Beiju,beiju,outros,336,2,82,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+schimier-de-fruta-exceto-de-cana,"Schimier de fruta (exceto de cana)","schimier de fruta (exceto de cana)",outros,278,0.4,68.9,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+beijo-de-moca,"Beijo de moça","beijo de moca",outros,387,0,100,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+picole-ensacado,"Picolé ensacado","picole ensacado",outros,79,0,19.2,0.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+geladinho,Geladinho,geladinho,outros,122.7,0.1,32.5,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+churro,Churro,churro,outros,401.7,3,45.9,23.4,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pamonha,Pamonha,pamonha,outros,171,2.6,30.7,4.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+algodao-doce,Algodão-doce,algodao-doce,outros,387,0,100,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+io-io-crem-chocolate-em-creme,"Io-Iô crem (chocolate em creme)","io-io crem (chocolate em creme)",outros,350,4.6,62.9,8.9,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+ovo-de-pascoa,"Ovo de páscoa","ovo de pascoa",outros,535,7.7,59.4,29.7,50,,,,,0,0,"IBGE POF 2008-2009",sem-animal,,g,0
+kinder-ovo,"Kinder ovo","kinder ovo",outros,535,7.7,59.4,29.7,50,,,,,0,0,"IBGE POF 2008-2009",sem-animal,,g,0
+torrone,Torrone,torrone,outros,460.3,11,56.3,24.6,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+arroz-doce,Arroz-doce,arroz-doce,outros,108.5,3.1,18.8,2.3,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+polpa-de-coco,"Polpa de coco","polpa de coco",outros,402,3.8,9.8,41.7,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+diet-shake,"Diet shake","diet shake",outros,335.5,19.2,69.9,1.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+concentrado-alimentar-diet-shake,"Concentrado alimentar diet shake","concentrado alimentar diet shake",outros,335.5,19.2,69.9,1.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+acucar,Açúcar,acucar,outros,387,0,100,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+acucar-light,"Açúcar light","acucar light",outros,400,0,100,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+barra-de-cereais,"Barra de cereais","barra de cereais",outros,352.9,3.2,69.4,8.6,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+barra-de-cereais-salgada,"Barra de cereais salgada","barra de cereais salgada",outros,352.9,3.2,69.4,8.6,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+barra-de-cereais-doce,"Barra de cereais doce","barra de cereais doce",outros,352.9,3.2,69.4,8.6,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+sobremesa-de-qualquer-tipo-exceto-infantil,"Sobremesa de qualquer tipo (exceto infantil)","sobremesa de qualquer tipo (exceto infantil)",outros,131.2,5.6,15.4,5.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+rabanada,Rabanada,rabanada,outros,293,4.7,31.3,16.6,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+milk-shake,"Milk shake","milk shake",outros,161.1,3.1,23.5,6.4,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+geleia-diet,"Geleia diet","geleia diet",outros,52.6,0.5,12.7,0.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+doce-de-frutas-diet,"Doce de frutas diet","doce de frutas diet",outros,52.6,0.5,12.7,0.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pasteis-de-santa-clara,"Pastéis de santa clara","pasteis de santa clara",outros,131.2,5.6,15.4,5.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+suspiro,Suspiro,suspiro,outros,358.3,6.2,85.9,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+doce-de-frutas-cristalizado-de-qualquer-sabor-diet,"Doce de frutas cristalizado de qualquer sabor diet","doce de frutas cristalizado de qualquer sabor diet",outros,52.6,0.5,12.7,0.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+sorvete-de-qualquer-sabor-industrializado-light,"Sorvete de qualquer sabor industrializado light","sorvete de qualquer sabor industrializado light",outros,189,4.4,26.2,7.7,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+sorvete-de-qualquer-sabor-industrializado-diet,"Sorvete de qualquer sabor industrializado diet","sorvete de qualquer sabor industrializado diet",outros,190,3.2,15.9,12.7,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+bala-light,"Bala light","bala light",outros,235,0,95,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+chiclete-diet,"Chiclete diet","chiclete diet",outros,240,0,100,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bala-diet,"Bala diet","bala diet",outros,235,0,95,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+barra-de-chocolate-light,"Barra de chocolate light","barra de chocolate light",outros,539.8,10.6,40.4,41.6,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+barra-de-chocolate-diet,"Barra de chocolate diet","barra de chocolate diet",outros,539.8,10.6,40.4,41.6,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+achocolatado-em-po-light,"Achocolatado em pó light","achocolatado em po light",outros,337.7,29.4,55.3,2.4,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+achocolatado-em-po-diet,"Achocolatado em pó diet","achocolatado em po diet",outros,337.7,29.4,55.3,2.4,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+toddynho-diet,"Toddynho diet","toddynho diet",outros,73.3,3.5,7.1,3.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bombom-de-qualquer-marca-light,"Bombom de qualquer marca light","bombom de qualquer marca light",outros,373,0,93.2,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bombom-de-qualquer-marca-diet,"Bombom de qualquer marca diet","bombom de qualquer marca diet",outros,373,0,93.2,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bombom-caramelizado-de-qualquer-marca-diet,"Bombom caramelizado de qualquer marca diet","bombom caramelizado de qualquer marca diet",outros,373,0,93.2,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+geleia-de-frutas-de-qualquer-marca-ou-sabor-light,"Geleia de frutas de qualquer marca ou sabor light","geleia de frutas de qualquer marca ou sabor light",outros,179,0.4,46.1,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+geleia-light,"Geleia light","geleia light",outros,179,0.4,46.1,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+geleia-de-frutas-light,"Geleia de frutas light","geleia de frutas light",outros,179,0.4,46.1,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+doce-de-frutas-em-barra-ou-pasta-light,"Doce de frutas em barra ou pasta light","doce de frutas em barra ou pasta light",outros,179,0.4,46.1,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+doce-de-frutas-em-pasta-light,"Doce de frutas em pasta light","doce de frutas em pasta light",outros,179,0.4,46.1,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pudim-de-qualquer-sabor-light,"Pudim de qualquer sabor light","pudim de qualquer sabor light",outros,119.2,5.7,15.8,3.6,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+pudim-danette-light,"Pudim danette light","pudim danette light",outros,119.2,5.7,15.8,3.6,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+pudim-de-qualquer-sabor-diet,"Pudim de qualquer sabor diet","pudim de qualquer sabor diet",outros,119.2,5.7,15.8,3.6,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+doce-de-leite-light,"Doce de leite light","doce de leite light",outros,292.3,7.6,59,3.6,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+doce-de-leite-diet,"Doce de leite diet","doce de leite diet",outros,292.3,7.6,59,3.6,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+barra-de-cereais-diet,"Barra de cereais diet","barra de cereais diet",outros,403.5,5.6,86.4,5.4,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+barra-de-cereais-doce-diet,"Barra de cereais doce diet","barra de cereais doce diet",outros,403.5,5.6,86.4,5.4,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+milk-shake-diet,"Milk shake diet","milk shake diet",outros,335.5,19.2,69.9,1.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cocada-diet,"Cocada diet","cocada diet",outros,404.8,1,75.7,12.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+doce-de-amendoim-diet,"Doce de amendoim diet","doce de amendoim diet",outros,599,28,15.3,52.5,50,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+pacoca-diet,"Paçoca diet","pacoca diet",outros,599,28,15.3,52.5,50,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+amendoim-amanteigado-diet,"Amendoim amanteigado diet","amendoim amanteigado diet",outros,477.9,7.1,64.6,21.6,50,,,,,0,0,"IBGE POF 2008-2009",castanhas,,g,0
+doce-a-base-de-leite-diet,"Doce à base de leite diet","doce a base de leite diet",outros,292.3,7.6,59,3.6,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+gelatina-de-qualquer-sabor-light,"Gelatina de qualquer sabor light","gelatina de qualquer sabor light",outros,179,0.4,46.1,0.1,50,,,,,0,0,"IBGE POF 2008-2009",sem-animal,,g,0
+adocante-light,"Adoçante light","adocante light",outros,365,2.2,89.1,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+adocante-em-po-light,"Adoçante em pó light","adocante em po light",outros,365,2.2,89.1,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mostarda-molho,"Mostarda molho","mostarda molho",outros,67,4.4,5.3,4,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+hortela,Hortelã,hortela,outros,1,0,0.2,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+alcaparra-em-conserva,"Alcaparra em conserva","alcaparra em conserva",outros,23,2.4,4.9,0.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+coentro,Coentro,coentro,outros,279,21.9,52.1,4.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+molho-de-soja,"Molho de soja","molho de soja",outros,53,6.3,7.6,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+shoyo,Shoyo,shoyo,outros,53,6.3,7.6,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+maionese-molho,"Maionese (molho)","maionese (molho)",outros,261.1,0.5,13.4,23.3,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+massa-de-tomate,"Massa de tomate","massa de tomate",outros,38,1.7,9,0.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+molho-de-tomate,"Molho de tomate","molho de tomate",outros,24,1.3,5.4,0.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+ketchup,Ketchup,ketchup,outros,97,1.7,25.2,0.3,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+catchup,Catchup,catchup,outros,97,1.7,25.2,0.3,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pimenta-em-po,"Pimenta em pó","pimenta em po",outros,255,11,64.8,3.3,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+tucupi-em-caldo-sem-pimenta,"Tucupi em caldo sem pimenta","tucupi em caldo sem pimenta",outros,4.9,0,1.3,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+creme-de-queijo,"Creme de queijo","creme de queijo",outros,209.7,10.3,6.7,15.8,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+caldo-de-peixe,"Caldo de peixe","caldo de peixe",outros,16,2,0.4,0.6,200,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,ml,0
+caldo-de-tomate,"Caldo de tomate","caldo de tomate",outros,37.7,0.8,7.4,0.8,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+gergelim,Gergelim,gergelim,outros,631,20.5,11.7,61.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+tomate-seco,"Tomate seco","tomate seco",outros,213,5.1,23.3,14.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+maionese-molho-light,"Maionese (molho) light","maionese (molho) light",outros,156.6,0.6,18.8,9.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+molho-de-soja-light,"Molho de soja light","molho de soja light",outros,53.1,5.2,8.5,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+leite-de-coco-light,"Leite de coco light","leite de coco light",outros,202.5,1.6,5.6,20.9,200,,,,,0,0,"IBGE POF 2008-2009",sem-animal,,ml,0
+vinagrete,Vinagrete,vinagrete,outros,76.8,0.7,3.7,6.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+file-mignon,Filé-mignon,file-mignon,proteina,204,30.7,0,9,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+tatu-lagarto-redondo,"Tatu (lagarto redondo)","tatu (lagarto redondo)",proteina,199,36.1,0,5,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+dobradinha-fresca,"Dobradinha fresca","dobradinha fresca",proteina,94,11.7,2,4.1,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+rabada-de-boi,"Rabada de boi","rabada de boi",proteina,365,22.6,0,29.8,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+mocoto-bovino,"Mocotó bovino","mocoto bovino",proteina,214,28.8,0,10.1,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+bisteca-suina,"Bisteca suína","bisteca suina",proteina,397,29.1,0,30.3,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+costela-suina,"Costela suína","costela suina",proteina,397,29.1,0,30.3,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+toucinho,Toucinho,toucinho,proteina,541,37,1.4,41.8,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+arrasto-suino,"Arrasto suíno","arrasto suino",proteina,100,14,4.2,3,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+sarapatel-suino-fresco,"Sarapatel suíno fresco","sarapatel suino fresco",proteina,100,14,4.2,3,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+carne-suina,"Carne suína","carne suina",proteina,289,25.3,0,20.1,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+carne-moida,"Carne moída","carne moida",proteina,214,26.6,0,11.1,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+guisado,Guisado,guisado,proteina,242,24.2,0,15.4,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+sarrabulho,Sarrabulho,sarrabulho,proteina,100,14,4.2,3,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+brachola,Brachola,brachola,proteina,204,30.7,0,9,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+bife-role-cru,"Bife role cru","bife role cru",proteina,204,30.7,0,9,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+buchada-de-bode,"Buchada de bode","buchada de bode",proteina,125,19.8,0,4.4,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+carne-de-outros-animais,"Carne de outros animais","carne de outros animais",proteina,242,24.2,0,15.4,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+file-nao-especificado,"Filé não especificado","file nao especificado",proteina,204,30.7,0,9,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+carne-bovina,"Carne bovina","carne bovina",proteina,242,24.2,0,15.4,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+ossada-nao-especificada,"Ossada não especificada","ossada nao especificada",proteina,164,26.1,0,5.8,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+camarao,Camarão,camarao,proteina,99,20.9,0,1.1,100,,,,,0,0,"IBGE POF 2008-2009",frutos-do-mar|sem-carne|sem-animal,,g,0
+marisco,Marisco,marisco,proteina,148,25.6,5.1,2,100,,,,,0,0,"IBGE POF 2008-2009",frutos-do-mar|sem-carne|sem-animal,,g,0
+bacalhau,Bacalhau,bacalhau,proteina,117,24.2,0,1.5,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+peixe-de-agua-doce-inteiro-em-posta-em-file-etc,"Peixe de água doce (inteiro, em posta, em filé, etc.)","peixe de agua doce (inteiro",proteina,117,24.2,0,1.5,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+azeitona,Azeitona,azeitona,outros,145,1,3.8,15.3,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+ervilha-em-conserva,"Ervilha em conserva","ervilha em conserva",outros,69,4.4,12.6,0.4,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+petit-pois,Petit-pois,petit-pois,outros,69,4.4,12.6,0.4,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+milho-verde-em-conserva,"Milho verde em conserva","milho verde em conserva",outros,81,2.6,18.8,0.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+palmito-em-conserva,"Palmito em conserva","palmito em conserva",outros,28,2.5,4.6,0.6,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cogumelo-em-conserva,"Cogumelo em conserva","cogumelo em conserva",outros,50.7,1.9,5.1,3.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+champignon-em-conserva,"Champignon em conserva","champignon em conserva",outros,50.7,1.9,5.1,3.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+aspargo-em-conserva,"Aspargo em conserva","aspargo em conserva",outros,19,2.1,2.5,0.7,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+repolho-em-conserva,"Repolho em conserva","repolho em conserva",outros,19,0.9,4.3,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+chucrute,Chucrute,chucrute,outros,19,0.9,4.3,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+legume-nao-especificado-em-conserva,"Legume não especificado em conserva","legume nao especificado em conserva",outros,47,2.5,9.1,0.3,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+creme-de-cebola-sopa-desidratada,"Creme de cebola (sopa desidratada)","creme de cebola (sopa desidratada)",outros,46.3,0.8,5.3,2.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+creme-de-legumes-sopa-desidratada,"Creme de legumes (sopa desidratada)","creme de legumes (sopa desidratada)",outros,10.6,0.5,2.2,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+yakissoba,Yakissoba,yakissoba,outros,527,8.4,57.5,30.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+milho-verde-com-ervilha-em-conserva,"Milho verde com ervilha em conserva","milho verde com ervilha em conserva",outros,79.5,3.8,16.8,0.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+feijao-branco-com-dobradinha-em-conserva,"Feijão branco com dobradinha em conserva","feijao branco com dobradinha em conserva",outros,136.4,10.7,10.2,5.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cozido,Cozido,cozido,outros,87.3,5.6,7.9,3.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pasta-de-carne-em-conserva,"Pasta de carne em conserva","pasta de carne em conserva",outros,245.7,9.9,14.1,16.9,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+pasta-de-presunto-em-conserva,"Pasta de presunto em conserva","pasta de presunto em conserva",outros,276.5,17.9,1.8,21.4,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+pasta-de-galinha-em-conserva,"Pasta de galinha em conserva","pasta de galinha em conserva",outros,214.4,16.4,3.7,14.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+carne-bovina-em-conserva,"Carne bovina em conserva","carne bovina em conserva",outros,242,24.2,0,15.4,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+almondega,Almôndega,almondega,outros,214.9,20.6,11,9.2,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+kitute-bovino,"Kitute bovino","kitute bovino",outros,242,24.2,0,15.4,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+almondega-ao-molho-em-conserva,"Almôndega ao molho em conserva","almondega ao molho em conserva",outros,203.5,16.2,9.7,10.7,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+kitute-suino,"Kitute suíno","kitute suino",outros,178,22.6,0,9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+presuntada,Presuntada,presuntada,outros,178,22.6,0,9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+salsicha-em-conserva,"Salsicha em conserva","salsicha em conserva",outros,269.1,8.3,0.3,25.8,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+sardinha-em-conserva,"Sardinha em conserva","sardinha em conserva",outros,208,24.6,0,11.5,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+atum-em-conserva,"Atum em conserva","atum em conserva",outros,198,29.1,0,8.2,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+pepino-em-conserva,"Pepino em conserva","pepino em conserva",outros,12,0.6,2.6,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pasta-de-peixe-em-conserva,"Pasta de peixe em conserva","pasta de peixe em conserva",outros,198,29.1,0,8.2,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+picles,Picles,picles,outros,12,0.6,2.6,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+nabo-em-conserva,"Nabo em conserva","nabo em conserva",outros,43.3,0.9,9.9,0.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+strogonoff,Strogonoff,strogonoff,outros,147.7,12.8,4.1,9.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+salmao-em-conserva,"Salmão em conserva","salmao em conserva",outros,136,23.1,0,4.8,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+creme-de-cebola-sopa-desidratada-light,"Creme de cebola (sopa desidratada) light","creme de cebola (sopa desidratada) light",outros,46.3,0.8,5.3,2.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+creme-de-legumes-sopa-desidratada-light,"Creme de legumes (sopa desidratada) light","creme de legumes (sopa desidratada) light",outros,10.6,0.5,2.2,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+yakissoba-sopa-de-legumes-desidratada-light,"Yakissoba (sopa de legumes desidratada) light","yakissoba (sopa de legumes desidratada) light",outros,80,3,15.6,0.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+atum-em-conserva-light,"Atum em conserva light","atum em conserva light",outros,116,25.5,0,0.8,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+parte-de-galinha-ou-frango-nao-especificada,"Parte de galinha ou frango não especificada","parte de galinha ou frango nao especificada",proteina,239,27.3,0,13.6,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+frango-em-pedacos,"Frango em pedaços","frango em pedacos",proteina,239,27.3,0,13.6,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+carne-de-galinha,"Carne de galinha","carne de galinha",proteina,239,27.3,0,13.6,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+peito-de-galinha-ou-frango,"Peito de galinha ou frango","peito de galinha ou frango",proteina,173,30.9,0,4.5,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+file-de-frango,"Filé de frango","file de frango",proteina,173,30.9,0,4.5,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+canja,Canja,canja,proteina,31.5,1.6,3.6,1.1,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+peito-de-peru,"Peito de peru","peito de peru",proteina,140,30.2,0,1.2,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+chester,Chester,chester,proteina,207,26.9,0,10.2,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+steak-de-frango,"Steak de frango","steak de frango",proteina,211.8,31.4,3.4,7.1,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+ovo-de-galinha,"Ovo de galinha","ovo de galinha",proteina,155,12.6,1.1,10.6,100,,,,,0,0,"IBGE POF 2008-2009",sem-animal,,g,0
+ovo-de-codorna,"Ovo de codorna","ovo de codorna",proteina,155,12.6,1.1,10.6,100,,,,,0,0,"IBGE POF 2008-2009",sem-animal,,g,0
+peito-de-peru-light,"Peito de peru light","peito de peru light",proteina,140,30.2,0,1.2,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+leite-de-vaca-integral,"Leite de vaca integral","leite de vaca integral",laticinio,60,3.2,4.5,3.3,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+leite-de-vaca-fresco,"Leite de vaca fresco","leite de vaca fresco",laticinio,60,3.2,4.5,3.3,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+leite-em-po-integral,"Leite em pó integral","leite em po integral",laticinio,480,25.8,36.2,26,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+leite-em-po-desnatado,"Leite em pó desnatado","leite em po desnatado",laticinio,358,35.1,52.2,0.7,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+leite-em-po,"Leite em pó","leite em po",laticinio,480,25.8,36.2,26,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+leite-beijinho,"Leite beijinho","leite beijinho",laticinio,319.7,7.9,54.2,8.7,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+chantilly,Chantilly,chantilly,laticinio,276.4,2.9,12.4,24.6,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+iogurte-de-qualquer-sabor,"Iogurte de qualquer sabor","iogurte de qualquer sabor",laticinio,98.7,3.5,14.6,3.5,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+iogurte-desnatado,"Iogurte desnatado","iogurte desnatado",laticinio,56,5.7,7.7,0.2,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+yakult-de-qualquer-sabor,"Yakult de qualquer sabor","yakult de qualquer sabor",laticinio,69.3,3,14.5,0.1,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+bebida-lactea,"Bebida láctea","bebida lactea",laticinio,91.1,2.8,18,1.2,200,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,ml,0
+coalhada,Coalhada,coalhada,laticinio,61,3.5,4.7,3.3,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+manteiga-com-ou-sem-sal,"Manteiga com ou sem sal","manteiga com ou sem sal",laticinio,717,0.9,0.1,81.1,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+manteiga-de-garrafa,"Manteiga de garrafa","manteiga de garrafa",laticinio,717,0.9,0.1,81.1,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+margarina-com-ou-sem-sal,"Margarina com ou sem sal","margarina com ou sem sal",laticinio,719,0.9,0.9,80.5,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-colonial,"Queijo colonial","queijo colonial",laticinio,302,26,3.8,20,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-de-colonia,"Queijo de colônia","queijo de colonia",laticinio,302,26,3.8,20,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+mucarela,Muçarela,mucarela,laticinio,318,21.6,2.5,24.6,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+mucarela-de-bufala,"Muçarela de búfala","mucarela de bufala",laticinio,318,21.6,2.5,24.6,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-de-bufala,"Queijo de búfala","queijo de bufala",laticinio,318,21.6,2.5,24.6,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-de-reino,"Queijo de reino","queijo de reino",laticinio,356,24.9,2.2,27.4,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-de-minas,"Queijo de minas","queijo de minas",laticinio,240,17.6,10.6,14.1,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-de-manteiga,"Queijo de manteiga","queijo de manteiga",laticinio,318,21.6,2.5,24.6,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+quechimia,Quechimia,quechimia,laticinio,240,17.6,10.6,14.1,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-de-coalho,"Queijo de coalho","queijo de coalho",laticinio,373,24.5,0.7,30.3,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-canastra,"Queijo canastra","queijo canastra",laticinio,240,17.6,10.6,14.1,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+leite-de-soja-com-sabor,"Leite de soja com sabor","leite de soja com sabor",laticinio,64.1,3.7,9.1,1.7,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+ades-original,"Ades original","ades original",laticinio,54,3.3,6.3,1.8,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-ralado,"Queijo ralado","queijo ralado",laticinio,431,38.5,4.1,28.6,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-provolone,"Queijo provolone","queijo provolone",laticinio,351,25.6,2.1,26.6,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-polenguinho,"Queijo polenguinho","queijo polenguinho",laticinio,349,7.6,2.7,34.9,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+requeijao,Requeijão,requeijao,laticinio,231,10.6,7,17.6,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-cremoso,"Queijo cremoso","queijo cremoso",laticinio,231,10.6,7,17.6,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-nao-especificado,"Queijo não especificado","queijo nao especificado",laticinio,375,22.2,1.6,31.3,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+leite-com-sabor,"Leite com sabor","leite com sabor",laticinio,83.3,3.2,10.4,3.4,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+leite-achocolatado,"Leite achocolatado","leite achocolatado",laticinio,83.3,3.2,10.4,3.4,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+leite-aromatizado,"Leite aRomãtizado","leite aromatizado",laticinio,83.3,3.2,10.4,3.4,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+bebida-achocolatada,"Bebida achocolatada","bebida achocolatada",laticinio,83.3,3.2,10.4,3.4,200,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,ml,0
+nata,Nata,nata,laticinio,195,2.7,3.7,19.3,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-gorgonzola,"Queijo gorgonzola","queijo gorgonzola",laticinio,353,21.4,2.3,28.7,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+leite-de-soja-em-po,"Leite de soja em pó","leite de soja em po",laticinio,408.3,32.9,42.1,13.2,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+leite-de-vaca-desnatado,"Leite de vaca desnatado","leite de vaca desnatado",laticinio,34.2,3.4,5,0.1,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+leite-de-vaca-semidesnatado,"Leite de vaca semidesnatado","leite de vaca semidesnatado",laticinio,42,3.4,5,1,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+leite-nao-especificado-pasteurizado,"Leite não especificado pasteurizado","leite nao especificado pasteurizado",laticinio,60,3.2,4.5,3.3,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+iogurte-de-qualquer-sabor-light,"Iogurte de qualquer sabor light","iogurte de qualquer sabor light",laticinio,102,4.4,19.1,1.1,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+iogurte-de-qualquer-sabor-diet,"Iogurte de qualquer sabor diet","iogurte de qualquer sabor diet",laticinio,51.4,3.1,3.9,2.7,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+margarina-light,"Margarina light","margarina light",laticinio,253.7,0.1,0.3,28.5,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+mucarela-light,"Muçarela light","mucarela light",laticinio,302,26,3.8,20,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-mucarela-light,"Queijo muçarela light","queijo mucarela light",laticinio,302,26,3.8,20,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+leite-de-soja-com-sabor-light,"Leite de soja com sabor light","leite de soja com sabor light",laticinio,53.2,2.6,8.6,1,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+ades-light,"Ades light","ades light",laticinio,39.4,2,6.2,0.8,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+creme-de-leite-light,"Creme de leite light","creme de leite light",laticinio,59,2.6,9,1.4,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-prato-light,"Queijo prato light","queijo prato light",laticinio,297.3,24.5,1.2,21.4,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-de-minas-light,"Queijo de minas light","queijo de minas light",laticinio,90,13.7,3.6,1.9,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-de-coalho-light,"Queijo de coalho light","queijo de coalho light",laticinio,297.3,24.5,1.2,21.4,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-ricota-light,"Queijo ricota light","queijo ricota light",laticinio,92.7,14.6,7.1,0.3,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-ralado-light,"Queijo ralado light","queijo ralado light",laticinio,265,20,1.4,20,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-polenguinho-light,"Queijo polenguinho light","queijo polenguinho light",laticinio,231,10.6,7,17.6,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+requeijao-light,"Requeijão light","requeijao light",laticinio,231,10.6,7,17.6,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+queijo-nao-especificado-light,"Queijo não especificado light","queijo nao especificado light",laticinio,90,13.7,3.6,1.9,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+leite-achocolatado-light,"Leite achocolatado light","leite achocolatado light",laticinio,63,3.2,10.4,1,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+bebida-achocolatada-light,"Bebida achocolatada light","bebida achocolatada light",laticinio,63,3.2,10.4,1,200,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,ml,0
+leite-com-sabor-diet,"Leite com sabor diet","leite com sabor diet",laticinio,73.3,3.5,7.1,3.5,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+leite-achocolatado-diet,"Leite achocolatado diet","leite achocolatado diet",laticinio,73.3,3.5,7.1,3.5,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+bebida-achocolatada-diet,"Bebida achocolatada diet","bebida achocolatada diet",laticinio,73.3,3.5,7.1,3.5,200,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,ml,0
+leite-de-soja-em-po-light,"Leite de soja em pó light","leite de soja em po light",laticinio,379.6,32.9,59.9,2.8,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+leite-em-po-com-sabor,"Leite em pó com sabor","leite em po com sabor",laticinio,405,3.3,90.9,3.1,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+manteiga-com-ou-sem-sal-light,"Manteiga com ou sem sal light","manteiga com ou sem sal light",laticinio,347.3,0.4,0,39.3,150,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+pao-de-hamburguer,"Pão de hambúrguer","pao de hamburguer",carboidrato,279,9.5,49.5,4.3,100,,,,,0,0,"IBGE POF 2008-2009",gluten|sem-carne|sem-animal,,g,0
+pao-de-sal,"Pão de sal","pao de sal",carboidrato,300,8,58.6,3.1,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+pao-doce,"Pão doce","pao doce",carboidrato,355.2,5.2,55.8,13.1,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+chineque,Chineque,chineque,carboidrato,355.2,5.2,55.8,13.1,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+chineque-com-farofa,"Chineque com farofa","chineque com farofa",carboidrato,355.2,5.2,55.8,13.1,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pao-de-mel,"Pão de mel","pao de mel",carboidrato,508.4,4.5,85,18.3,100,,,,,0,0,"IBGE POF 2008-2009",gluten|sem-animal,,g,0
+panetone,Panetone,panetone,carboidrato,356,7.5,58,10.4,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bisnaguinha,Bisnaguinha,bisnaguinha,carboidrato,310,10.9,52,6.5,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+croissant,Croissant,croissant,carboidrato,455.2,8,46.8,26.3,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+pao-de-forma-industrializado-de-qualquer-marca,"Pão de forma industrializado de qualquer marca","pao de forma industrializado de qualquer marca",carboidrato,266,7.6,50.6,3.3,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+pao-de-queijo,"Pão de queijo","pao de queijo",carboidrato,363,5.1,34.2,24.6,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+pao-de-milho,"Pão de milho","pao de milho",carboidrato,316.6,7.2,48,10.4,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+pao-nao-especificado,"Pão não especificado","pao nao especificado",carboidrato,300,8,58.6,3.1,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+torrada-de-qualquer-pao,"Torrada de qualquer pão","torrada de qualquer pao",carboidrato,377,10.5,74.6,3.3,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+rosca-doce,"Rosca doce","rosca doce",carboidrato,423,4.5,55.5,20.6,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+rosquinha-doce,"Rosquinha doce","rosquinha doce",carboidrato,443,8.1,75.2,12,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+rosca-salgada,"Rosca salgada","rosca salgada",carboidrato,245.8,12.8,25.8,9.9,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+rosquinha-salgada,"Rosquinha salgada","rosquinha salgada",carboidrato,432,10.1,68.7,14.4,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+biscoito-salgado,"Biscoito salgado","biscoito salgado",carboidrato,432,10.1,68.7,14.4,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+presuntinho-biscoito,"Presuntinho biscoito","presuntinho biscoito",carboidrato,509,8.9,60.7,25.4,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+biscoito-de-polvilho,"Biscoito de polvilho","biscoito de polvilho",carboidrato,436.7,4.5,38.4,29.1,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+bolacha-salgada,"Bolacha salgada","bolacha salgada",carboidrato,432,10.1,68.7,14.4,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+chips-salgadinhos,"Chips (salgadinhos)","chips (salgadinhos)",carboidrato,558.9,5.1,55.4,35.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+baconzitos,Baconzitos,baconzitos,carboidrato,509,8.9,60.7,25.4,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+biscoito-salgado-integral,"Biscoito salgado integral","biscoito salgado integral",carboidrato,412.4,11.5,60.9,16.1,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+biscoito-doce,"Biscoito doce","biscoito doce",carboidrato,443,8.1,75.2,12,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+cavaco-chines,"Cavaco chinês","cavaco chines",carboidrato,443,8.1,75.2,12,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+sequilho,Sequilho,sequilho,carboidrato,443,8.1,75.2,12,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+tareco,Tareço,tareco,carboidrato,443,8.1,75.2,12,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+solda,Solda,solda,carboidrato,432,10.1,68.7,14.4,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+brevidade,Brevidade,brevidade,carboidrato,371.2,3.2,57.7,14.6,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bolacha-doce,"Bolacha doce","bolacha doce",carboidrato,443,8.1,75.2,12,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+maria-maluca-bolacha-doce,"Maria maluca (bolacha doce)","maria maluca (bolacha doce)",carboidrato,443,8.1,75.2,12,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+quebra-quebra,Quebra-quebra,quebra-quebra,carboidrato,443,8.1,75.2,12,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+rocambole,Rocambole,rocambole,carboidrato,339.3,6.3,18.6,26.9,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cuca-de-qualquer-tipo,"Cuca de qualquer tipo","cuca de qualquer tipo",carboidrato,355.2,5.2,55.8,13.1,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bolo-de-milho,"Bolo de milho","bolo de milho",carboidrato,311,4.8,45.1,12.4,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+amidomil-bolinho,"Amidomil (bolinho)","amidomil (bolinho)",carboidrato,311,4.8,45.1,12.4,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+angusor-de-milho,"Angusor de milho","angusor de milho",carboidrato,311,4.8,45.1,12.4,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+grustoli-bolinho-doce,"Grustoli (bolinho doce)","grustoli (bolinho doce)",carboidrato,421.4,5.6,55.7,19.8,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bolo-de-aipim,"Bolo de aipim","bolo de aipim",carboidrato,324,4.4,47.9,12.7,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+bolo-de-tapioca,"Bolo de tapioca","bolo de tapioca",carboidrato,324,4.4,47.9,12.7,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+bolo-de-macaxeira,"Bolo de macaxeira","bolo de macaxeira",carboidrato,324,4.4,47.9,12.7,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+bolo-de-goma,"Bolo de goma","bolo de goma",carboidrato,324,4.4,47.9,12.7,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+bolo-de-batata-doce,"Bolo de batata-doce","bolo de batata-doce",carboidrato,324,4.4,47.9,12.7,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+bolo-de-arroz,"Bolo de arroz","bolo de arroz",carboidrato,324,4.4,47.9,12.7,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+bolo-de-cara,"Bolo de cará","bolo de cara",carboidrato,324,4.4,47.9,12.7,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+tortas-doces-de-qualquer-sabor,"Tortas doces de qualquer sabor","tortas doces de qualquer sabor",carboidrato,119.7,2.3,15.6,5.4,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+tortas-salgadas-de-qualquer-sabor,"Tortas salgadas de qualquer sabor","tortas salgadas de qualquer sabor",carboidrato,249.6,3.9,38.4,9.9,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+sonho,Sonho,sonho,carboidrato,378.8,6,48.1,18.3,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+filhos-bolinho-de-farinha-de-trigo-e-ovos,"Filhos (bolinho de farinha de trigo e ovos)","filhos (bolinho de farinha de trigo e ovos)",carboidrato,421.4,5.6,55.7,19.8,100,,,,,0,0,"IBGE POF 2008-2009",gluten|sem-animal,,g,0
+bolo-de-chocolate,"Bolo de chocolate","bolo de chocolate",carboidrato,312.8,8.7,58.3,6,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+brioche,Brioche,brioche,carboidrato,366.8,9,49.6,14.2,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bolo-de-laranja,"Bolo de laranja","bolo de laranja",carboidrato,360.8,4.8,58.3,13.2,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+bolo-de-coco,"Bolo de coco","bolo de coco",carboidrato,317.2,6.3,54.2,8.7,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+bolo-de-cenoura,"Bolo de cenoura","bolo de cenoura",carboidrato,344.9,4.2,44.3,17.3,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+bolo-de-trigo,"Bolo de trigo","bolo de trigo",carboidrato,286.6,6.9,55.3,4.2,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+broa,Broa,broa,carboidrato,392,9.8,47.1,18.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+biscoito-recheado,"Biscoito recheado","biscoito recheado",carboidrato,472,6.4,70.5,19.6,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+waffer-biscoito,"Waffer (biscoito)","waffer (biscoito)",carboidrato,430.3,6.3,74.8,12.5,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+alfajores-biscoito,"Alfajores (biscoito)","alfajores (biscoito)",carboidrato,505.2,6.5,70.9,22.6,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bolacha-recheada,"Bolacha recheada","bolacha recheada",carboidrato,472,6.4,70.5,19.6,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+rosca-recheada,"Rosca recheada","rosca recheada",carboidrato,620.2,5.6,98.1,26.3,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+rosquinha-recheada-de-qualquer-sabor,"Rosquinha recheada de qualquer sabor","rosquinha recheada de qualquer sabor",carboidrato,472,6.4,70.5,19.6,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+biscoito-nao-especificado,"Biscoito não especificado","biscoito nao especificado",carboidrato,432,10.1,68.7,14.4,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+crepe,Crepe,crepe,carboidrato,203.2,14,8.3,12.5,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pao-diet-de-forma-industrializado,"Pão diet (de forma industrializado)","pao diet (de forma industrializado)",carboidrato,198,9.1,43.6,2.3,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+pao-light-de-forma-industrializado,"Pão light (de forma industrializado)","pao light (de forma industrializado)",carboidrato,198,9.1,43.6,2.3,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+pao-de-queijo-light,"Pão de queijo light","pao de queijo light",carboidrato,363,5.1,34.2,24.6,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+pao-integral-light,"Pão integral light","pao integral light",carboidrato,198,9.1,43.6,2.3,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+tortas-doces-de-qualquer-sabor-light,"Tortas doces de qualquer sabor light","tortas doces de qualquer sabor light",carboidrato,121.8,2.3,16.1,5.4,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+tortas-doces-de-qualquer-sabor-diet,"Tortas doces de qualquer sabor diet","tortas doces de qualquer sabor diet",carboidrato,99.2,2.3,10.7,5.3,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+filhos-bolinho-de-farinha-de-trigo-e-ovos-light,"Filhos (bolinho de farinha de trigo e ovos) light","filhos (bolinho de farinha de trigo e ovos) light",carboidrato,426.5,6.4,48.7,23,100,,,,,0,0,"IBGE POF 2008-2009",gluten|sem-animal,,g,0
+filhos-bolinho-de-farinha-de-trigo-e-ovos-diet,"Filhos (bolinho de farinha de trigo e ovos) diet","filhos (bolinho de farinha de trigo e ovos) diet",carboidrato,426.5,6.4,48.7,23,100,,,,,0,0,"IBGE POF 2008-2009",gluten|sem-animal,,g,0
+bolo-de-chocolate-light,"Bolo de chocolate light","bolo de chocolate light",carboidrato,299.5,4.6,52.5,9.4,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+bolo-de-chocolate-diet,"Bolo de chocolate diet","bolo de chocolate diet",carboidrato,299.5,4.6,52.5,9.4,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+bolo-de-laranja-light,"Bolo de laranja light","bolo de laranja light",carboidrato,328.4,4.8,58.3,9.5,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+bolo-de-coco-diet,"Bolo de coco diet","bolo de coco diet",carboidrato,299.5,4.6,52.5,9.4,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+bolo-de-cenoura-diet,"Bolo de cenoura diet","bolo de cenoura diet",carboidrato,272.7,4.1,44.3,9.1,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+biscoito-recheado-light,"Biscoito recheado light","biscoito recheado light",carboidrato,433,5.9,77.8,13.2,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+biscoito-waffer-light,"Biscoito waffer light","biscoito waffer light",carboidrato,398.6,4.5,80.7,6.9,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+waffer-biscoito-light,"Waffer (biscoito) light","waffer (biscoito) light",carboidrato,398.6,4.5,80.7,6.9,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+alfajores-biscoito-light,"Alfajores (biscoito) light","alfajores (biscoito) light",carboidrato,433,5.9,77.8,13.2,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bolacha-recheada-light,"Bolacha recheada light","bolacha recheada light",carboidrato,433,5.9,77.8,13.2,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+biscoito-recheado-diet,"Biscoito recheado diet","biscoito recheado diet",carboidrato,405.3,8.2,66.8,20.8,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+rosquinha-recheada-de-qualquer-sabor-diet,"Rosquinha recheada de qualquer sabor diet","rosquinha recheada de qualquer sabor diet",carboidrato,405.3,8.2,66.8,20.8,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bolacha-recheada-diet,"Bolacha recheada diet","bolacha recheada diet",carboidrato,405.3,8.2,66.8,20.8,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pao-doce-diet,"Pão doce diet","pao doce diet",carboidrato,312.3,4.8,58,6.9,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+pao-de-mel-diet,"Pão de mel diet","pao de mel diet",carboidrato,446.2,4.4,85,11.3,100,,,,,0,0,"IBGE POF 2008-2009",gluten|sem-animal,,g,0
+panetone-diet,"Panetone diet","panetone diet",carboidrato,356,7.5,58,10.4,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+biscoito-salgado-light,"Biscoito salgado light","biscoito salgado light",carboidrato,452.6,9.7,72.5,13.8,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+bolacha-salgada-light,"Bolacha salgada light","bolacha salgada light",carboidrato,452.6,9.7,72.5,13.8,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+chips-salgadinhos-light,"Chips (salgadinhos) light","chips (salgadinhos) light",carboidrato,407.1,6.5,81.1,7.1,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+biscoito-doce-light,"Biscoito doce light","biscoito doce light",carboidrato,395.3,6.5,83.9,4.8,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+bolacha-doce-light,"Bolacha doce light","bolacha doce light",carboidrato,395.3,6.5,83.9,4.8,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+biscoito-doce-diet,"Biscoito doce diet","biscoito doce diet",carboidrato,453.9,6.2,65.7,21.9,100,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+bolacha-doce-diet,"Bolacha doce diet","bolacha doce diet",carboidrato,453.9,6.2,65.7,21.9,100,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bolo-de-banana,"Bolo de banana","bolo de banana",carboidrato,300.1,3.9,52.1,9.1,100,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+jaba,Jabá,jaba,proteina,313,26.9,0,21.9,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+hamburguer-de-carne-bovina,"Hambúrguer de carne bovina","hamburguer de carne bovina",proteina,214,26.6,0,11.1,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+copa-de-porco-defumada,"Copa de porco defumada","copa de porco defumada",proteina,248.7,20.5,0.4,17.8,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+bacon,Bacon,bacon,proteina,541,37,1.4,41.8,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+hamburguer-de-frango,"Hambúrguer de frango","hamburguer de frango",proteina,206.1,16.2,12.6,9.7,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+salsicha-no-varejo,"Salsicha no varejo","salsicha no varejo",proteina,321.1,9.7,3.6,29.5,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+linguica-suina-bovina-mista-etc,"Linguiça (suína, bovina, mista, etc.)","linguica (suina",proteina,396,13.8,2.7,36.3,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+chourico,Chouriço,chourico,proteina,379,14.6,1.3,34.5,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+morcela,Morcela,morcela,proteina,379,14.6,1.3,34.5,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+salaminho,Salaminho,salaminho,proteina,336,21.9,2.4,25.9,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+blanquet-de-peru,"Blanquet de peru","blanquet de peru",proteina,126,17.5,2,4.8,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+presunto,Presunto,presunto,proteina,226,20.5,0.4,15.2,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+hamburguer-nao-especificado,"Hambúrguer não especificado","hamburguer nao especificado",proteina,214,26.6,0,11.1,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+pururuca-de-porco,"Pururuca de porco","pururuca de porco",proteina,544,61.3,0,31.3,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+pele-de-porco-preparada-pururuca,"Pele de porco preparada (pururuca)","pele de porco preparada (pururuca)",proteina,544,61.3,0,31.3,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+pate-figado-calabresa-frango-presunto-etc,"Patê (fígado, calabresa, frango, presunto, etc.)","pate (figado",proteina,326,14.1,2.2,28.5,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+carne-de-aves-defumada,"Carne de aves defumada","carne de aves defumada",proteina,195.7,30.9,0,7.1,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+carne-salgada-nao-especificada,"Carne salgada não especificada","carne salgada nao especificada",proteina,313,26.9,0,21.9,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+mortadela-light,"Mortadela light","mortadela light",proteina,211,13.1,3.5,16.1,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+salame-light,"Salame light","salame light",proteina,145.2,14.7,0.5,8.9,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+blanquet-de-peru-light,"Blanquet de peru light","blanquet de peru light",proteina,124.1,15,7.1,3.6,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+hamburguer-nao-especificado-light,"Hambúrguer não especificado light","hamburguer nao especificado light",proteina,190,27,0,8.3,100,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+refrigerante-de-cola-tradicional,"Refrigerante de cola tradicional","refrigerante de cola tradicional",bebida,36.9,0.1,9.5,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+coca-cola-tradicional,"Coca-cola tradicional","coca-cola tradicional",bebida,36.9,0.1,9.5,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+fanta-laranja-tradicional,"Fanta laranja tradicional","fanta laranja tradicional",bebida,48,0,12.3,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+sukita-tradicional,"Sukita tradicional","sukita tradicional",bebida,48,0,12.3,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+refrigerante-de-guarana-tradicional,"Refrigerante de guaraná tradicional","refrigerante de guarana tradicional",bebida,39,0,10,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+guarana-tradicional,"Guaraná tradicional","guarana tradicional",bebida,39,0,10,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+sprit-refrigerante-tradicional,"Sprit refrigerante tradicional","sprit refrigerante tradicional",bebida,40,0.1,10.1,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+fanta-uva-tradicional,"Fanta uva tradicional","fanta uva tradicional",bebida,48,0,12.3,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+refrigerante-de-cola-light,"Refrigerante de cola light","refrigerante de cola light",bebida,2,0.1,0.3,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+coca-cola-light,"Coca-cola light","coca-cola light",bebida,2,0.1,0.3,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+refrigerante-de-cola-diet,"Refrigerante de cola diet","refrigerante de cola diet",bebida,2,0.1,0.3,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+minuano-tradicional,"Minuano tradicional","minuano tradicional",bebida,40,0.1,10.1,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+mate-tradicional,"Mate tradicional","mate tradicional",bebida,2.8,0.3,2.3,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+bidu-tradicional,"Bidu tradicional","bidu tradicional",bebida,39,0,10,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+tubaina-tradicional,"Tubaína tradicional","tubaina tradicional",bebida,39,0,10,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+tubaina-light,"Tubaína light","tubaina light",bebida,2,0.1,0.3,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+caldo-de-cana,"Caldo de cana","caldo de cana",bebida,73.6,0,20,0.1,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+garapa,Garapá,garapa,bebida,73.6,0,20,0.1,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+agua-de-coco,"Água de coco","agua de coco",bebida,19.3,0.7,3.8,0.2,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+q-suco,Q-suco,q-suco,bebida,15.3,0,3.9,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+q-refresko,Q-refresko,q-refresko,bebida,15.3,0,3.9,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+nescafe,Nescafé,nescafe,bebida,241,12.2,75.4,0.5,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+erva-mate,Erva-mate,erva-mate,bebida,2.8,0.3,2.3,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+chimarrao,Chimarrão,chimarrao,bebida,2.8,0.3,2.3,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+terere,Tereré,terere,bebida,2.8,0.3,2.3,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+levedo-de-cerveja,"Levedo de cerveja","levedo de cerveja",bebida,170,16.2,28.1,1.3,200,,,,,0,0,"IBGE POF 2008-2009",gluten,,ml,0
+refrigerante-nao-especificado,"Refrigerante não especificado","refrigerante nao especificado",bebida,36.9,0.1,9.5,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+cevada-em-po,"Cevada em pó","cevada em po",bebida,352,9.9,77.7,1.2,200,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+chocomilk,Chocomilk,chocomilk,bebida,83.3,3.2,10.4,3.4,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+agua-tonica-tradicional,"Água tônica tradicional","agua tonica tradicional",bebida,40,0.1,10.1,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+cha-diet-preto-camomila-erva-cidreira-capim-limao-etc,"Chá diet (preto, camomila, erva-cidreira, capim-limão, etc.)","cha diet (preto",bebida,2.5,0,0.7,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+paraguai-refrigerante-tradicional,"Paraguai refrigerante tradicional","paraguai refrigerante tradicional",bebida,39,0,10,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+gatorade,Gatorade,gatorade,bebida,27,0,6.8,0.1,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+bebida-energetica,"Bebida energética","bebida energetica",bebida,45.4,0.3,11,0.1,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+cha-preto-camomila-erva-cidreira-capim-limao-etc,"Chá (preto, camomila, erva-cidreira, capim-limão, etc.)","cha (preto",bebida,1,0,0.3,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+cafe-soluvel-capuccino,"Café solúvel capuccino","cafe soluvel capuccino",bebida,27.7,0.3,5.2,0.8,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+mate-light,"Mate light","mate light",bebida,2.8,0.3,2.3,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+agua-tonica-light,"Água tônica light","agua tonica light",bebida,40,0.1,10.1,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+paraguai-refrigerante-light,"Paraguai refrigerante light","paraguai refrigerante light",bebida,2,0.1,0.3,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+q-suco-light,"Q-suco light","q-suco light",bebida,15.3,0,3.9,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+q-refresko-light,"Q-refresko light","q-refresko light",bebida,15.3,0,3.9,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+q-suco-diet,"Q-suco diet","q-suco diet",bebida,15.3,0,3.9,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+cafe-capuccino-soluvel-light,"Café capuccino solúvel light","cafe capuccino soluvel light",bebida,12.8,0.1,0.9,1,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+cafe-capuccino-soluvel-diet,"Café capuccino solúvel diet","cafe capuccino soluvel diet",bebida,12.8,0.1,0.9,1,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+agua-tonica-diet,"Água tônica diet","agua tonica diet",bebida,40,0.1,10.1,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+refrigerante-de-quinino-dietetico,"Refrigerante de quinino dietético","refrigerante de quinino dietetico",bebida,40,0.1,10.1,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+suco-de-clorofila,"Suco de clorofila","suco de clorofila",bebida,1.9,0.2,0.3,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+cafe-com-farinha,"Café com farinha","cafe com farinha",bebida,181,0.9,44.2,0.2,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+cerveja-com-ou-sem-alcool,"Cerveja (com ou sem álcool)","cerveja (com ou sem alcool)",bebida,43.2,0.5,3.6,0,200,,,,,0,0,"IBGE POF 2008-2009",gluten,,ml,0
+chopp,Chopp,chopp,bebida,43.2,0.5,3.6,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+aguardente,Aguardente,aguardente,bebida,216,0,0,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+cachaca,Cachaça,cachaca,bebida,216,0,0,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+batida-de-qualquer-sabor,"Batida de qualquer sabor","batida de qualquer sabor",bebida,187.4,0.5,22.1,3.7,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+rum,Rum,rum,bebida,230.2,0,0,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+vodka,Vodka,vodka,bebida,217.2,0,0,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+uisque,Uísque,uisque,bebida,230.2,0,0,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+whisky,Whisky,whisky,bebida,230.2,0,0,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+champanhe,Champanhe,champanhe,bebida,82,0.1,2.6,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+sidra-champanhe,"Sidra champanhe","sidra champanhe",bebida,82,0.1,2.6,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+martini,Martini,martini,bebida,194.4,0,0.5,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+conhaque,Conhaque,conhaque,bebida,231,0,0,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+drink-dreher,"Drink dreher","drink dreher",bebida,216,0,0,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+licor-de-qualquer-sabor,"Licor de qualquer sabor","licor de qualquer sabor",bebida,282.7,0,33.6,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+cajuina,Cajuína,cajuina,bebida,45,0.8,11.5,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+vinho,Vinho,vinho,bebida,84.5,0.1,2.6,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+catuaba,Catuaba,catuaba,bebida,216,0,0,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+coquetel-de-frutas,"Coquetel de frutas","coquetel de frutas",bebida,187.4,0.5,22.1,3.7,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+caipirinha,Caipirinha,caipirinha,bebida,143.9,0.1,37.9,0.1,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+bebida-alcoolica,"Bebida alcoólica","bebida alcoolica",bebida,216,0,0,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+cerveja-com-ou-sem-alcool-light,"Cerveja (com ou sem álcool) light","cerveja (com ou sem alcool) light",bebida,29,0.2,1.6,0,200,,,,,0,0,"IBGE POF 2008-2009",gluten,,ml,0
+caxiri-aguardente-de-mandioca,"Caxiri (aguardente de mandioca)","caxiri (aguardente de mandioca)",bebida,216,0,0,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+banha-suina,"Banha suína","banha suina",gordura,902,0,0,100,15,,,,,0,0,"IBGE POF 2008-2009",sem-animal,,g,0
+banha-bovina,"Banha bovina","banha bovina",gordura,680,10.7,0,70.3,15,,,,,0,0,"IBGE POF 2008-2009",sem-animal,,g,0
+oleo-nao-especificado,"Óleo não especificado","oleo nao especificado",gordura,879.7,0,0,99.5,15,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+oleo-de-dende,"Óleo de dendê","oleo de dende",gordura,857.8,0,0,99.5,15,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+salgadinho,Salgadinho,salgadinho,outros,274.6,13.4,16.5,16.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pastel-queijo-carne-palmito-etc,"Pastel (queijo, carne, palmito, etc.)","pastel (queijo",outros,319.8,10.4,33.5,15.7,50,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-carne|sem-animal,,g,0
+croquete,Croquete,croquete,outros,274.6,13.4,16.5,16.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+coxinha,Coxinha,coxinha,outros,274.6,13.4,16.5,16.9,50,,,,,0,0,"IBGE POF 2008-2009",gluten|sem-carne|sem-animal,,g,0
+empada-queijo-carne-camarao-etc,"Empada (queijo, carne, camarão, etc.)","empada (queijo",outros,154,7.9,12.5,7.9,50,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|frutos-do-mar|sem-carne|sem-animal,,g,0
+rissole-queijo-carne-camarao-etc,"Rissole (queijo, carne, camarão, etc.)","rissole (queijo",outros,274.6,13.4,16.5,16.9,50,,,,,0,0,"IBGE POF 2008-2009",lactose|frutos-do-mar|sem-carne|sem-animal,,g,0
+torresmo,Torresmo,torresmo,outros,544,61.3,0,31.3,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+quibe,Quibe,quibe,outros,274.6,13.4,16.5,16.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+abara-bahia,"Abará (Bahia)","abara (bahia)",outros,289,8.3,19.1,19.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pacoca-de-carne-de-sol,"Paçoca de carne de sol","pacoca de carne de sol",outros,354,13.4,44,13.4,50,,,,,0,0,"IBGE POF 2008-2009",castanhas|sem-carne|sem-animal,,g,0
+angu-frito,"Angu frito","angu frito",outros,74.6,1.5,13,1.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+angu-de-milho,"Angu de milho","angu de milho",outros,60.6,1.4,13,0.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+polenta,Polenta,polenta,outros,74.6,1.5,13,1.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+esfirra,Esfirra,esfirra,outros,359.4,9.8,37.5,18.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+esfirra-de-carne,"Esfirra de carne","esfirra de carne",outros,346.5,11.9,26.2,21.4,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+esfirra-de-queijo,"Esfirra de queijo","esfirra de queijo",outros,359.4,9.8,37.5,18.9,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+esfirra-de-ricota,"Esfirra de ricota","esfirra de ricota",outros,320.4,7.5,38.1,15.3,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+esfirra-de-frango,"Esfirra de frango","esfirra de frango",outros,222.4,9.5,17.3,12.7,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+enroladinho,Enroladinho,enroladinho,outros,274.6,13.4,16.5,16.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bolinho-de-aipim,"Bolinho de aipim","bolinho de aipim",outros,212.6,6.3,18.5,13.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bolinho-de-bacalhau,"Bolinho de bacalhau","bolinho de bacalhau",outros,214,16.7,7.7,12.8,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+cachorro-quente,Cachorro-quente,cachorro-quente,outros,272.5,8.7,24.8,15.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+hamburguer-sanduiche,"Hambúrguer (sanduíche)","hamburguer (sanduiche)",outros,267.2,13.1,32.4,9.2,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+cheeseburger,Cheeseburger,cheeseburger,outros,279.9,14.2,28.7,11.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+eggsburger,Eggsburger,eggsburger,outros,269.4,13.3,17.4,16.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bauru,Bauru,bauru,outros,229.5,13.7,14,13,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+americano,Americano,americano,outros,236.7,10.1,16.9,14.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+misto-quente-ou-frio,"Misto-quente ou frio","misto-quente ou frio",outros,265.4,16.3,18.3,13.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+sanduiche-de-queijo-prato,"Sanduíche de queijo prato","sanduiche de queijo prato",outros,329.3,12.2,31.1,17.2,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+sanduiche-de-salame,"Sanduíche de salame","sanduiche de salame",outros,283,9,30.3,13.7,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+sanduiche-de-presunto,"Sanduíche de presunto","sanduiche de presunto",outros,230.3,11,18.7,12.2,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+sanduiche-de-queijo-prato-com-presunto,"Sanduíche de queijo prato com presunto","sanduiche de queijo prato com presunto",outros,265.4,16.3,18.3,13.8,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-carne|sem-animal,,g,0
+sanduiche-de-mortadela,"Sanduíche de mortadela","sanduiche de mortadela",outros,316,8.6,32.8,16.6,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+sanduiche-de-queijo-minas,"Sanduíche de queijo minas","sanduiche de queijo minas",outros,329.3,12.2,31.1,17.2,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+cheese-egg,"Cheese egg","cheese egg",outros,279.9,14.2,28.7,11.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cheese-tudo,"Cheese tudo","cheese tudo",outros,279.9,14.2,28.7,11.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+sanduiche-natural,"Sanduíche natural","sanduiche natural",outros,245.6,11.2,25.6,10.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+suco,Suco,suco,outros,41.8,0.6,9.8,0.1,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+suco-de-abacaxi,"Suco de abacaxi","suco de abacaxi",outros,53.2,0.4,12.9,0.1,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+suco-de-acerola,"Suco de acerola","suco de acerola",outros,23.1,0.4,4.8,0.3,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+suco-de-beterraba,"Suco de beterraba","suco de beterraba",outros,30.8,0.8,7.1,0.1,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+suco-de-cupuacu,"Suco de cupuaçu","suco de cupuacu",outros,24.5,0.6,5.2,0.5,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+suco-de-goiaba,"Suco de goiaba","suco de goiaba",outros,62.3,0.4,15.6,0.1,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+suco-de-laranja,"Suco de laranja","suco de laranja",outros,41.8,0.6,9.8,0.1,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+suco-de-laranja-com-banana,"Suco de laranja com banana","suco de laranja com banana",outros,56.8,0.8,13.8,0.2,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+suco-de-laranja-e-beterraba,"Suco de laranja e beterraba","suco de laranja e beterraba",outros,30.8,0.8,7.1,0.1,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+suco-de-laranja-e-cenoura,"Suco de laranja e cenoura","suco de laranja e cenoura",outros,30.8,0.8,7.1,0.1,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+suco-de-laranja-cenoura-e-beterraba,"Suco de laranja cenoura e beterraba","suco de laranja cenoura e beterraba",outros,30.8,0.8,7.1,0.1,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+suco-de-mamao,"Suco de mamão","suco de mamao",outros,57.1,0.2,14.5,0.2,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+suco-de-manga,"Suco de manga","suco de manga",outros,50.9,0.1,13.1,0.1,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+suco-de-maracuja,"Suco de maracujá","suco de maracuja",outros,60.1,0.7,14.5,0.2,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+suco-de-melao,"Suco de melão","suco de melao",outros,31.8,0.7,8,0.2,200,,,,,0,0,"IBGE POF 2008-2009",sem-animal,,ml,0
+suco-de-morango,"Suco de morango","suco de morango",outros,59.2,0.6,14.5,0.1,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+suco-de-pessego,"Suco de pêssego","suco de pessego",outros,54,0.3,13.9,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+suco-de-pessego-em-calda,"Suco de pêssego em calda","suco de pessego em calda",outros,54,0.3,13.9,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+vitamina,Vitamina,vitamina,outros,92.8,2.5,16.4,2.3,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+vitamina-de-banana,"Vitamina de banana","vitamina de banana",outros,92.8,2.5,16.4,2.3,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+vitamina-de-banana-com-aveia,"Vitamina de banana com aveia","vitamina de banana com aveia",outros,108.5,3.1,19.2,2.5,200,,,,,0,0,"IBGE POF 2008-2009",gluten,,ml,0
+vitamina-de-mamao,"Vitamina de mamão","vitamina de mamao",outros,80.6,2.4,13,2.3,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+vitamina-de-abacate,"Vitamina de abacate","vitamina de abacate",outros,100.2,2.7,12.8,4.6,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+vitamina-de-morango,"Vitamina de morango","vitamina de morango",outros,74.6,2,13.3,1.8,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+vitamina-mista,"Vitamina mista","vitamina mista",outros,83.2,1.8,16.2,1.7,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+vitamina-de-maca,"Vitamina de maçã","vitamina de maca",outros,83,2.3,14,2.3,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+refresco,Refresco,refresco,outros,46.8,0,11.9,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+refresco-de-caju,"Refresco de caju","refresco de caju",outros,46.8,0,11.9,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+refresco-de-groselha,"Refresco de groselha","refresco de groselha",outros,46.8,0,11.9,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+refresco-de-laranja,"Refresco de laranja","refresco de laranja",outros,46.8,0,11.9,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+refresco-de-maracuja,"Refresco de maracujá","refresco de maracuja",outros,46.8,0,11.9,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+refresco-de-limao,"Refresco de limão","refresco de limao",outros,46.8,0,11.9,0,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+salada-ou-verdura-cozida-exceto-de-fruta,"Salada ou verdura cozida, exceto de fruta","salada ou verdura cozida",outros,26,2.1,4.9,0.4,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+salada-de-maionese,"Salada de maionese","salada de maionese",outros,209.8,2.7,12.7,16.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pizza,Pizza,pizza,outros,281.2,14.6,29.8,11.4,50,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+lasanha-pronta-light,"Lasanha pronta light","lasanha pronta light",outros,158.6,10.8,12.3,7.3,50,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+nhoque,Nhoque,nhoque,outros,190.5,9.3,8.5,13.2,50,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+caneloni,Caneloni,caneloni,outros,120.9,5.9,9.2,6.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+capeleti,Capeleti,capeleti,outros,95.2,5.5,12.6,2.6,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+ravioli,Ravioli,ravioli,outros,95.2,5.5,12.6,2.6,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+calzone,Calzone,calzone,outros,245.8,12.8,25.8,9.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+panqueca,Panqueca,panqueca,outros,203.2,14,8.3,12.5,50,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+pizza-calabreza,"Pizza calabreza","pizza calabreza",outros,284.7,13.7,29.5,12.2,50,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+pizza-mucarela,"Pizza muçarela","pizza mucarela",outros,281.2,14.6,29.8,11.4,50,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+pizza-presunto,"Pizza presunto","pizza presunto",outros,284.7,13.7,29.5,12.2,50,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-carne|sem-animal,,g,0
+pizza-portuguesa,"Pizza portuguesa","pizza portuguesa",outros,247.5,11.8,22.4,12.2,50,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+macarronada,Macarronada,macarronada,outros,120.6,6.2,17.4,2.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+galeto,Galeto,galeto,outros,261.7,27.3,0,16.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+costela,Costela,costela,outros,365,22.6,0,29.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pipoca-doce-ou-salgada,"Pipoca doce ou salgada","pipoca doce ou salgada",outros,468.2,6.6,62.5,23.3,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cafe,Café,cafe,outros,1,0.1,0.5,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+cafe-com-leite,"Café com leite","cafe com leite",outros,31.4,1.7,2.6,1.7,200,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,ml,0
+cafe-tipo-expresso,"Café tipo expresso","cafe tipo expresso",outros,2.5,0.1,0.8,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+cafe-tipo-capuccino,"Café tipo capuccino","cafe tipo capuccino",outros,27.7,0.3,5.2,0.8,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+milho-cozido,"Milho cozido","milho cozido",outros,160.1,3.3,25.1,7.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+batata-palito,"Batata palito","batata palito",outros,263.5,2.9,33.6,13.6,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+batata-palha,"Batata palha","batata palha",outros,545.7,5.2,54.5,35.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mungunza,Mungunzá,mungunza,outros,146,4,24.4,3.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+canjica,Canjica,canjica,outros,146,4,24.4,3.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+curau,Curau,curau,outros,78.2,2.4,10.5,3.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+farofa,Farofa,farofa,outros,406,2.1,80.3,9.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+mingau-fuba-aveia-farinha-etc,"Mingau (fubá, aveia, farinha, etc.)","mingau (fuba",outros,78.2,2.4,10.5,3.1,50,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+bolinho-de-coco,"Bolinho de coco","bolinho de coco",outros,297.3,6.7,54.9,5.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+risoto,Risoto,risoto,outros,113,6.7,17.2,2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+farofa-pronta,"Farofa pronta","farofa pronta",outros,406,2.1,80.3,9.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+caldo-de-carne,"Caldo de carne","caldo de carne",outros,7,1.4,0.5,0,200,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,ml,0
+caldo-de-feijao,Caldo-de-feijão,caldo-de-feijao,outros,75.5,4.8,10.3,1.8,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+caldo-de-mocoto,"Caldo de mocotó","caldo de mocoto",outros,7,1.4,0.5,0,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+baiao-de-dois,"Baião de dois","baiao de dois",outros,136,6.2,20.4,3.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+churrasco,Churrasco,churrasco,outros,204,30.7,0,9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+sushi,Sushi,sushi,outros,146.8,5.6,29.2,0.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+salada-de-frutas,"Salada de frutas","salada de frutas",outros,51.2,0.6,13.3,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+sopa-legumes-carne-etc,"Sopa (legumes, carne, etc.)","sopa (legumes",outros,28.8,1.6,3.8,0.8,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+salpicao,Salpicão,salpicao,outros,202.9,14.3,3.9,14.4,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+arroz-a-grega,"Arroz à grega","arroz a grega",outros,92,2.2,17.5,1.7,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+arrumadinho,Arrumadinho,arrumadinho,outros,198.9,9.3,21.7,8.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+bobo-de-camarao,"Bobó de camarão","bobo de camarao",outros,72.1,2.6,5.5,4.4,50,,,,,0,0,"IBGE POF 2008-2009",frutos-do-mar|sem-carne|sem-animal,,g,0
+caruru-quiabo-amendoim-castanha-de-caju-camarao-seco-etc,"Caruru (quiabo, amendoim, castanha de caju, camarão seco, etc.)","caruru (quiabo",outros,215.9,6.1,4.1,20.1,50,,,,,0,0,"IBGE POF 2008-2009",castanhas|frutos-do-mar|sem-carne|sem-animal,,g,0
+empadao-queijo-frango-camarao-palmito-etc,"Empadão (queijo, frango, camarão, palmito, etc.)","empadao (queijo",outros,154,7.9,12.5,7.9,50,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|frutos-do-mar|sem-carne|sem-animal,,g,0
+farofa-de-banana,"Farofa de banana","farofa de banana",outros,309.6,1.7,52.9,11.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+feijao-tropeiro,Feijão-tropeiro,feijao-tropeiro,outros,198.9,9.3,21.7,8.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+galinha-com-arroz,"Galinha com arroz","galinha com arroz",outros,143.5,4.5,23.9,3.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+galinhada,Galinhada,galinhada,outros,143.5,4.5,23.9,3.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+moqueca-baiana,"Moqueca baiana","moqueca baiana",outros,130.1,13.6,1.7,7.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+omelete,Omelete,omelete,outros,241.6,11,1,21.3,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pirao,Pirão,pirao,outros,119.7,8.1,8.9,5.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+quiche,Quiche,quiche,outros,282.7,10.3,13.9,20.4,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+sufle,Suflê,sufle,outros,126.1,5.1,6.4,9.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+tutu,Tutu,tutu,outros,123.8,5.4,22.3,1.6,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+moqueca-capixaba,"Moqueca capixaba","moqueca capixaba",outros,100.5,14.3,1.8,3.7,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+caldo-verde,"Caldo verde","caldo verde",outros,94.9,3.5,14.2,2.9,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+arroz-de-cuxa,"Arroz de cuxá","arroz de cuxa",outros,102.7,2.4,20.9,1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+angu-a-baiana,"Angu à baiana","angu a baiana",outros,125.3,9,8.9,5.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+chocolate,Chocolate,chocolate,outros,535,7.7,59.4,29.7,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+gemada,Gemada,gemada,outros,134.8,3.8,13.5,7.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+acai-com-granola,"Açaí com granola","acai com granola",outros,110,0.7,21.5,3.7,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pizza-pronta-light,"Pizza pronta light","pizza pronta light",outros,255.6,14.6,29.8,8.5,50,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+pizza-portuguesa-light,"Pizza portuguesa light","pizza portuguesa light",outros,229.6,11.8,22.4,10.2,50,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+farofa-pronta-light-em-pacote,"Farofa pronta light em pacote","farofa pronta light em pacote",outros,406,2.1,80.3,9.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+salada-ou-verdura-crua-exceto-de-fruta,"Salada ou verdura crua, exceto de fruta","salada ou verdura crua",outros,18,0.9,3.9,0.2,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+outros-legumes-cozidos,"Outros legumes cozidos","outros legumes cozidos",outros,60.5,1.2,14.1,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+cafe-da-manha,"Café da manha","cafe da manha",outros,31.4,1.7,2.6,1.7,200,,,,,0,0,"IBGE POF 2008-2009",,,ml,0
+prato-de-comida-brasileira,"Prato de comida brasileira","prato de comida brasileira",outros,148.4,6.7,21.3,3.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+prato-de-comida-do-nordeste,"Prato de comida do nordeste","prato de comida do nordeste",outros,129.2,6.5,19.5,2.7,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+prato-de-comida-do-norte,"Prato de comida do norte","prato de comida do norte",outros,157.1,6.5,25,3.4,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+prato-de-comida-do-sudeste,"Prato de comida do sudeste","prato de comida do sudeste",outros,131.1,8.6,12,5.3,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+prato-de-comida-do-sul,"Prato de comida do sul","prato de comida do sul",outros,148.4,6.7,21.3,3.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+prato-de-comida-do-centro-oeste,"Prato de comida do centro-oeste","prato de comida do centro-oeste",outros,105.9,5.7,14.3,2.9,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+arroz-com-feijao,"Arroz com feijão","arroz com feijao",outros,116.5,4.2,21.4,1.5,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+pao-com-manteiga,"Pão com manteiga","pao com manteiga",outros,369.5,6.8,48.8,16.1,50,,,,,0,0,"IBGE POF 2008-2009",gluten|lactose|sem-animal,,g,0
+pao-com-margarina,"Pão com margarina","pao com margarina",outros,369.8,6.8,49,16,50,,,,,0,0,"IBGE POF 2008-2009",gluten,,g,0
+pao-com-ovo,"Pão com ovo","pao com ovo",outros,261.3,10.8,29.9,10.4,50,,,,,0,0,"IBGE POF 2008-2009",gluten|sem-animal,,g,0
+carne-com-batata-inhame-batata-baroa-ou-aipim,"Carne com batata, inhame, batata-baroa ou aipim","carne com batata",outros,188.2,13,10,10.5,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+carne-com-legumes-exceto-batata-inhame-e-aipim,"Carne com legumes (exceto batata, inhame e aipim)","carne com legumes (exceto batata",outros,150.5,12.5,2.5,10,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+frango-com-batata-inhame-batata-baroa-ou-aipim,"Frango com batata, inhame batata-baroa ou aipim","frango com batata",outros,153.7,16.3,10,5,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+frango-com-legumes-exceto-batata-inhame-e-aipim,"Frango com legumes (exceto batata, inhame e aipim)","frango com legumes (exceto batata",outros,116,15.8,2.5,4.5,50,,,,,0,0,"IBGE POF 2008-2009",sem-carne|sem-animal,,g,0
+abobora-com-quiabo,"Abobora com quiabo","abobora com quiabo",outros,21,1.3,4.7,0.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+maria-izabel,"Maria izabel","maria izabel",outros,154,10.8,11.6,7.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+arroz-de-leite,"Arroz de leite","arroz de leite",outros,142.4,3,22.6,4.2,50,,,,,0,0,"IBGE POF 2008-2009",lactose|sem-animal,,g,0
+arroz-com-mandioca,"Arroz com mandioca","arroz com mandioca",outros,130.3,1.6,28.9,0.8,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0
+arroz-com-ovo,"Arroz com ovo","arroz com ovo",outros,179.1,8.1,14.5,9.4,50,,,,,0,0,"IBGE POF 2008-2009",sem-animal,,g,0
+palma,Palma,palma,outros,42,1.4,3.3,3.1,50,,,,,0,0,"IBGE POF 2008-2009",,,g,0

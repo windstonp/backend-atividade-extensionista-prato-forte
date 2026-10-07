@@ -277,7 +277,7 @@ Mudanças em relação à spec 03: **removido** `PATCH /days/{date}/meals/{slot}
 ```
 [ ] CA31–CA44 atendidos
 [x] Migrations: meal_entries, custom_foods (com deleted_at), foods.measure/in_plans, day_meals.done_at com o novo sentido (dados antigos convertidos)
-[ ] Catálogo ≥ 700 alimentos (TACO 4ª ed. + Tabela de Composição Nutricional do IBGE/POF 2008–2009), P5 atualizado para conferência
+[x] Catálogo ≥ 700 alimentos (TACO 4ª ed. + Tabela de Composição Nutricional do IBGE/POF 2008–2009), P5 atualizado para conferência
 [x] Endpoints de registro, busca, recentes e alimento próprio; PATCH meals removido; Policies; feature tests com posse
 [x] Consumido vem dos registros em Hoje, Evolução, Nutri, notificações e exportação
 [ ] Detalhe reescrito (régua, registros, sugestão com "+"), folha Adicionar alimento, Hoje e Dieta ajustados

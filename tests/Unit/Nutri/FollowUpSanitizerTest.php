@@ -38,3 +38,9 @@ it('"outras restrições" digitadas também valem', function () {
 
     expect(app(FollowUpSanitizer::class)->clean(['Posso comer beterrabas?'], 'Oi', $this->user->fresh()))->toBe([]);
 });
+
+it('alimento do catálogo ampliado ligado à alergia continua barrado; o resto do catálogo ampliado não (RN45, RN52)', function () {
+    $limpas = app(FollowUpSanitizer::class)->clean(['Posso comer paçoca no lanche?', 'E um pé-de-moleque?', 'E o cuscuz?'], 'Oi', $this->user);
+
+    expect($limpas)->toBe(['E o cuscuz?']);
+});

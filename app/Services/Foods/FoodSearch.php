@@ -29,6 +29,8 @@ class FoodSearch
             ->sortBy([
                 fn (array $a, array $b) => $a[1] <=> $b[1],
                 fn (array $a, array $b) => ($uses[$this->key($b[0])] ?? 0) <=> ($uses[$this->key($a[0])] ?? 0),
+                // Os alimentos curados (os do plano e os do próprio usuário) antes dos da tabela ampliada (RN52).
+                fn (array $a, array $b) => $this->curated($b[0]) <=> $this->curated($a[0]),
                 fn (array $a, array $b) => strcmp(FoodFilter::normalize($a[0]->name), FoodFilter::normalize($b[0]->name)),
             ])
             ->take($limit)
@@ -86,6 +88,11 @@ class FoodSearch
         return MealEntry::where('user_id', $user->id)->where('created_at', '>=', now()->subDays(30))
             ->select('food_id', 'custom_food_id', DB::raw('count(*) as n'))->groupBy('food_id', 'custom_food_id')->get()
             ->mapWithKeys(fn ($r) => [$r->food_id !== null ? "f{$r->food_id}" : "c{$r->custom_food_id}" => (int) $r->getAttribute('n')])->all();
+    }
+
+    private function curated(Food|CustomFood $food): int
+    {
+        return $food instanceof CustomFood || $food->in_plans ? 1 : 0;
     }
 
     private function key(Food|CustomFood $food): string

@@ -173,3 +173,4 @@ Status: **Decidido** (✅ com os autores) · **Recomendado** (adotado nesta spec
 - **Impacto:** as metas (RN13) não mudam; as porções e os totais do cardápio (Plano 04) herdam qualquer erro da tabela.
 - **Recomendação técnica:** antes da rodada de validação, conferir a planilha com a TACO (e, se possível, com o(a) nutricionista de P4); a coluna `source` diz de onde veio cada linha.
 - **Situação (Plano 09):** a coluna `source` de `database/data/foods.csv` diz a origem de cada linha; a conferência com a TACO continua pendente (antes da rodada de validação).
+- **Situação (Plano 11B):** catálogo com 1510 itens (62 originais + TACO 4ª ed. + IBGE/POF 2008–2009, extraídos dos PDFs oficiais — `database/data/fontes/README.md`). Restrições dos novos ligadas por regra conservadora (`CatalogRowMapper`); conferir antes de promover algum para `in_plans`.

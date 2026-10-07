@@ -59,5 +59,5 @@ it('alimento próprio apagado continua acessível pelo registro antigo', functio
 it('foods ganha medida e in_plans; os alimentos de antes ficam no plano', function () {
     expect(Food::where('slug', 'leite-integral')->sole()->measure)->toBe('ml')
         ->and(Food::where('slug', 'arroz-branco-cozido')->sole()->measure)->toBe('g')
-        ->and(Food::where('in_plans', false)->count())->toBe(0);
+        ->and(Food::where('slug', 'arroz-branco-cozido')->sole()->in_plans)->toBeTrue();
 });

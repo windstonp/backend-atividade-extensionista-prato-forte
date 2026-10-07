@@ -7,6 +7,7 @@ use App\Models\PantryItem;
 use App\Models\Restriction;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 use RuntimeException;
 use SplFileObject;
 
@@ -21,11 +22,15 @@ class FoodSeeder extends Seeder
     {
         $restrictions = Restriction::pluck('id', 'slug');
         $pantry = PantryItem::pluck('id', 'slug');
+        $rows = $this->rows();
+        $now = now();
 
-        foreach ($this->rows() as $row) {
-            $food = Food::updateOrCreate(['slug' => $row['slug']], [
+        // Em lote (≥ 1.500 alimentos, Plano 11B): upsert pelo slug e ligações refeitas de uma vez.
+        foreach (array_chunk($rows, 200) as $chunk) {
+            Food::upsert(array_map(fn (array $row) => [
+                'slug' => $row['slug'],
                 'name' => $row['name'],
-                'aliases' => $this->list($row['aliases']),
+                'aliases' => json_encode($this->list($row['aliases']), JSON_UNESCAPED_UNICODE),
                 'group' => $row['group'],
                 'kcal_per_100g' => $row['kcal'],
                 'protein_per_100g' => $row['protein'],
@@ -42,11 +47,36 @@ class FoodSeeder extends Seeder
                 'source' => $row['source'],
                 'measure' => ($row['measure'] ?? 'g') === 'ml' ? 'ml' : 'g',
                 'in_plans' => ($row['in_plans'] ?? '1') === '1',
-            ]);
-
-            $food->restrictions()->sync($this->ids($restrictions, $this->list($row['restrictions']), $food->slug));
-            $food->pantryItems()->sync($this->ids($pantry, $this->list($row['pantry']), $food->slug));
+                'created_at' => $now,
+                'updated_at' => $now,
+            ], $chunk), ['slug'], ['name', 'aliases', 'group', 'kcal_per_100g', 'protein_per_100g', 'carbs_per_100g', 'fat_per_100g',
+                'typical_portion_g', 'unit_label', 'unit_label_plural', 'unit_grams', 'substitution_note', 'common_dislike', 'is_staple',
+                'is_active', 'source', 'measure', 'in_plans', 'updated_at']);
         }
+
+        $ids = Food::whereIn('slug', array_column($rows, 'slug'))->pluck('id', 'slug');
+        $foodRestriction = [];
+        $foodPantry = [];
+        foreach ($rows as $row) {
+            $id = $ids[$row['slug']];
+            foreach ($this->ids($restrictions, $this->list($row['restrictions']), $row['slug']) as $r) {
+                $foodRestriction[] = ['food_id' => $id, 'restriction_id' => $r];
+            }
+            foreach ($this->ids($pantry, $this->list($row['pantry']), $row['slug']) as $p) {
+                $foodPantry[] = ['food_id' => $id, 'pantry_item_id' => $p];
+            }
+        }
+
+        DB::transaction(function () use ($ids, $foodRestriction, $foodPantry) {
+            DB::table('food_restriction')->whereIn('food_id', $ids->values())->delete();
+            DB::table('food_pantry_item')->whereIn('food_id', $ids->values())->delete();
+            foreach (array_chunk($foodRestriction, 500) as $chunk) {
+                DB::table('food_restriction')->insert($chunk);
+            }
+            foreach (array_chunk($foodPantry, 500) as $chunk) {
+                DB::table('food_pantry_item')->insert($chunk);
+            }
+        });
     }
 
     /** @return list<array<string, string>> */

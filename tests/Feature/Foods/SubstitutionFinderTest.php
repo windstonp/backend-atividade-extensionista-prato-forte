@@ -10,7 +10,7 @@ beforeEach(fn () => seedCatalog());
 /** @return array<int, Food> */
 function catalogo(array $sem = []): Collection
 {
-    return Food::whereNotIn('slug', $sem)->orderBy('id')->get()->keyBy('id');
+    return Food::where('in_plans', true)->whereNotIn('slug', $sem)->orderBy('id')->get()->keyBy('id');
 }
 
 function resumo(array $opcoes): array

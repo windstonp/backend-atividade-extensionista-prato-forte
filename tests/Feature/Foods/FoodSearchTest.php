@@ -25,7 +25,7 @@ it('mostra o que está fora do plano e o conflito de restrição, sem esconder (
     $lactose = Restriction::where('slug', 'lactose')->sole();
     $this->user->restrictions()->attach($lactose);
 
-    $leite = collect($this->getJson('/api/v1/foods?q=leite')->json('data'))->firstWhere('name', 'Leite integral');
+    $leite = collect($this->getJson('/api/v1/foods?q=leite+integ')->json('data'))->firstWhere('name', 'Leite integral');
 
     expect($leite)->not->toBeNull()
         ->and($leite['measure'])->toBe('ml')
@@ -60,4 +60,10 @@ it('recentes: os mais registrados nos últimos 30 dias, com a última quantidade
 
 it('busca exige 2 letras', function () {
     $this->getJson('/api/v1/foods?q=a')->assertUnprocessable();
+});
+
+it('com muitos resultados, os alimentos do plano vêm antes dos da tabela ampliada (RN52)', function () {
+    $nomes = collect($this->getJson('/api/v1/foods?q=leite')->json('data'))->pluck('name');
+
+    expect($nomes->first())->toBe('Leite integral');
 });

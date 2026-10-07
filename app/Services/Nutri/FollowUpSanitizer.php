@@ -47,7 +47,12 @@ class FollowUpSanitizer
         $allowedWords = $allowed->flatMap(fn (Food $food) => [$food->name, ...$food->aliases])
             ->flatMap(fn (string $name) => self::words($name))->flip()->all();
 
-        $names = Food::query()->whereNotIn('id', $allowed->keys())->get()
+        // Proibido = do plano mas fora do permitido (restrição, "não curto") + qualquer alimento do catálogo
+        // ampliado ligado a uma restrição do usuário. Ficar fora do plano (in_plans, RN52) não é proibição.
+        $names = Food::query()
+            ->where(fn ($q) => $q->where(fn ($q) => $q->where('in_plans', true)->whereNotIn('id', $allowed->keys()))
+                ->orWhereHas('restrictions', fn ($r) => $r->whereIn('restrictions.id', $user->restrictions()->pluck('restrictions.id'))))
+            ->get()
             ->flatMap(fn (Food $food) => [$food->name, ...$food->aliases])
             ->merge($user->profile->other_restrictions);
 
