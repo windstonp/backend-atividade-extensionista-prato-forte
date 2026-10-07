@@ -133,14 +133,14 @@ Formato: **Responsabilidade · Props · Variantes · Estados · Comportamento ·
 | onboarding | `GoalWeightField` | ✅ novo | meta + faixa saudável + aviso | Oculto, Vazio, Dentro, Fora, DirecaoErrada |
 | onboarding | `RoutineTimes`, `DayToggleGroup` | 🔵 extraídos de Rotina | horários e dias | Padrao, ErroTreino, NenhumDia |
 | onboarding | `SummaryList` | 🔵 extraído do Resumo | linhas com "Editar" | ComAlergia, PreviaCarregando |
-| perfil | `ProfileHeader`, `GoalCard`, `ProfileMenu` | 🔵 extraídos | cabeçalho, objetivo, lista | ComMeta, MetaSugerida, SemMeta |
+| perfil | `ProfileHeader`, `GoalCard`, `ProfileMenu` | 🔵 extraídos | cabeçalho, objetivo, lista | ComMeta, MetaSugerida, SemMeta; Menu: Padrao, JaAvaliou |
 | plano | `DayRail` 🔵, `MealRow` (ex-`LinhaRefeicao`), `FoodItemRow`, `SubstitutionSheet`, `WeekDayPicker`, `MacroSummary`, `PlanGenerating`, `PlanReadySummary`, `NoPlanState` | 🔵/✅ | spec 03 | ver spec 03 §8 |
-| nutri | `ConversationList`, `ConversationListItem` ✅, `ChatBubble` (ex-`Pergunta`/`Resposta`), `SwapCard`, `MealSuggestionCard`, `NutriActions`, `ContextCard` (ex-`EstadoInicial`), `ThinkingIndicator` (ex-`Pensando`), `ChatComposer`, `OfflineNotice`, `SuggestionList` (perguntas do estado inicial), `SuggestionChips` ✅ (continuações dinâmicas, RN45) | 🔵/✅ | spec 04 | ver spec 04 §9 |
-| progresso | `WeightChart` (ex-`GraficoPeso`), `AdherenceGrid`, `AveragesBlock`, `WeightStepper`, `WeightHistory`, `WeightDeltaMessage` | 🔵 | spec 05 | ver spec 05 §8 |
-| settings | `NotificationSettings`, `UnitSelector` | 🔵 | spec 06 | ver spec 06 §8 |
-| feedback | `RatingButtons`, `LikertQuestion`, `UsabilitySurvey`, `InviteBanner` | ✅ | spec 07 | ver spec 07 §8 |
+| nutri | `ConversationList`, `ConversationListItem` ✅, `ChatBubble` (ex-`Pergunta`/`Resposta`; exporta `PerguntaBubble` e `RespostaBubble`), `SwapCard`, `MealSuggestionCard`, `NutriActions`, `ContextCard` (ex-`EstadoInicial`), `ThinkingIndicator` (ex-`Pensando`), `ChatComposer`, `OfflineNotice`, `SuggestionList` (perguntas do estado inicial), `SuggestionChips` ✅ (continuações dinâmicas, RN45) | 🔵/✅ | spec 04 | ver spec 04 §9 |
+| progresso | `WeightChart` (ex-`GraficoPeso`), `AdherenceGrid`, `MediasDoPeriodo` (= `AveragesBlock`), `WeightStepper`, `HistoricoPesagens` (= `WeightHistory`), `WeightDeltaMessage`, `EvolucaoVazia` (usa `EmptyState`) | 🔵 | spec 05 | ver spec 05 §8 |
+| settings | `AvisosNoCelular` (= `NotificationSettings`), `UnitSelector` | 🔵 | spec 06 | ver spec 06 §8 |
+| feedback | `RatingButtons` (+ `Avaliacao`, que liga a API), `LikertQuestion`, `QuestionarioTela` (= `UsabilitySurvey`), `InviteBanner` | ✅ | spec 07 | ver spec 07 §8 |
 
-Componentes de domínio recebem **dados prontos por props** (não chamam hooks de API), para que a story não dependa de rede; a página/contêiner liga o hook. Exceção documentada: `SubstitutionSheet` e `ConversationList` usam MSW nas stories porque carregam dados ao abrir.
+Nomes entre parênteses com "=" são os nomes usados no código (Plano 10B: renomear não mudaria comportamento). Componentes de domínio recebem **dados prontos por props** (não chamam hooks de API), para que a story não dependa de rede; a página/contêiner liga o hook. Exceção documentada: `SubstitutionSheet` e `ConversationList` usam MSW nas stories porque carregam dados ao abrir.
 
 ## 7. Critérios de aceitação
 - **CA01** Todo componente listado em §4–§6 tem story para cada estado citado, e as stories rodam como testes no CI.
