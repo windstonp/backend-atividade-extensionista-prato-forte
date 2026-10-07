@@ -55,7 +55,7 @@ After=network.target mysql.service
 [Service]
 User=www-data
 WorkingDirectory=/caminho/backend
-ExecStart=/usr/bin/php artisan queue:work --tries=1 --timeout=180 --sleep=1
+ExecStart=/usr/bin/php artisan queue:work --queue=notifications,default --tries=1 --timeout=180 --sleep=1
 Restart=always
 
 [Install]

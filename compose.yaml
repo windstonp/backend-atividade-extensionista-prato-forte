@@ -25,7 +25,7 @@ services:
       AI_FAKE_FAIL_PLAN_FOR: ${AI_FAKE_FAIL_PLAN_FOR:-} # só E2E-07
     volumes:
       - .:/app
-    command: php artisan queue:work --tries=1 --timeout=170 --sleep=1
+    command: php artisan queue:work --queue=notifications,default --tries=1 --timeout=170 --sleep=1
     restart: unless-stopped # volta sozinho (ex.: depois de um migrate:fresh derrubar as tabelas)
     depends_on:
       mysql:

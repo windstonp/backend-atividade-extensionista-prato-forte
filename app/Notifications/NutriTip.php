@@ -13,7 +13,13 @@ class NutriTip extends Notification implements ShouldQueue
 {
     use Queueable;
 
-    public function __construct(public readonly string $text, public readonly string $url) {}
+    /** Conta apagada antes do envio: o job some em vez de virar falha. */
+    public bool $deleteWhenMissingModels = true;
+
+    public function __construct(public readonly string $text, public readonly string $url)
+    {
+        $this->onQueue('notifications'); // fila própria: não espera atrás da geração de plano
+    }
 
     /**
      * @return list<string>

@@ -110,7 +110,8 @@ final class TipSelector
     private function streak(User $user, CarbonImmutable $today): ?array
     {
         $dias = [];
-        foreach (DB::table('day_meals')->where('user_id', $user->id)->where('date', '<=', $today->toDateString())
+        foreach (DB::table('day_meals')->where('user_id', $user->id)
+            ->where('date', '>=', $today->subDays(400)->toDateString())->where('date', '<=', $today->toDateString())
             ->groupBy('date')->selectRaw('date, count(*) as total, sum(done_at is not null) as done')->get() as $linha) {
             $dias[CarbonImmutable::parse($linha->date)->toDateString()] = ['total' => (int) $linha->total, 'done' => (int) $linha->done];
         }

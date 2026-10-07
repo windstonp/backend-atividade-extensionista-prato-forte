@@ -13,12 +13,17 @@ class MealReminder extends Notification implements ShouldQueue
 {
     use Queueable;
 
+    /** Conta apagada antes do envio: o job some em vez de virar falha. */
+    public bool $deleteWhenMissingModels = true;
+
     public function __construct(
         public readonly string $slot,
         public readonly string $name,
         public readonly string $time,
         public readonly string $summary,
-    ) {}
+    ) {
+        $this->onQueue('notifications'); // fila própria: não espera atrás da geração de plano
+    }
 
     /**
      * @return list<string>
