@@ -117,11 +117,11 @@ Onde: `MealScheduler` (puro).
 Onde: `PlanGenerator` (persistência), `DayMaterializer` (nome/nota por data).
 
 **RN16 — Alimentos permitidos** ✅
-Permitidos = catálogo ativo − alimentos ligados a qualquer restrição do usuário (via `food_restriction`) − alimentos cujo nome/sinônimo normalizado (minúsculas, sem acento) contém qualquer termo de "outras restrições" − alimentos marcados como "não curto". Os alimentos ligados aos itens de cozinha marcados recebem prioridade (`pantry: true`) — **não** exclusividade.
+Permitidos = catálogo ativo **com `in_plans`** (RN52) − alimentos ligados a qualquer restrição do usuário (via `food_restriction`) − alimentos cujo nome/sinônimo normalizado (minúsculas, sem acento) contém qualquer termo de "outras restrições" − alimentos marcados como "não curto". Os alimentos ligados aos itens de cozinha marcados recebem prioridade (`pantry: true`) — **não** exclusividade.
 Onde: `FoodFilter::allowedFor(User)`. Única porta de entrada de alimentos para geração, trocas e ações do Nutri.
 
 **RN17 — Alergias e restrições nunca aparecem** 🔵✅ ("O Nutri nunca sugere um alimento marcado aqui, nem nas substituições")
-Nenhum alimento fora de RN16 pode ser persistido em plano, dia, troca ou ação do Nutri. Toda escrita de item passa por verificação de `FoodFilter`; violação é erro de programação/IA — o item é rejeitado, nunca salvo.
+Nenhum alimento fora de RN16 pode ser persistido em plano, sugestão do dia, troca ou ação do Nutri. Registros do que o usuário comeu seguem RN51. Toda escrita de item passa por verificação de `FoodFilter`; violação é erro de programação/IA — o item é rejeitado, nunca salvo.
 Onde: `PlanValidator`, `SubstitutionFinder`, `NutriActionValidator`, `DayService`. Teste E2E dedicado.
 
 **RN18 — Validação do plano gerado pela IA** ✅🟡
@@ -147,15 +147,16 @@ Onde: `PlanService::activate` (transação), `DayMaterializer::refreshPending`.
 - **Hoje**: na primeira leitura, o dia é copiado do plano ativo para `day_meals`/`day_meal_items`.
 - **Futuro** (até +6 dias): retornado como prévia do plano ativo, sem gravar, somente leitura.
 - **Passado** (até −90 dias): retorna o que foi gravado; se nada foi gravado, dia vazio. Somente leitura.
+- **Ontem** ✅ D13: se não foi materializado, a leitura devolve a prévia do plano ativo (como o futuro) com `editable: true`; a **primeira escrita** de registro materializa ontem a partir do plano ativo (nomes e notas pelo dia da semana de ontem, RN15).
 - Sem plano ativo: `409 NO_ACTIVE_PLAN` (com status do último plano, para a tela mostrar "gerando" ou "tentar de novo").
 Onde: `DayMaterializer`.
 
-**RN23 — Só o dia de hoje é editável** 🔵 (mock só deixa clicar em hoje)
-Marcar/desmarcar, trocar, aplicar ação e desfazer só valem para a data corrente no fuso `America/Sao_Paulo`. Outras datas: `409 DAY_NOT_EDITABLE`.
+**RN23 — Dias editáveis** 🔵 revisada ✅ D13
+**Registro alimentar** (adicionar, editar, remover — RN46) vale para **hoje e ontem** no fuso `America/Sao_Paulo`. **Trocar, aplicar ação do Nutri e desfazer** mexem na sugestão e só valem para **hoje**. Outras datas: `409 DAY_NOT_EDITABLE`.
 Onde: `DayService` (checagem central), `config('app.timezone')`.
 
 **RN24 — Totais do dia** 🔵
-Planejado = soma dos itens de todas as refeições. Consumido = soma dos itens das refeições **feitas**. Restante = max(0, planejado − consumido). Macros por item = macros por 100 g do catálogo × gramas ÷ 100; kcal arredondadas ao inteiro, macros a 1 casa.
+Planejado (meta) = soma dos itens **sugeridos** de todas as refeições. Consumido = soma dos **registros** (`meal_entries`, RN49) — ✅ D13; antes era a soma dos itens das refeições feitas. Restante = max(0, planejado − consumido). Macros por item = macros por 100 g do catálogo × gramas ÷ 100; kcal arredondadas ao inteiro, macros a 1 casa.
 Onde: `DayTotals` (puro), exposto em `DayResource`. FE: `lib/nutrition.ts` recalcula para atualização otimista.
 
 **RN25 — Opções de troca** 🔵🟡
@@ -169,12 +170,47 @@ Lista vazia é válida (mock: "Ainda não temos trocas cadastradas…").
 Onde: `SubstitutionFinder` (puro sobre coleções; testado com catálogo fixo).
 
 **RN26 — Efeito da troca** 🔵
-A troca vale só para aquele dia. O item recebe `replaced_food_id` (o original da refeição-modelo, mesmo após trocas sucessivas) e `source = manual`. O resumo da refeição é refeito. Uma troca **não** muda o estado "feita".
+A troca vale só para aquele dia. O item recebe `replaced_food_id` (o original da refeição-modelo, mesmo após trocas sucessivas) e `source = manual`. O resumo da refeição é refeito. Uma troca muda só a **sugestão**: não cria nem altera registro (RN46). ✅ D13: item sugerido **já registrado** não pode ser trocado (`409 SUGGESTION_ALREADY_REGISTERED`; a tela nem mostra "Trocar"); a ação "trocar a refeição inteira" do Nutri (RN31) só vale para refeição **sem registro** (`409 MEAL_ALREADY_DONE`, "Você já registrou o que comeu nesse {refeição}.").
 Onde: `DayService::swap`.
 
 **RN27 — Desfazer** 🔵
-"Desfazer" reverte a **última** alteração de conteúdo do dia (troca ou aplicação de refeição pelo Nutri), se feita há no máximo 15 min e ainda não desfeita. Marcar/desmarcar não entra (já é reversível). Cada alteração grava um snapshot dos itens anteriores.
+"Desfazer" reverte a **última** alteração de conteúdo do dia (troca ou aplicação de refeição pelo Nutri), se feita há no máximo 15 min e ainda não desfeita. Marcar/desmarcar não entra (já é reversível). Cada alteração grava um snapshot dos itens anteriores. ✅ D13: desfazer devolve cada item **na mesma linha** (mesma `position`), sem apagar e recriar a refeição, para os registros continuarem ligados aos seus itens sugeridos.
 Onde: `DayService::undo`, tabela `day_meal_changes`.
+
+## Registro alimentar ✅ D13 (spec 09)
+
+**RN46 — Refeição registrada ("feita")**
+Uma refeição está **feita** quando tem pelo menos um registro em `meal_entries`. `day_meals.done_at` (nome mantido) guarda o horário do primeiro registro e volta a `null` quando o último é removido; é mantido só pelo `EntryService` e é a única fonte de "feita" para Hoje, constância (RN36), lembretes (RN38), resumo semanal, dicas e exportação. Não há mais marcar/desmarcar.
+Onde: `EntryService`, migration que converte `done_at` em registros (CA44).
+
+**RN47 — Gramas ou mililitros**
+Cada alimento tem `measure` = `g` (sólido) ou `ml` (líquido); os valores nutricionais são por 100 g ou por 100 ml. Para líquidos da TACO (dada por 100 g), usa-se 1 ml ≈ 1 g (🟡 aproximação declarada; erro < 5% para leite, sucos e café). A quantidade registrada (`amount`) está sempre na medida do alimento; a medida caseira (`unit_label`/`unit_grams`) vira atalho e texto ("200 ml, 1 copo").
+Onde: `EntryNutrition`, `PortionFormatter`.
+
+**RN48 — Meta da refeição e situação**
+Meta da refeição = soma da sugestão da refeição (RN24). Situação, só quando há registro:
+- **calorias:** `below` se < 90% da meta; `ok` em [90%, 110%]; `above` se > 110%;
+- **proteína:** `ok` se ≥ 90% da meta; senão `below`;
+- **gordura:** `ok` se ≤ 110% da meta; senão `above`.
+**Meta batida** (`goal_met`) = calorias ≥ 90% **e** proteína ≥ 90%. Passar das calorias ou da gordura **não** desfaz a meta batida ✅ D13 (os autores: "se passar de 110% ainda deve aceitar como completo") — vira só nota neutra.
+Frase: meta batida → "Meta batida." + notas opcionais "{x} kcal acima da sugestão." / "{z} g de gordura acima da sugestão."; senão "Faltam {x} kcal" e/ou "{y} g de proteína" ("Faltam 162 kcal e 25 g de proteína."). Números inteiros. Carboidrato aparece na barra, sem julgamento.
+Onde: `MealGoalStatus` (puro, back); `lib/registro.ts` espelha para a atualização otimista.
+
+**RN49 — Retrato do registro**
+Ao gravar (ou mudar a quantidade de) um registro, o backend guarda nome, medida, `amount` e os números calculados (kcal inteira, macros com 1 casa — mesmo arredondamento de RN24). Correções futuras do catálogo ou do alimento próprio **não** mudam registros já feitos.
+Onde: `EntryService`, `EntryNutrition`.
+
+**RN50 — Busca e alimentos próprios**
+Busca = catálogo ativo (todos, inclusive fora de `in_plans`, RN52) + alimentos próprios do usuário; nome e sinônimos, sem maiúsculas/acentos; ordem: começa com o termo, contém o termo; empate: mais registrados pelo usuário em 30 dias, depois alfabética; até 20. "Recentes" = até 8 mais registrados em 30 dias. Alimento próprio (`custom_foods`) é privado, sem limite de quantidade, editável e apagável (exclusão lógica; registros já feitos ficam — RN49), e **nunca** entra em `FoodFilter` (plano, troca, Nutri).
+Onde: `FoodSearch`, `CustomFoodService`.
+
+**RN51 — Restrições no registro**
+Registro é o que o usuário comeu: alimento ligado a restrição/alergia **pode** ser registrado; a busca e a folha mostram o rótulo da restrição e um aviso, nunca bloqueiam. RN17 continua valendo para tudo o que o app **sugere** (plano, troca, ação e sugestões do Nutri).
+Onde: `FoodSearch` (`conflicts`), `EntryService` (não passa por `FoodFilter`).
+
+**RN52 — Catálogo ampliado e `in_plans`**
+O catálogo tem ≥ 700 alimentos: TACO 4ª ed. (NEPA/UNICAMP, ~600 itens) completada pela Tabela de Composição Nutricional dos Alimentos Consumidos no Brasil (IBGE, POF 2008–2009) e, para produtos industrializados comuns em academia, rótulo — sempre marcado em `source`. `foods.in_plans` diz quais entram em `FoodFilter` (geração, trocas, Nutri): `true` para os 62 atuais, `false` por padrão para os novos — o prompt do plano não cresce. Os autores podem promover alimentos para `in_plans` no CSV. Valores dos novos itens entram na conferência P5.
+Onde: `foods.csv`, `FoodSeeder`, `FoodFilter`.
 
 ## Nutri
 
@@ -189,7 +225,7 @@ Onde: `ConversationService`, `ConversationPolicy`.
 **RN29 — Contexto enviado à IA** ✅🔵
 Em toda resposta do Nutri, a IA recebe, nesta ordem:
 1. *system prompt* versionado em código (nunca gravado como mensagem — corrige 🟤);
-2. contexto do momento: nome preferido, objetivo e meta, metas e restantes do dia, próxima refeição com itens, refeições feitas, restrições e alergias (alergias em destaque), itens da cozinha, lugar do almoço, horário de treino e se hoje é dia de treino;
+2. contexto do momento: nome preferido, objetivo e meta, metas e restantes do dia, próxima refeição com a sugestão, **o que foi registrado em cada refeição** (RN46; ✅ D13 — antes "refeições feitas"), restrições e alergias (alergias em destaque), itens da cozinha, lugar do almoço, horário de treino e se hoje é dia de treino;
 3. memória: resumos das **3** conversas anteriores mais recentes que tenham resumo;
 4. as **20** últimas mensagens da conversa atual.
 O endpoint `/nutri/context` expõe a versão legível do item 2 para o card "O que estou olhando agora" 🔵.
@@ -236,7 +272,7 @@ Só com meta definida, ≥ 3 pesagens cobrindo ≥ 14 dias. Regressão linear (p
 Onde: `WeightForecast` (puro).
 
 **RN36 — Constância** 🔵
-Status por dia: `completo` (todas as refeições do dia feitas), `parcial` (≥ 1 feita), `vazio` (nenhuma feita ou dia não materializado), `hoje` (data corrente, qualquer estado). Janela: últimos 28 dias, incluindo hoje. **Sequência** = dias `completo` consecutivos terminando ontem (hoje é ignorado).
+Status por dia: `completo` (todas as refeições do dia feitas — "feita" = com registro, RN46), `parcial` (≥ 1 feita), `vazio` (nenhuma feita ou dia não materializado), `hoje` (data corrente, qualquer estado). Janela: últimos 28 dias, incluindo hoje. **Sequência** = dias `completo` consecutivos terminando ontem (hoje é ignorado).
 Onde: `AdherenceCalculator` (puro).
 
 **RN37 — Médias do período** 🔵🟡

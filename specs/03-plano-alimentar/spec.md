@@ -29,9 +29,13 @@
 **Regras:** RN15, RN22, RN23 (só hoje é clicável/editável).
 
 ### RF12 — Detalhe da refeição
+> ✅ D13: a tela foi reescrita na spec 09 (RF31–RF36). "O que vai no prato" virou **sugestão**; o que vale como consumo são os registros.
+
 **Fluxo:** Hoje/Dieta → toca refeição de hoje → `/dieta/{slot}` → nome, horário, nota, kcal, % do dia, barras de macro em relação à meta, itens com porção caseira e macros, "Trocar" por item, "Marcar como feita".
 
 ### RF13 — Marcar/desmarcar refeição feita
+> ❌ **Removido por D13** (spec 09): "feita" = refeição com registro (RN46). O texto abaixo fica como histórico.
+
 **Fluxo:** toque no marcador da linha do dia ou botão "Marcar como feita" → estado muda na hora (otimista) → metas recalculam. Desmarcar é o mesmo gesto.
 **Regras:** RN23, RN24. **Erro:** falha de rede → volta ao estado anterior + toast "Não foi possível salvar. Tente de novo."
 

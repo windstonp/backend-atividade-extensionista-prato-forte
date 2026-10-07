@@ -46,6 +46,7 @@ Quando fontes divergem, o conflito está em [`99-inconsistencias.md`](99-inconsi
 | [`06-configuracoes-notificacoes/spec.md`](06-configuracoes-notificacoes/spec.md) | Web Push, lembretes, resumo semanal, dicas, unidade de medida |
 | [`07-validacao-feedback/spec.md`](07-validacao-feedback/spec.md) | 👍/👎, questionário de usabilidade, exportação para o relatório |
 | [`08-design-system/spec.md`](08-design-system/spec.md) | Biblioteca de componentes, Storybook, testes de componente |
+| [`09-registro-alimentar/spec.md`](09-registro-alimentar/spec.md) | O que eu comi × sugestão da refeição: registro em g/ml, busca no catálogo, alimento próprio, meta da refeição |
 | [`99-inconsistencias.md`](99-inconsistencias.md) | Conflitos entre documento, Node e mocks — e decisões pendentes |
 
 ### 1.3 Estrutura de cada spec de feature
@@ -172,7 +173,7 @@ Consequência: números confiáveis, **alergia garantida em código**, e todo o 
 
 | # | Decisão | Alternativas descartadas |
 |---|---|---|
-| D1 | "Registros alimentares" do documento = marcar refeição feita + trocas. A IA usa esse histórico. | registro livre; deixar em aberto |
+| D1 | ~~"Registros alimentares" do documento = marcar refeição feita + trocas.~~ **Revista por D13.** | registro livre; deixar em aberto |
 | D2 | Conta criada **antes** do onboarding; onboarding salvo no servidor etapa a etapa; "Já tenho conta" abre Login. | conta ao fim do onboarding; link mágico |
 | D3 | Validação com a comunidade: 👍/👎 nas respostas do Nutri e no plano + questionário curto de usabilidade. | formulário externo; só 👍/👎 |
 | D4 | Um único papel (usuário). Dados da validação extraídos por comando artisan. | admin via API; painel admin |
@@ -183,6 +184,7 @@ Consequência: números confiáveis, **alergia garantida em código**, e todo o 
 | D9 | Chat com várias conversas: antes de abrir, o usuário escolhe continuar uma conversa ou começar outra; a IA recebe resumos das últimas conversas. | conversa única |
 | D10 | Ferramentas de teste: Pest (back); Storybook 10 + Vitest + Testing Library + MSW + Playwright (front). | — |
 | D11 | Telas novas geradas com o skill `frontend-design:frontend-design`, com bastante animação e na identidade visual do mock. | — |
+| D13 | (2026-10-07) **Registro livre**: o usuário registra o que comeu (g/ml) buscando no catálogo ou cadastrando um alimento próprio; o plano vira **sugestão** com "+" por item; sem "Marcar como feita" (feita = tem registro); registro em hoje e ontem; alimento com restrição aparece na busca com aviso; catálogo ampliado para ≥ 700 itens; alimento próprio editável/apagável, sem limite; passar das calorias não desfaz a meta batida (spec 09). | manter marcar como feita; só hoje; esconder restritos; só catálogo |
 | D12 | Sugestões de continuação do Nutri geradas pela IA a cada resposta (RN45), com filtro e reserva determinística. Nenhum dado de domínio fixo no front: checagem no CI proíbe importar mocks fora de `src/mocks/`, stories e testes. | chips fixos do mock |
 
 Decisões **pendentes** (precisam de resposta dos autores antes da implementação da feature afetada) estão no fim de `99-inconsistencias.md`.

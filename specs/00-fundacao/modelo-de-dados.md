@@ -106,6 +106,8 @@ Catálogo de alimentos com composição nutricional. 🟡 (base TACO 4ª ed. —
 | is_staple | boolean | R | básico sempre disponível (salada, azeite, café), padrão `false` |
 | is_active | boolean | R | padrão `true` |
 | source | varchar(40) | R | `TACO 4ª ed.` / `Rótulo` |
+| measure | varchar(2) | R | `g` · `ml` — valores por 100 g ou 100 ml (RN47), padrão `g` ✅ D13 |
+| in_plans | boolean | R | entra em `FoodFilter` (RN52); padrão `false`; `true` nos 62 originais ✅ D13 |
 
 Índices: `UNIQUE(slug)`, `INDEX(group, is_active)`.
 Integridade: `CHECK (kcal_per_100g >= 0 AND protein_per_100g >= 0 AND carbs_per_100g >= 0 AND fat_per_100g >= 0)`.
@@ -211,11 +213,13 @@ Refeições de uma data concreta (RN22).
 | time | time | R | |
 | note | varchar(80) | O | "Depois do treino das 19h" |
 | position | tinyint | R | |
-| done_at | timestamp | O | não nulo ⇒ feita |
+| done_at | timestamp | O | ✅ D13: horário do **1º registro**; não nulo ⇒ feita (RN46). Mantido só pelo `EntryService` |
 
 Índices: `UNIQUE(user_id, date, slot)`, `INDEX(user_id, date)`.
 
 ### `day_meal_items`
+Itens **sugeridos** da refeição (✅ D13: sugestão, não o que foi comido).
+
 | Campo | Tipo | R/O | Regra |
 |---|---|---|---|
 | id | bigint PK | R | |
@@ -242,6 +246,45 @@ Histórico para "Desfazer" (RN27).
 | created_at | timestamp | R | |
 
 Índice: `INDEX(user_id, date, created_at)`.
+
+### `meal_entries` ✅ D13 (spec 09)
+O que o usuário comeu, com retrato dos números (RN49).
+
+| Campo | Tipo | R/O | Regra |
+|---|---|---|---|
+| id | bigint PK | R | |
+| user_id | FK users | R | cascade (consulta por posse sem join) |
+| day_meal_id | FK day_meals | R | cascade |
+| food_id | FK foods | O | restrict |
+| custom_food_id | FK custom_foods | O | restrict |
+| suggestion_item_id | FK day_meal_items | O | `null on delete`; marca o "+" como registrado |
+| name | varchar(120) | R | retrato |
+| measure | varchar(2) | R | `g` · `ml` |
+| amount | decimal(6,1) | R | 0,1–2000 |
+| calories | smallint unsigned | R | retrato (RN49) |
+| protein / carbs / fat | decimal(5,1) | R | retrato |
+| position | tinyint | R | ordem de registro |
+| created_at / updated_at | timestamp | R | |
+
+Índices: `INDEX(day_meal_id, position)`, `INDEX(user_id, created_at)` (recentes, RN50), `UNIQUE(day_meal_id, suggestion_item_id)`.
+Integridade: `CHECK ((food_id IS NOT NULL) + (custom_food_id IS NOT NULL) = 1)`.
+
+### `custom_foods` ✅ D13 (spec 09)
+Alimentos cadastrados pelo usuário (RN50). Nunca entram em `FoodFilter`.
+
+| Campo | Tipo | R/O | Regra |
+|---|---|---|---|
+| id | bigint PK | R | |
+| user_id | FK users | R | cascade |
+| name | varchar(60) | R | único por usuário (normalizado) |
+| name_normalized | varchar(60) | R | minúsculas, sem acento — para unicidade e busca |
+| measure | varchar(2) | R | `g` · `ml` |
+| kcal_per_100 | decimal(5,1) | R | 0–900 |
+| protein_per_100 / carbs_per_100 / fat_per_100 | decimal(4,1) | R | 0–100; soma ≤ 100 |
+| created_at / updated_at | timestamp | R | |
+| deleted_at | timestamp | O | exclusão lógica (RN50) |
+
+Índices: `INDEX(user_id, name_normalized)`. Unicidade do nome entre os **não apagados** é validada na aplicação (no MySQL, `NULL` em `deleted_at` não entra em `UNIQUE`); um nome apagado pode ser cadastrado de novo.
 
 ---
 

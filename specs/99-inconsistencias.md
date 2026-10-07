@@ -14,12 +14,13 @@ Status: **Decidido** (✅ com os autores) · **Recomendado** (adotado nesta spec
 - **Opções:** manter Node; migrar para Laravel.
 - **Recomendação:** Laravel (requisito do documento e decisão dos autores). O Node vira só referência.
 
-### I02 — "Registros alimentares" · Decidido (D1)
+### I02 — "Registros alimentares" · Decidido (D1, **revisto em D13**)
 - **Problema:** o documento diz que a IA deve "processar os registros alimentares dos usuários"; os mocks só permitem marcar refeições planejadas como feitas e trocar alimentos.
 - **Onde:** documento p. 3; `lib/plan-store.tsx`.
 - **Impacto:** define se há tela de registro livre.
 - **Opções:** marcar+trocas bastam; registro livre; deixar em aberto.
 - **Recomendação/decisão:** marcar+trocas = registro alimentar; entram no contexto do Nutri (RN29) e nas dicas/resumo (spec 06). Registro livre fica para depois. **Registrar essa interpretação no relatório.**
+- **Revisão (D13, 2026-10-07):** marcar como feita dizia que o usuário comeu exatamente a sugestão — errado. Agora há registro livre em g/ml e o plano vira sugestão (spec 09). O relatório deve citar a mudança.
 
 ### I03 — Validação com a comunidade sem suporte no produto · Decidido (D3, D4)
 - **Problema:** o documento exige coletar feedback de usabilidade e utilidade; nenhum mock cobre.
