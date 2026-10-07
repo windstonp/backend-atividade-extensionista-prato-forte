@@ -3,7 +3,6 @@
 namespace App\Services\Notifications;
 
 use App\Models\DayMeal;
-use App\Models\DayMealItem;
 use App\Models\User;
 use App\Services\Nutrition\DayTotals;
 use App\Services\Progress\AdherenceCalculator;
@@ -30,7 +29,7 @@ final class TipSelector
         $desde = $today->subDays(7);
         $refeicoes = $user->dayMeals()
             ->whereBetween('date', [$desde->toDateString(), $today->subDay()->toDateString()])
-            ->with('items.food')
+            ->with(['items.food', 'entries'])
             ->get();
 
         $candidatas = [
@@ -58,9 +57,7 @@ final class TipSelector
         $meta = $user->activePlan()->value('target_protein_g');
         $porDia = $refeicoes->filter(fn (DayMeal $meal) => $meal->isDone())
             ->groupBy(fn (DayMeal $meal) => $meal->date->toDateString())
-            ->map(fn ($meals) => DayTotals::sum($meals->flatMap(fn (DayMeal $meal) => $meal->items->map(
-                fn (DayMealItem $item) => DayTotals::item($item->food, (float) $item->grams),
-            ))->values()->all())['protein']);
+            ->map(fn ($meals) => DayTotals::sum($meals->map(fn (DayMeal $meal) => $meal->consumed())->values()->all())['protein']); // RN24 (D13)
         if (! $meta || $porDia->isEmpty() || $porDia->avg() >= 0.9 * $meta) {
             return null;
         }

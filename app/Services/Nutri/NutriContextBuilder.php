@@ -7,6 +7,7 @@ use App\Exceptions\DomainException;
 use App\Models\DayMeal;
 use App\Models\DayMealItem;
 use App\Models\Food;
+use App\Models\MealEntry;
 use App\Models\User;
 use App\Services\Days\DayMaterializer;
 use App\Services\Foods\FoodFilter;
@@ -39,8 +40,11 @@ class NutriContextBuilder
                 'nome' => $meal->name,
                 'horario' => substr((string) $meal->time, 0, 5),
                 'feita' => $meal->isDone(),
-                'itens' => $meal->items->map(fn (DayMealItem $item) => [
+                'sugestao' => $meal->items->map(fn (DayMealItem $item) => [
                     'food_id' => $item->food_id, 'nome' => $item->food->name, 'gramas' => (float) $item->grams,
+                ])->values()->all(),
+                'comido' => $meal->entries->map(fn (MealEntry $entry) => [
+                    'nome' => $entry->name, 'quantidade' => $entry->amount, 'medida' => $entry->measure, 'kcal' => $entry->calories,
                 ])->values()->all(),
             ])->values()->all(),
             'alergias' => $user->restrictions()->where('is_allergy', true)->pluck('label')->all(),
@@ -105,12 +109,8 @@ class NutriContextBuilder
      */
     private function totals(Collection $meals): array
     {
-        $parts = $meals->map(fn (DayMeal $meal) => [
-            'done' => $meal->isDone(),
-            'totals' => DayTotals::sum($meal->items->map(fn (DayMealItem $item) => DayTotals::item($item->food, (float) $item->grams))->all()),
-        ]);
-        $planned = DayTotals::sum($parts->pluck('totals')->all());
-        $consumed = DayTotals::sum($parts->where('done', true)->pluck('totals')->all());
+        $planned = DayTotals::sum($meals->map(fn (DayMeal $meal) => $meal->target())->all());
+        $consumed = DayTotals::sum($meals->map(fn (DayMeal $meal) => $meal->consumed())->all()); // RN24 (D13)
 
         return ['planned' => $planned, 'remaining' => DayTotals::remaining($planned, $consumed)];
     }

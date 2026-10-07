@@ -66,7 +66,11 @@ class DayResource extends JsonResource
         ];
     }
 
-    /** Prévias (ontem sem gravar, futuro) não têm registros carregados. @return Collection<int, MealEntry> */
+    /**
+     * Prévias (ontem sem gravar, futuro) não têm registros carregados.
+     *
+     * @return Collection<int, MealEntry>
+     */
     private function entriesOf(DayMeal $meal): Collection
     {
         return $meal->exists && $meal->relationLoaded('entries') ? $meal->entries : collect();

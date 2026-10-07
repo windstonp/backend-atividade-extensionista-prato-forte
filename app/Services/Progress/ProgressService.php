@@ -3,7 +3,6 @@
 namespace App\Services\Progress;
 
 use App\Models\DayMeal;
-use App\Models\DayMealItem;
 use App\Models\User;
 use App\Models\WeighIn;
 use App\Services\Days\DayMaterializer;
@@ -101,12 +100,10 @@ final class ProgressService
             ->whereNotNull('done_at')
             ->when($desde, fn ($q) => $q->where('date', '>=', $desde->toDateString()))
             ->where('date', '<=', $today->toDateString())
-            ->with('items.food')
+            ->with('entries')
             ->get()
             ->groupBy(fn (DayMeal $meal) => $meal->date->toDateString())
-            ->map(fn ($meals) => DayTotals::sum($meals->flatMap(fn (DayMeal $meal) => $meal->items->map(
-                fn (DayMealItem $item) => DayTotals::item($item->food, (float) $item->grams),
-            ))->values()->all()));
+            ->map(fn ($meals) => DayTotals::sum($meals->map(fn (DayMeal $meal) => $meal->consumed())->values()->all())); // RN24 (D13)
 
         $metaProteina = $plano?->target_protein_g;
         $contados = $porDia->count();

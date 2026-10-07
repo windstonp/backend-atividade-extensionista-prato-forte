@@ -50,7 +50,7 @@ class EntryService
         $entry = $this->entry($user, $date, $entryId);
         $snapshot = match (true) {
             $entry->food_id !== null => $this->fromFood(Food::findOrFail($entry->food_id), $amount),
-            default => $this->fromCustom($entry->customFood()->firstOrFail(), $amount),
+            default => $this->fromCustom(CustomFood::withTrashed()->findOrFail($entry->custom_food_id), $amount),
         };
 
         $entry->update($snapshot);
@@ -91,7 +91,7 @@ class EntryService
         }
 
         if (isset($entry['custom_food_id'])) {
-            $food = $user->customFoods()->find($entry['custom_food_id']) ?? throw new NotFoundHttpException;
+            $food = CustomFood::where('user_id', $user->id)->find($entry['custom_food_id']) ?? throw new NotFoundHttpException;
 
             return ['custom_food_id' => $food->id, ...$this->fromCustom($food, (float) $entry['amount'])];
         }

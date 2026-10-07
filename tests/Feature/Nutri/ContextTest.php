@@ -39,7 +39,7 @@ it('o contexto da IA leva a refeição de hoje com food_id e só alimentos permi
     $json = json_encode($contexto);
 
     expect($contexto['refeicoes_hoje'])->toHaveCount(5)
-        ->and($contexto['refeicoes_hoje'][0]['itens'][0])->toHaveKeys(['food_id', 'nome', 'gramas'])
+        ->and($contexto['refeicoes_hoje'][0]['sugestao'][0])->toHaveKeys(['food_id', 'nome', 'gramas'])
         ->and($contexto['alergias'])->toBe(['Amendoim e castanhas'])
         ->and(collect($contexto['alimentos_permitidos'])->pluck('nome')->implode(' '))->not->toMatch('/castanha|amendoim|leite/i')
         ->and($json)->not->toContain($this->user->email)

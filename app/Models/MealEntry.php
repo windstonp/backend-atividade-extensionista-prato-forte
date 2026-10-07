@@ -36,7 +36,11 @@ class MealEntry extends Model
         return $this->belongsTo(Food::class);
     }
 
-    /** Inclui apagados: o registro antigo continua mostrando o alimento (RN49). @return BelongsTo<CustomFood, $this> */
+    /**
+     * Inclui apagados: o registro antigo continua mostrando o alimento (RN49).
+     *
+     * @return BelongsTo<CustomFood, $this>
+     */
     public function customFood(): BelongsTo
     {
         return $this->belongsTo(CustomFood::class)->withTrashed();

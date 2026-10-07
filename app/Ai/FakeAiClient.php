@@ -245,13 +245,13 @@ final class FakeAiClient implements AiClient
         $question = Str::lower(Str::ascii((string) end($messages)['content']));
         /** @var list<array{id: int, nome: string, grupo: string}> $allowed */
         $allowed = $context['alimentos_permitidos'] ?? [];
-        /** @var list<array{slot: string, feita: bool, itens: list<array{food_id: int, nome: string}>}> $meals */
+        /** @var list<array{slot: string, feita: bool, sugestao: list<array{food_id: int, nome: string}>}> $meals */
         $meals = $context['refeicoes_hoje'] ?? [];
         $groupOf = array_column($allowed, 'grupo', 'id');
 
         $swap = function (string $group, string $prefer) use ($allowed, $meals, $groupOf): ?array {
             foreach ($meals as $meal) {
-                foreach ($meal['feita'] ? [] : $meal['itens'] as $item) {
+                foreach ($meal['feita'] ? [] : $meal['sugestao'] as $item) {
                     if (($groupOf[$item['food_id']] ?? null) !== $group) {
                         continue;
                     }

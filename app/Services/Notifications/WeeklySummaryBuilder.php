@@ -3,7 +3,6 @@
 namespace App\Services\Notifications;
 
 use App\Models\DayMeal;
-use App\Models\DayMealItem;
 use App\Models\User;
 use App\Services\Nutrition\DayTotals;
 use Carbon\CarbonImmutable;
@@ -17,7 +16,7 @@ final class WeeklySummaryBuilder
         $segunda = $sunday->startOfWeek(CarbonInterface::MONDAY); // explícito: o locale pt_BR pode começar no domingo
         $refeicoes = $user->dayMeals()
             ->whereBetween('date', [$segunda->toDateString(), $sunday->toDateString()])
-            ->with('items.food')
+            ->with('entries')
             ->get()
             ->groupBy(fn (DayMeal $meal) => $meal->date->toDateString());
 
@@ -28,8 +27,7 @@ final class WeeklySummaryBuilder
 
         $completos = $refeicoes->filter(fn ($dia) => $dia->every(fn (DayMeal $meal) => $meal->isDone()))->count();
         $proteina = (int) round($comFeita->avg(fn ($dia) => DayTotals::sum($dia->filter(fn (DayMeal $meal) => $meal->isDone())
-            ->flatMap(fn (DayMeal $meal) => $meal->items->map(fn (DayMealItem $item) => DayTotals::item($item->food, (float) $item->grams)))
-            ->values()->all())['protein']));
+            ->map(fn (DayMeal $meal) => $meal->consumed())->values()->all())['protein'])); // RN24 (D13): o que foi registrado
 
         $texto = "{$completos} de 7 dias completos · média de {$proteina} g de proteína";
         $variacao = $this->weightChange($user, $segunda, $sunday);
