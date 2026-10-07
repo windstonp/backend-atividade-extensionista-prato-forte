@@ -1,63 +1,63 @@
-slug,name,aliases,group,kcal,protein,carbs,fat,portion_g,unit,unit_plural,unit_g,note,dislike,staple,source,restrictions,pantry
-ovos-cozidos,Ovos cozidos,ovo|ovos|ovo cozido,proteina,146,13.3,0.6,9.5,100,unidade,unidades,50,"Proteína completa, pronta em 10 minutos",0,0,TACO 4ª ed.,sem-animal,ovos
-ovos-mexidos,Ovos mexidos,ovo|ovos|ovo mexido,proteina,168,12.9,0.6,12.1,100,unidade,unidades,50,,0,0,Receita caseira (TACO),sem-animal,ovos
-frango-grelhado,Frango grelhado,frango|peito de frango,proteina,159,32.0,0.0,2.5,120,filé médio,filés médios,100,Magro e rende bem na marmita,0,0,TACO 4ª ed.,sem-carne|sem-animal,frango
-frango-desfiado,Frango desfiado,frango|peito de frango,proteina,163,31.5,0.0,3.2,100,colher de sopa,colheres de sopa,20,Combina com cuscuz e tapioca,0,0,TACO 4ª ed.,sem-carne|sem-animal,frango
-coxa-de-frango-assada,Coxa de frango assada,frango|coxa|sobrecoxa,proteina,215,28.5,0.0,10.4,100,coxa,coxas,70,,0,0,TACO 4ª ed.,sem-carne|sem-animal,frango
-patinho-moido,Patinho moído,carne moída|carne|patinho,proteina,219,35.9,0.0,7.3,100,colher de sopa,colheres de sopa,25,Carne magra que combina com arroz e feijão,0,0,TACO 4ª ed.,sem-carne|sem-animal,carne-moida
-carne-moida-refogada,Carne moída refogada,carne moída|carne|acém,proteina,212,26.7,0.0,10.9,100,colher de sopa,colheres de sopa,25,,0,0,TACO 4ª ed.,sem-carne|sem-animal,carne-moida
-bife-de-alcatra,Bife de alcatra grelhado,carne|bife|alcatra,proteina,241,31.9,0.0,11.6,100,bife médio,bifes médios,100,,0,0,TACO 4ª ed.,sem-carne|sem-animal,
-peixe-assado,Peixe assado,peixe|merluza|filé de peixe,proteina,122,26.6,0.0,0.9,120,filé,filés,120,Leve para a noite,1,0,TACO 4ª ed.,sem-carne|sem-animal,peixe
-sardinha-em-lata,Sardinha em lata,sardinha|peixe,proteina,285,15.9,0.0,24.0,60,lata,latas,84,Barata e cheia de ômega-3,0,0,TACO 4ª ed.,sem-carne|sem-animal,peixe
-atum-em-lata,"Atum em lata, na água",atum|peixe,proteina,116,26.0,0.0,1.0,60,lata,latas,120,"Prático, não precisa de fogão",0,0,Rótulo,sem-carne|sem-animal,peixe
-camarao-cozido,Camarão cozido,camarão|frutos do mar,proteina,90,19.0,0.0,1.0,100,,,,,0,0,TACO 4ª ed.,frutos-do-mar|sem-carne|sem-animal,
-figado-bovino,Fígado bovino,fígado|figado,proteina,225,29.9,4.2,9.0,100,bife,bifes,100,,1,0,TACO 4ª ed.,sem-carne|sem-animal,
-tofu,Tofu,tofu|queijo de soja,proteina,76,8.1,1.9,4.8,100,fatia,fatias,50,Proteína de planta que vai bem grelhada,0,0,Tabela USDA,,
-queijo-minas,Queijo minas,queijo|queijo branco|minas frescal,laticinio,264,17.4,3.2,20.2,30,fatia,fatias,30,,0,0,TACO 4ª ed.,lactose|sem-animal,queijo
-queijo-mucarela,Queijo muçarela,queijo|mussarela|mozarela,laticinio,330,22.6,3.0,25.2,30,fatia,fatias,15,,0,0,TACO 4ª ed.,lactose|sem-animal,queijo
-iogurte-natural,Iogurte natural,iogurte,laticinio,51,4.1,1.9,3.0,170,pote,potes,170,Segura a fome até o almoço,0,0,TACO 4ª ed.,lactose|sem-animal,iogurte
-leite-integral,Leite integral,leite|leite de vaca,laticinio,61,2.9,4.3,3.2,200,copo,copos,200,,0,0,TACO 4ª ed.,lactose|sem-animal,
-requeijao-cremoso,Requeijão cremoso,requeijão,laticinio,257,9.6,2.4,23.4,20,colher de sopa,colheres de sopa,20,,0,0,TACO 4ª ed.,lactose|sem-animal,
-feijao-carioca,Feijão carioca,feijão,leguminosa,76,4.8,13.6,0.5,86,concha,conchas,86,,0,0,TACO 4ª ed.,,arroz-e-feijao
-feijao-preto,Feijão preto,feijão,leguminosa,77,4.5,14.0,0.5,86,concha,conchas,86,,0,0,TACO 4ª ed.,,arroz-e-feijao
-lentilha-cozida,Lentilha cozida,lentilha,leguminosa,93,6.3,16.3,0.5,90,concha,conchas,90,Troca o feijão sem perder proteína,0,0,TACO 4ª ed.,,
-grao-de-bico-cozido,Grão-de-bico cozido,grão de bico|grão-de-bico,leguminosa,164,8.9,27.4,2.6,100,colher de sopa,colheres de sopa,22,Proteína de planta que substitui a carne,0,0,Tabela USDA,,
-amendoim-torrado,Amendoim torrado,amendoim,gordura,606,22.5,18.7,54.0,20,punhado,punhados,20,,0,0,TACO 4ª ed.,castanhas,
-pasta-de-amendoim,Pasta de amendoim,amendoim|pasta de amendoim,gordura,588,25.0,20.0,50.0,15,colher de sopa,colheres de sopa,15,,0,0,Rótulo,castanhas,
-castanha-do-para,Castanha-do-pará,castanha|castanha do brasil,gordura,643,14.5,15.1,63.5,10,unidade,unidades,4,,0,0,TACO 4ª ed.,castanhas,
-castanha-de-caju,Castanha de caju,castanha|caju,gordura,570,18.5,29.1,46.3,20,punhado,punhados,20,,0,0,TACO 4ª ed.,castanhas,
-arroz-branco-cozido,Arroz branco cozido,arroz,carboidrato,128,2.5,28.1,0.2,150,colher de sopa,colheres de sopa,25,,0,0,TACO 4ª ed.,,arroz-e-feijao
-arroz-integral,Arroz integral,arroz|arroz integral,carboidrato,124,2.6,25.8,1.0,150,colher de sopa,colheres de sopa,25,Mais fibra segura a fome até o treino,0,0,TACO 4ª ed.,,arroz-e-feijao
-batata-doce-cozida,Batata-doce cozida,batata doce|batata-doce,carboidrato,77,0.6,18.4,0.1,150,unidade média,unidades médias,150,Energia que dura até o treino,0,0,TACO 4ª ed.,,batata-doce
-batata-cozida,Batata cozida,batata|batata inglesa,carboidrato,52,1.2,11.9,0.0,150,unidade média,unidades médias,140,,0,0,TACO 4ª ed.,,
-aipim-cozido,Aipim cozido,aipim|mandioca|macaxeira,carboidrato,125,0.6,30.1,0.3,100,pedaço,pedaços,50,,0,0,TACO 4ª ed.,,
-tapioca,Tapioca,tapioca|goma de tapioca|beiju,carboidrato,240,0.0,60.0,0.0,60,tapioca média,tapiocas médias,60,Sem glúten e pronta em 3 minutos,0,0,Rótulo,,tapioca
-macarrao-parafuso,Macarrão parafuso,macarrão|massa,carboidrato,158,5.8,30.9,0.9,150,pegador,pegadores,50,,0,0,Tabela USDA,gluten,macarrao
-cuscuz-de-milho,Cuscuz de milho,cuscuz|cuscuz nordestino,carboidrato,113,2.2,25.3,0.7,120,fatia,fatias,60,,0,0,TACO 4ª ed.,,cuscuz
-pao-frances,Pão francês,pão|pão de sal|cacetinho,carboidrato,300,8.0,58.6,3.1,50,unidade,unidades,50,,0,0,TACO 4ª ed.,gluten,pao-frances
-pao-integral,Pão integral,pão|pão de forma integral,carboidrato,253,9.4,49.9,3.7,50,fatia,fatias,25,,0,0,TACO 4ª ed.,gluten,
-aveia-em-flocos,Aveia em flocos,aveia,carboidrato,394,13.9,66.6,8.5,30,colher de sopa,colheres de sopa,15,Dá liga no iogurte e na fruta,0,0,TACO 4ª ed.,gluten,aveia
-milho-verde,Milho verde,milho,carboidrato,98,3.2,17.1,2.4,70,colher de sopa,colheres de sopa,24,,0,0,TACO 4ª ed.,,
-banana,Banana,banana|banana prata,fruta,98,1.3,26.0,0.1,60,unidade,unidades,60,Energia rápida antes do treino,0,0,TACO 4ª ed.,,banana
-mamao,Mamão,mamão|papaia,fruta,40,0.5,10.4,0.1,150,fatia,fatias,150,,0,0,TACO 4ª ed.,,mamao
-maca,Maçã,maçã,fruta,56,0.3,15.2,0.0,130,unidade,unidades,130,,0,0,TACO 4ª ed.,,maca
-laranja,Laranja,laranja|laranja pera,fruta,37,1.0,8.9,0.1,140,unidade,unidades,140,,0,0,TACO 4ª ed.,,laranja
-abacate,Abacate,abacate,fruta,96,1.2,6.0,8.4,80,colher de sopa,colheres de sopa,40,,0,0,TACO 4ª ed.,,
-melancia,Melancia,melancia,fruta,33,0.9,8.1,0.0,200,fatia,fatias,200,,0,0,TACO 4ª ed.,,
-morango,Morango,morango,fruta,30,0.9,6.8,0.3,100,unidade,unidades,12,,0,0,TACO 4ª ed.,,
-abacaxi,Abacaxi,abacaxi,fruta,48,0.9,12.3,0.1,100,fatia,fatias,75,,0,0,TACO 4ª ed.,,
-manga,Manga,manga,fruta,51,0.9,12.8,0.2,140,fatia,fatias,70,,0,0,TACO 4ª ed.,,
-salada-de-alface-e-tomate,Salada de alface e tomate,salada|alface|tomate,vegetal,13,1.1,2.4,0.2,100,,,,,0,1,Receita caseira (TACO),,
-brocolis-no-vapor,Brócolis no vapor,brócolis,vegetal,25,2.1,4.4,0.5,80,ramo,ramos,20,,0,0,TACO 4ª ed.,,
-cenoura-cozida,Cenoura cozida,cenoura,vegetal,30,0.8,6.7,0.2,80,colher de sopa,colheres de sopa,25,,0,0,TACO 4ª ed.,,
-abobrinha-cozida,Abobrinha cozida,abobrinha,vegetal,15,1.1,3.0,0.2,80,colher de sopa,colheres de sopa,25,,0,0,TACO 4ª ed.,,
-chuchu-cozido,Chuchu cozido,chuchu,vegetal,19,0.4,4.8,0.0,80,colher de sopa,colheres de sopa,25,,0,0,TACO 4ª ed.,,
-couve-refogada,Couve refogada,couve,vegetal,90,1.7,8.7,6.6,40,colher de sopa,colheres de sopa,20,,0,0,TACO 4ª ed.,,
-beterraba,Beterraba,beterraba,vegetal,32,1.3,7.2,0.1,60,colher de sopa,colheres de sopa,20,,1,0,TACO 4ª ed.,,
-jilo,Jiló,jiló|jilo,vegetal,27,1.4,6.2,0.2,60,unidade,unidades,30,,1,0,TACO 4ª ed.,,
-berinjela,Berinjela,berinjela,vegetal,19,0.7,4.5,0.1,80,colher de sopa,colheres de sopa,25,,1,0,TACO 4ª ed.,,
-pepino,Pepino,pepino,vegetal,10,0.9,2.0,0.0,60,fatia,fatias,10,,0,0,TACO 4ª ed.,,
-azeite-de-oliva,Azeite de oliva,azeite,gordura,884,0.0,0.0,100.0,5,colher de chá,colheres de chá,5,,0,1,TACO 4ª ed.,,
-manteiga,Manteiga,manteiga,gordura,726,0.4,0.1,82.4,5,colher de chá,colheres de chá,5,,0,0,TACO 4ª ed.,lactose|sem-animal,
-cafe-sem-acucar,Café sem açúcar,café|cafezinho,bebida,9,0.7,1.5,0.1,100,xícara,xícaras,100,,0,1,TACO 4ª ed.,,
-mel,Mel,mel,outros,309,0.0,84.0,0.0,15,colher de sopa,colheres de sopa,15,,0,0,TACO 4ª ed.,sem-animal,
+slug,name,aliases,group,kcal,protein,carbs,fat,portion_g,unit,unit_plural,unit_g,note,dislike,staple,source,restrictions,pantry,measure,in_plans
+ovos-cozidos,Ovos cozidos,ovo|ovos|ovo cozido,proteina,146,13.3,0.6,9.5,100,unidade,unidades,50,"Proteína completa, pronta em 10 minutos",0,0,TACO 4ª ed.,sem-animal,ovos,g,1
+ovos-mexidos,Ovos mexidos,ovo|ovos|ovo mexido,proteina,168,12.9,0.6,12.1,100,unidade,unidades,50,,0,0,Receita caseira (TACO),sem-animal,ovos,g,1
+frango-grelhado,Frango grelhado,frango|peito de frango,proteina,159,32.0,0.0,2.5,120,filé médio,filés médios,100,Magro e rende bem na marmita,0,0,TACO 4ª ed.,sem-carne|sem-animal,frango,g,1
+frango-desfiado,Frango desfiado,frango|peito de frango,proteina,163,31.5,0.0,3.2,100,colher de sopa,colheres de sopa,20,Combina com cuscuz e tapioca,0,0,TACO 4ª ed.,sem-carne|sem-animal,frango,g,1
+coxa-de-frango-assada,Coxa de frango assada,frango|coxa|sobrecoxa,proteina,215,28.5,0.0,10.4,100,coxa,coxas,70,,0,0,TACO 4ª ed.,sem-carne|sem-animal,frango,g,1
+patinho-moido,Patinho moído,carne moída|carne|patinho,proteina,219,35.9,0.0,7.3,100,colher de sopa,colheres de sopa,25,Carne magra que combina com arroz e feijão,0,0,TACO 4ª ed.,sem-carne|sem-animal,carne-moida,g,1
+carne-moida-refogada,Carne moída refogada,carne moída|carne|acém,proteina,212,26.7,0.0,10.9,100,colher de sopa,colheres de sopa,25,,0,0,TACO 4ª ed.,sem-carne|sem-animal,carne-moida,g,1
+bife-de-alcatra,Bife de alcatra grelhado,carne|bife|alcatra,proteina,241,31.9,0.0,11.6,100,bife médio,bifes médios,100,,0,0,TACO 4ª ed.,sem-carne|sem-animal,,g,1
+peixe-assado,Peixe assado,peixe|merluza|filé de peixe,proteina,122,26.6,0.0,0.9,120,filé,filés,120,Leve para a noite,1,0,TACO 4ª ed.,sem-carne|sem-animal,peixe,g,1
+sardinha-em-lata,Sardinha em lata,sardinha|peixe,proteina,285,15.9,0.0,24.0,60,lata,latas,84,Barata e cheia de ômega-3,0,0,TACO 4ª ed.,sem-carne|sem-animal,peixe,g,1
+atum-em-lata,"Atum em lata, na água",atum|peixe,proteina,116,26.0,0.0,1.0,60,lata,latas,120,"Prático, não precisa de fogão",0,0,Rótulo,sem-carne|sem-animal,peixe,g,1
+camarao-cozido,Camarão cozido,camarão|frutos do mar,proteina,90,19.0,0.0,1.0,100,,,,,0,0,TACO 4ª ed.,frutos-do-mar|sem-carne|sem-animal,,g,1
+figado-bovino,Fígado bovino,fígado|figado,proteina,225,29.9,4.2,9.0,100,bife,bifes,100,,1,0,TACO 4ª ed.,sem-carne|sem-animal,,g,1
+tofu,Tofu,tofu|queijo de soja,proteina,76,8.1,1.9,4.8,100,fatia,fatias,50,Proteína de planta que vai bem grelhada,0,0,Tabela USDA,,,g,1
+queijo-minas,Queijo minas,queijo|queijo branco|minas frescal,laticinio,264,17.4,3.2,20.2,30,fatia,fatias,30,,0,0,TACO 4ª ed.,lactose|sem-animal,queijo,g,1
+queijo-mucarela,Queijo muçarela,queijo|mussarela|mozarela,laticinio,330,22.6,3.0,25.2,30,fatia,fatias,15,,0,0,TACO 4ª ed.,lactose|sem-animal,queijo,g,1
+iogurte-natural,Iogurte natural,iogurte,laticinio,51,4.1,1.9,3.0,170,pote,potes,170,Segura a fome até o almoço,0,0,TACO 4ª ed.,lactose|sem-animal,iogurte,g,1
+leite-integral,Leite integral,leite|leite de vaca,laticinio,61,2.9,4.3,3.2,200,copo,copos,200,,0,0,TACO 4ª ed.,lactose|sem-animal,,ml,1
+requeijao-cremoso,Requeijão cremoso,requeijão,laticinio,257,9.6,2.4,23.4,20,colher de sopa,colheres de sopa,20,,0,0,TACO 4ª ed.,lactose|sem-animal,,g,1
+feijao-carioca,Feijão carioca,feijão,leguminosa,76,4.8,13.6,0.5,86,concha,conchas,86,,0,0,TACO 4ª ed.,,arroz-e-feijao,g,1
+feijao-preto,Feijão preto,feijão,leguminosa,77,4.5,14.0,0.5,86,concha,conchas,86,,0,0,TACO 4ª ed.,,arroz-e-feijao,g,1
+lentilha-cozida,Lentilha cozida,lentilha,leguminosa,93,6.3,16.3,0.5,90,concha,conchas,90,Troca o feijão sem perder proteína,0,0,TACO 4ª ed.,,,g,1
+grao-de-bico-cozido,Grão-de-bico cozido,grão de bico|grão-de-bico,leguminosa,164,8.9,27.4,2.6,100,colher de sopa,colheres de sopa,22,Proteína de planta que substitui a carne,0,0,Tabela USDA,,,g,1
+amendoim-torrado,Amendoim torrado,amendoim,gordura,606,22.5,18.7,54.0,20,punhado,punhados,20,,0,0,TACO 4ª ed.,castanhas,,g,1
+pasta-de-amendoim,Pasta de amendoim,amendoim|pasta de amendoim,gordura,588,25.0,20.0,50.0,15,colher de sopa,colheres de sopa,15,,0,0,Rótulo,castanhas,,g,1
+castanha-do-para,Castanha-do-pará,castanha|castanha do brasil,gordura,643,14.5,15.1,63.5,10,unidade,unidades,4,,0,0,TACO 4ª ed.,castanhas,,g,1
+castanha-de-caju,Castanha de caju,castanha|caju,gordura,570,18.5,29.1,46.3,20,punhado,punhados,20,,0,0,TACO 4ª ed.,castanhas,,g,1
+arroz-branco-cozido,Arroz branco cozido,arroz,carboidrato,128,2.5,28.1,0.2,150,colher de sopa,colheres de sopa,25,,0,0,TACO 4ª ed.,,arroz-e-feijao,g,1
+arroz-integral,Arroz integral,arroz|arroz integral,carboidrato,124,2.6,25.8,1.0,150,colher de sopa,colheres de sopa,25,Mais fibra segura a fome até o treino,0,0,TACO 4ª ed.,,arroz-e-feijao,g,1
+batata-doce-cozida,Batata-doce cozida,batata doce|batata-doce,carboidrato,77,0.6,18.4,0.1,150,unidade média,unidades médias,150,Energia que dura até o treino,0,0,TACO 4ª ed.,,batata-doce,g,1
+batata-cozida,Batata cozida,batata|batata inglesa,carboidrato,52,1.2,11.9,0.0,150,unidade média,unidades médias,140,,0,0,TACO 4ª ed.,,,g,1
+aipim-cozido,Aipim cozido,aipim|mandioca|macaxeira,carboidrato,125,0.6,30.1,0.3,100,pedaço,pedaços,50,,0,0,TACO 4ª ed.,,,g,1
+tapioca,Tapioca,tapioca|goma de tapioca|beiju,carboidrato,240,0.0,60.0,0.0,60,tapioca média,tapiocas médias,60,Sem glúten e pronta em 3 minutos,0,0,Rótulo,,tapioca,g,1
+macarrao-parafuso,Macarrão parafuso,macarrão|massa,carboidrato,158,5.8,30.9,0.9,150,pegador,pegadores,50,,0,0,Tabela USDA,gluten,macarrao,g,1
+cuscuz-de-milho,Cuscuz de milho,cuscuz|cuscuz nordestino,carboidrato,113,2.2,25.3,0.7,120,fatia,fatias,60,,0,0,TACO 4ª ed.,,cuscuz,g,1
+pao-frances,Pão francês,pão|pão de sal|cacetinho,carboidrato,300,8.0,58.6,3.1,50,unidade,unidades,50,,0,0,TACO 4ª ed.,gluten,pao-frances,g,1
+pao-integral,Pão integral,pão|pão de forma integral,carboidrato,253,9.4,49.9,3.7,50,fatia,fatias,25,,0,0,TACO 4ª ed.,gluten,,g,1
+aveia-em-flocos,Aveia em flocos,aveia,carboidrato,394,13.9,66.6,8.5,30,colher de sopa,colheres de sopa,15,Dá liga no iogurte e na fruta,0,0,TACO 4ª ed.,gluten,aveia,g,1
+milho-verde,Milho verde,milho,carboidrato,98,3.2,17.1,2.4,70,colher de sopa,colheres de sopa,24,,0,0,TACO 4ª ed.,,,g,1
+banana,Banana,banana|banana prata,fruta,98,1.3,26.0,0.1,60,unidade,unidades,60,Energia rápida antes do treino,0,0,TACO 4ª ed.,,banana,g,1
+mamao,Mamão,mamão|papaia,fruta,40,0.5,10.4,0.1,150,fatia,fatias,150,,0,0,TACO 4ª ed.,,mamao,g,1
+maca,Maçã,maçã,fruta,56,0.3,15.2,0.0,130,unidade,unidades,130,,0,0,TACO 4ª ed.,,maca,g,1
+laranja,Laranja,laranja|laranja pera,fruta,37,1.0,8.9,0.1,140,unidade,unidades,140,,0,0,TACO 4ª ed.,,laranja,g,1
+abacate,Abacate,abacate,fruta,96,1.2,6.0,8.4,80,colher de sopa,colheres de sopa,40,,0,0,TACO 4ª ed.,,,g,1
+melancia,Melancia,melancia,fruta,33,0.9,8.1,0.0,200,fatia,fatias,200,,0,0,TACO 4ª ed.,,,g,1
+morango,Morango,morango,fruta,30,0.9,6.8,0.3,100,unidade,unidades,12,,0,0,TACO 4ª ed.,,,g,1
+abacaxi,Abacaxi,abacaxi,fruta,48,0.9,12.3,0.1,100,fatia,fatias,75,,0,0,TACO 4ª ed.,,,g,1
+manga,Manga,manga,fruta,51,0.9,12.8,0.2,140,fatia,fatias,70,,0,0,TACO 4ª ed.,,,g,1
+salada-de-alface-e-tomate,Salada de alface e tomate,salada|alface|tomate,vegetal,13,1.1,2.4,0.2,100,,,,,0,1,Receita caseira (TACO),,,g,1
+brocolis-no-vapor,Brócolis no vapor,brócolis,vegetal,25,2.1,4.4,0.5,80,ramo,ramos,20,,0,0,TACO 4ª ed.,,,g,1
+cenoura-cozida,Cenoura cozida,cenoura,vegetal,30,0.8,6.7,0.2,80,colher de sopa,colheres de sopa,25,,0,0,TACO 4ª ed.,,,g,1
+abobrinha-cozida,Abobrinha cozida,abobrinha,vegetal,15,1.1,3.0,0.2,80,colher de sopa,colheres de sopa,25,,0,0,TACO 4ª ed.,,,g,1
+chuchu-cozido,Chuchu cozido,chuchu,vegetal,19,0.4,4.8,0.0,80,colher de sopa,colheres de sopa,25,,0,0,TACO 4ª ed.,,,g,1
+couve-refogada,Couve refogada,couve,vegetal,90,1.7,8.7,6.6,40,colher de sopa,colheres de sopa,20,,0,0,TACO 4ª ed.,,,g,1
+beterraba,Beterraba,beterraba,vegetal,32,1.3,7.2,0.1,60,colher de sopa,colheres de sopa,20,,1,0,TACO 4ª ed.,,,g,1
+jilo,Jiló,jiló|jilo,vegetal,27,1.4,6.2,0.2,60,unidade,unidades,30,,1,0,TACO 4ª ed.,,,g,1
+berinjela,Berinjela,berinjela,vegetal,19,0.7,4.5,0.1,80,colher de sopa,colheres de sopa,25,,1,0,TACO 4ª ed.,,,g,1
+pepino,Pepino,pepino,vegetal,10,0.9,2.0,0.0,60,fatia,fatias,10,,0,0,TACO 4ª ed.,,,g,1
+azeite-de-oliva,Azeite de oliva,azeite,gordura,884,0.0,0.0,100.0,5,colher de chá,colheres de chá,5,,0,1,TACO 4ª ed.,,,g,1
+manteiga,Manteiga,manteiga,gordura,726,0.4,0.1,82.4,5,colher de chá,colheres de chá,5,,0,0,TACO 4ª ed.,lactose|sem-animal,,g,1
+cafe-sem-acucar,Café sem açúcar,café|cafezinho,bebida,9,0.7,1.5,0.1,100,xícara,xícaras,100,,0,1,TACO 4ª ed.,,,ml,1
+mel,Mel,mel,outros,309,0.0,84.0,0.0,15,colher de sopa,colheres de sopa,15,,0,0,TACO 4ª ed.,sem-animal,,g,1

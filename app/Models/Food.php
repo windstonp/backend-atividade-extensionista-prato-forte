@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
- * Alimento do catálogo (valores por 100 g).
+ * Alimento do catálogo (valores por 100 g, ou por 100 ml quando measure = ml — RN47).
  *
  * @property list<string> $aliases
  */
@@ -18,7 +18,7 @@ class Food extends Model
     protected $fillable = [
         'slug', 'name', 'aliases', 'group', 'kcal_per_100g', 'protein_per_100g', 'carbs_per_100g', 'fat_per_100g',
         'typical_portion_g', 'unit_label', 'unit_label_plural', 'unit_grams', 'substitution_note',
-        'common_dislike', 'is_staple', 'is_active', 'source',
+        'common_dislike', 'is_staple', 'is_active', 'source', 'measure', 'in_plans',
     ];
 
     protected function casts(): array
@@ -34,6 +34,7 @@ class Food extends Model
             'common_dislike' => 'boolean',
             'is_staple' => 'boolean',
             'is_active' => 'boolean',
+            'in_plans' => 'boolean',
         ];
     }
 

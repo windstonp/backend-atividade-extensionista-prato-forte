@@ -40,6 +40,8 @@ class FoodSeeder extends Seeder
                 'is_staple' => $row['staple'] === '1',
                 'is_active' => true,
                 'source' => $row['source'],
+                'measure' => ($row['measure'] ?? 'g') === 'ml' ? 'ml' : 'g',
+                'in_plans' => ($row['in_plans'] ?? '1') === '1',
             ]);
 
             $food->restrictions()->sync($this->ids($restrictions, $this->list($row['restrictions']), $food->slug));
