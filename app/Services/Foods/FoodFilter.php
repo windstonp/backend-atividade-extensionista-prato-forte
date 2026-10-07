@@ -12,7 +12,7 @@ use Illuminate\Support\Str;
 class FoodFilter
 {
     /**
-     * Catálogo ativo − restrições − "outras restrições" (nome ou sinônimo) − "não curto".
+     * Catálogo ativo com in_plans (RN52) − restrições − "outras restrições" (nome ou sinônimo) − "não curto".
      *
      * @return Collection<int, Food> chave = id
      */
@@ -25,12 +25,43 @@ class FoodFilter
 
         return Food::query()
             ->where('is_active', true)
+            ->where('in_plans', true) // RN52: o catálogo ampliado só serve à busca do registro
             ->whereDoesntHave('restrictions', fn ($query) => $query->whereIn('restrictions.id', $user->restrictions()->pluck('restrictions.id')))
             ->whereNotIn('id', $user->dislikedFoods()->pluck('foods.id'))
             ->orderBy('id')
             ->get()
             ->reject(fn (Food $food) => $this->matchesAny($food, $terms))
             ->keyBy('id');
+    }
+
+    /**
+     * RN51 — por alimento, as restrições do usuário que ele toca (para avisar; nunca para bloquear registro).
+     *
+     * @param  Collection<int, Food>  $foods  chave = id
+     * @return array<int, list<string>>
+     */
+    public function conflictsFor(User $user, Collection $foods): array
+    {
+        $labels = $user->restrictions()->pluck('label', 'restrictions.id');
+        $linked = DB::table('food_restriction')
+            ->whereIn('food_id', $foods->keys())
+            ->whereIn('restriction_id', $labels->keys())
+            ->get()
+            ->groupBy('food_id');
+        $terms = array_values(array_filter(array_map('trim', $user->profile->other_restrictions)));
+
+        $result = [];
+        foreach ($foods as $id => $food) {
+            $found = ($linked->get($id) ?? collect())->map(fn ($row) => (string) $labels[$row->restriction_id])->all();
+            foreach ($terms as $term) {
+                if ($this->matchesAny($food, self::variants(self::normalize($term)))) {
+                    $found[] = $term;
+                }
+            }
+            $result[$id] = array_values(array_unique($found));
+        }
+
+        return $result;
     }
 
     /**
