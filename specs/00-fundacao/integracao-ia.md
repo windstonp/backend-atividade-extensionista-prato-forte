@@ -132,3 +132,5 @@ Estimativa por usuário ativo (modelo pequeno tipo `gpt-4o-mini`): geração de 
 
 
 > **Prompt v3 (2026-10-07):** as entradas do plano ganham `meta_kcal_por_refeicao` (meta do dia × `distribuicao_kcal`, já calculada) e o sistema pede para conferir a soma de cada refeição. Com o Gemini 3.5 Flash-Lite, a v2 errava a proporção e estourava o dia (3.126 kcal para 2.250); com a v3, 5 de 5 planos saíram válidos na primeira tentativa. O parser aceita a lista de refeições solta ou embrulhada em outra chave, e cada tentativa recusada registra só as regras que falharam (`plan.invalid_attempt`, sem o conteúdo da IA).
+
+> **Mensagens de sistema (2026-10-07):** o `OpenAiCompatibleClient` junta as mensagens `system` do começo numa só antes de enviar. Com várias, o Gemini seguia só a última (o contexto em JSON) e respondia fora do formato (`"resposta"` em vez de `"reply"`), e o Nutri caía no texto padrão.

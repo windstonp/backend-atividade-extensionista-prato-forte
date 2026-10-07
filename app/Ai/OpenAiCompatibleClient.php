@@ -23,7 +23,7 @@ final class OpenAiCompatibleClient implements AiClient
 
         $body = [
             'model' => $options->model,
-            'messages' => $messages,
+            'messages' => self::mergeLeadingSystem($messages),
             'max_tokens' => $options->maxTokens,
             'temperature' => $options->temperature,
         ];
@@ -57,5 +57,22 @@ final class OpenAiCompatibleClient implements AiClient
             is_int($response->json('usage.completion_tokens')) ? $response->json('usage.completion_tokens') : null,
             (int) ((hrtime(true) - $start) / 1_000_000),
         );
+    }
+
+    /**
+     * As mensagens `system` do começo viram uma só: o Gemini (API compatível) seguia só a última
+     * e ignorava o formato pedido na primeira. Na OpenAI o resultado é o mesmo.
+     *
+     * @param  list<array{role: string, content: string}>  $messages
+     * @return list<array{role: string, content: string}>
+     */
+    private static function mergeLeadingSystem(array $messages): array
+    {
+        $system = [];
+        while ($messages !== [] && $messages[0]['role'] === 'system') {
+            $system[] = array_shift($messages)['content'];
+        }
+
+        return $system === [] ? $messages : [['role' => 'system', 'content' => implode("\n\n", $system)], ...$messages];
     }
 }

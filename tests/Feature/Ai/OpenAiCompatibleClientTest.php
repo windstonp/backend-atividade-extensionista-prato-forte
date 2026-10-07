@@ -44,3 +44,22 @@ it('sem chave configurada nem tenta chamar', function () use ($options) {
         ->toThrow(AiUnavailableException::class);
     Http::assertNothingSent();
 });
+
+it('junta as mensagens system do começo numa só (o Gemini seguia só a última e ignorava o formato)', function () use ($options) {
+    Http::fake(['ia.test/*' => Http::response(['choices' => [['message' => ['content' => '{}']]], 'usage' => []])]);
+
+    (new OpenAiCompatibleClient('https://ia.test/v1', 'k', 30))->chat([
+        ['role' => 'system', 'content' => 'regras'],
+        ['role' => 'system', 'content' => 'contexto'],
+        ['role' => 'user', 'content' => 'oi'],
+        ['role' => 'assistant', 'content' => 'olá'],
+        ['role' => 'user', 'content' => 'e aí?'],
+    ], $options());
+
+    Http::assertSent(fn (Request $request) => $request['messages'] === [
+        ['role' => 'system', 'content' => "regras\n\ncontexto"],
+        ['role' => 'user', 'content' => 'oi'],
+        ['role' => 'assistant', 'content' => 'olá'],
+        ['role' => 'user', 'content' => 'e aí?'],
+    ]);
+});
