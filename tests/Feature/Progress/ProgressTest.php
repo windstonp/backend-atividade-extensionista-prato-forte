@@ -141,3 +141,23 @@ it('a sequência olha além dos 28 dias da grade', function () {
 
     expect($this->getJson('/api/v1/progress')->assertOk()->json('data.adherence.streak'))->toBe(35);
 });
+
+it('fronteira do 3m: hoje − 90 entra, hoje − 91 não', function () {
+    $this->travelTo(CarbonImmutable::parse(MARCA_DE_HOJE, 'America/Sao_Paulo'));
+    pesagens($this->user, [['2026-06-29', 55.0], ['2026-06-30', 55.5], ['2026-09-28', 58.4]]);
+
+    expect(array_column($this->getJson('/api/v1/progress?period=3m')->json('data.weight.points'), 'date'))->toBe(['2026-06-30', '2026-09-28']);
+});
+
+it('dia de um plano antigo (já substituído) conta na constância como os outros', function () {
+    $this->travelTo(CarbonImmutable::parse('2026-09-21 07:00', 'America/Sao_Paulo'));
+    $antigo = planoPronto($this->user);
+    comerNoDia('2026-09-21', ['cafe', 'lanche', 'almoco', 'pre-treino', 'jantar']);
+    $antigo->update(['is_active' => false]);
+    $this->travelTo(CarbonImmutable::parse('2026-09-22 07:00', 'America/Sao_Paulo'));
+    planoPronto($this->user);
+
+    $dias = collect($this->getJson('/api/v1/progress')->json('data.adherence.days'))->pluck('status', 'date');
+
+    expect($dias['2026-09-21'])->toBe('completo');
+});

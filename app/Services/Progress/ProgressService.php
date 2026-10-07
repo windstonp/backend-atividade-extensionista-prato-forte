@@ -47,7 +47,7 @@ final class ProgressService
     private function weight(User $user, ?CarbonImmutable $desde, CarbonImmutable $today): array
     {
         $pontos = $user->weighIns()
-            ->when($desde, fn ($q) => $q->whereDate('date', '>=', $desde))
+            ->when($desde, fn ($q) => $q->where('date', '>=', $desde->toDateString()))
             ->orderBy('date')
             ->get()
             ->map(fn (WeighIn $w) => ['date' => $w->date->toDateString(), 'weight_kg' => (float) $w->weight_kg])
@@ -99,8 +99,8 @@ final class ProgressService
         $plano = $user->activePlan()->first();
         $porDia = $user->dayMeals()
             ->whereNotNull('done_at')
-            ->when($desde, fn ($q) => $q->whereDate('date', '>=', $desde))
-            ->whereDate('date', '<=', $today)
+            ->when($desde, fn ($q) => $q->where('date', '>=', $desde->toDateString()))
+            ->where('date', '<=', $today->toDateString())
             ->with('items.food')
             ->get()
             ->groupBy(fn (DayMeal $meal) => $meal->date->toDateString())

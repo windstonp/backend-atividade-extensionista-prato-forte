@@ -13,9 +13,17 @@ class WeighInRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'weight_kg' => ['required', 'numeric', 'decimal:0,1', 'between:30,250'],
+            'weight_kg' => ['bail', 'required', 'numeric', 'decimal:0,1', 'between:30,250'],
             'date' => ['sometimes', 'date_format:Y-m-d', 'before_or_equal:today', 'after_or_equal:'.today()->subDays(30)->toDateString()],
         ];
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    public function attributes(): array
+    {
+        return ['weight_kg' => 'peso', 'date' => 'data'];
     }
 
     /**

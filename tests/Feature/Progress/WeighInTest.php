@@ -72,3 +72,9 @@ it('duas abas ao mesmo tempo: a segunda vira atualização, nunca erro', functio
 
     expect($resultado['replaced'])->toBeTrue()->and(WeighIn::count())->toBe(1)->and(WeighIn::sole()->weight_kg)->toBe(58.7);
 });
+
+it('peso que não é número: uma mensagem só, com o nome do campo em português', function () {
+    $erros = $this->postJson('/api/v1/weigh-ins', ['weight_kg' => 'abc'])->assertUnprocessable()->json('errors.weight_kg');
+
+    expect($erros)->toHaveCount(1)->and($erros[0])->not->toContain('weight')->toContain('peso');
+});
