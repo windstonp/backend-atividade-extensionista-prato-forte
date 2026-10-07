@@ -24,7 +24,7 @@ class AiSmoke extends Command
 
         $modelo = (string) config('services.ai.model_chat');
         try {
-            $r = $ai->chat([['role' => 'user', 'content' => 'Responda apenas: ok']], new AiOptions('smoke', $modelo, 5, temperature: 0.0));
+            $r = $ai->chat([['role' => 'user', 'content' => 'Responda apenas: ok']], new AiOptions('smoke', $modelo, 16, temperature: 0.0));
         } catch (AiUnavailableException $e) {
             $this->error("A IA não respondeu ({$e->getMessage()}). Confira AI_BASE_URL, AI_API_KEY e o saldo da conta.");
 

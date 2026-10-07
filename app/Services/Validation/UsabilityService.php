@@ -49,7 +49,7 @@ final class UsabilityService
 
     public function dismiss(User $user): void
     {
-        $user->settings()->update(['usability_invite_dismissed_at' => now()]);
+        $user->settings()->updateOrCreate([], ['usability_invite_dismissed_at' => now()]);
     }
 
     private function dismissed(User $user): bool

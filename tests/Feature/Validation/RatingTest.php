@@ -72,3 +72,10 @@ it('valida o corpo', function (array $corpo, string $campo) {
     [['value' => 'meh'], 'value'],
     [['comment' => str_repeat('a', 501)], 'comment'],
 ]);
+
+it('plano de outra pessoa: 404 no formato único', function () {
+    $outro = planoPronto(User::factory()->onboarded()->create());
+
+    avaliar(['rateable_type' => 'meal_plan', 'rateable_id' => $outro->id, 'value' => 'up'])
+        ->assertNotFound()->assertJsonPath('code', 'NOT_FOUND');
+});

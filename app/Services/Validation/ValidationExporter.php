@@ -66,9 +66,9 @@ final class ValidationExporter
                 $itens('nutri'),
                 $noPeriodo(DB::table('nutri_messages')->join('nutri_conversations', 'nutri_conversations.id', '=', 'nutri_messages.conversation_id')
                     ->where('nutri_conversations.user_id', $userId)->where('nutri_messages.role', 'user'), 'nutri_messages.created_at')->count(),
-                DB::table('nutri_conversations')->where('user_id', $userId)->count(),
-                DB::table('meal_plans')->where('user_id', $userId)->where('status', 'ready')->count(),
-                DB::table('meal_plans')->where('user_id', $userId)->where('status', 'failed')->count(),
+                $noPeriodo(DB::table('nutri_conversations')->where('user_id', $userId), 'created_at')->count(),
+                $noPeriodo(DB::table('meal_plans')->where('user_id', $userId)->where('status', 'ready'), 'created_at')->count(),
+                $noPeriodo(DB::table('meal_plans')->where('user_id', $userId)->where('status', 'failed'), 'created_at')->count(),
                 $pesos->count(),
                 $pesos->count() >= 2 ? $this->decimal(round((float) $pesos->last() - (float) $pesos->first(), 1)) : null,
             ];
@@ -76,7 +76,7 @@ final class ValidationExporter
         $this->write("{$dir}/uso.csv", ['usuario_hash', 'objetivo', 'dias_desde_cadastro', 'dias_com_refeicao_marcada', 'refeicoes_feitas', 'dias_completos', 'trocas_manuais', 'trocas_nutri', 'perguntas_nutri', 'conversas', 'planos_gerados', 'planos_falhos', 'pesagens', 'variacao_peso_kg'], $linhasUso);
 
         // ia.csv — dia × propósito
-        $ia = $noPeriodo(DB::table('ai_requests'), 'created_at')
+        $ia = $noPeriodo(DB::table('ai_requests')->where('purpose', '<>', 'smoke'), 'created_at') // o ai:smoke não é uso
             ->selectRaw("date(created_at) as dia, purpose, count(*) as chamadas, sum(status <> 'ok') as falhas, coalesce(sum(prompt_tokens), 0) as entrada, coalesce(sum(completion_tokens), 0) as saida, round(avg(duration_ms)) as latencia")
             ->groupByRaw('date(created_at), purpose')->orderBy('dia')->get();
         $this->write("{$dir}/ia.csv", ['dia', 'proposito', 'chamadas', 'falhas', 'tokens_entrada', 'tokens_saida', 'latencia_media_ms'],

@@ -131,3 +131,39 @@ it('quem só avaliou também conta como participante', function () {
 
     $this->artisan('validacao:exportar', ['--dir' => $this->dir])->expectsOutputToContain('Participantes: 1')->assertSuccessful();
 });
+
+it('conversas e planos do uso.csv respeitam o período', function () {
+    $user = User::factory()->onboarded()->create();
+    $user->weighIns()->create(['date' => '2026-10-02', 'weight_kg' => 60.0]);
+    $this->travelTo(CarbonImmutable::parse('2026-08-01 10:00'));
+    planoPronto($user);
+    $user->conversations()->create(['title' => 'Antiga']);
+    $this->travelTo(CarbonImmutable::parse('2026-10-04 10:00', 'America/Sao_Paulo'));
+
+    $this->artisan('validacao:exportar', ['--dir' => $this->dir, '--de' => '2026-09-01'])->assertSuccessful();
+
+    $uso = lerCsv("{$this->dir}/uso.csv");
+    expect([$uso[1][9], $uso[1][10]])->toBe(['0', '0']);
+});
+
+it('ai:smoke não entra no ia.csv; chamadas e falhas por dia e propósito', function () {
+    DB::table('ai_requests')->insert([
+        ['purpose' => 'chat', 'model' => 'm', 'duration_ms' => 100, 'status' => 'ok', 'prompt_tokens' => 10, 'completion_tokens' => 5, 'created_at' => '2026-10-03 10:00:00'],
+        ['purpose' => 'chat', 'model' => 'm', 'duration_ms' => 300, 'status' => 'error', 'prompt_tokens' => null, 'completion_tokens' => null, 'created_at' => '2026-10-03 11:00:00'],
+        ['purpose' => 'smoke', 'model' => 'm', 'duration_ms' => 50, 'status' => 'ok', 'prompt_tokens' => 1, 'completion_tokens' => 1, 'created_at' => '2026-10-03 12:00:00'],
+    ]);
+
+    $this->artisan('validacao:exportar', ['--dir' => $this->dir])->assertSuccessful();
+
+    expect(array_slice(lerCsv("{$this->dir}/ia.csv"), 1))->toBe([['2026-10-03', 'chat', '2', '1', '10', '5', '200']]);
+});
+
+it('--ate inclui o dia inteiro nas avaliações', function () {
+    $user = User::factory()->onboarded()->create();
+    $plano = planoPronto($user);
+    DB::table('ratings')->insert(['user_id' => $user->id, 'rateable_type' => 'meal_plan', 'rateable_id' => $plano->id, 'value' => 'up', 'comment' => null, 'created_at' => '2026-10-03 23:30:00', 'updated_at' => now()]);
+
+    $this->artisan('validacao:exportar', ['--dir' => $this->dir, '--ate' => '2026-10-03'])->assertSuccessful();
+
+    expect(lerCsv("{$this->dir}/avaliacoes.csv"))->toHaveCount(2);
+});

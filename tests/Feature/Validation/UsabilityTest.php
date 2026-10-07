@@ -85,3 +85,12 @@ it('dois envios ao mesmo tempo: o segundo vira 409, nunca 500', function () use 
     $this->postJson('/api/v1/usability-responses', $resposta)->assertStatus(409);
     expect(UsabilityResponse::count())->toBe(1);
 });
+
+it('"Agora não" funciona mesmo sem a linha de configurações', function () {
+    $user = login(User::factory()->onboarded()->create());
+    $user->settings()->delete();
+
+    $this->postJson('/api/v1/usability-responses/dismiss')->assertNoContent();
+
+    expect($user->settings()->first()?->usability_invite_dismissed_at)->not->toBeNull();
+});
