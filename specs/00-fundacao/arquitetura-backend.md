@@ -211,7 +211,7 @@ PHP 8.1+ Backed Enums (string), com método `label(): string` em português quan
 | `notifications` (Notifications `ShouldQueue`) | comandos abaixo | `default` | 3 | |
 | `schedule:run` | cron `* * * * *` | — | — | `SendMealReminders` (everyMinute), `SendWeeklySummary` (sundays 20:00), `SendNutriTips` (tue/fri 18:00), `FailStalePlans` (everyFiveMinutes) — todos com `withoutOverlapping()` e `onOneServer()` |
 
-Worker em produção: `php artisan queue:work --queue=ai,default --tries=1 --max-time=3600`, mantido por Supervisor ou systemd (ver RNF de operação).
+Worker em produção: `php artisan queue:work --queue=notifications,default --tries=1 --timeout=180 --max-time=3600` (avisos na fila própria, antes da geração de plano — Plano 10A), mantido por Supervisor ou systemd (ver RNF de operação).
 
 ## 8. Rotas (`routes/api.php`, resumo)
 
