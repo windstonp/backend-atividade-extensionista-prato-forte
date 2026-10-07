@@ -1,0 +1,924 @@
+name,category,kcal,protein,carbs,fat,source
+"Arroz (polido, parboilizado, agulha, agulhinha, etc.)",Cereais e derivados,"135,62","2,50","27,78","1,20",IBGE POF 2008-2009
+Arroz integral,Cereais e derivados,"130,95","2,56","25,56","1,97",IBGE POF 2008-2009
+Milho (em grão),Cereais e derivados,"160,14","3,32","25,11","7,18",IBGE POF 2008-2009
+Canjiquinha de milho em grão,Cereais e derivados,"62,95","1,24","13,50","0,31",IBGE POF 2008-2009
+Xerém de milho,Cereais e derivados,"62,95","1,24","13,50","0,31",IBGE POF 2008-2009
+Amendoim (em grão) in natura,Cereais e derivados,"567,00","25,80","16,13","49,24",IBGE POF 2008-2009
+Ervilha em grão,Leguminosas e derivados,"109,09","5,36","15,63","3,06",IBGE POF 2008-2009
+Fava (em grão),Leguminosas e derivados,"85,62","4,80","10,10","3,17",IBGE POF 2008-2009
+Mangalô amargo em grão,Cereais e derivados,"85,62","4,80","10,10","3,17",IBGE POF 2008-2009
+Feijão-de-corda,Leguminosas e derivados,"121,33","3,17","20,32","3,13",IBGE POF 2008-2009
+Feijão-verde,Leguminosas e derivados,"121,33","3,17","20,32","3,13",IBGE POF 2008-2009
+Semente de linhaça,Cereais e derivados,"534,00","18,29","28,88","42,16",IBGE POF 2008-2009
+Andu,Cereais e derivados,"97,41","5,84","15,05","1,79",IBGE POF 2008-2009
+Grão de bico,Cereais e derivados,"188,48","8,86","27,42","5,36",IBGE POF 2008-2009
+Lentilha,Leguminosas e derivados,"136,28","9,02","20,13","2,67",IBGE POF 2008-2009
+Soja em grão,Leguminosas e derivados,"196,34","16,64","9,93","11,61",IBGE POF 2008-2009
+"Feijão (preto, mulatinho, roxo, rosinha, etc.)",Leguminosas e derivados,"97,41","5,84","15,05","1,79",IBGE POF 2008-2009
+Quirera não especificada,Cereais e derivados,"62,95","1,24","13,50","0,31",IBGE POF 2008-2009
+Pipoca light,Cereais e derivados,"445,94","10,77","64,85","17,78",IBGE POF 2008-2009
+Quinoa,Cereais e derivados,"135,47","4,37","19,83","4,33",IBGE POF 2008-2009
+Batata-inglesa,"Verduras, hortaliças e derivados","86,00","1,71","20,01","0,10",IBGE POF 2008-2009
+Mandioquinha salsa (batata-baroa),"Verduras, hortaliças e derivados","76,00","1,37","17,72","0,14",IBGE POF 2008-2009
+Cenoura amarela (batata-baroa),"Verduras, hortaliças e derivados","76,00","1,37","17,72","0,14",IBGE POF 2008-2009
+Batata-doce,"Verduras, hortaliças e derivados","76,00","1,37","17,72","0,14",IBGE POF 2008-2009
+Quicaré,"Verduras, hortaliças e derivados","100,00","1,71","23,40","0,12",IBGE POF 2008-2009
+Mandioca,"Verduras, hortaliças e derivados","125,00","0,60","30,10","0,30",IBGE POF 2008-2009
+Aipim,"Verduras, hortaliças e derivados","125,00","0,60","30,10","0,30",IBGE POF 2008-2009
+Batata (não especificada),"Verduras, hortaliças e derivados","86,00","1,71","20,01","0,10",IBGE POF 2008-2009
+Beterraba,"Verduras, hortaliças e derivados","43,00","1,61","9,56","0,17",IBGE POF 2008-2009
+Cenoura,"Verduras, hortaliças e derivados","41,00","0,93","9,58","0,24",IBGE POF 2008-2009
+Creme de arroz,Cereais e derivados,"148,32","3,80","26,07","3,30",IBGE POF 2008-2009
+Arrozina,Cereais e derivados,"148,32","3,80","26,07","3,30",IBGE POF 2008-2009
+Mucilon,Cereais e derivados,"78,24","2,42","10,46","3,06",IBGE POF 2008-2009
+Mingau de arroz,Cereais e derivados,"148,32","3,80","26,07","3,30",IBGE POF 2008-2009
+Croquinhos de arroz,Cereais e derivados,"387,00","12,94","77,90","4,54",IBGE POF 2008-2009
+Farinha de aveia,Cereais e derivados,"384,00","16,00","67,00","6,30",IBGE POF 2008-2009
+Aveia em flocos,Cereais e derivados,"384,00","16,00","67,00","6,30",IBGE POF 2008-2009
+Fubá de milho,Cereais e derivados,"60,58","1,44","13,00","0,20",IBGE POF 2008-2009
+Farinha de milho,Cereais e derivados,"351,00","7,20","79,10","1,50",IBGE POF 2008-2009
+Puba de milho,Cereais e derivados,"311,00","4,80","45,10","12,40",IBGE POF 2008-2009
+Puba de fubá,Cereais e derivados,"311,00","4,80","45,10","12,40",IBGE POF 2008-2009
+Mingau de milho,Cereais e derivados,"78,24","2,42","10,46","3,06",IBGE POF 2008-2009
+Amido de milho,Cereais e derivados,"78,24","2,42","10,46","3,06",IBGE POF 2008-2009
+Amido de arroz,Cereais e derivados,"148,32","3,80","26,07","3,30",IBGE POF 2008-2009
+Cremogema,Cereais e derivados,"78,24","2,42","10,46","3,06",IBGE POF 2008-2009
+Vitamilho,Cereais e derivados,"128,30","4,35","26,42","0,22",IBGE POF 2008-2009
+Creme de milho,Cereais e derivados,"78,24","2,42","10,46","3,06",IBGE POF 2008-2009
+Sucrilhos de milho,Cereais e derivados,"377,00","4,70","88,80","0,70",IBGE POF 2008-2009
+Cereal matinal de milho em flocos,Cereais e derivados,"377,00","4,70","88,80","0,70",IBGE POF 2008-2009
+Germe de trigo,Cereais e derivados,"360,00","23,15","51,80","9,72",IBGE POF 2008-2009
+Fibra de trigo,Cereais e derivados,"216,00","15,55","64,51","4,25",IBGE POF 2008-2009
+Fibra de cereal trigo,Cereais e derivados,"216,00","15,55","64,51","4,25",IBGE POF 2008-2009
+Farinha de mandioca,Cereais e derivados,"361,00","1,60","87,90","0,30",IBGE POF 2008-2009
+Farinha de copioba,Cereais e derivados,"361,00","1,60","87,90","0,30",IBGE POF 2008-2009
+Farinha d'água,Cereais e derivados,"361,00","1,60","87,90","0,30",IBGE POF 2008-2009
+Cruera,Cereais e derivados,"361,00","1,60","87,90","0,30",IBGE POF 2008-2009
+Goma de mandioca,Cereais e derivados,"336,00","2,00","82,00",,IBGE POF 2008-2009
+Sagu de mandioca,Cereais e derivados,"116,99","4,33","15,51","4,10",IBGE POF 2008-2009
+Farinha de tapioca,Cereais e derivados,"331,00","0,50","81,10","0,30",IBGE POF 2008-2009
+Farinha beiju,Cereais e derivados,"331,00","0,50","81,10","0,30",IBGE POF 2008-2009
+Sagu de tapioca,Cereais e derivados,"116,99","4,33","15,51","4,10",IBGE POF 2008-2009
+Tapioca de goma,Cereais e derivados,"336,00","2,00","82,00",,IBGE POF 2008-2009
+Farinha láctea,Cereais e derivados,"396,67","12,67","73,33","6,33",IBGE POF 2008-2009
+Neston,Cereais e derivados,"345,80","12,92","70,80",,IBGE POF 2008-2009
+Flocos de cereais,Cereais e derivados,"365,00","7,20","83,80","1,00",IBGE POF 2008-2009
+Vitaflocos,Cereais e derivados,"78,24","2,42","10,46","3,06",IBGE POF 2008-2009
+Mini pizza semipronta,Cereais e derivados,"252,49","10,17","33,73","8,22",IBGE POF 2008-2009
+Fibra de soja,Cereais e derivados,"70,00","12,00","74,00","2,00",IBGE POF 2008-2009
+Minipastel,Cereais e derivados,"319,81","10,38","33,51","15,68",IBGE POF 2008-2009
+Macarrão,Cereais e derivados,"158,00","5,80","30,86","0,93",IBGE POF 2008-2009
+Purê de batata,Cereais e derivados,"115,16","1,81","17,76","4,36",IBGE POF 2008-2009
+Bife vegetal,Cereais e derivados,"142,37","18,51","5,80","5,32",IBGE POF 2008-2009
+Pasta de soja,Cereais e derivados,"62,00","6,90","2,40","2,70",IBGE POF 2008-2009
+Carne de soja,Cereais e derivados,"142,37","18,51","5,80","5,32",IBGE POF 2008-2009
+Amendoim moído,Cereais e derivados,"567,00","25,80","16,13","49,24",IBGE POF 2008-2009
+Granola,Cereais e derivados,"388,00","9,50","73,80","6,30",IBGE POF 2008-2009
+Musli,Cereais e derivados,"388,00","9,50","73,80","6,30",IBGE POF 2008-2009
+Mix de cereais,Cereais e derivados,"388,00","9,50","73,80","6,30",IBGE POF 2008-2009
+Miojo,Cereais e derivados,"189,86","5,65","25,54","7,18",IBGE POF 2008-2009
+Macarrão instantâneo,Cereais e derivados,"189,86","5,65","25,54","7,18",IBGE POF 2008-2009
+Sustagem,Cereais e derivados,"369,15","24,05","68,02","0,49",IBGE POF 2008-2009
+Proteína de soja,Cereais e derivados,"142,37","18,51","5,80","5,32",IBGE POF 2008-2009
+Proteína vegetal,Cereais e derivados,"142,37","18,51","5,80","5,32",IBGE POF 2008-2009
+Complemento alimentar de qualquer sabor,Cereais e derivados,"369,15","24,05","68,02","0,49",IBGE POF 2008-2009
+Sucrilhos de milho light,Cereais e derivados,"365,00","7,20","83,80","1,00",IBGE POF 2008-2009
+Macarrão instantâneo light,Cereais e derivados,"189,86","5,65","25,54","7,18",IBGE POF 2008-2009
+Macarrão com carne,Cereais e derivados,"120,59","6,22","17,42","2,79",IBGE POF 2008-2009
+Macarrão com peixe,Cereais e derivados,"163,17","14,98","15,43","4,13",IBGE POF 2008-2009
+Coco-da-baía (seco ou verde),Nozes e sementes,"354,00","3,33","15,23","33,49",IBGE POF 2008-2009
+Castanha portuguesa,Nozes e sementes,"131,00","2,00","27,76","1,38",IBGE POF 2008-2009
+Pinhão,Nozes e sementes,"174,37","2,98","43,92","0,75",IBGE POF 2008-2009
+Amêndoa,Nozes e sementes,"578,00","21,26","19,74","50,64",IBGE POF 2008-2009
+Avelã,Nozes e sementes,"628,00","14,95","16,70","60,75",IBGE POF 2008-2009
+Castanha-do-pará,Nozes e sementes,"656,00","14,32","12,27","66,43",IBGE POF 2008-2009
+Castanha de caju,Nozes e sementes,"574,00","15,31","32,69","46,35",IBGE POF 2008-2009
+Butiá,Nozes e sementes,"105,00","1,90","22,80","2,00",IBGE POF 2008-2009
+Tucumã,Nozes e sementes,"474,00","5,50","6,80","47,20",IBGE POF 2008-2009
+Coco de mucajá,Nozes e sementes,"404,28","2,08","13,95","40,66",IBGE POF 2008-2009
+Noz (nogueira),Nozes e sementes,"654,00","15,23","13,71","65,21",IBGE POF 2008-2009
+Açaí,Nozes e sementes,"262,00","3,60","57,40","2,00",IBGE POF 2008-2009
+Juçara,Nozes e sementes,"262,00","3,60","57,40","2,00",IBGE POF 2008-2009
+Uaçaí,Nozes e sementes,"262,00","3,60","57,40","2,00",IBGE POF 2008-2009
+Jussara,Nozes e sementes,"262,00","3,60","57,40","2,00",IBGE POF 2008-2009
+Pupunha,Nozes e sementes,"28,00","2,52","4,62","0,62",IBGE POF 2008-2009
+Bacaba,Nozes e sementes,"212,00","3,12","6,60","19,80",IBGE POF 2008-2009
+Bacabuçu,Nozes e sementes,"212,00","3,12","6,60","19,80",IBGE POF 2008-2009
+Castanha-da-índia,Nozes e sementes,"656,00","14,32","12,27","66,43",IBGE POF 2008-2009
+Pistache,Nozes e sementes,"557,00","20,61","27,97","44,44",IBGE POF 2008-2009
+Buriti,Nozes e sementes,"145,00","1,80","10,20","8,10",IBGE POF 2008-2009
+Coco,Nozes e sementes,"354,00","3,33","15,23","33,49",IBGE POF 2008-2009
+Patauá,Nozes e sementes,"105,00","1,90","22,80","2,00",IBGE POF 2008-2009
+Alface,"Verduras, hortaliças e derivados","15,00","1,36","2,79","0,15",IBGE POF 2008-2009
+Escarola,"Verduras, hortaliças e derivados","52,88","1,61","4,31","3,75",IBGE POF 2008-2009
+Couve,"Verduras, hortaliças e derivados","26,00","2,11","4,91","0,36",IBGE POF 2008-2009
+Couve-flor,"Verduras, hortaliças e derivados","23,00","1,84","4,11","0,45",IBGE POF 2008-2009
+Espinafre,"Verduras, hortaliças e derivados","23,00","2,97","3,75","0,26",IBGE POF 2008-2009
+Mostarda (verdura),"Verduras, hortaliças e derivados","15,00","2,26","2,10","0,24",IBGE POF 2008-2009
+Repolho,"Verduras, hortaliças e derivados","23,00","1,27","5,51","0,06",IBGE POF 2008-2009
+Cebolinha,"Verduras, hortaliças e derivados","25,00","1,80","5,65","0,10",IBGE POF 2008-2009
+Agrião,"Verduras, hortaliças e derivados","25,00","2,58","3,65","0,66",IBGE POF 2008-2009
+Acelga,"Verduras, hortaliças e derivados","19,00","1,80","3,74","0,20",IBGE POF 2008-2009
+Brócolis,"Verduras, hortaliças e derivados","35,00","2,38","7,18","0,41",IBGE POF 2008-2009
+Cuxá,"Verduras, hortaliças e derivados","26,00","2,11","4,91","0,36",IBGE POF 2008-2009
+Vinagreira,"Verduras, hortaliças e derivados","26,00","2,11","4,91","0,36",IBGE POF 2008-2009
+Cariru,"Verduras, hortaliças e derivados","26,00","2,11","4,91","0,36",IBGE POF 2008-2009
+Rúcula,"Verduras, hortaliças e derivados","25,00","2,58","3,65","0,66",IBGE POF 2008-2009
+Jambu,"Verduras, hortaliças e derivados","32,00","1,90","7,20","0,30",IBGE POF 2008-2009
+Alcachofra,"Verduras, hortaliças e derivados","53,00","2,89","11,95","0,34",IBGE POF 2008-2009
+Bredo,"Verduras, hortaliças e derivados","26,00","2,11","4,91","0,36",IBGE POF 2008-2009
+Erva-doce,"Verduras, hortaliças e derivados","31,00","1,24","7,29","0,20",IBGE POF 2008-2009
+Moranga,"Verduras, hortaliças e derivados","20,00","0,72","4,90","0,07",IBGE POF 2008-2009
+Abóbora,"Verduras, hortaliças e derivados","20,00","0,72","4,90","0,07",IBGE POF 2008-2009
+Pépino,"Verduras, hortaliças e derivados","15,00","0,65","3,63","0,11",IBGE POF 2008-2009
+Jiló,"Verduras, hortaliças e derivados","22,00","1,87","4,51","0,21",IBGE POF 2008-2009
+Pimentão,"Verduras, hortaliças e derivados","20,00","0,86","4,64","0,17",IBGE POF 2008-2009
+Quiabo,"Verduras, hortaliças e derivados","22,00","1,87","4,51","0,21",IBGE POF 2008-2009
+Tomate,"Verduras, hortaliças e derivados","18,00","0,88","3,92","0,20",IBGE POF 2008-2009
+Vagem,"Verduras, hortaliças e derivados","35,00","1,89","7,88","0,28",IBGE POF 2008-2009
+Cogumelo in natura,"Verduras, hortaliças e derivados","28,00","2,17","5,29","0,47",IBGE POF 2008-2009
+Berinjela,"Verduras, hortaliças e derivados","35,00","0,83","8,73","0,23",IBGE POF 2008-2009
+Cebola,"Verduras, hortaliças e derivados","40,00","1,10","9,34","0,10",IBGE POF 2008-2009
+Jardineira (seleta),"Verduras, hortaliças e derivados","47,00","2,53","9,06","0,26",IBGE POF 2008-2009
+Seleta (jardineira),"Verduras, hortaliças e derivados","47,00","2,53","9,06","0,26",IBGE POF 2008-2009
+Alho,"Verduras, hortaliças e derivados","149,00","6,36","33,06","0,50",IBGE POF 2008-2009
+Alho-poró,"Verduras, hortaliças e derivados","54,48","0,81","7,62","2,86",IBGE POF 2008-2009
+Broto de alfafa,"Verduras, hortaliças e derivados","23,00","3,99","2,10","0,69",IBGE POF 2008-2009
+Orégano,"Verduras, hortaliças e derivados","306,00","11,00","64,43","10,25",IBGE POF 2008-2009
+Pacová,Frutas e derivados,"78,00","1,20","20,30","0,10",IBGE POF 2008-2009
+"Banana (ouro, prata, d´água, da terra, etc.)",Frutas e derivados,"89,00","1,09","22,84","0,33",IBGE POF 2008-2009
+"Laranja (pera, seleta, lima, da terra, etc.)",Frutas e derivados,"47,00","0,94","11,75","0,12",IBGE POF 2008-2009
+Lima,Frutas e derivados,"47,00","0,94","11,75","0,12",IBGE POF 2008-2009
+"Limão (comum, galego, etc.)",Frutas e derivados,"30,00","0,70","10,54","0,20",IBGE POF 2008-2009
+Tangerina,Frutas e derivados,"53,00","0,81","13,34","0,31",IBGE POF 2008-2009
+Mexerica,Frutas e derivados,"53,00","0,81","13,34","0,31",IBGE POF 2008-2009
+Bergamota,Frutas e derivados,"53,00","0,81","13,34","0,31",IBGE POF 2008-2009
+Mimosa,Frutas e derivados,"53,00","0,81","13,34","0,31",IBGE POF 2008-2009
+Tanja,Frutas e derivados,"53,00","0,81","13,34","0,31",IBGE POF 2008-2009
+Maricota,Frutas e derivados,"53,00","0,81","13,34","0,31",IBGE POF 2008-2009
+Laranjinha japonesa,Frutas e derivados,"47,00","0,94","11,75","0,12",IBGE POF 2008-2009
+Cana-de-açúcar,Frutas e derivados,"73,58",,"19,97","0,05",IBGE POF 2008-2009
+Abacaxi,Frutas e derivados,"48,00","0,54","12,63","0,12",IBGE POF 2008-2009
+Ananás,Frutas e derivados,"48,00","0,54","12,63","0,12",IBGE POF 2008-2009
+Abacate,Frutas e derivados,"120,00","2,23","7,82","10,06",IBGE POF 2008-2009
+Caqui,Frutas e derivados,"70,00","0,58","18,59","0,19",IBGE POF 2008-2009
+Figo,Frutas e derivados,"74,00","0,75","19,18","0,30",IBGE POF 2008-2009
+Maçã,Frutas e derivados,"52,00","0,26","13,81","0,17",IBGE POF 2008-2009
+Mamão,Frutas e derivados,"39,00","0,61","9,81","0,14",IBGE POF 2008-2009
+Papaia,Frutas e derivados,"39,00","0,61","9,81","0,14",IBGE POF 2008-2009
+Manga,Frutas e derivados,"65,00","0,51","17,00","0,27",IBGE POF 2008-2009
+Manguito,Frutas e derivados,"65,00","0,51","17,00","0,27",IBGE POF 2008-2009
+Maracujá,Frutas e derivados,"97,00","2,20","23,38","0,70",IBGE POF 2008-2009
+Melancia,Frutas e derivados,"30,00","0,61","7,55","0,15",IBGE POF 2008-2009
+Melão,Frutas e derivados,"36,00","0,54","9,09","0,14",IBGE POF 2008-2009
+pera,Frutas e derivados,"58,00","0,38","15,46","0,12",IBGE POF 2008-2009
+Pêssego,Frutas e derivados,"39,00","0,91","9,54","0,25",IBGE POF 2008-2009
+Fruta-de-conde,Frutas e derivados,"74,00","1,65","17,70","0,62",IBGE POF 2008-2009
+Pinha (fruta-de-conde),Frutas e derivados,"74,00","1,65","17,70","0,62",IBGE POF 2008-2009
+Ata,Frutas e derivados,"74,00","1,65","17,70","0,62",IBGE POF 2008-2009
+Uva,Frutas e derivados,"69,00","0,72","18,10","0,16",IBGE POF 2008-2009
+Uva passa,Frutas e derivados,"299,00","3,07","79,18","0,46",IBGE POF 2008-2009
+Jenipapo,Frutas e derivados,"113,00","5,20","25,70","0,30",IBGE POF 2008-2009
+Jaca,Frutas e derivados,"94,00","1,47","24,01","0,30",IBGE POF 2008-2009
+Goiaba,Frutas e derivados,"68,00","2,55","14,32","0,95",IBGE POF 2008-2009
+Araçá-açu (goiaba),Frutas e derivados,"68,00","2,55","14,32","0,95",IBGE POF 2008-2009
+Ameixa,Frutas e derivados,"46,00","0,70","11,42","0,28",IBGE POF 2008-2009
+Caju,Frutas e derivados,"43,00","1,00","10,30","0,30",IBGE POF 2008-2009
+Cereja,Frutas e derivados,"63,00","1,06","16,01","0,20",IBGE POF 2008-2009
+Cajá-manga,Frutas e derivados,"46,00","1,30","11,40",,IBGE POF 2008-2009
+Cajarana,Frutas e derivados,"46,00","0,20","12,40","0,10",IBGE POF 2008-2009
+Taperebá,Frutas e derivados,"70,00","0,80","13,80","2,10",IBGE POF 2008-2009
+Acaja (taberebá),Frutas e derivados,"46,00","1,30","11,40",,IBGE POF 2008-2009
+Carambola,Frutas e derivados,"31,00","1,04","6,73","0,33",IBGE POF 2008-2009
+Jabuticaba,Frutas e derivados,"73,00","0,66","18,40","0,50",IBGE POF 2008-2009
+Graviola,Frutas e derivados,"62,00","0,80","15,80","0,20",IBGE POF 2008-2009
+Morango,Frutas e derivados,"32,00","0,67","7,68","0,30",IBGE POF 2008-2009
+Jambo,Frutas e derivados,"27,00","0,90","6,50","0,10",IBGE POF 2008-2009
+Atemoia,Frutas e derivados,"74,00","1,65","17,70","0,62",IBGE POF 2008-2009
+Mangaba,Frutas e derivados,"43,00","0,70","10,50","0,30",IBGE POF 2008-2009
+Araçá,Frutas e derivados,"68,00","2,55","14,32","0,95",IBGE POF 2008-2009
+Nêspera,Frutas e derivados,"47,00","0,43","12,14","0,20",IBGE POF 2008-2009
+Fruta-pão,Frutas e derivados,"103,00","1,07","27,12","0,23",IBGE POF 2008-2009
+Sapoti,Frutas e derivados,"96,00","0,70","25,90","0,10",IBGE POF 2008-2009
+Uxi,Frutas e derivados,"252,00","2,20","38,20","10,10",IBGE POF 2008-2009
+Tamarindo,Frutas e derivados,"239,00","2,80","62,50","0,60",IBGE POF 2008-2009
+Cacau,Frutas e derivados,"74,00","1,00","19,40","0,10",IBGE POF 2008-2009
+Pitomba,Frutas e derivados,"66,00","0,83","16,53","0,44",IBGE POF 2008-2009
+Bacuri,Frutas e derivados,"105,00","1,90","22,80","2,00",IBGE POF 2008-2009
+Ingá,Frutas e derivados,"60,00","1,00","15,50","0,10",IBGE POF 2008-2009
+Pequi,Frutas e derivados,"152,00","1,50","6,30","13,40",IBGE POF 2008-2009
+Pitanga,Frutas e derivados,"41,00","0,90","10,20","0,20",IBGE POF 2008-2009
+Ciriguela,Frutas e derivados,"76,00","1,40","18,90","0,40",IBGE POF 2008-2009
+Murici,Frutas e derivados,"66,00","0,90","14,40","1,30",IBGE POF 2008-2009
+Umbu,Frutas e derivados,"37,00","0,80","9,40",,IBGE POF 2008-2009
+Imbu,Frutas e derivados,"37,00","0,80","9,40",,IBGE POF 2008-2009
+Biribá,Frutas e derivados,"74,00","1,65","17,70","0,62",IBGE POF 2008-2009
+Cupuaçu,Frutas e derivados,"49,00","1,20","10,40","1,00",IBGE POF 2008-2009
+Nectarina,Frutas e derivados,"44,00","1,06","10,55","0,32",IBGE POF 2008-2009
+Mari,Frutas e derivados,"281,10","2,70","20,10","21,10",IBGE POF 2008-2009
+Romã,Frutas e derivados,"56,00","0,40","15,10",,IBGE POF 2008-2009
+Acerola,Frutas e derivados,"32,00","0,40","7,69","0,30",IBGE POF 2008-2009
+Kiwi,Frutas e derivados,"61,00","1,14","14,66","0,52",IBGE POF 2008-2009
+Abiu,Frutas e derivados,"62,00","0,80","14,90","0,70",IBGE POF 2008-2009
+Jurubeba,Frutas e derivados,"126,00","4,40","23,10","3,90",IBGE POF 2008-2009
+Fruta (não especificada),Frutas e derivados,"89,00","1,09","22,84","0,33",IBGE POF 2008-2009
+Amora,Frutas e derivados,"43,00","1,39","9,61","0,49",IBGE POF 2008-2009
+Jamelão (jamburão),Frutas e derivados,"73,00","0,66","18,40","0,50",IBGE POF 2008-2009
+Demerara,Produtos açucarados,"387,00",,"99,98",,IBGE POF 2008-2009
+Açúcar mascavo,Produtos açucarados,"380,00","0,12","98,09",,IBGE POF 2008-2009
+Rapadura,Produtos açucarados,"296,00",,"76,60",,IBGE POF 2008-2009
+Alfenim de cana,Produtos açucarados,"296,00",,"76,60",,IBGE POF 2008-2009
+Batida (rapadura),Produtos açucarados,"380,00","0,12","98,09",,IBGE POF 2008-2009
+Sorvete de qualquer sabor industrializado,Produtos açucarados,"206,00","3,60","25,13","11,00",IBGE POF 2008-2009
+Picolé de qualquer sabor industrializado,Produtos açucarados,"79,00",,"19,23","0,24",IBGE POF 2008-2009
+Chiclete,Produtos açucarados,"396,00",,"98,90",,IBGE POF 2008-2009
+Bala,Produtos açucarados,"394,00",,"98,00","0,20",IBGE POF 2008-2009
+Caramelo (bala),Produtos açucarados,"382,00","4,60","77,00","8,10",IBGE POF 2008-2009
+Drops,Produtos açucarados,"394,00",,"98,00","0,20",IBGE POF 2008-2009
+Pastilha,Produtos açucarados,"396,00",,"98,90",,IBGE POF 2008-2009
+Pirulito,Produtos açucarados,"394,00",,"98,00","0,20",IBGE POF 2008-2009
+Goma de mascar,Produtos açucarados,"396,00",,"98,90",,IBGE POF 2008-2009
+Jujuba,Produtos açucarados,"375,00",,"93,55","0,05",IBGE POF 2008-2009
+Tablete de chocolate,Produtos açucarados,"535,00","7,65","59,40","29,66",IBGE POF 2008-2009
+Barra de chocolate,Produtos açucarados,"535,00","7,65","59,40","29,66",IBGE POF 2008-2009
+Confete,Produtos açucarados,"492,00","4,33","71,19","21,13",IBGE POF 2008-2009
+Chocolate em pó de qualquer marca,Produtos açucarados,"364,24","2,83","85,53","3,55",IBGE POF 2008-2009
+Ovomaltine,Produtos açucarados,"388,00","9,17","75,13","5,19",IBGE POF 2008-2009
+Achocolatado em pó,Produtos açucarados,"400,00","4,55","90,28","2,27",IBGE POF 2008-2009
+Toddynho,Produtos açucarados,"83,32","3,18","10,38","3,40",IBGE POF 2008-2009
+Bombom de qualquer marca,Produtos açucarados,"373,00",,"93,18","0,02",IBGE POF 2008-2009
+Trufa,Produtos açucarados,"487,87","3,57","49,06","36,26",IBGE POF 2008-2009
+Geleia de frutas de qualquer marca ou sabor,Produtos açucarados,"278,00","0,37","68,86","0,07",IBGE POF 2008-2009
+Mousse de qualquer sabor (Geleia),Produtos açucarados,"331,89","5,09","32,19","21,87",IBGE POF 2008-2009
+Geleia de mocotó,Produtos açucarados,"120,25","3,04","27,99",,IBGE POF 2008-2009
+Doce de frutas em pasta de qualquer sabor,Produtos açucarados,"291,30","0,77","74,28","0,29",IBGE POF 2008-2009
+Pasta de amendoim,Produtos açucarados,"588,00","25,09","19,56","50,39",IBGE POF 2008-2009
+Pessegada,Produtos açucarados,"77,00","0,54","19,79","0,14",IBGE POF 2008-2009
+Marmelada,Produtos açucarados,"278,00","0,37","68,86","0,07",IBGE POF 2008-2009
+Figada,Produtos açucarados,"88,00","0,38","22,90","0,10",IBGE POF 2008-2009
+Goiabada,Produtos açucarados,"291,30","0,77","74,28","0,29",IBGE POF 2008-2009
+Caju em pasta,Produtos açucarados,"291,30","0,77","74,28","0,29",IBGE POF 2008-2009
+Mariola,Produtos açucarados,"291,30","0,77","74,28","0,29",IBGE POF 2008-2009
+Doce de frutas em calda de qualquer sabor,Produtos açucarados,"77,00","0,54","19,79","0,14",IBGE POF 2008-2009
+Doce de frutas cristalizado de qualquer sabor,Produtos açucarados,"291,30","0,77","74,28","0,29",IBGE POF 2008-2009
+Melado,Produtos açucarados,"296,00",,"76,60",,IBGE POF 2008-2009
+Mel,Produtos açucarados,"304,00","0,30","82,40",,IBGE POF 2008-2009
+Gelatina de qualquer sabor,Produtos açucarados,"278,00","0,37","68,86","0,07",IBGE POF 2008-2009
+Adoçante artificial,Produtos açucarados,,,,,IBGE POF 2008-2009
+Merengue,Produtos açucarados,"358,26","6,21","85,89","0,10",IBGE POF 2008-2009
+Schimier de cana,Produtos açucarados,"296,00",,"76,60",,IBGE POF 2008-2009
+Fruta seca ou desidratada,Produtos açucarados,"240,00","2,18","63,88","0,38",IBGE POF 2008-2009
+Passa,Produtos açucarados,"299,00","3,07","79,18","0,46",IBGE POF 2008-2009
+Pudim de qualquer sabor,Produtos açucarados,"131,15","5,58","15,44","5,07",IBGE POF 2008-2009
+Danette pudim,Produtos açucarados,"131,15","5,58","15,44","5,07",IBGE POF 2008-2009
+Manjar,Produtos açucarados,"284,98","8,20","40,14","10,74",IBGE POF 2008-2009
+Cuscuz,Produtos açucarados,"128,30","4,35","26,42","0,22",IBGE POF 2008-2009
+Cuscuz de tapioca,Produtos açucarados,"116,99","4,33","15,51","4,10",IBGE POF 2008-2009
+Maria-mole,Produtos açucarados,"444,92","1,64","68,84","19,94",IBGE POF 2008-2009
+Cocada,Produtos açucarados,"404,80","1,01","75,65","12,46",IBGE POF 2008-2009
+Quebra-queixo,Produtos açucarados,"404,80","1,01","75,65","12,46",IBGE POF 2008-2009
+Doce de amendoim,Produtos açucarados,"451,58","11,16","55,29","23,89",IBGE POF 2008-2009
+Pé de moleque,Produtos açucarados,"474,00","9,10","69,20","17,91",IBGE POF 2008-2009
+Paçoca,Produtos açucarados,"472,17","10,35","64,04","21,53",IBGE POF 2008-2009
+Torrão de amendoim,Produtos açucarados,"460,34","11,01","56,27","24,64",IBGE POF 2008-2009
+Paçoquinha de amendoim,Produtos açucarados,"472,17","10,35","64,04","21,53",IBGE POF 2008-2009
+Amendoim caramelizado,Produtos açucarados,"474,00","9,10","69,20","17,91",IBGE POF 2008-2009
+Amendoim amanteigado,Produtos açucarados,"567,00","25,80","16,13","49,24",IBGE POF 2008-2009
+Amendoim achocolatado,Produtos açucarados,"519,00","13,10","49,70","33,50",IBGE POF 2008-2009
+Amendoim apimentado,Produtos açucarados,"567,00","25,80","16,13","49,24",IBGE POF 2008-2009
+Amendoim cozido,Produtos açucarados,"318,00","13,50","21,26","22,01",IBGE POF 2008-2009
+Brigadeiro,Produtos açucarados,"334,48","7,52","54,86","10,14",IBGE POF 2008-2009
+Bomba de qualquer tipo,Produtos açucarados,"339,26","6,32","18,55","26,93",IBGE POF 2008-2009
+Mil folhas,Produtos açucarados,"440,33","2,36","43,22","29,03",IBGE POF 2008-2009
+Queijadinha,Produtos açucarados,"404,80","1,01","75,65","12,46",IBGE POF 2008-2009
+Doce à base de ovos,Produtos açucarados,"131,15","5,58","15,44","5,07",IBGE POF 2008-2009
+Caçarola italiana,Produtos açucarados,"284,98","8,20","40,14","10,74",IBGE POF 2008-2009
+Quindim,Produtos açucarados,"131,15","5,58","15,44","5,07",IBGE POF 2008-2009
+Fios de ovos,Produtos açucarados,"131,15","5,58","15,44","5,07",IBGE POF 2008-2009
+Doce à base de leite,Produtos açucarados,"319,70","7,88","54,18","8,67",IBGE POF 2008-2009
+Pavê de qualquer sabor,Produtos açucarados,"306,43","4,94","21,59","22,24",IBGE POF 2008-2009
+Ambrosia,Produtos açucarados,"144,23","4,09","23,88","3,84",IBGE POF 2008-2009
+Leite geleificado,Produtos açucarados,"131,15","5,58","15,44","5,07",IBGE POF 2008-2009
+Chandele de qualquer sabor,Produtos açucarados,"131,15","5,58","15,44","5,07",IBGE POF 2008-2009
+Mumu,Produtos açucarados,"319,70","7,88","54,18","8,67",IBGE POF 2008-2009
+Canudinho recheado,Produtos açucarados,"123,26","2,43","21,33","4,50",IBGE POF 2008-2009
+Sarolho,Produtos açucarados,"336,00","2,00","82,00",,IBGE POF 2008-2009
+Beiju,Produtos açucarados,"336,00","2,00","82,00",,IBGE POF 2008-2009
+Schimier de fruta (exceto de cana),Produtos açucarados,"278,00","0,37","68,86","0,07",IBGE POF 2008-2009
+Beijo de moça,Produtos açucarados,"387,00",,"99,98",,IBGE POF 2008-2009
+Picolé ensacado,Produtos açucarados,"79,00",,"19,23","0,24",IBGE POF 2008-2009
+Geladinho,Produtos açucarados,"122,69","0,14","32,51","0,09",IBGE POF 2008-2009
+Churro,Produtos açucarados,"401,66","3,00","45,94","23,44",IBGE POF 2008-2009
+Pamonha,Produtos açucarados,"171,00","2,60","30,70","4,80",IBGE POF 2008-2009
+Algodão-doce,Produtos açucarados,"387,00",,"99,98",,IBGE POF 2008-2009
+Io-Iô crem (chocolate em creme),Produtos açucarados,"350,00","4,60","62,90","8,90",IBGE POF 2008-2009
+Ovo de páscoa,Produtos açucarados,"535,00","7,65","59,40","29,66",IBGE POF 2008-2009
+Kinder ovo,Produtos açucarados,"535,00","7,65","59,40","29,66",IBGE POF 2008-2009
+Torrone,Produtos açucarados,"460,34","11,01","56,27","24,64",IBGE POF 2008-2009
+Arroz-doce,Produtos açucarados,"108,49","3,05","18,77","2,34",IBGE POF 2008-2009
+Polpa de coco,Produtos açucarados,"402,00","3,80","9,80","41,70",IBGE POF 2008-2009
+Diet shake,Produtos açucarados,"335,52","19,19","69,94","1,87",IBGE POF 2008-2009
+Concentrado alimentar diet shake,Produtos açucarados,"335,52","19,19","69,94","1,87",IBGE POF 2008-2009
+Açúcar,Produtos açucarados,"387,00",,"99,98",,IBGE POF 2008-2009
+Açúcar light,Produtos açucarados,"400,00",,"100,00",,IBGE POF 2008-2009
+Barra de cereais,Produtos açucarados,"352,92","3,17","69,44","8,55",IBGE POF 2008-2009
+Barra de cereais salgada,Produtos açucarados,"352,92","3,17","69,44","8,55",IBGE POF 2008-2009
+Barra de cereais doce,Produtos açucarados,"352,92","3,17","69,44","8,55",IBGE POF 2008-2009
+Sobremesa de qualquer tipo (exceto infantil),Produtos açucarados,"131,15","5,58","15,44","5,07",IBGE POF 2008-2009
+Rabanada,Produtos açucarados,"293,00","4,70","31,30","16,60",IBGE POF 2008-2009
+Milk shake,Produtos açucarados,"161,09","3,11","23,49","6,43",IBGE POF 2008-2009
+Geleia diet,Produtos açucarados,"52,64","0,47","12,72","0,17",IBGE POF 2008-2009
+Doce de frutas diet,Produtos açucarados,"52,64","0,47","12,72","0,17",IBGE POF 2008-2009
+Pastéis de santa clara,Produtos açucarados,"131,15","5,58","15,44","5,07",IBGE POF 2008-2009
+Suspiro,Produtos açucarados,"358,26","6,21","85,89","0,10",IBGE POF 2008-2009
+Doce de frutas cristalizado de qualquer sabor diet,Produtos açucarados,"52,64","0,47","12,72","0,17",IBGE POF 2008-2009
+Sorvete de qualquer sabor industrializado light,Produtos açucarados,"188,99","4,43","26,15","7,67",IBGE POF 2008-2009
+Sorvete de qualquer sabor industrializado diet,Produtos açucarados,"190,00","3,17","15,87","12,70",IBGE POF 2008-2009
+Bala light,Produtos açucarados,"235,00",,"95,00",,IBGE POF 2008-2009
+Chiclete diet,Produtos açucarados,"240,00",,"100,00",,IBGE POF 2008-2009
+Bala diet,Produtos açucarados,"235,00",,"95,00",,IBGE POF 2008-2009
+Barra de chocolate light,Produtos açucarados,"539,79","10,58","40,42","41,64",IBGE POF 2008-2009
+Barra de chocolate diet,Produtos açucarados,"539,79","10,58","40,42","41,64",IBGE POF 2008-2009
+Achocolatado em pó light,Produtos açucarados,"337,70","29,42","55,30","2,39",IBGE POF 2008-2009
+Achocolatado em pó diet,Produtos açucarados,"337,70","29,42","55,30","2,39",IBGE POF 2008-2009
+Toddynho diet,Produtos açucarados,"73,29","3,48","7,09","3,51",IBGE POF 2008-2009
+Bombom de qualquer marca light,Produtos açucarados,"373,00",,"93,18","0,02",IBGE POF 2008-2009
+Bombom de qualquer marca diet,Produtos açucarados,"373,00",,"93,18","0,02",IBGE POF 2008-2009
+Bombom caramelizado de qualquer marca diet,Produtos açucarados,"373,00",,"93,18","0,02",IBGE POF 2008-2009
+Geleia de frutas de qualquer marca ou sabor light,Produtos açucarados,"179,01","0,36","46,13","0,05",IBGE POF 2008-2009
+Geleia light,Produtos açucarados,"179,01","0,36","46,13","0,05",IBGE POF 2008-2009
+Geleia de frutas light,Produtos açucarados,"179,01","0,36","46,13","0,05",IBGE POF 2008-2009
+Doce de frutas em barra ou pasta light,Produtos açucarados,"179,01","0,36","46,13","0,05",IBGE POF 2008-2009
+Doce de frutas em pasta light,Produtos açucarados,"179,01","0,36","46,13","0,05",IBGE POF 2008-2009
+Pudim de qualquer sabor light,Produtos açucarados,"119,15","5,68","15,75","3,55",IBGE POF 2008-2009
+Pudim danette light,Produtos açucarados,"119,15","5,68","15,75","3,55",IBGE POF 2008-2009
+Pudim de qualquer sabor diet,Produtos açucarados,"119,15","5,68","15,75","3,55",IBGE POF 2008-2009
+Doce de leite light,Produtos açucarados,"292,29","7,58","58,98","3,62",IBGE POF 2008-2009
+Doce de leite diet,Produtos açucarados,"292,29","7,58","58,98","3,62",IBGE POF 2008-2009
+Barra de cereais diet,Produtos açucarados,"403,45","5,56","86,36","5,44",IBGE POF 2008-2009
+Barra de cereais doce diet,Produtos açucarados,"403,45","5,56","86,36","5,44",IBGE POF 2008-2009
+Milk shake diet,Produtos açucarados,"335,52","19,19","69,94","1,87",IBGE POF 2008-2009
+Cocada diet,Produtos açucarados,"404,80","1,01","75,65","12,46",IBGE POF 2008-2009
+Doce de amendoim diet,Produtos açucarados,"599,00","28,03","15,26","52,50",IBGE POF 2008-2009
+Paçoca diet,Produtos açucarados,"599,00","28,03","15,26","52,50",IBGE POF 2008-2009
+Amendoim amanteigado diet,Produtos açucarados,"477,86","7,09","64,64","21,64",IBGE POF 2008-2009
+Doce à base de leite diet,Produtos açucarados,"292,29","7,58","58,98","3,62",IBGE POF 2008-2009
+Gelatina de qualquer sabor light,Produtos açucarados,"179,01","0,36","46,13","0,05",IBGE POF 2008-2009
+Adoçante light,Produtos açucarados,"365,00","2,17","89,08",,IBGE POF 2008-2009
+Adoçante em pó light,Produtos açucarados,"365,00","2,17","89,08",,IBGE POF 2008-2009
+Adoçante liquido light,Produtos açucarados,,,,,IBGE POF 2008-2009
+Mostarda molho,Miscelâneas,"67,00","4,37","5,33","4,01",IBGE POF 2008-2009
+Hortelã,Miscelâneas,"1,00",,"0,20",,IBGE POF 2008-2009
+Alcaparra em conserva,Miscelâneas,"23,00","2,36","4,89","0,86",IBGE POF 2008-2009
+Coentro,Miscelâneas,"279,00","21,93","52,10","4,78",IBGE POF 2008-2009
+Molho de soja,Miscelâneas,"53,00","6,28","7,61","0,04",IBGE POF 2008-2009
+Shoyo,Miscelâneas,"53,00","6,28","7,61","0,04",IBGE POF 2008-2009
+Leite de coco,Miscelâneas,"202,46","1,61","5,59","20,85",IBGE POF 2008-2009
+Maionese (molho),Miscelâneas,"261,05","0,47","13,38","23,33",IBGE POF 2008-2009
+Massa de tomate,Miscelâneas,"38,00","1,65","8,98","0,21",IBGE POF 2008-2009
+Molho de tomate,Miscelâneas,"24,00","1,32","5,38","0,18",IBGE POF 2008-2009
+Ketchup,Miscelâneas,"97,00","1,74","25,15","0,31",IBGE POF 2008-2009
+Catchup,Miscelâneas,"97,00","1,74","25,15","0,31",IBGE POF 2008-2009
+Pimenta em pó,Miscelâneas,"255,00","10,95","64,81","3,26",IBGE POF 2008-2009
+Tucupi em caldo sem pimenta,Miscelâneas,"4,87","0,01","1,30","0,00",IBGE POF 2008-2009
+Creme de queijo,Miscelâneas,"209,66","10,34","6,72","15,81",IBGE POF 2008-2009
+Caldo de peixe,Miscelâneas,"16,00","2,00","0,40","0,60",IBGE POF 2008-2009
+Caldo de tomate,Miscelâneas,"37,65","0,75","7,39","0,78",IBGE POF 2008-2009
+Gergelim,Miscelâneas,"631,00","20,45","11,73","61,21",IBGE POF 2008-2009
+Tomate seco,Miscelâneas,"213,00","5,06","23,33","14,08",IBGE POF 2008-2009
+Maionese (molho) light,Miscelâneas,"156,58","0,59","18,77","9,46",IBGE POF 2008-2009
+Molho de soja light,Miscelâneas,"53,13","5,18","8,53","0,08",IBGE POF 2008-2009
+Leite de coco light,Miscelâneas,"202,46","1,61","5,59","20,85",IBGE POF 2008-2009
+Vinagrete,Miscelâneas,"76,79","0,65","3,68","6,21",IBGE POF 2008-2009
+Filé-mignon,Carnes e derivados,"204,00","30,67",,"9,00",IBGE POF 2008-2009
+Tatu (lagarto redondo),Carnes e derivados,"199,00","36,12",,"5,00",IBGE POF 2008-2009
+Dobradinha fresca,Carnes e derivados,"94,00","11,71","1,99","4,05",IBGE POF 2008-2009
+Rabada de boi,Carnes e derivados,"365,00","22,60",,"29,79",IBGE POF 2008-2009
+Mocotó bovino,Carnes e derivados,"214,00","28,81",,"10,13",IBGE POF 2008-2009
+Bisteca suína,Carnes e derivados,"397,00","29,06",,"30,30",IBGE POF 2008-2009
+Costela suína,Carnes e derivados,"397,00","29,06",,"30,30",IBGE POF 2008-2009
+Toucinho,Carnes e derivados,"541,00","37,04","1,43","41,78",IBGE POF 2008-2009
+Arrasto suíno,Carnes e derivados,"100,04","13,98","4,18","2,96",IBGE POF 2008-2009
+Sarapatel suíno fresco,Carnes e derivados,"100,04","13,98","4,18","2,96",IBGE POF 2008-2009
+Carne suína,Carnes e derivados,"289,00","25,34",,"20,06",IBGE POF 2008-2009
+Carne moída,Carnes e derivados,"214,00","26,62",,"11,10",IBGE POF 2008-2009
+Guisado,Carnes e derivados,"242,00","24,22",,"15,42",IBGE POF 2008-2009
+Sarrabulho,Carnes e derivados,"100,04","13,98","4,18","2,96",IBGE POF 2008-2009
+Brachola,Carnes e derivados,"204,00","30,67",,"9,00",IBGE POF 2008-2009
+Bife role cru,Carnes e derivados,"204,00","30,67",,"9,00",IBGE POF 2008-2009
+Buchada de bode,Carnes e derivados,"125,00","19,80",,"4,40",IBGE POF 2008-2009
+Carne de outros animais,Carnes e derivados,"242,00","24,22",,"15,42",IBGE POF 2008-2009
+Filé não especificado,Carnes e derivados,"204,00","30,67",,"9,00",IBGE POF 2008-2009
+Carne bovina,Carnes e derivados,"242,00","24,22",,"15,42",IBGE POF 2008-2009
+Ossada não especificada,Carnes e derivados,"164,00","26,13",,"5,81",IBGE POF 2008-2009
+Camarão,Pescados e frutos do mar,"99,00","20,91",,"1,08",IBGE POF 2008-2009
+Marisco,Pescados e frutos do mar,"148,00","25,55","5,13","1,95",IBGE POF 2008-2009
+Bacalhau,Pescados e frutos do mar,"117,00","24,16",,"1,53",IBGE POF 2008-2009
+"Peixe de água doce (inteiro, em posta, em filé, etc.)",Pescados e frutos do mar,"117,00","24,16",,"1,53",IBGE POF 2008-2009
+Azeitona,Alimentos preparados,"145,00","1,03","3,84","15,32",IBGE POF 2008-2009
+Ervilha em conserva,Alimentos preparados,"69,00","4,42","12,58","0,35",IBGE POF 2008-2009
+Petit-pois,Alimentos preparados,"69,00","4,42","12,58","0,35",IBGE POF 2008-2009
+Milho verde em conserva,Alimentos preparados,"81,00","2,64","18,80","0,93",IBGE POF 2008-2009
+Palmito em conserva,Alimentos preparados,"28,00","2,52","4,62","0,62",IBGE POF 2008-2009
+Cogumelo em conserva,Alimentos preparados,"50,74","1,87","5,09","3,20",IBGE POF 2008-2009
+Champignon em conserva,Alimentos preparados,"50,74","1,87","5,09","3,20",IBGE POF 2008-2009
+Aspargo em conserva,Alimentos preparados,"19,00","2,14","2,46","0,65",IBGE POF 2008-2009
+Repolho em conserva,Alimentos preparados,"19,00","0,91","4,28","0,14",IBGE POF 2008-2009
+Chucrute,Alimentos preparados,"19,00","0,91","4,28","0,14",IBGE POF 2008-2009
+Legume não especificado em conserva,Alimentos preparados,"47,00","2,53","9,06","0,26",IBGE POF 2008-2009
+Creme de cebola (sopa desidratada),Alimentos preparados,"46,31","0,82","5,34","2,47",IBGE POF 2008-2009
+Creme de legumes (sopa desidratada),Alimentos preparados,"10,55","0,48","2,15","0,02",IBGE POF 2008-2009
+Yakissoba,Alimentos preparados,"527,00","8,38","57,54","30,76",IBGE POF 2008-2009
+Milho verde com ervilha em conserva,Alimentos preparados,"79,52","3,83","16,81","0,47",IBGE POF 2008-2009
+Feijoada,Alimentos preparados,"181,59","11,11","16,92","7,90",IBGE POF 2008-2009
+Feijão branco com dobradinha em conserva,Alimentos preparados,"136,38","10,68","10,20","5,91",IBGE POF 2008-2009
+Cozido,Alimentos preparados,"87,33","5,61","7,93","3,79",IBGE POF 2008-2009
+Pasta de carne em conserva,Alimentos preparados,"245,65","9,89","14,10","16,89",IBGE POF 2008-2009
+Pasta de presunto em conserva,Alimentos preparados,"276,46","17,86","1,80","21,43",IBGE POF 2008-2009
+Pasta de galinha em conserva,Alimentos preparados,"214,36","16,39","3,66","14,53",IBGE POF 2008-2009
+Carne bovina em conserva,Alimentos preparados,"242,00","24,22",,"15,42",IBGE POF 2008-2009
+Almôndega,Alimentos preparados,"214,85","20,64","11,00","9,20",IBGE POF 2008-2009
+Kitute bovino,Alimentos preparados,"242,00","24,22",,"15,42",IBGE POF 2008-2009
+Almôndega ao molho em conserva,Alimentos preparados,"203,52","16,16","9,70","10,72",IBGE POF 2008-2009
+Kitute suíno,Alimentos preparados,"178,00","22,62",,"9,02",IBGE POF 2008-2009
+Presuntada,Alimentos preparados,"178,00","22,62",,"9,02",IBGE POF 2008-2009
+Salsicha em conserva,Alimentos preparados,"269,08","8,30","0,27","25,81",IBGE POF 2008-2009
+Sardinha em conserva,Alimentos preparados,"208,00","24,62",,"11,45",IBGE POF 2008-2009
+Atum em conserva,Alimentos preparados,"198,00","29,13",,"8,21",IBGE POF 2008-2009
+Pepino em conserva,Alimentos preparados,"12,00","0,60","2,59","0,14",IBGE POF 2008-2009
+Pasta de peixe em conserva,Alimentos preparados,"198,00","29,13",,"8,21",IBGE POF 2008-2009
+Picles,Alimentos preparados,"12,00","0,60","2,59","0,14",IBGE POF 2008-2009
+Nabo em conserva,Alimentos preparados,"43,26","0,87","9,94","0,19",IBGE POF 2008-2009
+Strogonoff,Alimentos preparados,"147,68","12,83","4,13","9,11",IBGE POF 2008-2009
+Salmão em conserva,Alimentos preparados,"136,00","23,08",,"4,83",IBGE POF 2008-2009
+Creme de cebola (sopa desidratada) light,Alimentos preparados,"46,31","0,82","5,34","2,47",IBGE POF 2008-2009
+Creme de legumes (sopa desidratada) light,Alimentos preparados,"10,55","0,48","2,15","0,02",IBGE POF 2008-2009
+Yakissoba (sopa de legumes desidratada) light,Alimentos preparados,"80,04","3,01","15,61","0,47",IBGE POF 2008-2009
+Atum em conserva light,Alimentos preparados,"116,00","25,51",,"0,82",IBGE POF 2008-2009
+Parte de galinha ou frango não especificada,Carnes e derivados,"239,00","27,30",,"13,60",IBGE POF 2008-2009
+Frango em pedaços,Carnes e derivados,"239,00","27,30",,"13,60",IBGE POF 2008-2009
+Carne de galinha,Carnes e derivados,"239,00","27,30",,"13,60",IBGE POF 2008-2009
+Peito de galinha ou frango,Carnes e derivados,"173,00","30,91",,"4,51",IBGE POF 2008-2009
+Filé de frango,Carnes e derivados,"173,00","30,91",,"4,51",IBGE POF 2008-2009
+Canja,Carnes e derivados,"31,47","1,61","3,64","1,06",IBGE POF 2008-2009
+Peito de peru,Carnes e derivados,"140,00","30,19",,"1,18",IBGE POF 2008-2009
+Chester,Carnes e derivados,"207,00","26,94",,"10,24",IBGE POF 2008-2009
+Steak de frango,Carnes e derivados,"211,84","31,37","3,39","7,12",IBGE POF 2008-2009
+Ovo de galinha,Ovos e derivados,"155,00","12,58","1,12","10,61",IBGE POF 2008-2009
+Ovo de codorna,Ovos e derivados,"155,00","12,58","1,12","10,61",IBGE POF 2008-2009
+Peito de peru light,Carnes e derivados,"140,00","30,19",,"1,18",IBGE POF 2008-2009
+Leite de vaca integral,Leite e derivados,"60,03","3,22","4,52","3,25",IBGE POF 2008-2009
+Leite de vaca fresco,Leite e derivados,"60,03","3,22","4,52","3,25",IBGE POF 2008-2009
+Leite de cabra,Leite e derivados,"69,03","3,56","4,45","4,14",IBGE POF 2008-2009
+Leite em pó integral,Leite e derivados,"480,00","25,76","36,16","26,00",IBGE POF 2008-2009
+Leite em pó desnatado,Leite e derivados,"358,00","35,10","52,19","0,72",IBGE POF 2008-2009
+Leite em pó,Leite e derivados,"480,00","25,76","36,16","26,00",IBGE POF 2008-2009
+Leite condensado,Leite e derivados,"319,70","7,88","54,18","8,67",IBGE POF 2008-2009
+Leite beijinho,Leite e derivados,"319,70","7,88","54,18","8,67",IBGE POF 2008-2009
+Creme de leite,Leite e derivados,"292,00","2,17","2,96","30,91",IBGE POF 2008-2009
+Chantilly,Leite e derivados,"276,39","2,93","12,36","24,57",IBGE POF 2008-2009
+Iogurte de qualquer sabor,Leite e derivados,"98,69","3,46","14,62","3,47",IBGE POF 2008-2009
+Iogurte desnatado,Leite e derivados,"56,00","5,73","7,68","0,18",IBGE POF 2008-2009
+Iogurte natural,Leite e derivados,"61,00","3,47","4,66","3,25",IBGE POF 2008-2009
+Yakult de qualquer sabor,Leite e derivados,"69,30","3,03","14,46","0,07",IBGE POF 2008-2009
+Bebida láctea,Leite e derivados,"91,13","2,78","18,03","1,15",IBGE POF 2008-2009
+Leite fermentado,Leite e derivados,"50,23","3,32","4,70","1,98",IBGE POF 2008-2009
+Coalhada,Leite e derivados,"61,00","3,47","4,66","3,25",IBGE POF 2008-2009
+Manteiga com ou sem sal,Leite e derivados,"717,00","0,85","0,06","81,11",IBGE POF 2008-2009
+Manteiga de garrafa,Leite e derivados,"717,00","0,85","0,06","81,11",IBGE POF 2008-2009
+Margarina com ou sem sal,Leite e derivados,"719,00","0,90","0,90","80,50",IBGE POF 2008-2009
+Queijo prato,Leite e derivados,"302,00","25,96","3,83","20,03",IBGE POF 2008-2009
+Queijo colonial,Leite e derivados,"302,00","25,96","3,83","20,03",IBGE POF 2008-2009
+Queijo de colônia,Leite e derivados,"302,00","25,96","3,83","20,03",IBGE POF 2008-2009
+Queijo muçarela,Leite e derivados,"318,00","21,60","2,47","24,64",IBGE POF 2008-2009
+Muçarela,Leite e derivados,"318,00","21,60","2,47","24,64",IBGE POF 2008-2009
+Muçarela de búfala,Leite e derivados,"318,00","21,60","2,47","24,64",IBGE POF 2008-2009
+Queijo de búfala,Leite e derivados,"318,00","21,60","2,47","24,64",IBGE POF 2008-2009
+Queijo de reino,Leite e derivados,"356,00","24,94","2,22","27,44",IBGE POF 2008-2009
+Queijo de minas,Leite e derivados,"240,00","17,60","10,60","14,10",IBGE POF 2008-2009
+Queijo de manteiga,Leite e derivados,"318,00","21,60","2,47","24,64",IBGE POF 2008-2009
+Quechimia,Leite e derivados,"240,00","17,60","10,60","14,10",IBGE POF 2008-2009
+Queijo de coalho,Leite e derivados,"373,00","24,48","0,68","30,28",IBGE POF 2008-2009
+Queijo canastra,Leite e derivados,"240,00","17,60","10,60","14,10",IBGE POF 2008-2009
+Queijo ricota,Leite e derivados,"174,00","11,26","3,04","12,98",IBGE POF 2008-2009
+Leite de soja com sabor,Leite e derivados,"64,05","3,68","9,07","1,65",IBGE POF 2008-2009
+Ades original,Leite e derivados,"54,00","3,27","6,28","1,75",IBGE POF 2008-2009
+Queijo ralado,Leite e derivados,"431,00","38,46","4,06","28,61",IBGE POF 2008-2009
+Queijo provolone,Leite e derivados,"351,00","25,58","2,14","26,62",IBGE POF 2008-2009
+Queijo polenguinho,Leite e derivados,"349,00","7,55","2,66","34,87",IBGE POF 2008-2009
+Requeijão,Leite e derivados,"231,00","10,60","7,00","17,60",IBGE POF 2008-2009
+Queijo cremoso,Leite e derivados,"231,00","10,60","7,00","17,60",IBGE POF 2008-2009
+Queijo não especificado,Leite e derivados,"375,00","22,15","1,60","31,25",IBGE POF 2008-2009
+Leite com sabor,Leite e derivados,"83,32","3,18","10,38","3,40",IBGE POF 2008-2009
+Leite achocolatado,Leite e derivados,"83,32","3,18","10,38","3,40",IBGE POF 2008-2009
+Leite aRomãtizado,Leite e derivados,"83,32","3,18","10,38","3,40",IBGE POF 2008-2009
+Bebida achocolatada,Leite e derivados,"83,32","3,18","10,38","3,40",IBGE POF 2008-2009
+Nata,Leite e derivados,"195,00","2,70","3,66","19,31",IBGE POF 2008-2009
+Queijo gorgonzola,Leite e derivados,"353,00","21,40","2,34","28,74",IBGE POF 2008-2009
+Tofu,Leite e derivados,"61,00","6,55","1,80","3,69",IBGE POF 2008-2009
+Leite de soja em pó,Leite e derivados,"408,33","32,85","42,13","13,22",IBGE POF 2008-2009
+Leite de vaca desnatado,Leite e derivados,"34,15","3,39","4,98","0,08",IBGE POF 2008-2009
+Leite de vaca semidesnatado,Leite e derivados,"42,00","3,37","4,99","0,97",IBGE POF 2008-2009
+Leite não especificado pasteurizado,Leite e derivados,"60,03","3,22","4,52","3,25",IBGE POF 2008-2009
+Iogurte de qualquer sabor light,Leite e derivados,"102,00","4,37","19,05","1,08",IBGE POF 2008-2009
+Iogurte de qualquer sabor diet,Leite e derivados,"51,35","3,11","3,88","2,65",IBGE POF 2008-2009
+Margarina light,Leite e derivados,"253,69","0,08","0,27","28,52",IBGE POF 2008-2009
+Muçarela light,Leite e derivados,"302,00","25,96","3,83","20,03",IBGE POF 2008-2009
+Queijo muçarela light,Leite e derivados,"302,00","25,96","3,83","20,03",IBGE POF 2008-2009
+Leite de soja com sabor light,Leite e derivados,"53,21","2,56","8,62","1,03",IBGE POF 2008-2009
+Ades light,Leite e derivados,"39,37","1,99","6,18","0,82",IBGE POF 2008-2009
+Creme de leite light,Leite e derivados,"59,00","2,60","9,00","1,40",IBGE POF 2008-2009
+Queijo prato light,Leite e derivados,"297,30","24,49","1,22","21,36",IBGE POF 2008-2009
+Queijo de minas light,Leite e derivados,"90,00","13,74","3,63","1,93",IBGE POF 2008-2009
+Queijo de coalho light,Leite e derivados,"297,30","24,49","1,22","21,36",IBGE POF 2008-2009
+Queijo ricota light,Leite e derivados,"92,69","14,56","7,08","0,29",IBGE POF 2008-2009
+Queijo ralado light,Leite e derivados,"265,00","20,00","1,37","20,00",IBGE POF 2008-2009
+Queijo polenguinho light,Leite e derivados,"231,00","10,60","7,00","17,60",IBGE POF 2008-2009
+Requeijão light,Leite e derivados,"231,00","10,60","7,00","17,60",IBGE POF 2008-2009
+Queijo não especificado light,Leite e derivados,"90,00","13,74","3,63","1,93",IBGE POF 2008-2009
+Leite achocolatado light,Leite e derivados,"63,00","3,24","10,44","1,00",IBGE POF 2008-2009
+Bebida achocolatada light,Leite e derivados,"63,00","3,24","10,44","1,00",IBGE POF 2008-2009
+Leite com sabor diet,Leite e derivados,"73,29","3,48","7,09","3,51",IBGE POF 2008-2009
+Leite achocolatado diet,Leite e derivados,"73,29","3,48","7,09","3,51",IBGE POF 2008-2009
+Bebida achocolatada diet,Leite e derivados,"73,29","3,48","7,09","3,51",IBGE POF 2008-2009
+Leite de soja em pó light,Leite e derivados,"379,58","32,94","59,92","2,80",IBGE POF 2008-2009
+Leite em pó com sabor,Leite e derivados,"405,00","3,30","90,90","3,10",IBGE POF 2008-2009
+Manteiga com ou sem sal light,Leite e derivados,"347,32","0,41","0,03","39,29",IBGE POF 2008-2009
+Pão de hambúrguer,Cereais e derivados,"279,00","9,50","49,45","4,33",IBGE POF 2008-2009
+Pão de sal,Cereais e derivados,"300,00","8,00","58,60","3,10",IBGE POF 2008-2009
+Pão doce,Cereais e derivados,"355,23","5,15","55,83","13,08",IBGE POF 2008-2009
+Chineque,Cereais e derivados,"355,23","5,15","55,83","13,08",IBGE POF 2008-2009
+Chineque com farofa,Cereais e derivados,"355,23","5,15","55,83","13,08",IBGE POF 2008-2009
+Pão de mel,Cereais e derivados,"508,36","4,46","85,04","18,34",IBGE POF 2008-2009
+Panetone,Cereais e derivados,"355,95","7,45","58,03","10,43",IBGE POF 2008-2009
+Bisnaguinha,Cereais e derivados,"310,00","10,86","52,04","6,47",IBGE POF 2008-2009
+Croissant,Cereais e derivados,"455,16","8,04","46,84","26,26",IBGE POF 2008-2009
+Pão de forma industrializado de qualquer marca,Cereais e derivados,"266,00","7,64","50,61","3,29",IBGE POF 2008-2009
+Pão de queijo,Cereais e derivados,"363,00","5,10","34,20","24,60",IBGE POF 2008-2009
+Pão de milho,Cereais e derivados,"316,62","7,20","47,96","10,43",IBGE POF 2008-2009
+Pão integral,Cereais e derivados,"247,00","12,95","41,29","3,35",IBGE POF 2008-2009
+Pão não especificado,Cereais e derivados,"300,00","8,00","58,60","3,10",IBGE POF 2008-2009
+Torrada de qualquer pão,Cereais e derivados,"377,00","10,50","74,60","3,30",IBGE POF 2008-2009
+Rosca doce,Cereais e derivados,"422,97","4,54","55,53","20,61",IBGE POF 2008-2009
+Rosquinha doce,Cereais e derivados,"443,00","8,10","75,20","12,00",IBGE POF 2008-2009
+Rosca salgada,Cereais e derivados,"245,75","12,83","25,80","9,85",IBGE POF 2008-2009
+Rosquinha salgada,Cereais e derivados,"432,00","10,10","68,70","14,40",IBGE POF 2008-2009
+Biscoito salgado,Cereais e derivados,"432,00","10,10","68,70","14,40",IBGE POF 2008-2009
+Presuntinho biscoito,Cereais e derivados,"508,99","8,88","60,74","25,40",IBGE POF 2008-2009
+Biscoito de polvilho,Cereais e derivados,"436,72","4,46","38,37","29,08",IBGE POF 2008-2009
+Bolacha salgada,Cereais e derivados,"432,00","10,10","68,70","14,40",IBGE POF 2008-2009
+Chips (salgadinhos),Cereais e derivados,"558,86","5,08","55,41","35,25",IBGE POF 2008-2009
+Baconzitos,Cereais e derivados,"508,99","8,88","60,74","25,40",IBGE POF 2008-2009
+Biscoito salgado integral,Cereais e derivados,"412,43","11,49","60,85","16,07",IBGE POF 2008-2009
+Biscoito doce,Cereais e derivados,"443,00","8,10","75,20","12,00",IBGE POF 2008-2009
+Cavaco chinês,Cereais e derivados,"443,00","8,10","75,20","12,00",IBGE POF 2008-2009
+Sequilho,Cereais e derivados,"443,00","8,10","75,20","12,00",IBGE POF 2008-2009
+Tareço,Cereais e derivados,"443,00","8,10","75,20","12,00",IBGE POF 2008-2009
+Solda,Cereais e derivados,"432,00","10,10","68,70","14,40",IBGE POF 2008-2009
+Brevidade,Cereais e derivados,"371,22","3,18","57,71","14,61",IBGE POF 2008-2009
+Bolacha doce,Cereais e derivados,"443,00","8,10","75,20","12,00",IBGE POF 2008-2009
+Maria maluca (bolacha doce),Cereais e derivados,"443,00","8,10","75,20","12,00",IBGE POF 2008-2009
+Quebra-quebra,Cereais e derivados,"443,00","8,10","75,20","12,00",IBGE POF 2008-2009
+Rocambole,Cereais e derivados,"339,26","6,32","18,55","26,93",IBGE POF 2008-2009
+Cuca de qualquer tipo,Cereais e derivados,"355,23","5,15","55,83","13,08",IBGE POF 2008-2009
+Bolo de milho,Cereais e derivados,"311,00","4,80","45,10","12,40",IBGE POF 2008-2009
+Amidomil (bolinho),Cereais e derivados,"311,00","4,80","45,10","12,40",IBGE POF 2008-2009
+Angusor de milho,Cereais e derivados,"311,00","4,80","45,10","12,40",IBGE POF 2008-2009
+Grustoli (bolinho doce),Cereais e derivados,"421,37","5,55","55,70","19,81",IBGE POF 2008-2009
+Bolo de aipim,Cereais e derivados,"324,00","4,40","47,90","12,70",IBGE POF 2008-2009
+Bolo de tapioca,Cereais e derivados,"324,00","4,40","47,90","12,70",IBGE POF 2008-2009
+Bolo de macaxeira,Cereais e derivados,"324,00","4,40","47,90","12,70",IBGE POF 2008-2009
+Bolo de goma,Cereais e derivados,"324,00","4,40","47,90","12,70",IBGE POF 2008-2009
+Bolo de batata-doce,Cereais e derivados,"324,00","4,40","47,90","12,70",IBGE POF 2008-2009
+Bolo de arroz,Cereais e derivados,"324,00","4,40","47,90","12,70",IBGE POF 2008-2009
+Bolo de cará,Cereais e derivados,"324,00","4,40","47,90","12,70",IBGE POF 2008-2009
+Tortas doces de qualquer sabor,Cereais e derivados,"119,67","2,28","15,56","5,38",IBGE POF 2008-2009
+Tortas salgadas de qualquer sabor,Cereais e derivados,"249,55","3,87","38,40","9,86",IBGE POF 2008-2009
+Sonho,Cereais e derivados,"378,79","6,02","48,08","18,25",IBGE POF 2008-2009
+Filhos (bolinho de farinha de trigo e ovos),Cereais e derivados,"421,37","5,55","55,70","19,81",IBGE POF 2008-2009
+Bolo de chocolate,Cereais e derivados,"312,80","8,71","58,30","6,00",IBGE POF 2008-2009
+Brioche,Cereais e derivados,"366,84","9,04","49,58","14,22",IBGE POF 2008-2009
+Bolo de laranja,Cereais e derivados,"360,83","4,80","58,32","13,15",IBGE POF 2008-2009
+Bolo de coco,Cereais e derivados,"317,24","6,33","54,19","8,70",IBGE POF 2008-2009
+Bolo de cenoura,Cereais e derivados,"344,86","4,17","44,27","17,26",IBGE POF 2008-2009
+Bolo de trigo,Cereais e derivados,"286,60","6,91","55,27","4,24",IBGE POF 2008-2009
+Broa,Cereais e derivados,"392,00","9,80","47,10","18,30",IBGE POF 2008-2009
+Biscoito recheado,Cereais e derivados,"472,00","6,40","70,50","19,60",IBGE POF 2008-2009
+Waffer (biscoito),Cereais e derivados,"430,32","6,25","74,79","12,49",IBGE POF 2008-2009
+Alfajores (biscoito),Cereais e derivados,"505,21","6,47","70,85","22,55",IBGE POF 2008-2009
+Bolacha recheada,Cereais e derivados,"472,00","6,40","70,50","19,60",IBGE POF 2008-2009
+Rosca recheada,Cereais e derivados,"620,20","5,57","98,06","26,28",IBGE POF 2008-2009
+Rosquinha recheada de qualquer sabor,Cereais e derivados,"472,00","6,40","70,50","19,60",IBGE POF 2008-2009
+Biscoito não especificado,Cereais e derivados,"432,00","10,10","68,70","14,40",IBGE POF 2008-2009
+Crepe,Cereais e derivados,"203,18","13,96","8,27","12,46",IBGE POF 2008-2009
+Pão diet (de forma industrializado),Cereais e derivados,"198,00","9,10","43,60","2,30",IBGE POF 2008-2009
+Pão light (de forma industrializado),Cereais e derivados,"198,00","9,10","43,60","2,30",IBGE POF 2008-2009
+Pão de queijo light,Cereais e derivados,"363,00","5,10","34,20","24,60",IBGE POF 2008-2009
+Pão integral light,Cereais e derivados,"198,00","9,10","43,60","2,30",IBGE POF 2008-2009
+Tortas doces de qualquer sabor light,Cereais e derivados,"121,84","2,29","16,06","5,40",IBGE POF 2008-2009
+Tortas doces de qualquer sabor diet,Cereais e derivados,"99,17","2,25","10,66","5,30",IBGE POF 2008-2009
+Filhos (bolinho de farinha de trigo e ovos) light,Cereais e derivados,"426,53","6,44","48,69","22,95",IBGE POF 2008-2009
+Filhos (bolinho de farinha de trigo e ovos) diet,Cereais e derivados,"426,53","6,44","48,69","22,95",IBGE POF 2008-2009
+Bolo de chocolate light,Cereais e derivados,"299,49","4,59","52,45","9,36",IBGE POF 2008-2009
+Bolo de chocolate diet,Cereais e derivados,"299,49","4,59","52,45","9,36",IBGE POF 2008-2009
+Bolo de laranja light,Cereais e derivados,"328,38","4,76","58,31","9,48",IBGE POF 2008-2009
+Bolo de coco diet,Cereais e derivados,"299,49","4,59","52,45","9,36",IBGE POF 2008-2009
+Bolo de cenoura diet,Cereais e derivados,"272,74","4,09","44,26","9,10",IBGE POF 2008-2009
+Biscoito recheado light,Cereais e derivados,"432,96","5,88","77,80","13,24",IBGE POF 2008-2009
+Biscoito waffer light,Cereais e derivados,"398,63","4,51","80,66","6,92",IBGE POF 2008-2009
+Waffer (biscoito) light,Cereais e derivados,"398,63","4,51","80,66","6,92",IBGE POF 2008-2009
+Alfajores (biscoito) light,Cereais e derivados,"432,96","5,88","77,80","13,24",IBGE POF 2008-2009
+Bolacha recheada light,Cereais e derivados,"432,96","5,88","77,80","13,24",IBGE POF 2008-2009
+Biscoito recheado diet,Cereais e derivados,"405,28","8,17","66,82","20,83",IBGE POF 2008-2009
+Rosquinha recheada de qualquer sabor diet,Cereais e derivados,"405,28","8,17","66,82","20,83",IBGE POF 2008-2009
+Bolacha recheada diet,Cereais e derivados,"405,28","8,17","66,82","20,83",IBGE POF 2008-2009
+Pão doce diet,Cereais e derivados,"312,25","4,83","57,97","6,92",IBGE POF 2008-2009
+Pão de mel diet,Cereais e derivados,"446,23","4,38","85,04","11,31",IBGE POF 2008-2009
+Panetone diet,Cereais e derivados,"355,95","7,45","58,03","10,43",IBGE POF 2008-2009
+Biscoito salgado light,Cereais e derivados,"452,56","9,67","72,45","13,79",IBGE POF 2008-2009
+Bolacha salgada light,Cereais e derivados,"452,56","9,67","72,45","13,79",IBGE POF 2008-2009
+Chips (salgadinhos) light,Cereais e derivados,"407,05","6,53","81,13","7,05",IBGE POF 2008-2009
+Biscoito doce light,Cereais e derivados,"395,25","6,45","83,88","4,84",IBGE POF 2008-2009
+Bolacha doce light,Cereais e derivados,"395,25","6,45","83,88","4,84",IBGE POF 2008-2009
+Biscoito doce diet,Cereais e derivados,"453,92","6,22","65,74","21,89",IBGE POF 2008-2009
+Bolacha doce diet,Cereais e derivados,"453,92","6,22","65,74","21,89",IBGE POF 2008-2009
+Bolo de banana,Cereais e derivados,"300,05","3,93","52,14","9,07",IBGE POF 2008-2009
+Jabá,Carnes e derivados,"313,00","26,90",,"21,90",IBGE POF 2008-2009
+Hambúrguer de carne bovina,Carnes e derivados,"214,00","26,62",,"11,10",IBGE POF 2008-2009
+Copa de porco defumada,Carnes e derivados,"248,66","20,53","0,42","17,76",IBGE POF 2008-2009
+Bacon,Carnes e derivados,"541,00","37,04","1,43","41,78",IBGE POF 2008-2009
+Hambúrguer de frango,Carnes e derivados,"206,14","16,19","12,64","9,71",IBGE POF 2008-2009
+Salsicha no varejo,Carnes e derivados,"321,05","9,72","3,61","29,51",IBGE POF 2008-2009
+"Linguiça (suína, bovina, mista, etc.)",Carnes e derivados,"396,00","13,80","2,70","36,25",IBGE POF 2008-2009
+Chouriço,Carnes e derivados,"379,00","14,60","1,29","34,50",IBGE POF 2008-2009
+Morcela,Carnes e derivados,"379,00","14,60","1,29","34,50",IBGE POF 2008-2009
+Mortadela,Carnes e derivados,"307,00","11,10","3,20","27,70",IBGE POF 2008-2009
+Salame,Carnes e derivados,"336,00","21,85","2,40","25,90",IBGE POF 2008-2009
+Salaminho,Carnes e derivados,"336,00","21,85","2,40","25,90",IBGE POF 2008-2009
+Blanquet de peru,Carnes e derivados,"126,00","17,50","2,04","4,84",IBGE POF 2008-2009
+Presunto,Carnes e derivados,"226,00","20,53","0,42","15,20",IBGE POF 2008-2009
+Hambúrguer não especificado,Carnes e derivados,"214,00","26,62",,"11,10",IBGE POF 2008-2009
+Apresuntado,Carnes e derivados,"178,00","22,62",,"9,02",IBGE POF 2008-2009
+Pururuca de porco,Carnes e derivados,"544,00","61,30",,"31,30",IBGE POF 2008-2009
+Pele de porco preparada (pururuca),Carnes e derivados,"544,00","61,30",,"31,30",IBGE POF 2008-2009
+"Patê (fígado, calabresa, frango, presunto, etc.)",Carnes e derivados,"326,00","14,10","2,20","28,50",IBGE POF 2008-2009
+Carne de aves defumada,Carnes e derivados,"195,66","30,91",,"7,07",IBGE POF 2008-2009
+Carne salgada não especificada,Carnes e derivados,"313,00","26,90",,"21,90",IBGE POF 2008-2009
+Mortadela light,Carnes e derivados,"211,00","13,06","3,45","16,06",IBGE POF 2008-2009
+Salame light,Carnes e derivados,"145,18","14,70","0,50","8,94",IBGE POF 2008-2009
+Blanquet de peru light,Carnes e derivados,"124,12","14,99","7,11","3,57",IBGE POF 2008-2009
+Hambúrguer não especificado light,Carnes e derivados,"190,00","27,03",,"8,26",IBGE POF 2008-2009
+Refrigerante de cola tradicional,Bebidas (alcoólicas e não alcoólicas),"36,87","0,07","9,53","0,02",IBGE POF 2008-2009
+Coca-cola tradicional,Bebidas (alcoólicas e não alcoólicas),"36,87","0,07","9,53","0,02",IBGE POF 2008-2009
+Fanta laranja tradicional,Bebidas (alcoólicas e não alcoólicas),"48,00",,"12,30",,IBGE POF 2008-2009
+Sukita tradicional,Bebidas (alcoólicas e não alcoólicas),"48,00",,"12,30",,IBGE POF 2008-2009
+Refrigerante de guaraná tradicional,Bebidas (alcoólicas e não alcoólicas),"39,00",,"10,00",,IBGE POF 2008-2009
+Guaraná tradicional,Bebidas (alcoólicas e não alcoólicas),"39,00",,"10,00",,IBGE POF 2008-2009
+Sprit refrigerante tradicional,Bebidas (alcoólicas e não alcoólicas),"40,00","0,05","10,14","0,02",IBGE POF 2008-2009
+Fanta uva tradicional,Bebidas (alcoólicas e não alcoólicas),"48,00",,"12,30",,IBGE POF 2008-2009
+Refrigerante de cola light,Bebidas (alcoólicas e não alcoólicas),"2,00","0,11","0,29","0,03",IBGE POF 2008-2009
+Coca-cola light,Bebidas (alcoólicas e não alcoólicas),"2,00","0,11","0,29","0,03",IBGE POF 2008-2009
+Refrigerante de cola diet,Bebidas (alcoólicas e não alcoólicas),"2,00","0,11","0,29","0,03",IBGE POF 2008-2009
+Minuano tradicional,Bebidas (alcoólicas e não alcoólicas),"40,00","0,05","10,14","0,02",IBGE POF 2008-2009
+Mate tradicional,Bebidas (alcoólicas e não alcoólicas),"2,80","0,25","2,31",,IBGE POF 2008-2009
+Bidu tradicional,Bebidas (alcoólicas e não alcoólicas),"39,00",,"10,00",,IBGE POF 2008-2009
+Fanta laranja light,Bebidas (alcoólicas e não alcoólicas),,"0,10",,,IBGE POF 2008-2009
+Refrigerante de guaraná light,Bebidas (alcoólicas e não alcoólicas),,,,,IBGE POF 2008-2009
+Guaraná light,Bebidas (alcoólicas e não alcoólicas),,,,,IBGE POF 2008-2009
+Tubaína tradicional,Bebidas (alcoólicas e não alcoólicas),"39,00",,"10,00",,IBGE POF 2008-2009
+Tubaína light,Bebidas (alcoólicas e não alcoólicas),"2,00","0,11","0,29","0,03",IBGE POF 2008-2009
+Caldo de cana,Bebidas (alcoólicas e não alcoólicas),"73,58",,"19,97","0,05",IBGE POF 2008-2009
+Garapá,Bebidas (alcoólicas e não alcoólicas),"73,58",,"19,97","0,05",IBGE POF 2008-2009
+Água de coco,Bebidas (alcoólicas e não alcoólicas),"19,28","0,73","3,76","0,20",IBGE POF 2008-2009
+Q-suco,Bebidas (alcoólicas e não alcoólicas),"15,28",,"3,91","0,00",IBGE POF 2008-2009
+Q-refresko,Bebidas (alcoólicas e não alcoólicas),"15,28",,"3,91","0,00",IBGE POF 2008-2009
+Nescafé,Bebidas (alcoólicas e não alcoólicas),"241,00","12,20","75,40","0,50",IBGE POF 2008-2009
+Erva-mate,Bebidas (alcoólicas e não alcoólicas),"2,80","0,25","2,31",,IBGE POF 2008-2009
+Chimarrão,Bebidas (alcoólicas e não alcoólicas),"2,80","0,25","2,31",,IBGE POF 2008-2009
+Tereré,Bebidas (alcoólicas e não alcoólicas),"2,80","0,25","2,31",,IBGE POF 2008-2009
+Levedo de cerveja,Bebidas (alcoólicas e não alcoólicas),"170,00","16,20","28,10","1,30",IBGE POF 2008-2009
+Refrigerante não especificado,Bebidas (alcoólicas e não alcoólicas),"36,87","0,07","9,53","0,02",IBGE POF 2008-2009
+Cevada em pó,Bebidas (alcoólicas e não alcoólicas),"352,00","9,91","77,72","1,16",IBGE POF 2008-2009
+Chocomilk,Bebidas (alcoólicas e não alcoólicas),"83,32","3,18","10,38","3,40",IBGE POF 2008-2009
+Água tônica tradicional,Bebidas (alcoólicas e não alcoólicas),"40,02","0,05","10,14","0,02",IBGE POF 2008-2009
+"Chá diet (preto, camomila, erva-cidreira, capim-limão, etc.)",Bebidas (alcoólicas e não alcoólicas),"2,52","0,01","0,67",,IBGE POF 2008-2009
+Paraguai refrigerante tradicional,Bebidas (alcoólicas e não alcoólicas),"39,00",,"10,00",,IBGE POF 2008-2009
+Gatorade,Bebidas (alcoólicas e não alcoólicas),"27,01",,"6,76","0,10",IBGE POF 2008-2009
+Bebida energética,Bebidas (alcoólicas e não alcoólicas),"45,35","0,25","11,03","0,08",IBGE POF 2008-2009
+"Chá (preto, camomila, erva-cidreira, capim-limão, etc.)",Bebidas (alcoólicas e não alcoólicas),"1,00",,"0,30",,IBGE POF 2008-2009
+Café solúvel capuccino,Bebidas (alcoólicas e não alcoólicas),"27,71","0,26","5,17","0,84",IBGE POF 2008-2009
+Refrigerante de guaraná diet,Bebidas (alcoólicas e não alcoólicas),,,,,IBGE POF 2008-2009
+Guaraná diet,Bebidas (alcoólicas e não alcoólicas),,,,,IBGE POF 2008-2009
+Refrigerante de limão diet,Bebidas (alcoólicas e não alcoólicas),,"0,10",,,IBGE POF 2008-2009
+Fanta uva light,Bebidas (alcoólicas e não alcoólicas),,"0,10",,,IBGE POF 2008-2009
+Mate light,Bebidas (alcoólicas e não alcoólicas),"2,80","0,25","2,31",,IBGE POF 2008-2009
+Água tônica light,Bebidas (alcoólicas e não alcoólicas),"40,02","0,05","10,14","0,02",IBGE POF 2008-2009
+Paraguai refrigerante light,Bebidas (alcoólicas e não alcoólicas),"2,00","0,11","0,29","0,03",IBGE POF 2008-2009
+Q-suco light,Bebidas (alcoólicas e não alcoólicas),"15,28",,"3,91","0,00",IBGE POF 2008-2009
+Q-refresko light,Bebidas (alcoólicas e não alcoólicas),"15,28",,"3,91","0,00",IBGE POF 2008-2009
+Q-suco diet,Bebidas (alcoólicas e não alcoólicas),"15,28",,"3,91","0,00",IBGE POF 2008-2009
+Café capuccino solúvel light,Bebidas (alcoólicas e não alcoólicas),"12,77","0,14","0,91","1,01",IBGE POF 2008-2009
+Café capuccino solúvel diet,Bebidas (alcoólicas e não alcoólicas),"12,77","0,14","0,91","1,01",IBGE POF 2008-2009
+Água tônica diet,Bebidas (alcoólicas e não alcoólicas),"40,02","0,05","10,14","0,02",IBGE POF 2008-2009
+Refrigerante de quinino dietético,Bebidas (alcoólicas e não alcoólicas),"40,02","0,05","10,14","0,02",IBGE POF 2008-2009
+Suco de clorofila,Bebidas (alcoólicas e não alcoólicas),"1,87","0,24","0,31","0,02",IBGE POF 2008-2009
+Café com farinha,Bebidas (alcoólicas e não alcoólicas),"181,00","0,86","44,19","0,16",IBGE POF 2008-2009
+Cerveja (com ou sem álcool),Bebidas (alcoólicas e não alcoólicas),"43,19","0,46","3,57",,IBGE POF 2008-2009
+Chopp,Bebidas (alcoólicas e não alcoólicas),"43,19","0,46","3,57",,IBGE POF 2008-2009
+Aguardente,Bebidas (alcoólicas e não alcoólicas),"216,00",,,,IBGE POF 2008-2009
+Cachaça,Bebidas (alcoólicas e não alcoólicas),"216,00",,,,IBGE POF 2008-2009
+Batida de qualquer sabor,Bebidas (alcoólicas e não alcoólicas),"187,38","0,54","22,14","3,69",IBGE POF 2008-2009
+Rum,Bebidas (alcoólicas e não alcoólicas),"230,18",,,,IBGE POF 2008-2009
+Vodka,Bebidas (alcoólicas e não alcoólicas),"217,15",,,,IBGE POF 2008-2009
+Uísque,Bebidas (alcoólicas e não alcoólicas),"230,18",,,,IBGE POF 2008-2009
+Whisky,Bebidas (alcoólicas e não alcoólicas),"230,18",,,,IBGE POF 2008-2009
+Champanhe,Bebidas (alcoólicas e não alcoólicas),"82,00","0,07","2,60",,IBGE POF 2008-2009
+Sidra champanhe,Bebidas (alcoólicas e não alcoólicas),"82,00","0,07","2,60",,IBGE POF 2008-2009
+Martini,Bebidas (alcoólicas e não alcoólicas),"194,44","0,01","0,53",,IBGE POF 2008-2009
+Conhaque,Bebidas (alcoólicas e não alcoólicas),"231,00",,,,IBGE POF 2008-2009
+Drink dreher,Bebidas (alcoólicas e não alcoólicas),"216,00",,,,IBGE POF 2008-2009
+Licor de qualquer sabor,Bebidas (alcoólicas e não alcoólicas),"282,65",,"33,64",,IBGE POF 2008-2009
+Cajuína,Bebidas (alcoólicas e não alcoólicas),"45,00","0,80","11,50",,IBGE POF 2008-2009
+Vinho,Bebidas (alcoólicas e não alcoólicas),"84,50","0,07","2,60",,IBGE POF 2008-2009
+Catuaba,Bebidas (alcoólicas e não alcoólicas),"216,00",,,,IBGE POF 2008-2009
+Coquetel de frutas,Bebidas (alcoólicas e não alcoólicas),"187,38","0,54","22,14","3,69",IBGE POF 2008-2009
+Caipirinha,Bebidas (alcoólicas e não alcoólicas),"143,90","0,10","37,90","0,10",IBGE POF 2008-2009
+Bebida alcoólica,Bebidas (alcoólicas e não alcoólicas),"216,00",,,,IBGE POF 2008-2009
+Cerveja (com ou sem álcool) light,Bebidas (alcoólicas e não alcoólicas),"29,00","0,24","1,64",,IBGE POF 2008-2009
+Caxiri (aguardente de mandioca),Bebidas (alcoólicas e não alcoólicas),"216,00",,,,IBGE POF 2008-2009
+Azeite de oliva,Gorduras e óleos,"887,81",,,"100,43",IBGE POF 2008-2009
+Óleo de soja,Gorduras e óleos,"879,73",,,"99,52",IBGE POF 2008-2009
+Banha suína,Gorduras e óleos,"902,00",,,"100,00",IBGE POF 2008-2009
+Banha bovina,Gorduras e óleos,"680,00","10,65",,"70,33",IBGE POF 2008-2009
+Óleo não especificado,Gorduras e óleos,"879,73",,,"99,52",IBGE POF 2008-2009
+Óleo de dendê,Gorduras e óleos,"857,84",,,"99,52",IBGE POF 2008-2009
+Salgadinho,Miscelâneas,"274,60","13,41","16,54","16,88",IBGE POF 2008-2009
+"Pastel (queijo, carne, palmito, etc.)",Miscelâneas,"319,81","10,38","33,51","15,68",IBGE POF 2008-2009
+Croquete,Miscelâneas,"274,60","13,41","16,54","16,88",IBGE POF 2008-2009
+Coxinha,Miscelâneas,"274,60","13,41","16,54","16,88",IBGE POF 2008-2009
+"Empada (queijo, carne, camarão, etc.)",Miscelâneas,"153,96","7,89","12,47","7,91",IBGE POF 2008-2009
+"Rissole (queijo, carne, camarão, etc.)",Miscelâneas,"274,60","13,41","16,54","16,88",IBGE POF 2008-2009
+Acarajé,Miscelâneas,"289,00","8,30","19,10","19,90",IBGE POF 2008-2009
+Torresmo,Miscelâneas,"544,00","61,30",,"31,30",IBGE POF 2008-2009
+Quibe,Miscelâneas,"274,60","13,41","16,54","16,88",IBGE POF 2008-2009
+Abará (Bahia),Miscelâneas,"289,00","8,30","19,10","19,90",IBGE POF 2008-2009
+Paçoca de carne de sol,Miscelâneas,"354,00","13,44","43,95","13,43",IBGE POF 2008-2009
+Angu frito,Miscelâneas,"74,60","1,45","13,00","1,78",IBGE POF 2008-2009
+Angu de milho,Miscelâneas,"60,58","1,44","13,00","0,20",IBGE POF 2008-2009
+Polenta,Miscelâneas,"74,60","1,45","13,00","1,78",IBGE POF 2008-2009
+Esfirra,Miscelâneas,"359,42","9,76","37,51","18,88",IBGE POF 2008-2009
+Esfirra de carne,Miscelâneas,"346,45","11,90","26,20","21,38",IBGE POF 2008-2009
+Esfirra de queijo,Miscelâneas,"359,42","9,76","37,51","18,88",IBGE POF 2008-2009
+Esfirra de ricota,Miscelâneas,"320,39","7,54","38,09","15,25",IBGE POF 2008-2009
+Esfirra de frango,Miscelâneas,"222,39","9,47","17,32","12,71",IBGE POF 2008-2009
+Enroladinho,Miscelâneas,"274,60","13,41","16,54","16,88",IBGE POF 2008-2009
+Bolinho de aipim,Miscelâneas,"212,64","6,28","18,51","13,11",IBGE POF 2008-2009
+Bolinho de bacalhau,Miscelâneas,"214,01","16,70","7,69","12,75",IBGE POF 2008-2009
+Cachorro-quente,Miscelâneas,"272,47","8,73","24,80","15,22",IBGE POF 2008-2009
+Hambúrguer (sanduíche),Miscelâneas,"267,16","13,08","32,36","9,22",IBGE POF 2008-2009
+Cheeseburger,Miscelâneas,"279,85","14,15","28,74","11,81",IBGE POF 2008-2009
+Eggsburger,Miscelâneas,"269,44","13,28","17,42","16,10",IBGE POF 2008-2009
+Bauru,Miscelâneas,"229,47","13,67","13,97","13,00",IBGE POF 2008-2009
+Americano,Miscelâneas,"236,68","10,05","16,85","14,22",IBGE POF 2008-2009
+Misto-quente ou frio,Miscelâneas,"265,42","16,29","18,30","13,78",IBGE POF 2008-2009
+Sanduíche de queijo prato,Miscelâneas,"329,29","12,22","31,09","17,24",IBGE POF 2008-2009
+Sanduíche de salame,Miscelâneas,"282,99","8,97","30,27","13,74",IBGE POF 2008-2009
+Sanduíche de presunto,Miscelâneas,"230,33","10,97","18,73","12,15",IBGE POF 2008-2009
+Sanduíche de queijo prato com presunto,Miscelâneas,"265,42","16,29","18,30","13,78",IBGE POF 2008-2009
+Sanduíche de mortadela,Miscelâneas,"315,97","8,60","32,81","16,56",IBGE POF 2008-2009
+Sanduíche de queijo minas,Miscelâneas,"329,29","12,22","31,09","17,24",IBGE POF 2008-2009
+Cheese egg,Miscelâneas,"279,85","14,15","28,74","11,81",IBGE POF 2008-2009
+Cheese tudo,Miscelâneas,"279,85","14,15","28,74","11,81",IBGE POF 2008-2009
+Sanduíche natural,Miscelâneas,"245,58","11,21","25,58","10,84",IBGE POF 2008-2009
+Suco,Miscelâneas,"41,83","0,59","9,81","0,14",IBGE POF 2008-2009
+Suco de abacaxi,Miscelâneas,"53,21","0,36","12,92","0,12",IBGE POF 2008-2009
+Suco de acerola,Miscelâneas,"23,06","0,40","4,81","0,30",IBGE POF 2008-2009
+Suco de beterraba,Miscelâneas,"30,77","0,81","7,11","0,12",IBGE POF 2008-2009
+Suco de cupuaçu,Miscelâneas,"24,50","0,60","5,20","0,50",IBGE POF 2008-2009
+Suco de goiaba,Miscelâneas,"62,28","0,37","15,62","0,14",IBGE POF 2008-2009
+Suco de laranja,Miscelâneas,"41,83","0,59","9,81","0,14",IBGE POF 2008-2009
+Suco de laranja com banana,Miscelâneas,"56,80","0,76","13,84","0,20",IBGE POF 2008-2009
+Suco de laranja e beterraba,Miscelâneas,"30,77","0,81","7,11","0,12",IBGE POF 2008-2009
+Suco de laranja e cenoura,Miscelâneas,"30,77","0,81","7,11","0,12",IBGE POF 2008-2009
+Suco de laranja cenoura e beterraba,Miscelâneas,"30,77","0,81","7,11","0,12",IBGE POF 2008-2009
+Suco de mamão,Miscelâneas,"57,13","0,17","14,54","0,15",IBGE POF 2008-2009
+Suco de manga,Miscelâneas,"50,86","0,11","13,08","0,06",IBGE POF 2008-2009
+Suco de maracujá,Miscelâneas,"60,14","0,67","14,48","0,18",IBGE POF 2008-2009
+Suco de melão,Miscelâneas,"31,79","0,65","8,00","0,16",IBGE POF 2008-2009
+Suco de morango,Miscelâneas,"59,21","0,57","14,51","0,10",IBGE POF 2008-2009
+Suco de pêssego,Miscelâneas,"53,99","0,27","13,92","0,02",IBGE POF 2008-2009
+Suco de pêssego em calda,Miscelâneas,"53,99","0,27","13,92","0,02",IBGE POF 2008-2009
+Vitamina,Miscelâneas,"92,78","2,47","16,39","2,31",IBGE POF 2008-2009
+Vitamina de banana,Miscelâneas,"92,78","2,47","16,39","2,31",IBGE POF 2008-2009
+Vitamina de banana com aveia,Miscelâneas,"108,46","3,06","19,20","2,54",IBGE POF 2008-2009
+Vitamina de mamão,Miscelâneas,"80,59","2,42","12,95","2,34",IBGE POF 2008-2009
+Vitamina de abacate,Miscelâneas,"100,19","2,74","12,80","4,64",IBGE POF 2008-2009
+Vitamina de morango,Miscelâneas,"74,61","1,96","13,27","1,83",IBGE POF 2008-2009
+Vitamina mista,Miscelâneas,"83,16","1,81","16,20","1,65",IBGE POF 2008-2009
+Vitamina de maçã,Miscelâneas,"82,99","2,28","13,98","2,26",IBGE POF 2008-2009
+Refresco,Miscelâneas,"46,81",,"11,92",,IBGE POF 2008-2009
+Refresco de caju,Miscelâneas,"46,81",,"11,92",,IBGE POF 2008-2009
+Refresco de groselha,Miscelâneas,"46,81",,"11,92",,IBGE POF 2008-2009
+Refresco de laranja,Miscelâneas,"46,81",,"11,92",,IBGE POF 2008-2009
+Refresco de maracujá,Miscelâneas,"46,81",,"11,92",,IBGE POF 2008-2009
+Refresco de limão,Miscelâneas,"46,81",,"11,92",,IBGE POF 2008-2009
+"Salada ou verdura cozida, exceto de fruta",Miscelâneas,"26,00","2,11","4,91","0,36",IBGE POF 2008-2009
+Salada de maionese,Miscelâneas,"209,79","2,71","12,65","16,83",IBGE POF 2008-2009
+Pizza,Miscelâneas,"281,20","14,60","29,82","11,35",IBGE POF 2008-2009
+Lasanha pronta light,Miscelâneas,"158,63","10,78","12,34","7,31",IBGE POF 2008-2009
+Nhoque,Miscelâneas,"190,54","9,31","8,49","13,18",IBGE POF 2008-2009
+Caneloni,Miscelâneas,"120,86","5,94","9,22","6,80",IBGE POF 2008-2009
+Capeleti,Miscelâneas,"95,24","5,53","12,60","2,59",IBGE POF 2008-2009
+Ravioli,Miscelâneas,"95,24","5,53","12,60","2,59",IBGE POF 2008-2009
+Calzone,Miscelâneas,"245,75","12,83","25,80","9,85",IBGE POF 2008-2009
+Panqueca,Miscelâneas,"203,18","13,96","8,27","12,46",IBGE POF 2008-2009
+Pizza calabreza,Miscelâneas,"284,72","13,74","29,51","12,21",IBGE POF 2008-2009
+Pizza muçarela,Miscelâneas,"281,20","14,60","29,82","11,35",IBGE POF 2008-2009
+Pizza presunto,Miscelâneas,"284,72","13,74","29,51","12,21",IBGE POF 2008-2009
+Pizza portuguesa,Miscelâneas,"247,49","11,75","22,40","12,23",IBGE POF 2008-2009
+Macarronada,Miscelâneas,"120,59","6,22","17,42","2,79",IBGE POF 2008-2009
+Galeto,Miscelâneas,"261,66","27,30",,"16,16",IBGE POF 2008-2009
+Costela,Miscelâneas,"365,00","22,60",,"29,79",IBGE POF 2008-2009
+Pipoca doce ou salgada,Miscelâneas,"468,15","6,59","62,51","23,28",IBGE POF 2008-2009
+Café,Miscelâneas,"1,00","0,12","0,47","0,02",IBGE POF 2008-2009
+Café com leite,Miscelâneas,"31,44","1,72","2,57","1,69",IBGE POF 2008-2009
+Café tipo expresso,Miscelâneas,"2,45","0,12","0,77","0,01",IBGE POF 2008-2009
+Café tipo capuccino,Miscelâneas,"27,71","0,26","5,17","0,84",IBGE POF 2008-2009
+Milho cozido,Miscelâneas,"160,14","3,32","25,11","7,18",IBGE POF 2008-2009
+Batata palito,Miscelâneas,"263,50","2,87","33,60","13,64",IBGE POF 2008-2009
+Batata palha,Miscelâneas,"545,70","5,24","54,52","35,24",IBGE POF 2008-2009
+Mungunzá,Miscelâneas,"146,00","4,00","24,40","3,90",IBGE POF 2008-2009
+Canjica,Miscelâneas,"146,00","4,00","24,40","3,90",IBGE POF 2008-2009
+Curau,Miscelâneas,"78,24","2,42","10,46","3,06",IBGE POF 2008-2009
+Farofa,Miscelâneas,"406,00","2,10","80,30","9,10",IBGE POF 2008-2009
+"Mingau (fubá, aveia, farinha, etc.)",Miscelâneas,"78,24","2,42","10,46","3,06",IBGE POF 2008-2009
+Tacacá,Miscelâneas,"16,00","2,00","0,40","0,60",IBGE POF 2008-2009
+Bolinho de coco,Miscelâneas,"297,32","6,71","54,89","5,80",IBGE POF 2008-2009
+Risoto,Miscelâneas,"113,02","6,66","17,16","1,99",IBGE POF 2008-2009
+Vatapá,Miscelâneas,"226,07","13,77","9,28","15,61",IBGE POF 2008-2009
+Farofa pronta,Miscelâneas,"406,00","2,10","80,30","9,10",IBGE POF 2008-2009
+Caldo de carne,Miscelâneas,"7,02","1,36","0,45",,IBGE POF 2008-2009
+Caldo-de-feijão,Miscelâneas,"75,50","4,78","10,33","1,77",IBGE POF 2008-2009
+Caldo de mocotó,Miscelâneas,"7,02","1,36","0,45",,IBGE POF 2008-2009
+Baião de dois,Miscelâneas,"136,00","6,20","20,40","3,20",IBGE POF 2008-2009
+Churrasco,Miscelâneas,"204,00","30,67",,"9,00",IBGE POF 2008-2009
+Sushi,Miscelâneas,"146,78","5,56","29,19","0,45",IBGE POF 2008-2009
+Salada de frutas,Miscelâneas,"51,24","0,62","13,31","0,14",IBGE POF 2008-2009
+"Sopa (legumes, carne, etc.)",Miscelâneas,"28,78","1,63","3,81","0,78",IBGE POF 2008-2009
+Salpicão,Miscelâneas,"202,85","14,26","3,93","14,41",IBGE POF 2008-2009
+Charuto de repolho,Miscelâneas,"84,91","9,63","8,75","1,30",IBGE POF 2008-2009
+Arroz à grega,Miscelâneas,"92,01","2,17","17,47","1,69",IBGE POF 2008-2009
+Arrumadinho,Miscelâneas,"198,86","9,33","21,73","8,47",IBGE POF 2008-2009
+Bobó de camarão,Miscelâneas,"72,10","2,63","5,48","4,42",IBGE POF 2008-2009
+"Caruru (quiabo, amendoim, castanha de caju, camarão seco, etc.)",Miscelâneas,"215,87","6,07","4,07","20,07",IBGE POF 2008-2009
+Cuscuz paulista,Miscelâneas,"142,00","2,60","22,50","4,60",IBGE POF 2008-2009
+"Empadão (queijo, frango, camarão, palmito, etc.)",Miscelâneas,"153,96","7,89","12,47","7,91",IBGE POF 2008-2009
+Farofa de banana,Miscelâneas,"309,55","1,66","52,89","11,17",IBGE POF 2008-2009
+Feijão-tropeiro,Miscelâneas,"198,86","9,33","21,73","8,47",IBGE POF 2008-2009
+Galinha com arroz,Miscelâneas,"143,50","4,47","23,93","3,07",IBGE POF 2008-2009
+Galinhada,Miscelâneas,"143,50","4,47","23,93","3,07",IBGE POF 2008-2009
+Moqueca baiana,Miscelâneas,"130,13","13,62","1,66","7,54",IBGE POF 2008-2009
+Omelete,Miscelâneas,"241,62","11,04","0,98","21,26",IBGE POF 2008-2009
+Pirão,Miscelâneas,"119,65","8,05","8,90","5,76",IBGE POF 2008-2009
+Quibebe,Miscelâneas,"36,39","0,72","4,90","1,92",IBGE POF 2008-2009
+Quiche,Miscelâneas,"282,73","10,34","13,85","20,44",IBGE POF 2008-2009
+Suflê,Miscelâneas,"126,10","5,11","6,40","9,17",IBGE POF 2008-2009
+Tutu,Miscelâneas,"123,76","5,41","22,34","1,64",IBGE POF 2008-2009
+Moqueca capixaba,Miscelâneas,"100,52","14,34","1,75","3,66",IBGE POF 2008-2009
+Maniçoba,Miscelâneas,"181,85","15,09","2,92","12,16",IBGE POF 2008-2009
+Caldo verde,Miscelâneas,"94,92","3,53","14,19","2,90",IBGE POF 2008-2009
+Arroz de cuxá,Miscelâneas,"102,74","2,38","20,92","0,95",IBGE POF 2008-2009
+Angu à baiana,Miscelâneas,"125,34","9,01","8,87","5,75",IBGE POF 2008-2009
+Chocolate,Miscelâneas,"535,00","7,65","59,40","29,66",IBGE POF 2008-2009
+Gemada,Miscelâneas,"134,79","3,80","13,52","7,47",IBGE POF 2008-2009
+Açaí com granola,Miscelâneas,"110,00","0,70","21,50","3,70",IBGE POF 2008-2009
+Pizza pronta light,Miscelâneas,"255,57","14,60","29,82","8,45",IBGE POF 2008-2009
+Lasanha pronta light,Miscelâneas,"144,33","10,93","12,34","5,67",IBGE POF 2008-2009
+Pizza portuguesa light,Miscelâneas,"229,62","11,75","22,40","10,21",IBGE POF 2008-2009
+Farofa pronta light em pacote,Miscelâneas,"406,00","2,10","80,30","9,10",IBGE POF 2008-2009
+Vaca atolada,Miscelâneas,"245,00","11,60","15,05","15,05",IBGE POF 2008-2009
+"Salada ou verdura crua, exceto de fruta",Miscelâneas,"18,00","0,88","3,92","0,20",IBGE POF 2008-2009
+Outros legumes cozidos,Miscelâneas,"60,50","1,24","14,12","0,14",IBGE POF 2008-2009
+Café da manha,Miscelâneas,"31,44","1,72","2,57","1,69",IBGE POF 2008-2009
+Prato de comida brasileira,Miscelâneas,"148,37","6,74","21,34","3,86",IBGE POF 2008-2009
+Prato de comida do nordeste,Miscelâneas,"129,21","6,49","19,48","2,66",IBGE POF 2008-2009
+Prato de comida do norte,Miscelâneas,"157,10","6,53","24,99","3,36",IBGE POF 2008-2009
+Prato de comida do sudeste,Miscelâneas,"131,09","8,62","12,00","5,30",IBGE POF 2008-2009
+Prato de comida do sul,Miscelâneas,"148,37","6,74","21,34","3,86",IBGE POF 2008-2009
+Prato de comida do centro-oeste,Miscelâneas,"105,93","5,68","14,27","2,91",IBGE POF 2008-2009
+Arroz com feijão,Miscelâneas,"116,51","4,17","21,42","1,50",IBGE POF 2008-2009
+Pão com manteiga,Miscelâneas,"369,50","6,81","48,84","16,10",IBGE POF 2008-2009
+Pão com margarina,Miscelâneas,"369,83","6,82","48,98","16,00",IBGE POF 2008-2009
+Pão com ovo,Miscelâneas,"261,30","10,84","29,91","10,38",IBGE POF 2008-2009
+"Carne com batata, inhame, batata-baroa ou aipim",Miscelâneas,"188,20","12,97","10,01","10,50",IBGE POF 2008-2009
+"Carne com legumes (exceto batata, inhame e aipim)",Miscelâneas,"150,52","12,47","2,45","9,95",IBGE POF 2008-2009
+"Frango com batata, inhame batata-baroa ou aipim",Miscelâneas,"153,70","16,31","10,01","5,04",IBGE POF 2008-2009
+"Frango com legumes (exceto batata, inhame e aipim)",Miscelâneas,"116,02","15,82","2,45","4,50",IBGE POF 2008-2009
+Abobora com quiabo,Miscelâneas,"21,00","1,30","4,71","0,14",IBGE POF 2008-2009
+Arroz carreteiro,Miscelâneas,"154,00","10,80","11,60","7,10",IBGE POF 2008-2009
+Maria izabel,Miscelâneas,"154,00","10,80","11,60","7,10",IBGE POF 2008-2009
+Arroz de leite,Miscelâneas,"142,42","2,98","22,62","4,17",IBGE POF 2008-2009
+Arroz com mandioca,Miscelâneas,"130,31","1,55","28,94","0,75",IBGE POF 2008-2009
+Arroz com ovo,Miscelâneas,"179,11","8,09","14,50","9,43",IBGE POF 2008-2009
+Palma,Miscelâneas,"41,95","1,35","3,28","3,10",IBGE POF 2008-2009

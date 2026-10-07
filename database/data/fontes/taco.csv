@@ -1,0 +1,597 @@
+name,category,kcal,protein,carbs,fat,source
+"Arroz, integral, cozido",Cereais e derivados,124,"2,6","25,8","1,0",TACO 4ª ed.
+"Arroz, integral, cru",Cereais e derivados,360,"7,3","77,5","1,9",TACO 4ª ed.
+"Arroz, tipo 1, cozido",Cereais e derivados,128,"2,5","28,1","0,2",TACO 4ª ed.
+"Arroz, tipo 1, cru",Cereais e derivados,358,"7,2","78,8","0,3",TACO 4ª ed.
+"Arroz, tipo 2, cozido",Cereais e derivados,130,"2,6","28,2","0,4",TACO 4ª ed.
+"Arroz, tipo 2, cru",Cereais e derivados,358,"7,2","78,9","0,3",TACO 4ª ed.
+"Aveia, flocos, crua",Cereais e derivados,394,"13,9","66,6","8,5",TACO 4ª ed.
+"Biscoito, doce, maisena",Cereais e derivados,443,"8,1","75,2","12,0",TACO 4ª ed.
+"Biscoito, doce, recheado com chocolate",Cereais e derivados,472,"6,4","70,5","19,6",TACO 4ª ed.
+"Biscoito, doce, recheado com morango",Cereais e derivados,471,"5,7","71,0","19,6",TACO 4ª ed.
+"Biscoito, doce, wafer, recheado de chocolate",Cereais e derivados,502,"5,6","67,5","24,7",TACO 4ª ed.
+"Biscoito, doce, wafer, recheado de morango",Cereais e derivados,513,"4,5","67,4","26,4",TACO 4ª ed.
+"Biscoito, salgado, cream cracker",Cereais e derivados,432,"10,1","68,7","14,4",TACO 4ª ed.
+"Bolo, mistura para",Cereais e derivados,419,"6,2","84,7","6,1",TACO 4ª ed.
+"Bolo, pronto, aipim",Cereais e derivados,324,"4,4","47,9","12,7",TACO 4ª ed.
+"Bolo, pronto, chocolate",Cereais e derivados,410,"6,2","54,7","18,5",TACO 4ª ed.
+"Bolo, pronto, coco",Cereais e derivados,333,"5,7","52,3","11,3",TACO 4ª ed.
+"Bolo, pronto, milho",Cereais e derivados,311,"4,8","45,1","12,4",TACO 4ª ed.
+"Canjica, branca, crua",Cereais e derivados,358,"7,2","78,1","1,0",TACO 4ª ed.
+"Canjica, com leite integral",Cereais e derivados,112,"2,4","23,6","1,2",TACO 4ª ed.
+"Cereais, milho, flocos, com sal",Cereais e derivados,370,"7,3","80,8","1,6",TACO 4ª ed.
+"Cereais, milho, flocos, sem sal",Cereais e derivados,363,"6,9","80,4","1,2",TACO 4ª ed.
+"Cereais, mingau, milho, infantil",Cereais e derivados,394,"6,4","87,3","1,1",TACO 4ª ed.
+"Cereais, mistura para vitamina, trigo, cevada e aveia",Cereais e derivados,381,"8,9","81,6","2,1",TACO 4ª ed.
+"Cereal matinal, milho",Cereais e derivados,365,"7,2","83,8","1,0",TACO 4ª ed.
+"Cereal matinal, milho, açúcar",Cereais e derivados,377,"4,7","88,8","0,7",TACO 4ª ed.
+"Creme de arroz, pó",Cereais e derivados,386,"7,0","83,9","1,2",TACO 4ª ed.
+"Creme de milho, pó",Cereais e derivados,333,"4,8","86,1","1,6",TACO 4ª ed.
+"Curau, milho verde",Cereais e derivados,78,"2,4","13,9","1,6",TACO 4ª ed.
+"Curau, milho verde, mistura para",Cereais e derivados,402,"2,2","79,8","13,4",TACO 4ª ed.
+"Farinha, de arroz, enriquecida",Cereais e derivados,363,"1,3","85,5","0,3",TACO 4ª ed.
+"Farinha, de centeio, integral",Cereais e derivados,336,"12,5","73,3","1,8",TACO 4ª ed.
+"Farinha, de milho, amarela",Cereais e derivados,351,"7,2","79,1","1,5",TACO 4ª ed.
+"Farinha, de rosca",Cereais e derivados,371,"11,4","75,8","1,5",TACO 4ª ed.
+"Farinha, de trigo",Cereais e derivados,360,"9,8","75,1","1,4",TACO 4ª ed.
+"Farinha, láctea, de cereais",Cereais e derivados,415,"11,9","77,8","5,8",TACO 4ª ed.
+"Lasanha, massa fresca, cozida",Cereais e derivados,164,"5,8","32,5","1,2",TACO 4ª ed.
+"Lasanha, massa fresca, crua",Cereais e derivados,220,"7,0","45,1","1,3",TACO 4ª ed.
+"Macarrão, instantâneo",Cereais e derivados,436,"8,8","62,4","17,2",TACO 4ª ed.
+"Macarrão, trigo, cru",Cereais e derivados,371,"10,0","77,9","1,3",TACO 4ª ed.
+"Macarrão, trigo, cru, com ovos",Cereais e derivados,371,"10,3","76,6","2,0",TACO 4ª ed.
+"Milho, amido, cru",Cereais e derivados,361,"0,6","87,1",Tr,TACO 4ª ed.
+"Milho, fubá, cru",Cereais e derivados,353,"7,2","78,9","1,9",TACO 4ª ed.
+"Milho, verde, cru",Cereais e derivados,138,"6,6","28,6","0,6",TACO 4ª ed.
+"Milho, verde, enlatado, drenado",Cereais e derivados,98,"3,2","17,1","2,4",TACO 4ª ed.
+"Mingau tradicional, pó",Cereais e derivados,373,"0,6","89,3","0,4",TACO 4ª ed.
+"Pamonha, barra para cozimento, pré-cozida",Cereais e derivados,171,"2,6","30,7","4,8",TACO 4ª ed.
+"Pão, aveia, forma",Cereais e derivados,343,"12,4","59,6","5,7",TACO 4ª ed.
+"Pão, de soja",Cereais e derivados,309,"11,3","56,5","3,6",TACO 4ª ed.
+"Pão, glúten, forma",Cereais e derivados,253,"12,0","44,1","2,7",TACO 4ª ed.
+"Pão, milho, forma",Cereais e derivados,292,"8,3","56,4","3,1",TACO 4ª ed.
+"Pão, trigo, forma, integral",Cereais e derivados,253,"9,4","49,9","3,7",TACO 4ª ed.
+"Pão, trigo, francês",Cereais e derivados,300,"8,0","58,6","3,1",TACO 4ª ed.
+"Pão, trigo, sovado",Cereais e derivados,311,"8,4","61,5","2,8",TACO 4ª ed.
+"Pastel, de carne, cru",Cereais e derivados,289,"10,7","42,0","8,8",TACO 4ª ed.
+"Pastel, de carne, frito",Cereais e derivados,388,"10,1","43,8","20,1",TACO 4ª ed.
+"Pastel, de queijo, cru",Cereais e derivados,308,"9,9","45,9","9,6",TACO 4ª ed.
+"Pastel, de queijo, frito",Cereais e derivados,422,"8,7","48,1","22,7",TACO 4ª ed.
+"Pastel, massa, crua",Cereais e derivados,310,"6,9","57,4","5,5",TACO 4ª ed.
+"Pastel, massa, frita",Cereais e derivados,570,"6,0","49,3","40,9",TACO 4ª ed.
+"Pipoca, com óleo de soja, sem sal",Cereais e derivados,448,"9,9","70,3","15,9",TACO 4ª ed.
+"Polenta, pré-cozida",Cereais e derivados,103,"2,3","23,3","0,3",TACO 4ª ed.
+"Torrada, pão francês",Cereais e derivados,377,"10,5","74,6","3,3",TACO 4ª ed.
+"Abóbora, cabotian, cozida","Verduras, hortaliças e derivados",48,"1,4","10,8","0,7",TACO 4ª ed.
+"Abóbora, cabotian, crua","Verduras, hortaliças e derivados",39,"1,7","8,4","0,5",TACO 4ª ed.
+"Abóbora, menina brasileira, crua","Verduras, hortaliças e derivados",14,"0,6","3,3",Tr,TACO 4ª ed.
+"Abóbora, moranga, crua","Verduras, hortaliças e derivados",12,"1,0","2,7","0,1",TACO 4ª ed.
+"Abóbora, moranga, refogada","Verduras, hortaliças e derivados",29,"0,4","6,0","0,8",TACO 4ª ed.
+"Abobora, pescoço, crua","Verduras, hortaliças e derivados",24,"0,7","6,1","0,1",TACO 4ª ed.
+"Abobrinha, italiana, cozida","Verduras, hortaliças e derivados",15,"1,1","3,0","0,2",TACO 4ª ed.
+"Abobrinha, italiana, crua","Verduras, hortaliças e derivados",19,"1,1","4,3","0,1",TACO 4ª ed.
+"Abobrinha, italiana, refogada","Verduras, hortaliças e derivados",24,"1,1","4,2","0,8",TACO 4ª ed.
+"Abobrinha, paulista, crua","Verduras, hortaliças e derivados",31,"0,6","7,9","0,1",TACO 4ª ed.
+"Acelga, crua","Verduras, hortaliças e derivados",21,"1,4","4,6","0,1",TACO 4ª ed.
+"Agrião, cru","Verduras, hortaliças e derivados",17,"2,7","2,3","0,2",TACO 4ª ed.
+"Aipo, cru","Verduras, hortaliças e derivados",19,"0,8","4,3","0,1",TACO 4ª ed.
+"Alface, americana, crua","Verduras, hortaliças e derivados",9,"0,6","1,7","0,1",TACO 4ª ed.
+"Alface, crespa, crua","Verduras, hortaliças e derivados",11,"1,3","1,7","0,2",TACO 4ª ed.
+"Alface, lisa, crua","Verduras, hortaliças e derivados",14,"1,7","2,4","0,1",TACO 4ª ed.
+"Alface, roxa, crua","Verduras, hortaliças e derivados",13,"0,9","2,5","0,2",TACO 4ª ed.
+"Alfavaca, crua","Verduras, hortaliças e derivados",29,"2,7","5,2","0,5",TACO 4ª ed.
+"Alho, cru","Verduras, hortaliças e derivados",113,"7,0","23,9","0,2",TACO 4ª ed.
+"Alho-poró, cru","Verduras, hortaliças e derivados",32,"1,4","6,9","0,1",TACO 4ª ed.
+"Almeirão, cru","Verduras, hortaliças e derivados",18,"1,8","3,3","0,2",TACO 4ª ed.
+"Almeirão, refogado","Verduras, hortaliças e derivados",65,"1,7","5,7","4,8",TACO 4ª ed.
+"Batata, baroa, cozida","Verduras, hortaliças e derivados",80,"0,9","18,9","0,2",TACO 4ª ed.
+"Batata, baroa, crua","Verduras, hortaliças e derivados",101,"1,0","24,0","0,2",TACO 4ª ed.
+"Batata, doce, cozida","Verduras, hortaliças e derivados",77,"0,6","18,4","0,1",TACO 4ª ed.
+"Batata, doce, crua","Verduras, hortaliças e derivados",118,"1,3","28,2","0,1",TACO 4ª ed.
+"Batata, frita, tipo chips, industrializada","Verduras, hortaliças e derivados",543,"5,6","51,2","36,6",TACO 4ª ed.
+"Batata, inglesa, cozida","Verduras, hortaliças e derivados",52,"1,2","11,9",Tr,TACO 4ª ed.
+"Batata, inglesa, crua","Verduras, hortaliças e derivados",64,"1,8","14,7",Tr,TACO 4ª ed.
+"Batata, inglesa, frita","Verduras, hortaliças e derivados",267,"5,0","35,6","13,1",TACO 4ª ed.
+"Batata, inglesa, sauté","Verduras, hortaliças e derivados",68,"1,3","14,1","0,9",TACO 4ª ed.
+"Berinjela, cozida","Verduras, hortaliças e derivados",19,"0,7","4,5","0,1",TACO 4ª ed.
+"Berinjela, crua","Verduras, hortaliças e derivados",20,"1,2","4,4","0,1",TACO 4ª ed.
+"Beterraba, cozida","Verduras, hortaliças e derivados",32,"1,3","7,2","0,1",TACO 4ª ed.
+"Beterraba, crua","Verduras, hortaliças e derivados",49,"1,9","11,1","0,1",TACO 4ª ed.
+"Biscoito, polvilho doce","Verduras, hortaliças e derivados",438,"1,3","80,5","12,2",TACO 4ª ed.
+"Brócolis, cozido","Verduras, hortaliças e derivados",25,"2,1","4,4","0,5",TACO 4ª ed.
+"Brócolis, cru","Verduras, hortaliças e derivados",25,"3,6","4,0","0,3",TACO 4ª ed.
+"Cará, cozido","Verduras, hortaliças e derivados",78,"1,5","18,9","0,1",TACO 4ª ed.
+"Cará, cru","Verduras, hortaliças e derivados",96,"2,3","23,0","0,1",TACO 4ª ed.
+"Caruru, cru","Verduras, hortaliças e derivados",34,"3,2","6,0","0,6",TACO 4ª ed.
+"Catalonha, crua","Verduras, hortaliças e derivados",24,"1,9","4,8","0,3",TACO 4ª ed.
+"Catalonha, refogada","Verduras, hortaliças e derivados",63,"2,0","4,8","4,8",TACO 4ª ed.
+"Cebola, crua","Verduras, hortaliças e derivados",39,"1,7","8,9","0,1",TACO 4ª ed.
+"Cebolinha, crua","Verduras, hortaliças e derivados",20,"1,9","3,4","0,4",TACO 4ª ed.
+"Cenoura, cozida","Verduras, hortaliças e derivados",30,"0,8","6,7","0,2",TACO 4ª ed.
+"Cenoura, crua","Verduras, hortaliças e derivados",34,"1,3","7,7","0,2",TACO 4ª ed.
+"Chicória, crua","Verduras, hortaliças e derivados",14,"1,1","2,9","0,1",TACO 4ª ed.
+"Chuchu, cozido","Verduras, hortaliças e derivados",19,"0,4","4,8",Tr,TACO 4ª ed.
+"Chuchu, cru","Verduras, hortaliças e derivados",17,"0,7","4,1","0,1",TACO 4ª ed.
+"Coentro, folhas desidratadas","Verduras, hortaliças e derivados",309,"20,9","48,0","10,4",TACO 4ª ed.
+"Couve, manteiga, crua","Verduras, hortaliças e derivados",27,"2,9","4,3","0,5",TACO 4ª ed.
+"Couve, manteiga, refogada","Verduras, hortaliças e derivados",90,"1,7","8,7","6,6",TACO 4ª ed.
+"Couve-flor, crua","Verduras, hortaliças e derivados",23,"1,9","4,5","0,2",TACO 4ª ed.
+"Couve-flor, cozida","Verduras, hortaliças e derivados",19,"1,2","3,9","0,3",TACO 4ª ed.
+"Espinafre, Nova Zelândia, cru","Verduras, hortaliças e derivados",16,"2,0","2,6","0,2",TACO 4ª ed.
+"Espinafre, Nova Zelândia, refogado","Verduras, hortaliças e derivados",67,"2,7","4,2","5,4",TACO 4ª ed.
+"Farinha, de mandioca, crua","Verduras, hortaliças e derivados",361,"1,6","87,9","0,3",TACO 4ª ed.
+"Farinha, de mandioca, torrada","Verduras, hortaliças e derivados",365,"1,2","89,2","0,3",TACO 4ª ed.
+"Farinha, de puba","Verduras, hortaliças e derivados",360,"1,6","87,3","0,5",TACO 4ª ed.
+"Fécula, de mandioca","Verduras, hortaliças e derivados",331,"0,5","81,1","0,3",TACO 4ª ed.
+"Feijão, broto, cru","Verduras, hortaliças e derivados",39,"4,2","7,8","0,1",TACO 4ª ed.
+"Inhame, cru","Verduras, hortaliças e derivados",97,"2,1","23,2","0,2",TACO 4ª ed.
+"Jiló, cru","Verduras, hortaliças e derivados",27,"1,4","6,2","0,2",TACO 4ª ed.
+"Jurubeba, crua","Verduras, hortaliças e derivados",126,"4,4","23,1","3,9",TACO 4ª ed.
+"Mandioca, cozida","Verduras, hortaliças e derivados",125,"0,6","30,1","0,3",TACO 4ª ed.
+"Mandioca, crua","Verduras, hortaliças e derivados",151,"1,1","36,2","0,3",TACO 4ª ed.
+"Mandioca, farofa, temperada","Verduras, hortaliças e derivados",406,"2,1","80,3","9,1",TACO 4ª ed.
+"Mandioca, frita","Verduras, hortaliças e derivados",300,"1,4","50,3","11,2",TACO 4ª ed.
+"Manjericão, cru","Verduras, hortaliças e derivados",21,"2,0","3,6","0,4",TACO 4ª ed.
+"Maxixe, cru","Verduras, hortaliças e derivados",14,"1,4","2,7","0,1",TACO 4ª ed.
+"Mostarda, folha, crua","Verduras, hortaliças e derivados",18,"2,1","3,2","0,2",TACO 4ª ed.
+"Nhoque, batata, cozido","Verduras, hortaliças e derivados",181,"5,9","36,8","1,9",TACO 4ª ed.
+"Nabo, cru","Verduras, hortaliças e derivados",18,"1,2","4,1","0,1",TACO 4ª ed.
+"Palmito, juçara, em conserva","Verduras, hortaliças e derivados",23,"1,8","4,3","0,4",TACO 4ª ed.
+"Palmito, pupunha, em conserva","Verduras, hortaliças e derivados",29,"2,5","5,5","0,5",TACO 4ª ed.
+"Pão, de queijo, assado","Verduras, hortaliças e derivados",363,"5,1","34,2","24,6",TACO 4ª ed.
+"Pão, de queijo, cru","Verduras, hortaliças e derivados",295,"3,6","38,5","14,0",TACO 4ª ed.
+"Pepino, cru","Verduras, hortaliças e derivados",10,"0,9","2,0",Tr,TACO 4ª ed.
+"Pimentão, amarelo, cru","Verduras, hortaliças e derivados",28,"1,2","6,0","0,4",TACO 4ª ed.
+"Pimentão, verde, cru","Verduras, hortaliças e derivados",21,"1,1","4,9","0,2",TACO 4ª ed.
+"Pimentão, vermelho, cru","Verduras, hortaliças e derivados",23,"1,0","5,5","0,1",TACO 4ª ed.
+"Polvilho, doce","Verduras, hortaliças e derivados",351,"0,4","86,8",Tr,TACO 4ª ed.
+"Quiabo, cru","Verduras, hortaliças e derivados",30,"1,9","6,4","0,3",TACO 4ª ed.
+"Rabanete, cru","Verduras, hortaliças e derivados",14,"1,4","2,7","0,1",TACO 4ª ed.
+"Repolho, branco, cru","Verduras, hortaliças e derivados",17,"0,9","3,9","0,1",TACO 4ª ed.
+"Repolho, roxo, cru","Verduras, hortaliças e derivados",31,"1,9","7,2","0,1",TACO 4ª ed.
+"Repolho, roxo, refogado","Verduras, hortaliças e derivados",42,"1,8","7,6","1,2",TACO 4ª ed.
+"Rúcula, crua","Verduras, hortaliças e derivados",13,"1,8","2,2","0,1",TACO 4ª ed.
+"Salsa, crua","Verduras, hortaliças e derivados",33,"3,3","5,7","0,6",TACO 4ª ed.
+"Seleta de legumes, enlatada","Verduras, hortaliças e derivados",57,"3,4","12,7","0,4",TACO 4ª ed.
+"Serralha, crua","Verduras, hortaliças e derivados",30,"2,7","4,9","0,7",TACO 4ª ed.
+"Taioba, crua","Verduras, hortaliças e derivados",34,"2,9","5,4","0,9",TACO 4ª ed.
+"Tomate, com semente, cru","Verduras, hortaliças e derivados",15,"1,1","3,1","0,2",TACO 4ª ed.
+"Tomate, extrato","Verduras, hortaliças e derivados",61,"2,4","15,0","0,2",TACO 4ª ed.
+"Tomate, molho industrializado","Verduras, hortaliças e derivados",38,"1,4","7,7","0,9",TACO 4ª ed.
+"Tomate, purê","Verduras, hortaliças e derivados",28,"1,4","6,9",Tr,TACO 4ª ed.
+"Tomate, salada","Verduras, hortaliças e derivados",21,"0,8","5,1",Tr,TACO 4ª ed.
+"Vagem, crua","Verduras, hortaliças e derivados",25,"1,8","5,3","0,2",TACO 4ª ed.
+"Abacate, cru",Frutas e derivados,96,"1,2","6,0","8,4",TACO 4ª ed.
+"Abacaxi, cru",Frutas e derivados,48,"0,9","12,3","0,1",TACO 4ª ed.
+"Abacaxi, polpa, congelada",Frutas e derivados,31,"0,5","7,8","0,1",TACO 4ª ed.
+"Abiu, cru",Frutas e derivados,62,"0,8","14,9","0,7",TACO 4ª ed.
+"Açaí, polpa, com xarope de guaraná e glucose",Frutas e derivados,110,"0,7","21,5","3,7",TACO 4ª ed.
+"Açaí, polpa, congelada",Frutas e derivados,58,"0,8","6,2","3,9",TACO 4ª ed.
+"Acerola, crua",Frutas e derivados,33,"0,9","8,0","0,2",TACO 4ª ed.
+"Acerola, polpa, congelada",Frutas e derivados,22,"0,6","5,5",Tr,TACO 4ª ed.
+"Ameixa, calda, enlatada",Frutas e derivados,183,"0,4","46,9",Tr,TACO 4ª ed.
+"Ameixa, crua",Frutas e derivados,53,"0,8","13,9",Tr,TACO 4ª ed.
+"Ameixa, em calda, enlatada, drenada",Frutas e derivados,177,"1,0","47,7","0,3",TACO 4ª ed.
+"Atemóia, crua",Frutas e derivados,97,"1,0","25,3","0,3",TACO 4ª ed.
+"Banana, da terra, crua",Frutas e derivados,128,"1,4","33,7","0,2",TACO 4ª ed.
+"Banana, doce em barra",Frutas e derivados,280,"2,2","75,7","0,1",TACO 4ª ed.
+"Banana, figo, crua",Frutas e derivados,105,"1,1","27,8","0,1",TACO 4ª ed.
+"Banana, maçã, crua",Frutas e derivados,87,"1,8","22,3","0,1",TACO 4ª ed.
+"Banana, nanica, crua",Frutas e derivados,92,"1,4","23,8","0,1",TACO 4ª ed.
+"Banana, ouro, crua",Frutas e derivados,112,"1,5","29,3","0,2",TACO 4ª ed.
+"Banana, pacova, crua",Frutas e derivados,78,"1,2","20,3","0,1",TACO 4ª ed.
+"Banana, prata, crua",Frutas e derivados,98,"1,3","26,0","0,1",TACO 4ª ed.
+"Cacau, cru",Frutas e derivados,74,"1,0","19,4","0,1",TACO 4ª ed.
+"Cajá-Manga, cru",Frutas e derivados,46,"1,3","11,4",Tr,TACO 4ª ed.
+"Cajá, polpa, congelada",Frutas e derivados,26,"0,6","6,4","0,2",TACO 4ª ed.
+"Caju, cru",Frutas e derivados,43,"1,0","10,3","0,3",TACO 4ª ed.
+"Caju, polpa, congelada",Frutas e derivados,37,"0,5","9,4","0,2",TACO 4ª ed.
+"Caju, suco concentrado, envasado",Frutas e derivados,45,"0,4","10,7","0,2",TACO 4ª ed.
+"Caqui, chocolate, cru",Frutas e derivados,71,"0,4","19,3","0,1",TACO 4ª ed.
+"Carambola, crua",Frutas e derivados,46,"0,9","11,5","0,2",TACO 4ª ed.
+"Ciriguela, crua",Frutas e derivados,76,"1,4","18,9","0,4",TACO 4ª ed.
+"Cupuaçu, cru",Frutas e derivados,49,"1,2","10,4","1,0",TACO 4ª ed.
+"Cupuaçu, polpa, congelada",Frutas e derivados,49,"0,8","11,4","0,6",TACO 4ª ed.
+"Figo, cru",Frutas e derivados,41,"1,0","10,2","0,2",TACO 4ª ed.
+"Figo, enlatado, em calda",Frutas e derivados,184,"0,6","50,3","0,2",TACO 4ª ed.
+"Fruta-pão, crua",Frutas e derivados,67,"1,1","17,2","0,2",TACO 4ª ed.
+"Goiaba, branca, com casca, crua",Frutas e derivados,52,"0,9","12,4","0,5",TACO 4ª ed.
+"Goiaba, doce em pasta",Frutas e derivados,269,"0,6","74,1","0,0",TACO 4ª ed.
+"Goiaba, doce, cascão",Frutas e derivados,286,"0,4","78,7","0,1",TACO 4ª ed.
+"Goiaba, vermelha, com casca, crua",Frutas e derivados,54,"1,1","13,0","0,4",TACO 4ª ed.
+"Graviola, crua",Frutas e derivados,62,"0,8","15,8","0,2",TACO 4ª ed.
+"Graviola, polpa, congelada",Frutas e derivados,38,"0,6","9,8","0,1",TACO 4ª ed.
+"Jabuticaba, crua",Frutas e derivados,58,"0,6","15,3","0,1",TACO 4ª ed.
+"Jaca, crua",Frutas e derivados,88,"1,4","22,5","0,3",TACO 4ª ed.
+"Jambo, cru",Frutas e derivados,27,"0,9","6,5","0,1",TACO 4ª ed.
+"Jamelão, cru",Frutas e derivados,41,"0,5","10,6","0,1",TACO 4ª ed.
+"Kiwi, cru",Frutas e derivados,51,"1,3","11,5","0,6",TACO 4ª ed.
+"Laranja, baía, crua",Frutas e derivados,45,"1,0","11,5","0,1",TACO 4ª ed.
+"Laranja, baía, suco",Frutas e derivados,37,"0,7","8,7",Tr,TACO 4ª ed.
+"Laranja, da terra, crua",Frutas e derivados,51,"1,1","12,9","0,2",TACO 4ª ed.
+"Laranja, da terra, suco",Frutas e derivados,41,"0,7","9,6","0,1",TACO 4ª ed.
+"Laranja, lima, crua",Frutas e derivados,46,"1,1","11,5","0,1",TACO 4ª ed.
+"Laranja, lima, suco",Frutas e derivados,39,"0,7","9,2","0,1",TACO 4ª ed.
+"Laranja, pêra, crua",Frutas e derivados,37,"1,0","8,9","0,1",TACO 4ª ed.
+"Laranja, pêra, suco",Frutas e derivados,33,"0,7","7,6","0,1",TACO 4ª ed.
+"Laranja, valência, crua",Frutas e derivados,46,"0,8","11,7","0,2",TACO 4ª ed.
+"Laranja, valência, suco",Frutas e derivados,36,"0,5","8,6","0,1",TACO 4ª ed.
+"Limão, cravo, suco",Frutas e derivados,14,"0,3","5,2",Tr,TACO 4ª ed.
+"Limão, galego, suco",Frutas e derivados,22,"0,6","7,3","0,1",TACO 4ª ed.
+"Limão, tahiti, cru",Frutas e derivados,32,"0,9","11,1","0,1",TACO 4ª ed.
+"Maçã, Argentina, com casca, crua",Frutas e derivados,63,"0,2","16,6","0,2",TACO 4ª ed.
+"Maçã, Fuji, com casca, crua",Frutas e derivados,56,"0,3","15,2",Tr,TACO 4ª ed.
+"Macaúba, crua",Frutas e derivados,404,"2,1","13,9","40,7",TACO 4ª ed.
+"Mamão, doce em calda, drenado",Frutas e derivados,196,"0,2","54,0","0,1",TACO 4ª ed.
+"Mamão, Formosa, cru",Frutas e derivados,45,"0,8","11,6","0,1",TACO 4ª ed.
+"Mamão, Papaia, cru",Frutas e derivados,40,"0,5","10,4","0,1",TACO 4ª ed.
+"Mamão verde, doce em calda, drenado",Frutas e derivados,209,"0,3","57,6","0,1",TACO 4ª ed.
+"Manga, Haden, crua",Frutas e derivados,64,"0,4","16,7","0,3",TACO 4ª ed.
+"Manga, Palmer, crua",Frutas e derivados,72,"0,4","19,4","0,2",TACO 4ª ed.
+"Manga, polpa, congelada",Frutas e derivados,48,"0,4","12,5","0,2",TACO 4ª ed.
+"Manga, Tommy Atkins, crua",Frutas e derivados,51,"0,9","12,8","0,2",TACO 4ª ed.
+"Maracujá, cru",Frutas e derivados,68,"2,0","12,3","2,1",TACO 4ª ed.
+"Maracujá, polpa, congelada",Frutas e derivados,39,"0,8","9,6","0,2",TACO 4ª ed.
+"Maracujá, suco concentrado, envasado",Frutas e derivados,42,"0,8","9,6","0,2",TACO 4ª ed.
+"Melancia, crua",Frutas e derivados,33,"0,9","8,1",Tr,TACO 4ª ed.
+"Melão, cru",Frutas e derivados,29,"0,7","7,5",Tr,TACO 4ª ed.
+"Mexerica, Murcote, crua",Frutas e derivados,58,"0,9","14,9","0,1",TACO 4ª ed.
+"Mexerica, Rio, crua",Frutas e derivados,37,"0,7","9,3","0,1",TACO 4ª ed.
+"Morango, cru",Frutas e derivados,30,"0,9","6,8","0,3",TACO 4ª ed.
+"Nêspera, crua",Frutas e derivados,43,"0,3","11,5",Tr,TACO 4ª ed.
+"Pequi, cru",Frutas e derivados,205,"2,3","13,0","18,0",TACO 4ª ed.
+"Pêra, Park, crua",Frutas e derivados,61,"0,2","16,1","0,2",TACO 4ª ed.
+"Pêra, Williams, crua",Frutas e derivados,53,"0,6","14,0","0,1",TACO 4ª ed.
+"Pêssego, Aurora, cru",Frutas e derivados,36,"0,8","9,3",Tr,TACO 4ª ed.
+"Pêssego, enlatado, em calda",Frutas e derivados,63,"0,7","16,9",Tr,TACO 4ª ed.
+"Pinha, crua",Frutas e derivados,88,"1,5","22,4","0,3",TACO 4ª ed.
+"Pitanga, crua",Frutas e derivados,41,"0,9","10,2","0,2",TACO 4ª ed.
+"Pitanga, polpa, congelada",Frutas e derivados,19,"0,3","4,8","0,1",TACO 4ª ed.
+"Romã, crua",Frutas e derivados,56,"0,4","15,1",Tr,TACO 4ª ed.
+"Tamarindo, cru",Frutas e derivados,276,"3,2","72,5","0,5",TACO 4ª ed.
+"Tangerina, Poncã, crua",Frutas e derivados,38,"0,8","9,6","0,1",TACO 4ª ed.
+"Tangerina, Poncã, suco",Frutas e derivados,36,"0,5","8,8",Tr,TACO 4ª ed.
+"Tucumã, cru",Frutas e derivados,262,"2,1","26,5","19,1",TACO 4ª ed.
+"Umbu, cru",Frutas e derivados,37,"0,8","9,4",Tr,TACO 4ª ed.
+"Umbu, polpa, congelada",Frutas e derivados,34,"0,5","8,8","0,1",TACO 4ª ed.
+"Uva, Itália, crua",Frutas e derivados,53,"0,7","13,6","0,2",TACO 4ª ed.
+"Uva, Rubi, crua",Frutas e derivados,49,"0,6","12,7","0,2",TACO 4ª ed.
+"Uva, suco concentrado, envasado",Frutas e derivados,58,Tr,"14,7",Tr,TACO 4ª ed.
+"Azeite, de dendê",Gorduras e óleos,884,NA,NA,"100,0",TACO 4ª ed.
+"Azeite, de oliva, extra virgem",Gorduras e óleos,884,NA,NA,"100,0",TACO 4ª ed.
+"Manteiga, com sal",Gorduras e óleos,726,"0,4","0,1","82,4",TACO 4ª ed.
+"Manteiga, sem sal",Gorduras e óleos,758,"0,4","0,0","86,0",TACO 4ª ed.
+"Margarina, com óleo hidrogenado, com sal (65% de lipídeos)",Gorduras e óleos,596,Tr,"0,0","67,4",TACO 4ª ed.
+"Margarina, com óleo hidrogenado, sem sal (80% de lipídeos)",Gorduras e óleos,723,Tr,"0,0","81,7",TACO 4ª ed.
+"Margarina, com óleo interesterificado, com sal (65%de lipídeos)",Gorduras e óleos,594,Tr,"0,0","67,2",TACO 4ª ed.
+"Margarina, com óleo interesterificado, sem sal (65% de lipídeos)",Gorduras e óleos,593,Tr,"0,0","67,1",TACO 4ª ed.
+"Óleo, de babaçu",Gorduras e óleos,884,NA,NA,"100,0",TACO 4ª ed.
+"Óleo, de canola",Gorduras e óleos,884,NA,NA,"100,0",TACO 4ª ed.
+"Óleo, de girassol",Gorduras e óleos,884,NA,NA,"100,0",TACO 4ª ed.
+"Óleo, de milho",Gorduras e óleos,884,NA,NA,"100,0",TACO 4ª ed.
+"Óleo, de pequi",Gorduras e óleos,884,NA,NA,"100,0",TACO 4ª ed.
+"Óleo, de soja",Gorduras e óleos,884,NA,NA,"100,0",TACO 4ª ed.
+"Abadejo, filé, congelado, assado",Pescados e frutos do mar,112,"23,5","0,0","1,2",TACO 4ª ed.
+"Abadejo, filé, congelado,cozido",Pescados e frutos do mar,91,"19,3","0,0","0,9",TACO 4ª ed.
+"Abadejo, filé, congelado, cru",Pescados e frutos do mar,59,"13,1","0,0","0,4",TACO 4ª ed.
+"Abadejo, filé, congelado, grelhado",Pescados e frutos do mar,130,"27,6","0,0","1,3",TACO 4ª ed.
+"Atum, conserva em óleo",Pescados e frutos do mar,166,"26,2","0,0","6,0",TACO 4ª ed.
+"Atum, fresco, cru",Pescados e frutos do mar,118,"25,7","0,0","0,9",TACO 4ª ed.
+"Bacalhau, salgado, cru",Pescados e frutos do mar,136,"29,0","0,0","1,3",TACO 4ª ed.
+"Bacalhau, salgado, refogado",Pescados e frutos do mar,140,"24,0","1,2","3,6",TACO 4ª ed.
+"Cação, posta, com farinha de trigo, frita",Pescados e frutos do mar,208,"25,0","3,1","10,0",TACO 4ª ed.
+"Cação, posta, cozida",Pescados e frutos do mar,116,"25,6","0,0","0,7",TACO 4ª ed.
+"Cação, posta, crua",Pescados e frutos do mar,83,"17,9","0,0","0,8",TACO 4ª ed.
+"Camarão, Rio Grande, grande, cozido",Pescados e frutos do mar,90,"19,0","0,0","1,0",TACO 4ª ed.
+"Camarão, Rio Grande, grande, cru",Pescados e frutos do mar,47,"10,0","0,0","0,5",TACO 4ª ed.
+"Camarão, Sete Barbas, sem cabeça, com casca, frito",Pescados e frutos do mar,231,"18,4","2,9","15,6",TACO 4ª ed.
+"Caranguejo, cozido",Pescados e frutos do mar,83,"18,5","0,0","0,4",TACO 4ª ed.
+"Corimba, cru",Pescados e frutos do mar,128,"17,4","0,0","6,0",TACO 4ª ed.
+"Corimbatá, assado",Pescados e frutos do mar,261,"19,9","0,0","19,6",TACO 4ª ed.
+"Corimbatá, cozido",Pescados e frutos do mar,239,"20,1","0,0","16,9",TACO 4ª ed.
+"Corvina de água doce, crua",Pescados e frutos do mar,101,"18,9","0,0","2,2",TACO 4ª ed.
+"Corvina do mar, crua",Pescados e frutos do mar,94,"18,6","0,0","1,6",TACO 4ª ed.
+"Corvina grande, assada",Pescados e frutos do mar,147,"26,8","0,0","3,6",TACO 4ª ed.
+"Corvina grande, cozida",Pescados e frutos do mar,100,"23,4","0,0","2,6",TACO 4ª ed.
+"Dourada de água doce, fresca",Pescados e frutos do mar,131,"18,8","0,0","5,6",TACO 4ª ed.
+"Lambari, congelado, cru",Pescados e frutos do mar,131,"16,8","0,0","6,5",TACO 4ª ed.
+"Lambari, congelado, frito",Pescados e frutos do mar,327,"28,4","0,0","22,8",TACO 4ª ed.
+"Lambari, fresco, cru",Pescados e frutos do mar,152,"15,7","0,0","9,4",TACO 4ª ed.
+"Manjuba, com farinha de trigo, frita",Pescados e frutos do mar,344,"23,5","10,2","22,6",TACO 4ª ed.
+"Manjuba, frita",Pescados e frutos do mar,349,"30,1","0,0","24,5",TACO 4ª ed.
+"Merluza, filé, assado",Pescados e frutos do mar,122,"26,6","0,0","0,9",TACO 4ª ed.
+"Merluza, filé, cru",Pescados e frutos do mar,89,"16,6","0,0","2,0",TACO 4ª ed.
+"Merluza, filé, frito",Pescados e frutos do mar,192,"26,9","0,0","8,5",TACO 4ª ed.
+"Pescada, branca, crua",Pescados e frutos do mar,111,"16,3","0,0","4,6",TACO 4ª ed.
+"Pescada, branca, frita",Pescados e frutos do mar,223,"27,4","0,0","11,8",TACO 4ª ed.
+"Pescada, filé, com farinha de trigo, frito",Pescados e frutos do mar,283,"21,4","5,0","19,1",TACO 4ª ed.
+"Pescada, filé, cru",Pescados e frutos do mar,107,"16,7","0,0","4,0",TACO 4ª ed.
+"Pescada, filé, frito",Pescados e frutos do mar,154,"28,6","0,0","3,6",TACO 4ª ed.
+"Pescada, filé, molho escabeche",Pescados e frutos do mar,142,"11,8","5,0","8,0",TACO 4ª ed.
+"Pescadinha, crua",Pescados e frutos do mar,76,"15,5","0,0","1,1",TACO 4ª ed.
+"Pintado, assado",Pescados e frutos do mar,192,"36,5","0,0","4,0",TACO 4ª ed.
+"Pintado, cru",Pescados e frutos do mar,91,"18,6","0,0","1,3",TACO 4ª ed.
+"Pintado, grelhado",Pescados e frutos do mar,152,"30,8","0,0","2,3",TACO 4ª ed.
+"Porquinho, cru",Pescados e frutos do mar,93,"20,5","0,0","0,6",TACO 4ª ed.
+"Salmão, filé, com pele, fresco, grelhado",Pescados e frutos do mar,229,"23,9","0,0","14,0",TACO 4ª ed.
+"Salmão, sem pele, fresco, cru",Pescados e frutos do mar,170,"19,3","0,0","9,7",TACO 4ª ed.
+"Salmão, sem pele, fresco, grelhado",Pescados e frutos do mar,243,"26,1","0,0","14,5",TACO 4ª ed.
+"Sardinha, assada",Pescados e frutos do mar,164,"32,2","0,0","3,0",TACO 4ª ed.
+"Sardinha, conserva em óleo",Pescados e frutos do mar,285,"15,9","0,0","24,0",TACO 4ª ed.
+"Sardinha, frita",Pescados e frutos do mar,257,"33,4","0,0","12,7",TACO 4ª ed.
+"Sardinha, inteira, crua",Pescados e frutos do mar,114,"21,1","0,0","2,7",TACO 4ª ed.
+"Tucunaré, filé, congelado, cru",Pescados e frutos do mar,88,"18,0","0,0","1,2",TACO 4ª ed.
+Apresuntado,Carnes e derivados,129,"13,5","2,9","6,7",TACO 4ª ed.
+"Caldo de carne, tablete",Carnes e derivados,241,"7,8","15,1","16,6",TACO 4ª ed.
+"Caldo de galinha, tablete",Carnes e derivados,251,"6,3","10,6","20,4",TACO 4ª ed.
+"Carne, bovina, acém, moído, cozido",Carnes e derivados,212,"26,7","0,0","10,9",TACO 4ª ed.
+"Carne, bovina, acém, moído, cru",Carnes e derivados,137,"19,4","0,0","5,9",TACO 4ª ed.
+"Carne, bovina, acém, sem gordura, cozido",Carnes e derivados,215,"27,3","0,0","10,9",TACO 4ª ed.
+"Carne, bovina, acém, sem gordura, cru",Carnes e derivados,144,"20,8","0,0","6,1",TACO 4ª ed.
+"Carne, bovina, almôndegas, cruas",Carnes e derivados,189,"12,3","9,8","11,2",TACO 4ª ed.
+"Carne, bovina, almôndegas, fritas",Carnes e derivados,272,"18,2","14,3","15,8",TACO 4ª ed.
+"Carne, bovina, bucho, cozido",Carnes e derivados,133,"21,6","0,0","4,5",TACO 4ª ed.
+"Carne, bovina, bucho, cru",Carnes e derivados,137,"20,5","0,0","5,5",TACO 4ª ed.
+"Carne, bovina, capa de contra-filé, com gordura, crua",Carnes e derivados,217,"19,2","0,0","15,0",TACO 4ª ed.
+"Carne, bovina, capa de contra-filé, com gordura, grelhada",Carnes e derivados,312,"30,7","0,0","20,0",TACO 4ª ed.
+"Carne, bovina, capa de contra-filé, sem gordura, crua",Carnes e derivados,131,"21,5","0,0","4,3",TACO 4ª ed.
+"Carne, bovina, capa de contra-filé, sem gordura, grelhada",Carnes e derivados,239,"35,1","0,0","10,0",TACO 4ª ed.
+"Carne, bovina, charque, cozido",Carnes e derivados,263,"36,4","0,0","11,9",TACO 4ª ed.
+"Carne, bovina, charque, cru",Carnes e derivados,249,"22,7","0,0","16,8",TACO 4ª ed.
+"Carne, bovina, contra-filé, à milanesa",Carnes e derivados,352,"20,6","12,2","24,0",TACO 4ª ed.
+"Carne, bovina, contra-filé de costela, cru",Carnes e derivados,202,"19,8","0,0","13,1",TACO 4ª ed.
+"Carne, bovina, contra-filé de costela, grelhado",Carnes e derivados,275,"29,9","0,0","16,3",TACO 4ª ed.
+"Carne, bovina, contra-filé, com gordura, cru",Carnes e derivados,206,"21,2","0,0","12,8",TACO 4ª ed.
+"Carne, bovina, contra-filé, com gordura, grelhado",Carnes e derivados,278,"32,4","0,0","15,5",TACO 4ª ed.
+"Carne, bovina, contra-filé, sem gordura, cru",Carnes e derivados,157,"24,0","0,0","6,0",TACO 4ª ed.
+"Carne, bovina, contra-filé, sem gordura, grelhado",Carnes e derivados,194,"35,9","0,0","4,5",TACO 4ª ed.
+"Carne, bovina, costela, assada",Carnes e derivados,373,"28,8","0,0","27,7",TACO 4ª ed.
+"Carne, bovina, costela, crua",Carnes e derivados,358,"16,7","0,0","31,8",TACO 4ª ed.
+"Carne, bovina, coxão duro, sem gordura, cozido",Carnes e derivados,217,"31,9","0,0","8,9",TACO 4ª ed.
+"Carne, bovina, coxão duro, sem gordura, cru",Carnes e derivados,148,"21,5","0,0","6,2",TACO 4ª ed.
+"Carne, bovina, coxão mole, sem gordura, cozido",Carnes e derivados,219,"32,4","0,0","8,9",TACO 4ª ed.
+"Carne, bovina, coxão mole, sem gordura, cru",Carnes e derivados,169,"21,2","0,0","8,7",TACO 4ª ed.
+"Carne, bovina, cupim, assado",Carnes e derivados,330,"28,6","0,0","23,0",TACO 4ª ed.
+"Carne, bovina, cupim, cru",Carnes e derivados,221,"19,5","0,0","15,3",TACO 4ª ed.
+"Carne, bovina, fígado, cru",Carnes e derivados,141,"20,7","1,1","5,4",TACO 4ª ed.
+"Carne, bovina, fígado, grelhado",Carnes e derivados,225,"29,9","4,2","9,0",TACO 4ª ed.
+"Carne, bovina, filé mingnon, sem gordura, cru",Carnes e derivados,143,"21,6","0,0","5,6",TACO 4ª ed.
+"Carne, bovina, filé mingnon, sem gordura, grelhado",Carnes e derivados,220,"32,8","0,0","8,8",TACO 4ª ed.
+"Carne, bovina, flanco, sem gordura, cozido",Carnes e derivados,196,"29,4","0,0","7,8",TACO 4ª ed.
+"Carne, bovina, flanco, sem gordura, cru",Carnes e derivados,141,"20,0","0,0","6,2",TACO 4ª ed.
+"Carne, bovina, fraldinha, com gordura, cozida",Carnes e derivados,338,"24,2","0,0","26,0",TACO 4ª ed.
+"Carne, bovina, fraldinha, com gordura, crua",Carnes e derivados,221,"17,6","0,0","16,1",TACO 4ª ed.
+"Carne, bovina, lagarto, cozido",Carnes e derivados,222,"32,9","0,0","9,1",TACO 4ª ed.
+"Carne, bovina, lagarto, cru",Carnes e derivados,135,"20,5","0,0","5,2",TACO 4ª ed.
+"Carne, bovina, língua, cozida",Carnes e derivados,315,"21,4","0,0","24,8",TACO 4ª ed.
+"Carne, bovina, língua, crua",Carnes e derivados,215,"17,1","0,0","15,8",TACO 4ª ed.
+"Carne, bovina, maminha, crua",Carnes e derivados,153,"20,9","0,0","7,0",TACO 4ª ed.
+"Carne, bovina, maminha, grelhada",Carnes e derivados,153,"30,7","0,0","2,4",TACO 4ª ed.
+"Carne, bovina, miolo de alcatra, sem gordura, cru",Carnes e derivados,163,"21,6","0,0","7,8",TACO 4ª ed.
+"Carne, bovina, miolo de alcatra, sem gordura, grelhado",Carnes e derivados,241,"31,9","0,0","11,6",TACO 4ª ed.
+"Carne, bovina, músculo, sem gordura, cozido",Carnes e derivados,194,"31,2","0,0","6,7",TACO 4ª ed.
+"Carne, bovina, músculo, sem gordura, cru",Carnes e derivados,142,"21,6","0,0","5,5",TACO 4ª ed.
+"Carne, bovina, paleta, com gordura, crua",Carnes e derivados,159,"21,4","0,0","7,5",TACO 4ª ed.
+"Carne, bovina, paleta, sem gordura, cozida",Carnes e derivados,194,"29,7","0,0","7,4",TACO 4ª ed.
+"Carne, bovina, paleta, sem gordura, crua",Carnes e derivados,141,"21,0","0,0","5,7",TACO 4ª ed.
+"Carne, bovina, patinho, sem gordura, cru",Carnes e derivados,133,"21,7","0,0","4,5",TACO 4ª ed.
+"Carne, bovina, patinho, sem gordura, grelhado",Carnes e derivados,219,"35,9","0,0","7,3",TACO 4ª ed.
+"Carne, bovina, peito, sem gordura, cozido",Carnes e derivados,338,"22,2","0,0","27,0",TACO 4ª ed.
+"Carne, bovina, peito, sem gordura, cru",Carnes e derivados,259,"17,6","0,0","20,4",TACO 4ª ed.
+"Carne, bovina, picanha, com gordura, crua",Carnes e derivados,213,"18,8","0,0","14,7",TACO 4ª ed.
+"Carne, bovina, picanha, com gordura, grelhada",Carnes e derivados,289,"26,4","0,0","19,5",TACO 4ª ed.
+"Carne, bovina, picanha, sem gordura, crua",Carnes e derivados,134,"21,3","0,0","4,7",TACO 4ª ed.
+"Carne, bovina, picanha, sem gordura, grelhada",Carnes e derivados,238,"31,9","0,0","11,3",TACO 4ª ed.
+"Carne, bovina, seca, cozida",Carnes e derivados,313,"26,9","0,0","21,9",TACO 4ª ed.
+"Carne, bovina, seca, crua",Carnes e derivados,313,"19,7","0,0","25,4",TACO 4ª ed.
+"Coxinha de frango, frita",Carnes e derivados,283,"9,6","34,5","11,8",TACO 4ª ed.
+"Croquete, de carne, cru",Carnes e derivados,246,"12,0","13,9","15,6",TACO 4ª ed.
+"Croquete, de carne, frito",Carnes e derivados,347,"16,9","18,1","22,7",TACO 4ª ed.
+"Empada de frango, pré-cozida, assada",Carnes e derivados,358,"6,9","47,5","15,6",TACO 4ª ed.
+"Empada, de frango, pré-cozida",Carnes e derivados,377,"7,3","35,5","22,9",TACO 4ª ed.
+"Frango, asa, com pele, crua",Carnes e derivados,213,"18,1","0,0","15,1",TACO 4ª ed.
+"Frango, caipira, inteiro, com pele, cozido",Carnes e derivados,243,"23,9","0,0","15,6",TACO 4ª ed.
+"Frango, caipira, inteiro, sem pele, cozido",Carnes e derivados,196,"29,6","0,0","7,7",TACO 4ª ed.
+"Frango, coração, cru",Carnes e derivados,222,"12,6","0,0","18,6",TACO 4ª ed.
+"Frango, coração, grelhado",Carnes e derivados,207,"22,4","0,6","12,1",TACO 4ª ed.
+"Frango, coxa, com pele, assada",Carnes e derivados,215,"28,5","0,1","10,4",TACO 4ª ed.
+"Frango, coxa, com pele, crua",Carnes e derivados,161,"17,1","0,0","9,8",TACO 4ª ed.
+"Frango, coxa, sem pele, cozida",Carnes e derivados,167,"26,9","0,0","5,8",TACO 4ª ed.
+"Frango, coxa, sem pele, crua",Carnes e derivados,120,"17,8","0,0","4,9",TACO 4ª ed.
+"Frango, fígado, cru",Carnes e derivados,106,"17,6","0,0","3,5",TACO 4ª ed.
+"Frango, filé, à milanesa",Carnes e derivados,221,"28,5","7,5","7,8",TACO 4ª ed.
+"Frango, inteiro, com pele, cru",Carnes e derivados,226,"16,4","0,0","17,3",TACO 4ª ed.
+"Frango, inteiro, sem pele, assado",Carnes e derivados,187,"28,0","0,0","7,5",TACO 4ª ed.
+"Frango, inteiro, sem pele, cozido",Carnes e derivados,170,"25,0","0,0","7,1",TACO 4ª ed.
+"Frango, inteiro, sem pele, cru",Carnes e derivados,129,"20,6","0,0","4,6",TACO 4ª ed.
+"Frango, peito, com pele, assado",Carnes e derivados,212,"33,4","0,0","7,6",TACO 4ª ed.
+"Frango, peito, com pele, cru",Carnes e derivados,149,"20,8","0,0","6,7",TACO 4ª ed.
+"Frango, peito, sem pele, cozido",Carnes e derivados,163,"31,5","0,0","3,2",TACO 4ª ed.
+"Frango, peito, sem pele, cru",Carnes e derivados,119,"21,5","0,0","3,0",TACO 4ª ed.
+"Frango, peito, sem pele, grelhado",Carnes e derivados,159,"32,0","0,0","2,5",TACO 4ª ed.
+"Frango, sobrecoxa, com pele, assada",Carnes e derivados,260,"28,7","0,0","15,2",TACO 4ª ed.
+"Frango, sobrecoxa, com pele, crua",Carnes e derivados,255,"15,5","0,0","20,9",TACO 4ª ed.
+"Frango, sobrecoxa, sem pele, assada",Carnes e derivados,233,"29,2","0,0","12,0",TACO 4ª ed.
+"Frango, sobrecoxa, sem pele, crua",Carnes e derivados,162,"17,6","0,0","9,6",TACO 4ª ed.
+"Hambúrguer, bovino, cru",Carnes e derivados,215,"13,2","4,2","16,2",TACO 4ª ed.
+"Hambúrguer, bovino, frito",Carnes e derivados,258,"20,0","6,3","17,0",TACO 4ª ed.
+"Hambúrguer, bovino, grelhado",Carnes e derivados,210,"13,2","11,3","12,4",TACO 4ª ed.
+"Lingüiça, frango, crua",Carnes e derivados,218,"14,2","0,0","17,4",TACO 4ª ed.
+"Lingüiça, frango, frita",Carnes e derivados,245,"18,3","0,0","18,5",TACO 4ª ed.
+"Lingüiça, frango, grelhada",Carnes e derivados,244,"18,2","0,0","18,4",TACO 4ª ed.
+"Lingüiça, porco, crua",Carnes e derivados,227,"16,1","0,0","17,6",TACO 4ª ed.
+"Lingüiça, porco, frita",Carnes e derivados,280,"20,5","0,0","21,3",TACO 4ª ed.
+"Lingüiça, porco, grelhada",Carnes e derivados,296,"23,2","0,0","21,9",TACO 4ª ed.
+Mortadela,Carnes e derivados,269,"12,0","5,8","21,6",TACO 4ª ed.
+"Peru, congelado, assado",Carnes e derivados,163,"26,2","0,0","5,7",TACO 4ª ed.
+"Peru, congelado, cru",Carnes e derivados,94,"18,1","0,0","1,8",TACO 4ª ed.
+"Porco, bisteca, crua",Carnes e derivados,164,"21,5","0,0","8,0",TACO 4ª ed.
+"Porco, bisteca, frita",Carnes e derivados,311,"33,7","0,0","18,5",TACO 4ª ed.
+"Porco, bisteca, grelhada",Carnes e derivados,280,"28,9","0,0","17,4",TACO 4ª ed.
+"Porco, costela, assada",Carnes e derivados,402,"30,2","0,0","30,3",TACO 4ª ed.
+"Porco, costela, crua",Carnes e derivados,256,"18,0","0,0","19,8",TACO 4ª ed.
+"Porco, lombo, assado",Carnes e derivados,210,"35,7","0,0","6,4",TACO 4ª ed.
+"Porco, lombo, cru",Carnes e derivados,176,"22,6","0,0","8,8",TACO 4ª ed.
+"Porco, orelha, salgada, crua",Carnes e derivados,258,"18,5","0,0","19,9",TACO 4ª ed.
+"Porco, pernil, assado",Carnes e derivados,262,"32,1","0,0","13,9",TACO 4ª ed.
+"Porco, pernil, cru",Carnes e derivados,186,"20,1","0,0","11,1",TACO 4ª ed.
+"Porco, rabo, salgado, cru",Carnes e derivados,377,"15,6","0,0","34,5",TACO 4ª ed.
+"Presunto, com capa de gordura",Carnes e derivados,128,"14,4","1,4","6,8",TACO 4ª ed.
+"Presunto, sem capa de gordura",Carnes e derivados,94,"14,3","2,1","2,7",TACO 4ª ed.
+"Quibe, assado",Carnes e derivados,136,"14,6","12,9","2,7",TACO 4ª ed.
+"Quibe, cru",Carnes e derivados,109,"12,4","10,8","1,7",TACO 4ª ed.
+"Quibe, frito",Carnes e derivados,254,"14,9","12,3","15,8",TACO 4ª ed.
+Salame,Carnes e derivados,398,"25,8","2,9","30,6",TACO 4ª ed.
+"Toucinho, cru",Carnes e derivados,593,"11,5","0,0","60,3",TACO 4ª ed.
+"Toucinho, frito",Carnes e derivados,697,"27,3","0,0","64,3",TACO 4ª ed.
+"Bebida láctea, pêssego",Leite e derivados,55,"2,1","7,6","1,9",TACO 4ª ed.
+Creme de Leite,Leite e derivados,221,"1,5","4,5","22,5",TACO 4ª ed.
+"Iogurte, natural",Leite e derivados,51,"4,1","1,9","3,0",TACO 4ª ed.
+"Iogurte, natural, desnatado",Leite e derivados,41,"3,8","5,8","0,3",TACO 4ª ed.
+"Iogurte, sabor abacaxi",Leite e derivados,*,*,*,*,TACO 4ª ed.
+"Iogurte, sabor morango",Leite e derivados,70,"2,7","9,7","2,3",TACO 4ª ed.
+"Iogurte, sabor pêssego",Leite e derivados,68,"2,5","9,4","2,3",TACO 4ª ed.
+"Leite, condensado",Leite e derivados,313,"7,7","57,0","6,7",TACO 4ª ed.
+"Leite, de cabra",Leite e derivados,66,"3,1","5,2","3,8",TACO 4ª ed.
+"Leite, de vaca, achocolatado",Leite e derivados,83,"2,1","14,2","2,2",TACO 4ª ed.
+"Leite, de vaca, desnatado, pó",Leite e derivados,362,"34,7","53,0","0,9",TACO 4ª ed.
+"Leite, de vaca, desnatado, UHT",Leite e derivados,*,*,*,*,TACO 4ª ed.
+"Leite, de vaca, integral",Leite e derivados,*,*,*,*,TACO 4ª ed.
+"Leite, de vaca, integral, pó",Leite e derivados,497,"25,4","39,2","26,9",TACO 4ª ed.
+"Leite, fermentado",Leite e derivados,70,"1,9","15,7","0,1",TACO 4ª ed.
+"Queijo, minas, frescal",Leite e derivados,264,"17,4","3,2","20,2",TACO 4ª ed.
+"Queijo, minas, meia cura",Leite e derivados,321,"21,2","3,6","24,6",TACO 4ª ed.
+"Queijo, mozarela",Leite e derivados,330,"22,6","3,0","25,2",TACO 4ª ed.
+"Queijo, parmesão",Leite e derivados,453,"35,6","1,7","33,5",TACO 4ª ed.
+"Queijo, pasteurizado",Leite e derivados,303,"9,4","5,7","27,4",TACO 4ª ed.
+"Queijo, petit suisse, morango",Leite e derivados,121,"5,8","18,5","2,8",TACO 4ª ed.
+"Queijo, prato",Leite e derivados,360,"22,7","1,9","29,1",TACO 4ª ed.
+"Queijo, requeijão, cremoso",Leite e derivados,257,"9,6","2,4","23,4",TACO 4ª ed.
+"Queijo, ricota",Leite e derivados,140,"12,6","3,8","8,1",TACO 4ª ed.
+"Bebida isotônica, sabores variados",Bebidas (alcoólicas e não alcoólicas),26,"0,0","6,4","0,0",TACO 4ª ed.
+"Café, infusão 10%",Bebidas (alcoólicas e não alcoólicas),9,"0,7","1,5","0,1",TACO 4ª ed.
+"Cana, caldo de",Bebidas (alcoólicas e não alcoólicas),65,Tr,"18,2",Tr,TACO 4ª ed.
+"Cerveja, pilsen",Bebidas (alcoólicas e não alcoólicas),41,"0,6","3,3",Tr,TACO 4ª ed.
+"Chá, erva-doce, infusão 5%",Bebidas (alcoólicas e não alcoólicas),1,"0,0","0,4","0,0",TACO 4ª ed.
+"Chá, mate, infusão 5%",Bebidas (alcoólicas e não alcoólicas),3,"0,0","0,6","0,1",TACO 4ª ed.
+"Chá, preto, infusão 5%",Bebidas (alcoólicas e não alcoólicas),2,"0,0","0,6","0,0",TACO 4ª ed.
+"Coco, água de",Bebidas (alcoólicas e não alcoólicas),22,"0,0","5,3","0,0",TACO 4ª ed.
+"Refrigerante, tipo água tônica",Bebidas (alcoólicas e não alcoólicas),31,"0,0","8,0","0,0",TACO 4ª ed.
+"Refrigerante, tipo cola",Bebidas (alcoólicas e não alcoólicas),34,"0,0","8,7","0,0",TACO 4ª ed.
+"Refrigerante, tipo guaraná",Bebidas (alcoólicas e não alcoólicas),39,"0,0","10,0","0,0",TACO 4ª ed.
+"Refrigerante, tipo laranja",Bebidas (alcoólicas e não alcoólicas),46,"0,0","11,8","0,0",TACO 4ª ed.
+"Refrigerante, tipo limão",Bebidas (alcoólicas e não alcoólicas),40,"0,0","10,3","0,0",TACO 4ª ed.
+"Omelete, de queijo",Ovos e derivados,268,"15,6","0,4","22,0",TACO 4ª ed.
+"Ovo, de codorna, inteiro, cru",Ovos e derivados,177,"13,7","0,8","12,7",TACO 4ª ed.
+"Ovo, de galinha, clara, cozida/10minutos",Ovos e derivados,59,"13,4","0,0","0,1",TACO 4ª ed.
+"Ovo, de galinha, gema, cozida/10minutos",Ovos e derivados,353,"15,9","1,6","30,8",TACO 4ª ed.
+"Ovo, de galinha, inteiro, cozido/10minutos",Ovos e derivados,146,"13,3","0,6","9,5",TACO 4ª ed.
+"Ovo, de galinha, inteiro, cru",Ovos e derivados,143,"13,0","1,6","8,9",TACO 4ª ed.
+"Ovo, de galinha, inteiro, frito",Ovos e derivados,240,"15,6","1,2","18,6",TACO 4ª ed.
+"Achocolatado, pó",Produtos açucarados,401,"4,2","91,2","2,2",TACO 4ª ed.
+"Açúcar, cristal",Produtos açucarados,387,"0,3","99,6",Tr,TACO 4ª ed.
+"Açúcar, mascavo",Produtos açucarados,369,"0,8","94,5","0,1",TACO 4ª ed.
+"Açúcar, refinado",Produtos açucarados,387,"0,3","99,5",Tr,TACO 4ª ed.
+"Chocolate, ao leite",Produtos açucarados,540,"7,2","59,6","30,3",TACO 4ª ed.
+"Chocolate, ao leite, com castanha do Pará",Produtos açucarados,559,"7,4","55,4","34,2",TACO 4ª ed.
+"Chocolate, ao leite, dietético",Produtos açucarados,557,"6,9","56,3","33,8",TACO 4ª ed.
+"Chocolate, meio amargo",Produtos açucarados,475,"4,9","62,4","29,9",TACO 4ª ed.
+Cocada branca,Produtos açucarados,449,"1,1","81,4","13,6",TACO 4ª ed.
+"Doce, de abóbora, cremoso",Produtos açucarados,199,"0,9","54,6","0,2",TACO 4ª ed.
+"Doce, de leite, cremoso",Produtos açucarados,306,"5,5","59,5","6,0",TACO 4ª ed.
+"Geléia, mocotó, natural",Produtos açucarados,106,"2,1","24,2","0,1",TACO 4ª ed.
+Glicose de milho,Produtos açucarados,292,"0,0","79,4","0,0",TACO 4ª ed.
+Maria mole,Produtos açucarados,301,"3,8","73,6","0,2",TACO 4ª ed.
+"Maria mole, coco queimado",Produtos açucarados,307,"3,9","75,1","0,1",TACO 4ª ed.
+Marmelada,Produtos açucarados,257,"0,4","70,8","0,1",TACO 4ª ed.
+"Mel, de abelha",Produtos açucarados,309,"0,0","84,0","0,0",TACO 4ª ed.
+Melado,Produtos açucarados,297,"0,0","76,6","0,0",TACO 4ª ed.
+Quindim,Produtos açucarados,411,"4,7","46,3","24,4",TACO 4ª ed.
+Rapadura,Produtos açucarados,352,"1,0","90,8","0,1",TACO 4ª ed.
+"Café, pó, torrado",Miscelâneas,419,"14,7","65,8","11,9",TACO 4ª ed.
+"Capuccino, pó",Miscelâneas,417,"11,3","73,6","8,6",TACO 4ª ed.
+"Fermento em pó, químico",Miscelâneas,90,"0,5","43,9","0,1",TACO 4ª ed.
+"Fermento, biológico, levedura, tablete",Miscelâneas,90,"17,0","7,7","1,5",TACO 4ª ed.
+"Gelatina, sabores variados, pó",Miscelâneas,380,"8,9","89,2",Tr,TACO 4ª ed.
+"Sal, dietético",Miscelâneas,NA,NA,NA,NA,TACO 4ª ed.
+"Sal, grosso",Miscelâneas,NA,NA,NA,NA,TACO 4ª ed.
+Shoyu,Miscelâneas,61,"3,3","11,6","0,3",TACO 4ª ed.
+Tempero a base de sal,Miscelâneas,21,"2,7","2,1","0,3",TACO 4ª ed.
+"Azeitona, preta, conserva",Outros alimentos industrializados,194,"1,2","5,5","20,3",TACO 4ª ed.
+"Azeitona, verde, conserva",Outros alimentos industrializados,137,"0,9","4,1","14,2",TACO 4ª ed.
+"Chantilly, spray, com gordura vegetal",Outros alimentos industrializados,315,"0,5","16,9","27,3",TACO 4ª ed.
+"Leite, de coco",Outros alimentos industrializados,166,"1,0","2,2","18,4",TACO 4ª ed.
+"Maionese, tradicional com ovos",Outros alimentos industrializados,302,"0,6","7,9","30,5",TACO 4ª ed.
+Acarajé,Alimentos preparados,289,"8,3","19,1","19,9",TACO 4ª ed.
+Arroz carreteiro,Alimentos preparados,154,"10,8","11,6","7,1",TACO 4ª ed.
+"Baião de dois, arroz e feijão-de-corda",Alimentos preparados,136,"6,2","20,4","3,2",TACO 4ª ed.
+Barreado,Alimentos preparados,165,"18,3","0,2","9,5",TACO 4ª ed.
+"Bife à cavalo, com contra filé",Alimentos preparados,291,"23,7","0,0","21,1",TACO 4ª ed.
+Bolinho de arroz,Alimentos preparados,274,"8,0","41,7","8,3",TACO 4ª ed.
+Camarão à baiana,Alimentos preparados,101,"7,9","3,2","6,0",TACO 4ª ed.
+"Charuto, de repolho",Alimentos preparados,78,"6,8","10,1","1,1",TACO 4ª ed.
+"Cuscuz, de milho, cozido com sal",Alimentos preparados,113,"2,2","25,3","0,7",TACO 4ª ed.
+"Cuscuz, paulista",Alimentos preparados,142,"2,6","22,5","4,6",TACO 4ª ed.
+"Cuxá, molho",Alimentos preparados,80,"5,6","5,7","3,6",TACO 4ª ed.
+Dobradinha,Alimentos preparados,125,"19,8","0,0","4,4",TACO 4ª ed.
+Estrogonofe de carne,Alimentos preparados,173,"15,0","3,0","10,8",TACO 4ª ed.
+Estrogonofe de frango,Alimentos preparados,157,"17,6","2,6","8,0",TACO 4ª ed.
+Feijão tropeiro mineiro,Alimentos preparados,152,"10,2","19,6","6,8",TACO 4ª ed.
+Feijoada,Alimentos preparados,117,"8,7","11,6","6,5",TACO 4ª ed.
+"Frango, com açafrão",Alimentos preparados,113,"9,7","4,1","6,2",TACO 4ª ed.
+"Macarrão, molho bolognesa",Alimentos preparados,120,"4,9","22,5","0,9",TACO 4ª ed.
+Maniçoba,Alimentos preparados,134,"10,0","3,4","8,7",TACO 4ª ed.
+Quibebe,Alimentos preparados,86,"8,6","6,6","2,7",TACO 4ª ed.
+"Salada, de legumes, com maionese",Alimentos preparados,96,"1,1","8,9","7,0",TACO 4ª ed.
+"Salada, de legumes, cozida no vapor",Alimentos preparados,35,"2,0","7,1","0,3",TACO 4ª ed.
+"Salpicão, de frango",Alimentos preparados,148,"13,9","4,6","7,8",TACO 4ª ed.
+Sarapatel,Alimentos preparados,123,"18,5","1,1","4,4",TACO 4ª ed.
+Tabule,Alimentos preparados,57,"2,0","10,6","1,2",TACO 4ª ed.
+Tacacá,Alimentos preparados,47,"7,0","3,4","0,4",TACO 4ª ed.
+"Tapioca, com manteiga",Alimentos preparados,348,"0,1","63,6","10,9",TACO 4ª ed.
+"Tucupi, com pimenta-de-cheiro",Alimentos preparados,27,"2,1","4,7","0,3",TACO 4ª ed.
+Vaca atolada,Alimentos preparados,145,"5,1","10,1","9,3",TACO 4ª ed.
+Vatapá,Alimentos preparados,255,"6,0","9,7","23,2",TACO 4ª ed.
+Virado à paulista,Alimentos preparados,307,"10,2","14,1","25,6",TACO 4ª ed.
+Yakisoba,Alimentos preparados,113,"7,5","18,3","2,6",TACO 4ª ed.
+"Amendoim, grão, cru",Leguminosas e derivados,544,"27,2","20,3","43,9",TACO 4ª ed.
+"Amendoim, torrado, salgado",Leguminosas e derivados,606,"22,5","18,7","54,0",TACO 4ª ed.
+"Ervilha, em vagem",Leguminosas e derivados,88,"7,5","14,2","0,5",TACO 4ª ed.
+"Ervilha, enlatada, drenada",Leguminosas e derivados,74,"4,6","13,4","0,4",TACO 4ª ed.
+"Feijão, carioca, cozido",Leguminosas e derivados,76,"4,8","13,6","0,5",TACO 4ª ed.
+"Feijão, carioca, cru",Leguminosas e derivados,329,"20,0","61,2","1,3",TACO 4ª ed.
+"Feijão, fradinho, cozido",Leguminosas e derivados,78,"5,1","13,5","0,6",TACO 4ª ed.
+"Feijão, fradinho, cru",Leguminosas e derivados,339,"20,2","61,2","2,4",TACO 4ª ed.
+"Feijão, jalo, cozido",Leguminosas e derivados,93,"6,1","16,5","0,5",TACO 4ª ed.
+"Feijão, jalo, cru",Leguminosas e derivados,328,"20,1","61,5","0,9",TACO 4ª ed.
+"Feijão, preto, cozido",Leguminosas e derivados,77,"4,5","14,0","0,5",TACO 4ª ed.
+"Feijão, preto, cru",Leguminosas e derivados,324,"21,3","58,8","1,2",TACO 4ª ed.
+"Feijão, rajado, cozido",Leguminosas e derivados,85,"5,5","15,3","0,4",TACO 4ª ed.
+"Feijão, rajado, cru",Leguminosas e derivados,326,"17,3","62,9","1,2",TACO 4ª ed.
+"Feijão, rosinha, cozido",Leguminosas e derivados,68,"4,5","11,8","0,5",TACO 4ª ed.
+"Feijão, rosinha, cru",Leguminosas e derivados,337,"20,9","62,2","1,3",TACO 4ª ed.
+"Feijão, roxo, cozido",Leguminosas e derivados,77,"5,7","12,9","0,5",TACO 4ª ed.
+"Feijão, roxo, cru",Leguminosas e derivados,331,"22,2","60,0","1,2",TACO 4ª ed.
+"Grão-de-bico, cru",Leguminosas e derivados,355,"21,2","57,9","5,4",TACO 4ª ed.
+"Guandu, cru",Leguminosas e derivados,344,"19,0","64,0","2,1",TACO 4ª ed.
+"Lentilha, cozida",Leguminosas e derivados,93,"6,3","16,3","0,5",TACO 4ª ed.
+"Lentilha, crua",Leguminosas e derivados,339,"23,2","62,0","0,8",TACO 4ª ed.
+"Paçoca, amendoim",Leguminosas e derivados,487,"16,0","52,4","26,1",TACO 4ª ed.
+"Pé-de-moleque, amendoim",Leguminosas e derivados,503,"13,2","54,7","28,0",TACO 4ª ed.
+"Soja, farinha",Leguminosas e derivados,404,"36,0","38,4","14,6",TACO 4ª ed.
+"Soja, extrato solúvel, natural, fluido",Leguminosas e derivados,39,"2,4","4,3","1,6",TACO 4ª ed.
+"Soja, extrato solúvel, pó",Leguminosas e derivados,459,"35,7","28,5","26,2",TACO 4ª ed.
+"Soja, queijo (tofu)",Leguminosas e derivados,64,"6,6","2,1","4,0",TACO 4ª ed.
+"Tremoço, cru",Leguminosas e derivados,381,"33,6","43,8","10,3",TACO 4ª ed.
+"Tremoço, em conserva",Leguminosas e derivados,121,"11,1","12,4","3,8",TACO 4ª ed.
+"Amêndoa, torrada, salgada",Nozes e sementes,581,"18,6","29,5","47,3",TACO 4ª ed.
+"Castanha-de-caju, torrada, salgada",Nozes e sementes,570,"18,5","29,1","46,3",TACO 4ª ed.
+"Castanha-do-Brasil, crua",Nozes e sementes,643,"14,5","15,1","63,5",TACO 4ª ed.
+"Coco, cru",Nozes e sementes,406,"3,7","10,4","42,0",TACO 4ª ed.
+"Coco, verde, cru",Nozes e sementes,*,*,*,*,TACO 4ª ed.
+"Farinha, de mesocarpo de babaçu, crua",Nozes e sementes,329,"1,4","79,2","0,2",TACO 4ª ed.
+"Gergelim, semente",Nozes e sementes,584,"21,2","21,6","50,4",TACO 4ª ed.
+"Linhaça, semente",Nozes e sementes,495,"14,1","43,3","32,3",TACO 4ª ed.
+"Pinhão, cozido",Nozes e sementes,174,"3,0","43,9","0,7",TACO 4ª ed.
+"Pupunha, cozida",Nozes e sementes,219,"2,5","29,6","12,8",TACO 4ª ed.
+"Noz, crua",Nozes e sementes,620,"14,0","18,4","59,4",TACO 4ª ed.
