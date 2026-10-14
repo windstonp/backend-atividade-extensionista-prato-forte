@@ -1,3 +1,10 @@
+# Hostinger (LiteSpeed): roda este site com PHP 8.4, sem depender da versão
+# escolhida para o site principal no hPanel. Não tem efeito no `artisan serve`.
+# https://www.hostinger.com/support/4047803-how-to-change-the-php-version-for-subfolders-or-subdomains-in-hostinger/
+<FilesMatch "\.(php4|php5|php3|php2|php|phtml)$">
+    SetHandler application/x-lsphp84
+</FilesMatch>
+
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes

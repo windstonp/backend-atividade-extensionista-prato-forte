@@ -10,5 +10,5 @@ it('usa o fuso e o idioma de Capivari de Baixo', function () {
 it('testa contra MySQL 8 com collation sem acento e sem caixa', function () {
     expect(DB::connection()->getDriverName())->toBe('mysql')
         ->and(DB::connection()->getConfig('collation'))->toBe('utf8mb4_0900_ai_ci')
-        ->and(DB::connection()->getDatabaseName())->toBe('prato_forte_test');
+        ->and(DB::connection()->getDatabaseName())->toMatch('/test/i'); // prato_forte_test no CI; na Hostinger, u423037311_<nome>
 });
